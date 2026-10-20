@@ -33,7 +33,7 @@
   "applicationCategory": "DesignApplication",
   "applicationSubCategory": "CAD/CAM",
   "operatingSystem": "Windows 10, Windows 11",
-  "softwareVersion": "0.3.7",
+  "softwareVersion": "0.3.8",
   "inLanguage": ["de", "en"],
   "url": "https://klapsc.github.io/ortino-cam/",
   "downloadUrl": "https://github.com/KlapSC/ortino-cam/releases/latest",
@@ -50,7 +50,8 @@
     "Direkte Anbindung an GRBL-Steuerungen mit Start-Check",
     "Steuerung durch Claude über MCP-Server und lokale API",
     "Community-Portal: Fräsdesigns entdecken, durchsuchen, mit einem Klick ins Programm laden und eigene Designs teilen",
-    "Möbel- und Küchen-Designer mit Stückliste, Plattenplaner mit Freiform-Nesting"
+    "Möbel- und Küchen-Designer mit Stückliste, Plattenplaner mit Freiform-Nesting",
+    "Gewindefräsen, Kamera auf der Arbeitsplatte mit QR-Marken, Wartungsplan und Standzeit-Grenzen"
   ],
   "keywords": "CAD/CAM, CNC, G-Code, GRBL, V-Carving, Toolpath, Nesting, MCP, Claude, Community-Portal, Fräsdesigns, CNC designs, share designs",
   "publisher": { "@type": "Person", "name": "KlapSC", "url": "https://github.com/KlapSC" },
@@ -97,7 +98,7 @@
       "name": "Funktioniert es mit meiner Maschine?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Mit GRBL-kompatiblen Steuerungen (GRBL 1.1, grblHAL, FluidNC) ja, direkt aus dem Programm. Erprobt ist bisher nur die Ultimate Bee mit xPRO V5, alles andere ist nicht an einer echten Maschine geprüft. Für Mach3/Mach4 und LinuxCNC erzeugt das Programm G-Code zum Export. Prüfe die Maße im Maschinenprofil und fahre zuerst ohne Werkzeug und Material."
+        "text": "Mit GRBL-kompatiblen Steuerungen (GRBL 1.1, grblHAL, FluidNC) ja, direkt aus dem Programm. Erprobt ist bisher nur die Ultimate Bee mit xPRO V5, alles andere ist nicht an einer echten Maschine geprüft. Für Mach3/Mach4, LinuxCNC, UCCNC, Centroid, ShopBot, MASSO und PlanetCNC erzeugt das Programm G-Code zum Export; die letzten fünf sind nicht erprobt. Prüfe die Maße im Maschinenprofil und fahre zuerst ohne Werkzeug und Material."
       }
     },
     {
@@ -324,11 +325,13 @@
     <p class="sub">Eine Anwendung für Entwurf, CAM, Simulation und Maschinenbedienung – mit Hilfen für Einsteiger und Werkzeugen für Fortgeschrittene.</p>
     <div class="cards">
       <div class="card"><div class="ico">✏️</div><h3>Entwerfen</h3><p>Formen, Text (auch auf Pfad, Einzellinienschriften), Bézier-Stift, Knoten, Boolesche Operationen, Offset, Arrays, Variablen und Formeln mit Einheiten. Import von SVG, DXF, PDF/AI und Bildern.</p></div>
-      <div class="card"><div class="ico">🧭</div><h3>Werkzeugwege</h3><p>Profil, Tasche, adaptives Räumen, Bohren, V-Carving, Inlay, Gravur und 3D-Relief. Postprozessoren für GRBL, grblHAL, FluidNC, Mach3/4 und LinuxCNC.</p></div>
+      <div class="card"><div class="ico">🧭</div><h3>Werkzeugwege</h3><p>Profil, Tasche, adaptives Räumen, Bohren, Gewindefräsen, V-Carving, Inlay, Gravur und 3D-Relief. Postprozessoren für GRBL, grblHAL, FluidNC, Mach3/4 und LinuxCNC, dazu fünf weitere (nicht erprobt).</p></div>
       <div class="card"><div class="ico">🧊</div><h3>3D-Simulation</h3><p>Materialabtrag abspielen, Kollisionen und Übermaß erkennen, Zeit abschätzen.</p></div>
       <div class="card"><div class="ico">🪚</div><h3>Plattenplaner &amp; Möbel</h3><p>Teile platzsparend auf Platten legen (auch Freiform), Passungen und Fingerzinken, Küchen- und Schrank-Designer mit Stückliste und Kantenband.</p></div>
       <div class="card"><div class="ico">🎛️</div><h3>Maschinenanbindung</h3><p>GRBL-kompatibel über USB/COM oder TCP: Handsteuerung, Referenzfahrt, Antasten mit Tastplatte oder XYZ-Eckblock, Werkzeugwechsel mit Längensensor, Tastplatte oder festem Taster.</p></div>
       <div class="card"><div class="ico">🛡️</div><h3>Start-Check</h3><p>Verfahrweg, Referenzfahrt, Nullpunkt, Werkzeug, Absaugung und mehr werden vor jedem Lauf geprüft. Das Programm schreibt nie Einstellungen in die Steuerung.</p></div>
+      <div class="card"><div class="ico">📷</div><h3>Kamera auf der Arbeitsplatte</h3><p>Vier QR-Marken in den Ecken, das Kamerabild wird entzerrt und liegt millimetergenau unter dem Entwurf; Werkstück-Umriss erkennen. Nur mit erzeugten Bildern geprüft, nie mit einer echten Kamera.</p></div>
+      <div class="card"><div class="ico">🛠️</div><h3>Wartung &amp; Standzeit</h3><p>Standzeit-Grenzen je Werkzeug und ein Wartungsplan je Maschine, mit Hinweisen im Start-Check. Richtwerte, nur Simulator.</p></div>
       <div class="card"><div class="ico">📱</div><h3>Handy-Fernbedienung</h3><p>Per QR-Code koppeln, in kleinen Schritten verfahren, Pause und Stopp – nur im eigenen WLAN, bei stabiler Verbindung, aus beim Start.</p></div>
       <div class="card"><div class="ico">📄</div><h3>Rüstblatt &amp; Angebot</h3><p>PDF mit Werkzeugliste, Reihenfolge, Zeitschätzung und Vorschau – dazu eine Kostenrechnung aus Material, Maschinenzeit und Aufschlag.</p></div>
       <div class="card"><div class="ico">🌍</div><h3>Community-Portal</h3><p>Fräsdesigns entdecken, mit einem Klick laden und eigene teilen. Im Programm integriert, vom Betreiber gehostet. <a href="#portal">Mehr dazu</a></p></div>
@@ -452,7 +455,7 @@ ortino export tuerschild.ocam --format dxf -o tuerschild.dxf</code></pre>
           <tr><th scope="row">Vierte Achse (Rotary)</th><td data-label="ortino.CAM">nein – für Version 0.4.0 geplant</td><td data-label="Vectric Aspire">ja</td></tr>
           <tr><th scope="row">Nesting</th><td data-label="ortino.CAM">ja (Plattenplaner mit Freiform-Nesting)</td><td data-label="Vectric Aspire">ja</td></tr>
           <tr><th scope="row">Zur Maschine schicken</th><td data-label="ortino.CAM">direkt aus dem Programm an GRBL-Steuerungen (USB/COM, TCP), mit Start-Check, Antasten und Werkzeugwechsel-Assistent</td><td data-label="Vectric Aspire">erzeugt G-Code-Dateien, die ein separates Steuerungsprogramm ausführt</td></tr>
-          <tr><th scope="row">Postprozessoren</th><td data-label="ortino.CAM">GRBL, grblHAL, FluidNC, Mach3/4, LinuxCNC; weitere Steuerungen laufend, Beiträge willkommen</td><td data-label="Vectric Aspire">sehr großer Katalog, online verwaltet; deutlich mehr Steuerungen</td></tr>
+          <tr><th scope="row">Postprozessoren</th><td data-label="ortino.CAM">GRBL, grblHAL, FluidNC, Mach3/4, LinuxCNC; UCCNC, Centroid, ShopBot, MASSO, PlanetCNC (nicht erprobt); weitere Steuerungen laufend, Beiträge willkommen</td><td data-label="Vectric Aspire">sehr großer Katalog, online verwaltet; deutlich mehr Steuerungen</td></tr>
           <tr><th scope="row">Steuerung durch Claude (MCP-Server, lokale API)</th><td data-label="ortino.CAM">ja</td><td data-label="Vectric Aspire">keine Angabe des Herstellers gefunden</td></tr>
           <tr><th scope="row">Reife</th><td data-label="ortino.CAM">junge Software (0.3.x), nur Teile an einer echten Maschine erprobt</td><td data-label="Vectric Aspire">seit Jahren etabliert, große Nutzergemeinde</td></tr>
           <tr><th scope="row">Hilfe</th><td data-label="ortino.CAM">Anleitungen im Repository, Fragen über GitHub Issues (Einzelperson)</td><td data-label="Vectric Aspire">Hersteller-Support, Handbuch, Videos, Forum</td></tr>
@@ -478,7 +481,7 @@ ortino export tuerschild.ocam --format dxf -o tuerschild.dxf</code></pre>
           <tr><th scope="row">Fourth axis (rotary)</th><td data-label="ortino.CAM">no – planned for version 0.4.0</td><td data-label="Vectric Aspire">yes</td></tr>
           <tr><th scope="row">Nesting</th><td data-label="ortino.CAM">yes (sheet planner with free-form nesting)</td><td data-label="Vectric Aspire">yes</td></tr>
           <tr><th scope="row">Sending to the machine</th><td data-label="ortino.CAM">straight from the app to GRBL controllers (USB/COM, TCP), with start check, probing and tool-change assistant</td><td data-label="Vectric Aspire">produces G-code files that a separate control program runs</td></tr>
-          <tr><th scope="row">Post-processors</th><td data-label="ortino.CAM">GRBL, grblHAL, FluidNC, Mach3/4, LinuxCNC; more controllers ongoing, contributions welcome</td><td data-label="Vectric Aspire">very large catalogue, managed online; considerably more controllers</td></tr>
+          <tr><th scope="row">Post-processors</th><td data-label="ortino.CAM">GRBL, grblHAL, FluidNC, Mach3/4, LinuxCNC; UCCNC, Centroid, ShopBot, MASSO, PlanetCNC (untested); more controllers ongoing, contributions welcome</td><td data-label="Vectric Aspire">very large catalogue, managed online; considerably more controllers</td></tr>
           <tr><th scope="row">Control by Claude (MCP server, local API)</th><td data-label="ortino.CAM">yes</td><td data-label="Vectric Aspire">no statement from the manufacturer found</td></tr>
           <tr><th scope="row">Maturity</th><td data-label="ortino.CAM">young software (0.3.x), only parts tested on a real machine</td><td data-label="Vectric Aspire">established for years, large user community</td></tr>
           <tr><th scope="row">Help</th><td data-label="ortino.CAM">guides in the repository, questions via GitHub issues (one person)</td><td data-label="Vectric Aspire">manufacturer support, manual, videos, forum</td></tr>
@@ -522,7 +525,7 @@ ortino export tuerschild.ocam --format dxf -o tuerschild.dxf</code></pre>
       <details class="faq"><summary>Kostet ortino.CAM etwas?</summary><p>Nein. Private und gewerbliche Nutzung sind kostenlos erlaubt (Bedingungen in der Datei LICENSE im Repository). Der Quelltext ist nicht öffentlich.</p></details>
       <details class="faq"><summary>Läuft es auf Mac oder Linux?</summary><p>Nein, derzeit nur unter Windows 10 und 11 (64 Bit).</p></details>
       <details class="faq"><summary>Brauche ich Claude oder einen Anthropic-Schlüssel?</summary><p>Nein. Alles Wesentliche läuft ohne. Den MCP-Server und den Assistenten im Programm kannst du zusätzlich nutzen; der Assistent braucht deinen eigenen Anthropic-Schlüssel.</p></details>
-      <details class="faq"><summary>Funktioniert es mit meiner Maschine?</summary><p>Mit GRBL-kompatiblen Steuerungen (GRBL 1.1, grblHAL, FluidNC) ja, direkt aus dem Programm. Erprobt ist bisher nur die Ultimate Bee mit xPRO V5, alles andere ist nicht an einer echten Maschine geprüft. Für Mach3/Mach4 und LinuxCNC erzeugt das Programm G-Code zum Export. Prüfe die Maße im Maschinenprofil und fahre zuerst ohne Werkzeug und Material.</p></details>
+      <details class="faq"><summary>Funktioniert es mit meiner Maschine?</summary><p>Mit GRBL-kompatiblen Steuerungen (GRBL 1.1, grblHAL, FluidNC) ja, direkt aus dem Programm. Erprobt ist bisher nur die Ultimate Bee mit xPRO V5, alles andere ist nicht an einer echten Maschine geprüft. Für Mach3/Mach4, LinuxCNC, UCCNC, Centroid, ShopBot, MASSO und PlanetCNC erzeugt das Programm G-Code zum Export; die letzten fünf sind nicht erprobt. Prüfe die Maße im Maschinenprofil und fahre zuerst ohne Werkzeug und Material.</p></details>
       <details class="faq"><summary>Warum warnt Windows beim Installieren?</summary><p>Der Installer ist mit einem selbst erstellten Zertifikat signiert, nicht von einer Zertifizierungsstelle. Windows (SmartScreen) zeigt deshalb eine Warnung: »Weitere Informationen → Trotzdem ausführen«. Die Prüfsumme (SHA-256) steht in den Hinweisen jeder Version.</p></details>
       <details class="faq"><summary>Sind die vorgeschlagenen Vorschübe und Drehzahlen sicher?</summary><p>Nein, es sind Richtwerte. Sie hängen von deiner Maschine, deinem Fräser und deinem Material ab. Prüfe sie, fange vorsichtig an und probiere an einem Reststück.</p></details>
       <details class="faq"><summary>Kann ich meine Fräserbibliothek mitnehmen?</summary><p>Das Programm bringt über 250 Fräser mit und kann Fräserdatenbanken anderer Programme einlesen (Vectric-.vtdb, Fusion, CSV). Das .vtdb-Format ist nicht offiziell dokumentiert und wurde mit einer echten Vectric-Datei bisher nicht getestet.</p></details>

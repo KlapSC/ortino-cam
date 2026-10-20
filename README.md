@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img alt="Version 0.3.7" src="https://img.shields.io/badge/Version-0.3.7-ff9a40?style=flat-square">
+  <img alt="Version 0.3.8" src="https://img.shields.io/badge/Version-0.3.8-ff9a40?style=flat-square">
   <img alt="Windows 10 und 11" src="https://img.shields.io/badge/Windows-10%20%7C%2011-0078d4?style=flat-square&logo=windows&logoColor=white">
   <img alt="GRBL" src="https://img.shields.io/badge/Steuerung-GRBL-2b6cb0?style=flat-square">
   <img alt="MCP für Claude" src="https://img.shields.io/badge/Claude-MCP%20%26%20API-d97757?style=flat-square">
@@ -38,7 +38,7 @@
 </p>
 
 > [!WARNING]
-> **Frühe Version (0.3.x): nicht alles ist an einer echten Maschine erprobt.** An echter Hardware erprobt sind bisher nur Taschen, V-Carving, Konturen, Referenzfahrt und Werkzeugwechsel mit der Tastplatte (Version 0.3.3, Ultimate Bee mit xPRO V5). **Nur gegen Simulator und Tests geprüft** sind fester Taster, Messung der Opferplatte, Höhenkarte, Handy-Fernbedienung, »An Position fahren« und der Längensensor. Immer zuerst **ohne Werkzeug und Material** testen, Not-Aus in Reichweite. Siehe [Haftungsausschluss](#haftungsausschluss).
+> **Frühe Version (0.3.x): nicht alles ist an einer echten Maschine erprobt.** An echter Hardware erprobt sind bisher nur Taschen, V-Carving, Konturen, Referenzfahrt und Werkzeugwechsel mit der Tastplatte (Version 0.3.3, Ultimate Bee mit xPRO V5). **Nur gegen Simulator und Tests geprüft** sind fester Taster, Messung der Opferplatte, Höhenkarte, Handy-Fernbedienung, »An Position fahren«, der Längensensor, **Gewindefräsen, Wartungsplan, die Kamera auf der Arbeitsplatte** und die neuen Postprozessoren. Immer zuerst **ohne Werkzeug und Material** testen, Not-Aus in Reichweite. Siehe [Haftungsausschluss](#haftungsausschluss).
 
 ## Auf einen Blick
 
@@ -71,11 +71,13 @@
 | | |
 |---|---|
 | ✏️ **Entwerfen** | Formen, Text (auch auf Pfad, Einzellinienschriften), Bézier-Stift, Knoten bearbeiten, Boolesche Operationen, Offset, Verrunden, Arrays, Variablen und Formeln mit Einheiten (`Breite/2 - 5mm`). Import von SVG, DXF, PDF/Illustrator und Bildern (nachzeichnen). |
-| 🧭 **Werkzeugwege** | Profil, Tasche, adaptives Räumen, Bohren, V-Carving, Inlay, Gravur, 3D-Relief. Postprozessoren für GRBL, grblHAL, FluidNC, Mach3/4 und LinuxCNC. |
+| 🧭 **Werkzeugwege** | Profil, Tasche, adaptives Räumen, Bohren, **Gewindefräsen** (metrisch, innen und außen), V-Carving, Inlay, Gravur, 3D-Relief. Postprozessoren für GRBL, grblHAL, FluidNC, Mach3/4 und LinuxCNC – dazu UCCNC, Centroid, ShopBot, MASSO und PlanetCNC *(nur nach Herstellerunterlagen, nicht erprobt)*. |
 | 🧊 **Prüfen** | Materialabtrag-Simulation in 3D, Eilgang-Kollision, Übermaß, Prüfliste mit Lösungsvorschlägen. Bei Fehlern sind Export und Maschinenstart gesperrt. |
 | 🪚 **Platten & Möbel** | Plattenplaner mit Freiform-Nesting, Passungen und Fingerzinken, Küchen- und Schrank-Designer mit Stückliste und Kantenband, Vorlagen und Serien aus CSV. |
 | 🎛️ **Maschinenanbindung** | GRBL-kompatibel über USB/COM oder TCP: Handsteuerung, Referenzfahrt, Antasten (Tastplatte oder XYZ-Eckblock), Werkzeugwechsel-Assistent (Längensensor, Tastplatte oder fester Taster), **Start-Check** vor jedem Lauf, Pause, Stopp, Start ab Zeile. |
 | 🧱 **Opferplatte** | Höhenkarte messen und beim Fräsen ausgleichen *(nur Simulator, nicht an echter Maschine erprobt)*. |
+| 📷 **Kamera auf der Arbeitsplatte** | Vier QR-Marken in den Ecken, das Kamerabild wird entzerrt und liegt millimetergenau unter dem Entwurf; Werkstück-Umriss erkennen. *(Nur mit erzeugten Bildern geprüft, nie mit einer echten Kamera.)* |
+| 🛠️ **Wartung & Standzeit** | Standzeit-Grenzen je Werkzeug, Wartungsplan je Maschine, Hinweise im Start-Check. *(Richtwerte, nur Simulator.)* |
 | 📱 **Handy-Fernbedienung** | Per QR-Code koppeln, in kleinen Schritten verfahren, Pause und Stopp – aus beim Start, nur im eigenen WLAN, unverschlüsselt. |
 | 🌱 **Für Einsteiger** | Einfach-Modus, Schnellstart »Was möchtest du fräsen?«, Hinweise mit Begründung, 250+ Fräser in einer Bibliothek, Richtwerte für Vorschub und Drehzahl. |
 | 📄 **Rüstblatt & Angebot** | PDF mit Werkzeugliste, Reihenfolge, Zeitschätzung und Vorschau – dazu Kostenrechnung. Deutsch und Englisch. |
@@ -172,7 +174,7 @@ Eine kurze, sachliche Gegenüberstellung mit den Stärken beider Seiten. Verglic
 | **Vierte Achse (Rotary)** | nein – für Version 0.4.0 geplant | ja |
 | **Nesting** | ja (Plattenplaner mit Freiform-Nesting) | ja |
 | **Zur Maschine schicken** | direkt aus dem Programm an GRBL-Steuerungen (USB/COM, TCP), mit Start-Check, Antasten und Werkzeugwechsel-Assistent | erzeugt G-Code-Dateien, die ein separates Steuerungsprogramm ausführt |
-| **Postprozessoren** | GRBL, grblHAL, FluidNC, Mach3/4, LinuxCNC; weitere Steuerungen laufend, Beiträge willkommen | sehr großer Katalog, online verwaltet; deutlich mehr Steuerungen |
+| **Postprozessoren** | GRBL, grblHAL, FluidNC, Mach3/4, LinuxCNC; UCCNC, Centroid, ShopBot, MASSO, PlanetCNC (nicht erprobt); weitere Steuerungen laufend, Beiträge willkommen | sehr großer Katalog, online verwaltet; deutlich mehr Steuerungen |
 | **Steuerung durch Claude (MCP-Server, lokale API)** | ja | keine Angabe des Herstellers gefunden |
 | **Reife** | junge Software (0.3.x), nur Teile an einer echten Maschine erprobt | seit Jahren etabliert, große Nutzergemeinde |
 | **Hilfe** | Anleitungen im Repository, Fragen über GitHub Issues (Einzelperson) | Hersteller-Support, Handbuch, Videos, Forum |
@@ -198,7 +200,7 @@ A short, factual comparison that names the strengths of both sides. The comparis
 | **Fourth axis (rotary)** | no – planned for version 0.4.0 | yes |
 | **Nesting** | yes (sheet planner with free-form nesting) | yes |
 | **Sending to the machine** | straight from the app to GRBL controllers (USB/COM, TCP), with start check, probing and tool-change assistant | produces G-code files that a separate control program runs |
-| **Post-processors** | GRBL, grblHAL, FluidNC, Mach3/4, LinuxCNC; more controllers ongoing, contributions welcome | very large catalogue, managed online; considerably more controllers |
+| **Post-processors** | GRBL, grblHAL, FluidNC, Mach3/4, LinuxCNC; UCCNC, Centroid, ShopBot, MASSO, PlanetCNC (untested); more controllers ongoing, contributions welcome | very large catalogue, managed online; considerably more controllers |
 | **Control by Claude (MCP server, local API)** | yes | no statement from the manufacturer found |
 | **Maturity** | young software (0.3.x), only parts tested on a real machine | established for years, large user community |
 | **Help** | guides in the repository, questions via GitHub issues (one person) | manufacturer support, manual, videos, forum |
@@ -235,7 +237,7 @@ A short, factual comparison that names the strengths of both sides. The comparis
 |---|---|
 | **Direkt angebunden** | GRBL-kompatible Steuerungen (GRBL 1.1, grblHAL, FluidNC) über USB/COM oder TCP |
 | **Maschinenkatalog** | u. a. Bulkman3D (Ultimate Bee, CNC xPRO V5), Carbide 3D, Onefinity, Sienci Labs, SainSmart, OpenBuilds, Inventables und eine generische GRBL-Vorlage |
-| **G-Code zum Export** | Postprozessoren für Mach3/Mach4 und LinuxCNC (ohne direkte Anbindung); eigene Postprozessoren als Textdatei möglich ([`postprozessoren/`](postprozessoren/)) |
+| **G-Code zum Export** | Postprozessoren für Mach3/Mach4 und LinuxCNC sowie UCCNC, Centroid, ShopBot, MASSO und PlanetCNC (diese fünf nur nach Herstellerunterlagen, **nicht erprobt**; ohne direkte Anbindung); eigene Postprozessoren als Textdatei möglich ([`postprozessoren/`](postprozessoren/)) |
 | **An echter Maschine erprobt** | bisher nur die Ultimate Bee mit xPRO V5 (siehe Hinweis oben) – **Berichte von anderen Maschinen sind sehr willkommen** ([Vorlage »Test an einer echten Maschine«](https://github.com/KlapSC/ortino-cam/issues/new/choose)) |
 
 ## Sicherheit
@@ -287,7 +289,7 @@ Nein. Alles Wesentliche läuft ohne. Den MCP-Server und den Assistenten im Progr
 <details>
 <summary><strong>Funktioniert es mit meiner Maschine?</strong></summary>
 
-Mit GRBL-kompatiblen Steuerungen (GRBL 1.1, grblHAL, FluidNC) ja, direkt aus dem Programm. Erprobt ist bisher nur die Ultimate Bee mit xPRO V5, alles andere ist **nicht an einer echten Maschine geprüft**. Für andere Steuerungen (Mach3/Mach4, LinuxCNC) erzeugt das Programm G-Code zum Export. Prüfe die Maße im Maschinenprofil und fahre zuerst ohne Werkzeug und Material.
+Mit GRBL-kompatiblen Steuerungen (GRBL 1.1, grblHAL, FluidNC) ja, direkt aus dem Programm. Erprobt ist bisher nur die Ultimate Bee mit xPRO V5, alles andere ist **nicht an einer echten Maschine geprüft**. Für andere Steuerungen (Mach3/Mach4, LinuxCNC, UCCNC, Centroid, ShopBot, MASSO, PlanetCNC) erzeugt das Programm G-Code zum Export; die letzten fünf sind nicht erprobt. Prüfe die Maße im Maschinenprofil und fahre zuerst ohne Werkzeug und Material.
 </details>
 
 <details>
