@@ -1,0 +1,32 @@
+name: Fehler
+description: Etwas funktioniert nicht oder falsch.
+title: "Fehler: "
+labels: ["fehler"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Version von ortino.CAM
+      placeholder: "0.3.7"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows-Version
+      placeholder: "Windows 11 23H2"
+  - type: textarea
+    id: schritte
+    attributes:
+      label: Was hast du getan?
+    validations:
+      required: true
+  - type: textarea
+    id: erwartet
+    attributes:
+      label: Was ist passiert, und was hast du erwartet?
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: Bei Fehlern an der Maschine: Bitte nenne Maschine und Steuerung. Projekte nur ohne persönliche Daten anhängen. Sicherheitslücken bitte **nicht** hier melden (siehe `SECURITY.md`).

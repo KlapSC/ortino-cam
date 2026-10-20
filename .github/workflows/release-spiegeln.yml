@@ -1,0 +1,88 @@
+# Legt in diesem öffentlichen Repository ein GitHub-Release aus den Installern an, die der Betreiber im Portal veröffentlicht hat.
+# Der Quelltext und der Build bleiben privat; hier wird nur gespiegelt, was ohnehin öffentlich unter der Download-Adresse des Portals liegt.
+# Nur von Hand startbar. Vorher müssen die Version im Portal veröffentlicht und release-notes/<Version>.md hier vorhanden sein.
+name: Release spiegeln
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version, z. B. 0.3.7 (im Portal veröffentlicht, Hinweise in release-notes/<Version>.md)"
+        required: true
+        type: string
+      vorabversion:
+        description: "Als Vorabversion markieren"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  spiegeln:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Eingabe prüfen
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ inputs.version }}
+        run: |
+          if ! [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "Ungültige Version '$VERSION'. Lösung: drei Zahlen mit Punkten, z. B. 0.3.7"
+            exit 1
+          fi
+          if [ ! -f "release-notes/$VERSION.md" ]; then
+            echo "release-notes/$VERSION.md fehlt. Lösung: die Hinweise der Version dort ablegen."
+            exit 1
+          fi
+          if gh release view "v$VERSION" >/dev/null 2>&1; then
+            echo "Das Release v$VERSION gibt es schon. Lösung: es auf GitHub löschen oder eine neue Version wählen."
+            exit 1
+          fi
+
+      - name: Installer vom Portal laden
+        env:
+          VERSION: ${{ inputs.version }}
+        run: |
+          set -euo pipefail
+          base="https://benini.access.ly:8088/api/v1/app/download/$VERSION"
+          mkdir -p dl
+          cd dl
+          for kind in nsis msi; do
+            curl --fail --location --retry 3 --remote-name --remote-header-name "$base/$kind?platform=windows-x86_64"
+          done
+          cp ../beispiele/tuerschild.ocam .
+          ls -l
+          # Fehlerseiten statt Installer erkennen: ein Installer ist mehrere Megabyte groß
+          for f in *.exe *.msi; do
+            size=$(stat -c %s "$f")
+            if [ "$size" -lt 5000000 ]; then
+              echo "$f ist nur $size Bytes groß. Lösung: prüfen, ob die Version $VERSION im Portal veröffentlicht ist."
+              exit 1
+            fi
+          done
+          sha256sum -- * > SHA256SUMS.txt
+          cat SHA256SUMS.txt
+
+      - name: Release anlegen
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ inputs.version }}
+          VORAB: ${{ inputs.vorabversion }}
+        run: |
+          set -euo pipefail
+          {
+            cat "release-notes/$VERSION.md"
+            echo
+            echo "### Prüfsummen (SHA-256)"
+            echo
+            echo '```'
+            cat dl/SHA256SUMS.txt
+            echo '```'
+          } > notes.md
+          flags=()
+          if [ "$VORAB" = "true" ]; then flags+=(--prerelease); else flags+=(--latest); fi
+          gh release create "v$VERSION" dl/* --target "$GITHUB_SHA" --title "ortino.CAM $VERSION" --notes-file notes.md "${flags[@]}"

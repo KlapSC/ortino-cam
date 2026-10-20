@@ -1,0 +1,11 @@
+# ortino.CAM
+
+> CAD/CAM-Software für CNC-Fräsen unter Windows (GRBL-Steuerungen wie die Ultimate Bee mit CNC xPRO V5): Entwurf, Werkzeugwege (Profil, Tasche, adaptives Räumen, Bohren, V-Carving, 3D-Relief), 3D-Simulation, Prüfliste, Plattenplaner und direkte Maschinenanbindung. Steuerbar mit Claude über einen MCP-Server und eine lokale API. Frühe Version 0.3.x, Quelltext nicht öffentlich.
+
+Wichtig: Nur teilweise an echten Maschinen erprobt; ohne Gewährleistung, Nutzung auf eigene Gefahr.
+
+- [Startseite](https://klapsc.github.io/ortino-cam/): Funktionen, Stand, Installation
+- [Releases](https://github.com/KlapSC/ortino-cam/releases): Installer für Windows
+- [Issues](https://github.com/KlapSC/ortino-cam/issues): Kontakt, Fehler, Wünsche, Maschinentests
+- [Mitmachen](https://github.com/KlapSC/ortino-cam/blob/main/CONTRIBUTING.md)
+- [Nutzungsbedingungen und Haftungsausschluss](https://github.com/KlapSC/ortino-cam/blob/main/LICENSE)

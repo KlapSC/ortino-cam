@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ortino.CAM – CAD/CAM für CNC-Fräsen (Windows, GRBL, V-Carving, Claude MCP)</title>
+<meta name="description" content="ortino.CAM: CAD/CAM-Software für CNC-Fräsen unter Windows. Entwerfen, Werkzeugwege (Profil, Tasche, V-Carving, 3D-Relief), 3D-Simulation, Prüfliste und direkte GRBL-Anbindung – steuerbar mit Claude über MCP und lokale API.">
+<meta name="keywords" content="CAD/CAM, CNC Fräse, G-Code, GRBL, V-Carving, Werkzeugwege, Simulation, Plattenplaner, Nesting, Ultimate Bee, xPRO V5, MCP, Claude, Windows">
+<link rel="canonical" href="https://klapsc.github.io/ortino-cam/">
+<meta name="theme-color" content="#161d31">
+<link rel="icon" href="bilder/logo.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ortino.CAM">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="ortino.CAM – CAD/CAM für CNC-Fräsen">
+<meta property="og:description" content="Vom Entwurf zum Werkstück in einer Anwendung: Werkzeugwege, 3D-Simulation, Prüfliste, GRBL-Anbindung und Steuerung per Claude (MCP) und API. Für Windows.">
+<meta property="og:url" content="https://klapsc.github.io/ortino-cam/">
+<meta property="og:image" content="https://klapsc.github.io/ortino-cam/bilder/social-preview.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+<meta property="og:image:alt" content="ortino.CAM – Vom Entwurf zum Werkstück, CAD/CAM für CNC-Fräsen">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ortino.CAM – CAD/CAM für CNC-Fräsen">
+<meta name="twitter:description" content="Entwerfen, Werkzeugwege, 3D-Simulation, Prüfliste, GRBL-Anbindung, Claude MCP und API. Für Windows.">
+<meta name="twitter:image" content="https://klapsc.github.io/ortino-cam/bilder/social-preview.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ortino.CAM",
+  "alternateName": "ortino CAM",
+  "description": "CAD/CAM-Software für CNC-Fräsen unter Windows: Entwurf, Werkzeugwege, 3D-Simulation, Prüfliste und direkte GRBL-Maschinenanbindung; steuerbar mit Claude über den Model Context Protocol (MCP) Server und eine lokale API.",
+  "applicationCategory": "DesignApplication",
+  "applicationSubCategory": "CAD/CAM",
+  "operatingSystem": "Windows 10, Windows 11",
+  "softwareVersion": "0.3.7",
+  "inLanguage": ["de", "en"],
+  "url": "https://klapsc.github.io/ortino-cam/",
+  "downloadUrl": "https://github.com/KlapSC/ortino-cam/releases/latest",
+  "image": "https://klapsc.github.io/ortino-cam/bilder/social-preview.png",
+  "screenshot": "https://klapsc.github.io/ortino-cam/bilder/simulation-dark.png",
+  "keywords": "CAD/CAM, CNC, G-Code, GRBL, V-Carving, Toolpath, Nesting, MCP, Claude",
+  "publisher": { "@type": "Person", "name": "KlapSC", "url": "https://github.com/KlapSC" }
+}
+</script>
+<style>
+  @font-face { font-family: 'InterVar'; src: url('assets/inter-latin.woff2') format('woff2'); font-weight: 100 900; font-display: swap; }
+  @font-face { font-family: 'InterVar'; src: url('assets/inter-latin-ext.woff2') format('woff2'); font-weight: 100 900; font-display: swap; unicode-range: U+0100-02AF, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  :root { color-scheme: light dark; --bg:#f6f4ef; --surface:#ffffff; --ink:#1a2036; --muted:#58617a; --line:#e3dfd5; --o1:#ff9a40; --o2:#e8571b; --navy:#161d31; --accent:#d9480f; --code:#f0ede5; --warn-bg:#fff4e5; --warn-line:#f2c07a; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0e1322; --surface:#161d31; --ink:#f1ece2; --muted:#a4aec6; --line:#27314d; --accent:#ff9a40; --code:#101626; --warn-bg:#2a2112; --warn-line:#6a4a1d; } }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.65 'InterVar', 'Inter', 'Segoe UI', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  img { max-width: 100%; height: auto; display: block; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+  header.hero { background: radial-gradient(900px 480px at 90% 0%, #2c3960 0%, transparent 60%), linear-gradient(135deg, #1b2440, #0d1220); color: #f5efe4; }
+  nav { display: flex; align-items: center; gap: 22px; padding: 18px 0; font-size: 15px; font-weight: 500; }
+  nav .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 18px; color: #f5efe4; text-decoration: none; margin-right: auto; }
+  nav .brand img { width: 30px; height: 30px; border-radius: 8px; }
+  nav a { color: #cdd5e8; text-decoration: none; }
+  nav a:hover { color: #fff; }
+  .hero-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 40px; align-items: center; padding: 40px 0 64px; }
+  h1 { font-size: clamp(38px, 6vw, 64px); line-height: 1.04; letter-spacing: -1.6px; margin: 0 0 18px; font-weight: 800; }
+  h1 span { background: linear-gradient(90deg, var(--o1), var(--o2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .lead { font-size: 20px; color: #d6dcec; margin: 0 0 28px; max-width: 34em; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 18px; }
+  .btn { display: inline-block; padding: 13px 24px; border-radius: 12px; font-weight: 700; text-decoration: none; font-size: 16px; }
+  .btn.primary { background: linear-gradient(90deg, var(--o1), var(--o2)); color: #1a1208; box-shadow: 0 10px 30px rgba(232,87,27,.35); }
+  .btn.ghost { border: 1.5px solid rgba(255,255,255,.28); color: #f5efe4; }
+  .btn:hover { filter: brightness(1.08); }
+  .fine { font-size: 14px; color: #aab4cc; }
+  .shot { border-radius: 14px; overflow: hidden; box-shadow: 0 30px 80px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.1); }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+  .chips span { font-size: 13.5px; font-weight: 600; padding: 5px 13px; border-radius: 999px; border: 1px solid rgba(255,255,255,.2); color: #cdd5e8; background: rgba(255,255,255,.05); }
+  section { padding: 64px 0 8px; }
+  h2 { font-size: clamp(28px, 4vw, 38px); line-height: 1.15; letter-spacing: -.8px; margin: 0 0 12px; }
+  h3 { font-size: 19px; margin: 0 0 6px; letter-spacing: -.2px; }
+  .sub { color: var(--muted); max-width: 44em; margin: 0 0 28px; }
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .step { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 16px 16px 20px; }
+  .step .shot { box-shadow: 0 10px 30px rgba(0,0,0,.18); margin-bottom: 14px; border-radius: 10px; }
+  .step small { display: inline-block; font-weight: 800; color: var(--accent); letter-spacing: .08em; font-size: 12.5px; }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 22px; }
+  .card .ico { font-size: 26px; margin-bottom: 8px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15.5px; }
+  .callout { border: 1px solid var(--warn-line); background: var(--warn-bg); border-radius: 16px; padding: 20px 24px; }
+  .callout h3 { margin-bottom: 8px; }
+  .callout ul { margin: 8px 0 0; padding-left: 20px; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+  pre { background: var(--code); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; overflow-x: auto; font: 14px/1.55 ui-monospace, 'Cascadia Code', Consolas, monospace; margin: 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 15.5px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+  tr:last-child td { border-bottom: 0; }
+  ol.install { padding-left: 22px; } ol.install li { margin-bottom: 8px; }
+  footer { margin-top: 72px; background: var(--navy); color: #b6c0d8; padding: 40px 0 48px; font-size: 15px; }
+  footer a { color: #ffb36b; } footer h2 { color: #f5efe4; font-size: 20px; margin-bottom: 8px; }
+  footer .cols { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; }
+  .en { margin-top: 12px; font-size: 15.5px; color: var(--muted); }
+  @media (max-width: 900px) { .hero-grid, .two, footer .cols { grid-template-columns: 1fr; } .steps, .cards { grid-template-columns: 1fr; } nav a:not(.brand) { display: none; } }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <nav aria-label="Hauptnavigation">
+      <a class="brand" href="#top"><img src="bilder/logo.png" alt="" width="30" height="30">ortino.CAM</a>
+      <a href="#funktionen">Funktionen</a>
+      <a href="#claude">Claude &amp; API</a>
+      <a href="#installation">Installation</a>
+      <a href="#mitmachen">Mitmachen</a>
+      <a href="https://github.com/KlapSC/ortino-cam">GitHub</a>
+    </nav>
+    <div class="hero-grid" id="top">
+      <div>
+        <h1>ortino<span>.CAM</span><br>CAD/CAM für CNC-Fräsen</h1>
+        <p class="lead">Vom Entwurf zum Werkstück in einer Anwendung: zeichnen, Werkzeugwege berechnen, in 3D simulieren, prüfen und direkt an die Maschine schicken. Für Windows und GRBL-Steuerungen wie die Ultimate Bee mit xPRO V5.</p>
+        <div class="cta">
+          <a class="btn primary" href="https://github.com/KlapSC/ortino-cam/releases/latest">Für Windows herunterladen</a>
+          <a class="btn ghost" href="#funktionen">Alle Funktionen</a>
+        </div>
+        <p class="fine">Frühe Version 0.3.x · Windows 10/11 (64 Bit) · Updates im Programm</p>
+        <div class="chips"><span>V-Carving</span><span>3D-Relief</span><span>Plattenplaner</span><span>G-Code</span><span>GRBL</span><span>MCP für Claude</span></div>
+      </div>
+      <div class="shot">
+        <picture>
+          <source media="(prefers-color-scheme: light)" srcset="bilder/entwurf-light.png">
+          <img src="bilder/entwurf-dark.png" width="1600" height="1000" alt="ortino.CAM: Entwurf eines Türschilds mit Text, Bohrungen und Außenkontur im Zeichenbereich">
+        </picture>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+  <section id="ablauf" aria-labelledby="h-ablauf">
+    <h2 id="h-ablauf">In drei Schritten zum Werkstück</h2>
+    <p class="sub">Die Oberfläche führt durch fünf Schritte – Projekt, Entwurf, Bearbeitung, Prüfen, Fräsen. Im Einfach-Modus stehen nur die wichtigsten Einstellungen, alles andere liegt unter »Mehr Einstellungen«.</p>
+    <div class="steps">
+      <article class="step">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/bearbeitung-light.png"><img loading="lazy" src="bilder/bearbeitung-dark.png" width="1600" height="1000" alt="Bearbeitungen wie Bohren, Tasche und Profil mit Werkzeug, Tiefe und Haltestegen"></picture></div>
+        <small>1 · BEARBEITEN</small><h3>Werkzeugwege festlegen</h3>
+        <p>Profil, Tasche, adaptives Räumen, Bohren, V-Carving, Inlay und 3D-Relief – mit Richtwerten für Vorschub und Drehzahl und kurzer Erklärung, warum.</p>
+      </article>
+      <article class="step">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/simulation-light.png"><img loading="lazy" src="bilder/simulation-dark.png" width="1600" height="1000" alt="3D-Simulation des Materialabtrags mit Prüfliste und Lösungsvorschlägen"></picture></div>
+        <small>2 · PRÜFEN</small><h3>Simulieren und prüfen</h3>
+        <p>Materialabtrag in 3D abspielen, Eilgang-Kollisionen und Übermaß finden, Prüfliste mit Lösungsvorschlägen. Bei Fehlern sind Export und Maschinenstart gesperrt.</p>
+      </article>
+      <article class="step">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/fraesen-light.png"><img loading="lazy" src="bilder/fraesen-dark.png" width="1600" height="1000" alt="Schritt Fräsen mit Maschinenverbindung, Handsteuerung, Antasten und Start-Check"></picture></div>
+        <small>3 · FRÄSEN</small><h3>Direkt an die Maschine</h3>
+        <p>Verbinden per USB oder TCP, Nullpunkt und Antasten, Werkzeugwechsel-Assistent, Start-Check vor jedem Lauf, Pause, Stopp und Start ab Zeile.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="funktionen" aria-labelledby="h-funktionen">
+    <h2 id="h-funktionen">Funktionen</h2>
+    <p class="sub">Eine Anwendung für Entwurf, CAM, Simulation und Maschinenbedienung – mit Hilfen für Einsteiger und Werkzeugen für Fortgeschrittene.</p>
+    <div class="cards">
+      <div class="card"><div class="ico">✏️</div><h3>Entwerfen</h3><p>Formen, Text (auch auf Pfad, Einzellinienschriften), Bézier-Stift, Knoten, Boolesche Operationen, Offset, Arrays, Variablen und Formeln mit Einheiten. Import von SVG, DXF, PDF/AI und Bildern.</p></div>
+      <div class="card"><div class="ico">🧭</div><h3>Werkzeugwege</h3><p>Profil, Tasche, adaptives Räumen, Bohren, V-Carving, Inlay, Gravur und 3D-Relief. Postprozessoren für GRBL, grblHAL, FluidNC, Mach3/4 und LinuxCNC.</p></div>
+      <div class="card"><div class="ico">🧊</div><h3>3D-Simulation</h3><p>Materialabtrag abspielen, Kollisionen und Übermaß erkennen, Zeit abschätzen.</p></div>
+      <div class="card"><div class="ico">🪚</div><h3>Plattenplaner &amp; Möbel</h3><p>Teile platzsparend auf Platten legen (auch Freiform), Passungen und Fingerzinken, Küchen- und Schrank-Designer mit Stückliste und Kantenband.</p></div>
+      <div class="card"><div class="ico">🎛️</div><h3>Maschinenanbindung</h3><p>GRBL-kompatibel über USB/COM oder TCP: Handsteuerung, Referenzfahrt, Antasten mit Tastplatte oder XYZ-Eckblock, Werkzeugwechsel mit Längensensor, Tastplatte oder festem Taster.</p></div>
+      <div class="card"><div class="ico">🛡️</div><h3>Start-Check</h3><p>Verfahrweg, Referenzfahrt, Nullpunkt, Werkzeug, Absaugung und mehr werden vor jedem Lauf geprüft. Das Programm schreibt nie Einstellungen in die Steuerung.</p></div>
+      <div class="card"><div class="ico">📱</div><h3>Handy-Fernbedienung</h3><p>Per QR-Code koppeln, in kleinen Schritten verfahren, Pause und Stopp – nur im eigenen WLAN, bei stabiler Verbindung, aus beim Start.</p></div>
+      <div class="card"><div class="ico">📄</div><h3>Rüstblatt &amp; Angebot</h3><p>PDF mit Werkzeugliste, Reihenfolge, Zeitschätzung und Vorschau – dazu eine Kostenrechnung aus Material, Maschinenzeit und Aufschlag.</p></div>
+      <div class="card"><div class="ico">🌍</div><h3>Community-Portal</h3><p>Fräsdesigns entdecken, mit einem Klick laden und eigene teilen. Im Programm integriert, vom Betreiber gehostet.</p></div>
+    </div>
+  </section>
+
+  <section id="claude" aria-labelledby="h-claude">
+    <h2 id="h-claude">Steuerbar mit Claude – MCP-Server und lokale API</h2>
+    <p class="sub">ortino.CAM bringt einen <strong>MCP-Server</strong> (<em>Model Context Protocol</em>) mit. Claude Desktop, Claude Code und jeder andere MCP-Client können zeichnen, Bearbeitungen anlegen, die Prüfliste abarbeiten und G-Code erzeugen – live im Programmfenster, jede Aktion ein Rückgängig-Schritt.</p>
+    <div class="two">
+      <div>
+        <ul>
+          <li><strong>MCP-Server <code>ortino-mcp</code></strong> für Claude Desktop und Claude Code.</li>
+          <li><strong>Lokale API</strong> (JSON, nur <code>127.0.0.1</code>, zufälliger Zugangsschlüssel, nur auf Wunsch eingeschaltet) für eigene Programme und Skripte.</li>
+          <li><strong>Kommandozeile</strong> <code>ortino</code>: G-Code erzeugen, Projekt prüfen, DXF/SVG exportieren, Serien aus CSV – auch für CI.</li>
+          <li><strong>Eigene Werkzeuge</strong> als Rhai-Skripte, die auch Claude benutzen kann.</li>
+          <li><strong>Assistent im Programm</strong> mit deinem eigenen Anthropic-API-Schlüssel (liegt im Windows-Anmeldeinformationsspeicher).</li>
+        </ul>
+      </div>
+      <div>
+<pre><code>// claude_desktop_config.json
+{
+  "mcpServers": {
+    "ortino-cam": {
+      "command": "C:\\Users\\&lt;Name&gt;\\AppData\\Local\\ortino.CAM\\ortino-mcp.exe",
+      "args": []
+    }
+  }
+}</code></pre>
+<pre style="margin-top:14px"><code># Kommandozeile
+ortino check  tuerschild.ocam
+ortino gcode  tuerschild.ocam -o tuerschild.nc --post grbl
+ortino export tuerschild.ocam --format dxf -o tuerschild.dxf</code></pre>
+        <p class="sub" style="margin-top:14px">Einstellungen der Steuerung (<code>$…=</code>) schreibt ortino.CAM auf keiner Stufe, auch nicht über die API.</p>
+      </div>
+    </div>
+    <h3 style="margin:26px 0 10px">Sicherheitsstufen für Claude und die API</h3>
+    <table aria-label="Sicherheitsstufen für Claude und die API">
+          <thead><tr><th>Stufe</th><th>Was erlaubt ist</th><th>Standard</th></tr></thead>
+          <tbody>
+            <tr><td><code>read</code></td><td>Projekt, Prüfliste, Vorschau lesen</td><td>erlaubt</td></tr>
+            <tr><td><code>edit</code></td><td>Projekt ändern (je Aktion ein Undo-Schritt)</td><td>erlaubt</td></tr>
+            <tr><td><code>machine</code></td><td>Verfahren, Spindel, Nullpunkt, Antasten</td><td>gesperrt, jede Aktion mit Bestätigung</td></tr>
+            <tr><td><code>danger</code></td><td>Job starten, Dateien überschreiben</td><td>gesperrt, jede Aktion mit Bestätigung</td></tr>
+          </tbody>
+    </table>
+  </section>
+
+  <section id="stand" aria-labelledby="h-stand">
+    <h2 id="h-stand">Stand und Grenzen – ehrlich gesagt</h2>
+    <div class="callout">
+      <h3>Frühe Version (0.3.x) – nicht alles ist an einer echten Maschine erprobt</h3>
+      <ul>
+        <li><strong>An echter Maschine erprobt</strong> (Version 0.3.3, Ultimate Bee mit xPRO V5): Taschen, V-Carving, Konturen, Referenzfahrt, Werkzeugwechsel mit Tastplatte.</li>
+        <li><strong>Nur gegen Simulator und Tests geprüft:</strong> fester Taster, Messung der Opferplatte und Höhenkarte, Handy-Fernbedienung, »An Position fahren«, Längensensor.</li>
+        <li>Immer zuerst <strong>ohne Werkzeug und Material</strong> testen, Not-Aus in Reichweite, Maschine nie unbeaufsichtigt lassen.</li>
+        <li>ortino.CAM entsteht <strong>zum größten Teil mit Claude Code (Anthropic) als Co-Autor</strong>; Anforderungen, Entscheidungen, Abnahme und Veröffentlichung liegen beim Betreiber. Berichte von echten Maschinen sind deshalb besonders willkommen.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="installation" aria-labelledby="h-installation">
+    <h2 id="h-installation">Installation</h2>
+    <ol class="install">
+      <li>Unter <a href="https://github.com/KlapSC/ortino-cam/releases/latest">Releases</a> die Datei <code>ortino.CAM_&lt;Version&gt;_x64-setup.exe</code> herunterladen (alternativ die <code>.msi</code>). Die Prüfsumme (SHA-256) steht in den Hinweisen der Version.</li>
+      <li>Starten und installieren. <strong>Windows warnt beim ersten Start</strong> (SmartScreen: »Weitere Informationen → Trotzdem ausführen«): Der Installer ist mit einem selbst erstellten Zertifikat signiert, nicht von einer Zertifizierungsstelle.</li>
+      <li><code>.ocam</code>-Projekte öffnen sich danach per Doppelklick.</li>
+    </ol>
+    <p class="sub"><strong>Updates</strong> kommen im Programm selbst über das Portal des Betreibers (nicht über GitHub): Die Kopfleiste zeigt einen Hinweis, installiert wird nur nach deinem Klick, mit geprüfter Signatur und nie mitten in einem Fräsauftrag. Übermittelt werden nur Systemart, Architektur, Installationsart und die installierte Version.</p>
+  </section>
+
+  <section id="mitmachen" aria-labelledby="h-mitmachen">
+    <h2 id="h-mitmachen">Mitmachen</h2>
+    <p class="sub"><strong>Neue Mitwirkende sind willkommen.</strong> Alles läuft über <a href="https://github.com/KlapSC/ortino-cam/issues/new/choose">GitHub Issues</a>: Fragen, Fehler, Wünsche und vor allem <strong>Berichte von Tests an echten Maschinen</strong>. Maschinenprofile, Postprozessor-Vorlagen, Beispielprojekte, Übersetzungen und Anleitungen kannst du als Pull Request beitragen (<a href="https://github.com/KlapSC/ortino-cam/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>). Wer an der Entwicklung des Programms selbst mitarbeiten möchte, meldet sich per Issue »Mitarbeit am Programm«; der Betreiber gibt Interessierten den Zugang frei.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap cols">
+    <div>
+      <h2>Haftungsausschluss</h2>
+      <p>ortino.CAM wird <strong>ohne jede Gewährleistung, »wie besehen«</strong> bereitgestellt; die Nutzung erfolgt <strong>auf eigene Gefahr</strong>. CNC-Maschinen können verletzen und Schäden verursachen. Simulation, Prüfliste und Start-Check sind Hilfen und keine Sicherheitsfunktion. Der Betreiber und die Mitwirkenden haften nicht für Schäden aus der Nutzung, soweit das Gesetz es zulässt; die Haftung bei Vorsatz, für Leben, Körper und Gesundheit und nach zwingendem Recht bleibt unberührt. Maßgeblich sind die <a href="https://github.com/KlapSC/ortino-cam/blob/main/LICENSE">Nutzungsbedingungen</a>.</p>
+      <p class="en" lang="en"><strong>English:</strong> ortino.CAM is CAD/CAM software for CNC routers on Windows – design, toolpaths, 3D simulation, a pre-flight check and direct GRBL machine control, drivable by Claude through an MCP server and a local API. Early version, proven on a real machine only in part; provided "as is", without warranty, use at your own risk. Closed source; private and commercial use allowed, redistribution not. <a href="https://github.com/KlapSC/ortino-cam/releases/latest">Download</a> · <a href="https://github.com/KlapSC/ortino-cam/issues/new/choose">Issues</a></p>
+    </div>
+    <div>
+      <h2>Links</h2>
+      <p><a href="https://github.com/KlapSC/ortino-cam/releases/latest">Releases</a><br><a href="https://github.com/KlapSC/ortino-cam/issues/new/choose">Issues – Kontakt, Fehler, Wünsche</a><br><a href="https://github.com/KlapSC/ortino-cam/blob/main/CONTRIBUTING.md">Mitmachen</a><br><a href="https://github.com/KlapSC/ortino-cam/blob/main/SECURITY.md">Sicherheitslücken melden</a><br><a href="https://github.com/KlapSC/ortino-cam/blob/main/LICENSE">Nutzungsbedingungen</a> · <a href="https://github.com/KlapSC/ortino-cam/blob/main/THIRD-PARTY-NOTICES.txt">Drittlizenzen</a></p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

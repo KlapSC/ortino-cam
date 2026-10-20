@@ -1,0 +1,56 @@
+name: Test an einer echten Maschine
+description: Bericht über einen Test an einer echten Maschine – auch Fehlschläge helfen.
+title: "Maschinentest: "
+labels: ["maschinentest"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke für den Test! Vieles in ortino.CAM ist bisher nur gegen einen Simulator geprüft. Bitte teste zuerst **ohne Werkzeug und ohne Material**, mit dem Not-Aus in Reichweite.
+  - type: input
+    id: version
+    attributes:
+      label: Version von ortino.CAM
+      placeholder: "0.3.7"
+    validations:
+      required: true
+  - type: input
+    id: maschine
+    attributes:
+      label: Maschine und Steuerung
+      placeholder: "z. B. Ultimate Bee 1000, CNC xPRO V5, GRBL 1.1h"
+    validations:
+      required: true
+  - type: dropdown
+    id: funktion
+    attributes:
+      label: Was hast du getestet?
+      options:
+        - Fester Taster (Werkzeug einmessen / Wechsel-Assistent)
+        - Opferplatte nullen / Höhenkarte
+        - Tastplatte / Eckblock (Antasten)
+        - Wechsel-Assistent mit Längensensor
+        - Handy-Fernbedienung
+        - An Position fahren
+        - Maschinenprofil
+        - Anderes
+    validations:
+      required: true
+  - type: dropdown
+    id: ergebnis
+    attributes:
+      label: Ergebnis
+      options:
+        - Hat wie beschrieben funktioniert
+        - Funktioniert mit Einschränkungen
+        - Hat nicht funktioniert
+        - Maschine hat unerwartet reagiert
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Was ist passiert?
+      description: Ablauf, Meldungen des Start-Checks, Auszug aus der Konsole der Maschine. Bitte keine persönlichen Daten.
+    validations:
+      required: true

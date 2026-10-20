@@ -1,0 +1,16 @@
+name: Wunsch
+description: Eine Idee oder Funktion, die du dir wünschst.
+title: "Wunsch: "
+labels: ["wunsch"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Welches Problem möchtest du lösen?
+      description: Beschreibe, was du fräsen oder tun willst und wo es heute hakt – nicht nur die gewünschte Funktion.
+    validations:
+      required: true
+  - type: textarea
+    id: idee
+    attributes:
+      label: Wie stellst du dir die Lösung vor?

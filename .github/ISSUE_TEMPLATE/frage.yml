@@ -1,0 +1,12 @@
+name: Frage
+description: Du kommst nicht weiter oder möchtest etwas wissen.
+title: "Frage: "
+labels: ["frage"]
+body:
+  - type: textarea
+    id: frage
+    attributes:
+      label: Deine Frage
+      description: Was möchtest du erreichen, was hast du schon versucht? Version von ortino.CAM nicht vergessen.
+    validations:
+      required: true

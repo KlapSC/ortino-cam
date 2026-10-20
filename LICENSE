@@ -1,0 +1,113 @@
+ortino.CAM – Nutzungsbedingungen / Terms of Use
+==================================================================================================
+
+Rechteinhaber / Copyright holder:  KlapSC
+Kontakt / Contact:                 ausschließlich über GitHub Issues / only via GitHub Issues:
+                                   https://github.com/KlapSC/ortino-cam/issues
+
+Copyright (c) 2026 KlapSC. Alle Rechte vorbehalten. / All rights reserved.
+
+
+--------------------------------------------------------------------------------------------------
+DEUTSCH
+--------------------------------------------------------------------------------------------------
+
+1. Gegenstand
+   ortino.CAM (das »Programm«) besteht aus der Anwendung, dem Quelltext, den mitgelieferten Beispielen, Schriften-
+   und Datendateien sowie der Dokumentation. Das Programm ist urheberrechtlich geschützt und kein Open-Source-Programm.
+   Bausteine Dritter stehen unter ihren eigenen Lizenzen (Nummer 6).
+
+2. Nutzungsrecht
+   Der Rechteinhaber räumt Ihnen ein einfaches, nicht ausschließliches, nicht übertragbares, nicht unterlizenzierbares
+   Recht ein, das Programm in der vom Rechteinhaber bereitgestellten Fassung (Installer, Aktualisierungen) auf Ihren
+   eigenen Rechnern zu installieren und zur Planung und Fertigung eigener Werkstücke zu nutzen – privat und gewerblich.
+
+3. Nicht erlaubt ist ohne schriftliche Zustimmung des Rechteinhabers
+   a) das Programm oder Teile davon weiterzugeben, zu verkaufen, zu vermieten, zu verleihen oder öffentlich bereitzustellen;
+   b) das Programm zu verändern, zurückzuentwickeln, zu dekompilieren oder auseinanderzunehmen, soweit das Gesetz es nicht
+      zwingend erlaubt;
+   c) Urheber-, Lizenz- oder Herkunftshinweise zu entfernen oder zu verändern;
+   d) das Programm oder das Community-Portal als Dienst für Dritte zu betreiben oder weitere Portale im Namen von
+      ortino.CAM zu betreiben (es gibt genau ein offizielles Portal, das der Betreiber hostet);
+   e) den Namen »ortino.CAM« oder das Zeichen ohne Zustimmung für eigene Produkte zu verwenden.
+
+4. Ihre Inhalte
+   Ihre Projekte, Zeichnungen und erzeugten Dateien (z. B. .ocam, DXF, SVG, G-Code) gehören Ihnen; das Programm erhebt
+   daran keine Rechte. Designs aus dem Community-Portal stehen unter den Bedingungen, die ihre Urheberinnen und Urheber
+   beim Teilen angegeben haben, sowie den Nutzungsbedingungen des Portals.
+
+5. Sicherheit, Gewährleistungs- und Haftungsausschluss
+   a) CNC-Maschinen können verletzen und Sachschäden verursachen. Das Programm erzeugt Werkzeugwege und G-Code nach bestem
+      Wissen; Sie müssen Simulation, Prüfliste und Programm vor jeder Fertigung selbst prüfen (zuerst ohne Werkzeug und
+      Material), den Not-Aus bereithalten und die Maschine nie unbeaufsichtigt lassen. Simulation, Prüfliste und Start-Check
+      sind Hilfen und keine Sicherheitsfunktion.
+   b) Das Programm wird »wie besehen« und ohne jede Gewährleistung überlassen, insbesondere nicht für Fehlerfreiheit,
+      Eignung für einen bestimmten Zweck, Verfügbarkeit oder bestimmte Eigenschaften. Die Nutzung erfolgt auf eigene Gefahr.
+      Das Programm ist überwiegend mit KI-Unterstützung entstanden und nur teilweise an echten Maschinen erprobt.
+   c) Der Rechteinhaber und alle, die am Programm mitgewirkt haben, haften nicht für Schäden, die aus der Nutzung oder der
+      Nichtnutzbarkeit des Programms entstehen – insbesondere Verletzungen, Schäden an Maschine, Werkzeug und Werkstück,
+      Brand, Folgeschäden, entgangenen Gewinn und Datenverlust –, soweit das Gesetz es zulässt.
+   d) Unberührt bleibt die Haftung bei Vorsatz, bei Verletzung von Leben, Körper oder Gesundheit, nach dem
+      Produkthaftungsgesetz und soweit zwingendes Recht sie vorschreibt.
+
+6. Bausteine Dritter
+   ortino.CAM enthält Software und Schriften Dritter (Rust-Bibliotheken, JavaScript-Bibliotheken, die Schriften DejaVu und
+   Inter). Für sie gelten ihre eigenen Lizenzen; Namen, Urheber und Lizenztexte stehen in der Datei
+   THIRD-PARTY-NOTICES.txt (Installationsordner; im Programm unter »Über ortino.CAM → Lizenzen«). Soweit eine dieser
+   Lizenzen weitergehende Rechte einräumt, bleiben diese Rechte unberührt.
+
+7. Beendigung, Recht
+   Bei Verstoß gegen diese Bedingungen endet das Nutzungsrecht. Es gilt das Recht der Bundesrepublik Deutschland unter
+   Ausschluss des UN-Kaufrechts, soweit dem keine zwingenden Verbraucherschutzvorschriften entgegenstehen.
+
+
+--------------------------------------------------------------------------------------------------
+ENGLISH
+--------------------------------------------------------------------------------------------------
+
+1. Subject
+   ortino.CAM (the "Program") consists of the application, its source code, the bundled examples, fonts and data files, and
+   the documentation. The Program is protected by copyright and is not open-source software. Third-party components are
+   licensed under their own licenses (section 6).
+
+2. Right of use
+   The copyright holder grants you a simple, non-exclusive, non-transferable, non-sublicensable right to install the Program,
+   in the version provided by the copyright holder (installer, updates), on your own computers and to use it to plan and
+   manufacture your own workpieces – privately and commercially.
+
+3. Not permitted without the written consent of the copyright holder
+   a) passing on, selling, renting, lending or publicly making available the Program or parts of it;
+   b) modifying, reverse-engineering, decompiling or disassembling the Program, except where mandatory law allows it;
+   c) removing or changing copyright, license or origin notices;
+   d) operating the Program or the community portal as a service for third parties, or operating further portals in the
+      name of ortino.CAM (there is exactly one official portal, hosted by the operator);
+   e) using the name "ortino.CAM" or its mark for your own products without consent.
+
+4. Your content
+   Your projects, drawings and generated files (e.g. .ocam, DXF, SVG, G-code) belong to you; the Program claims no rights in
+   them. Designs from the community portal are subject to the terms their authors stated when sharing them and to the
+   portal's terms of use.
+
+5. Safety, disclaimer of warranty and liability
+   a) CNC machines can injure people and damage property. The Program creates toolpaths and G-code to the best of its
+      knowledge; before every job you must check the simulation, the checklist and the program yourself (first without tool
+      and material), keep the emergency stop within reach and never leave the machine unattended. Simulation, checklist and
+      pre-flight check are aids, not safety functions.
+   b) The Program is provided "as is", without warranty of any kind, in particular none for freedom from defects, fitness
+      for a particular purpose, availability or particular properties. You use it at your own risk. The Program was
+      developed mostly with AI assistance and has been tested on real machines only in part.
+   c) The copyright holder and everyone who contributed to the Program are not liable for damages arising from the use of,
+      or the inability to use, the Program – in particular injury, damage to machine, tool and workpiece, fire,
+      consequential damages, lost profit and loss of data – to the extent permitted by law.
+   d) Liability for intent, for injury to life, body or health, under the product liability act, and where mandatory law
+      requires it, remains unaffected.
+
+6. Third-party components
+   ortino.CAM contains third-party software and fonts (Rust libraries, JavaScript libraries, the DejaVu and Inter fonts).
+   They are governed by their own licenses; names, authors and license texts are listed in THIRD-PARTY-NOTICES.txt
+   (installation folder; in the program under "About ortino.CAM → Licenses"). Where one of those licenses grants broader
+   rights, these rights remain unaffected.
+
+7. Termination, governing law
+   The right of use ends if you violate these terms. The law of the Federal Republic of Germany applies, excluding the UN
+   Convention on Contracts for the International Sale of Goods, unless mandatory consumer protection law provides otherwise.
