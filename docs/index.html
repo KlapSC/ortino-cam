@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ortino.CAM – CAD/CAM für CNC-Fräsen (Windows, GRBL, V-Carving, Claude MCP)</title>
-<meta name="description" content="ortino.CAM: CAD/CAM-Software für CNC-Fräsen unter Windows. Entwerfen, Werkzeugwege (Profil, Tasche, V-Carving, 3D-Relief), 3D-Simulation, Prüfliste und direkte GRBL-Anbindung – steuerbar mit Claude über MCP und lokale API.">
-<meta name="keywords" content="CAD/CAM, CNC Fräse, G-Code, GRBL, V-Carving, Werkzeugwege, Simulation, Plattenplaner, Nesting, Ultimate Bee, xPRO V5, MCP, Claude, Windows">
+<title>ortino.CAM – CAD/CAM für CNC-Fräsen: GRBL, V-Carving, Community-Designs, Claude MCP</title>
+<meta name="description" content="ortino.CAM: CAD/CAM-Software für CNC-Fräsen unter Windows. Entwerfen, Werkzeugwege (Profil, Tasche, V-Carving, 3D-Relief), 3D-Simulation, Prüfliste und direkte GRBL-Anbindung – steuerbar mit Claude über MCP und lokale API. Mit Community-Portal zum Entdecken und Teilen von Fräsdesigns.">
+<meta name="keywords" content="CAD/CAM, CNC Fräse, G-Code, GRBL, V-Carving, Werkzeugwege, Simulation, Plattenplaner, Nesting, Ultimate Bee, xPRO V5, MCP, Claude, Windows, Community-Portal, Fräsdesigns, Designs teilen, Möbel, Lampen, Wandbilder">
 <link rel="canonical" href="https://klapsc.github.io/ortino-cam/">
 <meta name="theme-color" content="#161d31">
 <link rel="icon" href="bilder/logo.png">
@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="ortino.CAM">
 <meta property="og:locale" content="de_DE">
 <meta property="og:title" content="ortino.CAM – CAD/CAM für CNC-Fräsen">
-<meta property="og:description" content="Vom Entwurf zum Werkstück in einer Anwendung: Werkzeugwege, 3D-Simulation, Prüfliste, GRBL-Anbindung und Steuerung per Claude (MCP) und API. Für Windows.">
+<meta property="og:description" content="Vom Entwurf zum Werkstück in einer Anwendung: Werkzeugwege, 3D-Simulation, Prüfliste, GRBL-Anbindung, Steuerung per Claude (MCP) und API – dazu ein Community-Portal für Fräsdesigns. Für Windows.">
 <meta property="og:url" content="https://klapsc.github.io/ortino-cam/">
 <meta property="og:image" content="https://klapsc.github.io/ortino-cam/bilder/social-preview.png">
 <meta property="og:image:width" content="1280">
@@ -29,7 +29,7 @@
   "@type": "SoftwareApplication",
   "name": "ortino.CAM",
   "alternateName": "ortino CAM",
-  "description": "CAD/CAM-Software für CNC-Fräsen unter Windows: Entwurf, Werkzeugwege, 3D-Simulation, Prüfliste und direkte GRBL-Maschinenanbindung; steuerbar mit Claude über den Model Context Protocol (MCP) Server und eine lokale API.",
+  "description": "CAD/CAM-Software für CNC-Fräsen unter Windows: Entwurf, Werkzeugwege, 3D-Simulation, Prüfliste und direkte GRBL-Maschinenanbindung; steuerbar mit Claude über den Model Context Protocol (MCP) Server und eine lokale API. Mit Community-Portal, auf dem Fräsdesigns entdeckt, mit einem Klick geladen und geteilt werden.",
   "applicationCategory": "DesignApplication",
   "applicationSubCategory": "CAD/CAM",
   "operatingSystem": "Windows 10, Windows 11",
@@ -38,9 +38,109 @@
   "url": "https://klapsc.github.io/ortino-cam/",
   "downloadUrl": "https://github.com/KlapSC/ortino-cam/releases/latest",
   "image": "https://klapsc.github.io/ortino-cam/bilder/social-preview.png",
-  "screenshot": "https://klapsc.github.io/ortino-cam/bilder/simulation-dark.png",
-  "keywords": "CAD/CAM, CNC, G-Code, GRBL, V-Carving, Toolpath, Nesting, MCP, Claude",
-  "publisher": { "@type": "Person", "name": "KlapSC", "url": "https://github.com/KlapSC" }
+  "screenshot": [
+    "https://klapsc.github.io/ortino-cam/bilder/simulation-dark.png",
+    "https://klapsc.github.io/ortino-cam/bilder/entwurf-dark.png",
+    "https://klapsc.github.io/ortino-cam/bilder/moebel-dark.png",
+    "https://klapsc.github.io/ortino-cam/bilder/community-im-programm-dark.png",
+    "https://klapsc.github.io/ortino-cam/bilder/portal-startseite-dark.png"
+  ],
+  "featureList": [
+    "Entwurf, Werkzeugwege (Profil, Tasche, V-Carving, 3D-Relief), 3D-Simulation, Prüfliste",
+    "Direkte Anbindung an GRBL-Steuerungen mit Start-Check",
+    "Steuerung durch Claude über MCP-Server und lokale API",
+    "Community-Portal: Fräsdesigns entdecken, durchsuchen, mit einem Klick ins Programm laden und eigene Designs teilen",
+    "Möbel- und Küchen-Designer mit Stückliste, Plattenplaner mit Freiform-Nesting"
+  ],
+  "keywords": "CAD/CAM, CNC, G-Code, GRBL, V-Carving, Toolpath, Nesting, MCP, Claude, Community-Portal, Fräsdesigns, CNC designs, share designs",
+  "publisher": { "@type": "Person", "name": "KlapSC", "url": "https://github.com/KlapSC" },
+  "mentions": {
+    "@type": "WebSite",
+    "name": "ortino.CAM Community-Portal",
+    "url": "https://benini.access.ly:8088",
+    "description": "Community-Portal für Fräsdesigns von ortino.CAM: entdecken, suchen, herunterladen, in ortino.CAM öffnen und eigene Designs teilen. Von einer Einzelperson betrieben, noch im Aufbau.",
+    "inLanguage": ["de", "en"]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Kostet ortino.CAM etwas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein. Private und gewerbliche Nutzung sind kostenlos erlaubt (Bedingungen in der Datei LICENSE im Repository). Der Quelltext ist nicht öffentlich."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Läuft es auf Mac oder Linux?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein, derzeit nur unter Windows 10 und 11 (64 Bit)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Brauche ich Claude oder einen Anthropic-Schlüssel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein. Alles Wesentliche läuft ohne. Den MCP-Server und den Assistenten im Programm kannst du zusätzlich nutzen; der Assistent braucht deinen eigenen Anthropic-Schlüssel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Funktioniert es mit meiner Maschine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mit GRBL-kompatiblen Steuerungen (GRBL 1.1, grblHAL, FluidNC) ja, direkt aus dem Programm. Erprobt ist bisher nur die Ultimate Bee mit xPRO V5, alles andere ist nicht an einer echten Maschine geprüft. Für Mach3/Mach4 und LinuxCNC erzeugt das Programm G-Code zum Export. Prüfe die Maße im Maschinenprofil und fahre zuerst ohne Werkzeug und Material."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Warum warnt Windows beim Installieren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Der Installer ist mit einem selbst erstellten Zertifikat signiert, nicht von einer Zertifizierungsstelle. Windows (SmartScreen) zeigt deshalb eine Warnung: »Weitere Informationen → Trotzdem ausführen«. Die Prüfsumme (SHA-256) steht in den Hinweisen jeder Version."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Sind die vorgeschlagenen Vorschübe und Drehzahlen sicher?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein, es sind Richtwerte. Sie hängen von deiner Maschine, deinem Fräser und deinem Material ab. Prüfe sie, fange vorsichtig an und probiere an einem Reststück."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kann ich meine Fräserbibliothek mitnehmen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Das Programm bringt über 250 Fräser mit und kann Fräserdatenbanken anderer Programme einlesen (Vectric-.vtdb, Fusion, CSV). Das .vtdb-Format ist nicht offiziell dokumentiert und wurde mit einer echten Vectric-Datei bisher nicht getestet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welche Daten sendet das Programm?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bei der Update-Abfrage nur Systemart, Architektur, Installationsart und die installierte Version, an das Portal des Betreibers (nicht an GitHub). Mit dem Community-Portal sprichst du nur, wenn du es benutzt. Der Assistent spricht mit Anthropic, wenn du ihn mit deinem Schlüssel einschaltest. Die lokale API ist aus, bis du sie einschaltest, und nur auf 127.0.0.1 erreichbar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie kann ich helfen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Am wertvollsten sind Tests an echten Maschinen und Fehlermeldungen, am besten als Issue auf GitHub."
+      }
+    }
+  ]
 }
 </script>
 <style>
@@ -95,11 +195,51 @@
   th { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
   tr:last-child td { border-bottom: 0; }
   ol.install { padding-left: 22px; } ol.install li { margin-bottom: 8px; }
+  .faq-list { max-width: 48em; display: grid; gap: 8px; }
+  details.faq { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 0 16px; }
+  details.faq summary { cursor: pointer; font-weight: 600; padding: 12px 0; }
+  details.faq[open] summary { border-bottom: 1px solid var(--line); margin-bottom: 10px; }
+  details.faq p { margin: 0 0 14px; color: var(--muted); }
   footer { margin-top: 72px; background: var(--navy); color: #b6c0d8; padding: 40px 0 48px; font-size: 15px; }
   footer a { color: #ffb36b; } footer h2 { color: #f5efe4; font-size: 20px; margin-bottom: 8px; }
   footer .cols { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; }
   .en { margin-top: 12px; font-size: 15.5px; color: var(--muted); }
   @media (max-width: 900px) { .hero-grid, .two, footer .cols { grid-template-columns: 1fr; } .steps, .cards { grid-template-columns: 1fr; } nav a:not(.brand) { display: none; } }
+  .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: start; }
+  .gallery.g2 { grid-template-columns: repeat(2, 1fr); }
+  figure.fig { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 12px 12px 16px; }
+  figure.fig .shot { border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,.18); margin-bottom: 12px; }
+  figure.fig figcaption { font-size: 14.5px; color: var(--muted); }
+  figure.fig figcaption b { display: block; color: var(--ink); font-size: 15.5px; margin-bottom: 2px; }
+  figure.fig figcaption .en { display: block; margin-top: 6px; font-size: 13.5px; }
+  .btn.line { border: 1.5px solid var(--accent); color: var(--accent); }
+  .btn.line:hover { filter: none; background: var(--code); }
+  .fine-print { font-size: 13.5px; color: var(--muted); max-width: 60em; }
+  .cards.c2 { grid-template-columns: repeat(2, 1fr); }
+  .two > div, .hero-grid > div, .steps > *, .cards > *, .gallery > *, .pair > * { min-width: 0; }
+  .tablewrap { overflow-x: auto; border-radius: 12px; }
+  table.cmp { table-layout: fixed; }
+  table.cmp th, table.cmp td { overflow-wrap: anywhere; hyphens: auto; }
+  table.cmp thead th:first-child { width: 22%; }
+  table.cmp tbody th { text-transform: none; letter-spacing: 0; font-size: 15.5px; color: var(--ink); font-weight: 700; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin: 22px 0 0; }
+  .pair .card p { color: var(--ink); }
+  .en-block { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); }
+  .en-block h3 { color: var(--ink); }
+  .en-block ul { padding-left: 20px; margin: 8px 0; }
+  .en-block li { margin-bottom: 6px; font-size: 15.5px; }
+  .en-block table.cmp td { color: var(--ink); }
+  @media (max-width: 900px) { .gallery, .gallery.g2, .cards.c2, .pair { grid-template-columns: 1fr; } }
+  @media (max-width: 700px) {
+    table.cmp, table.cmp tbody, table.cmp tr, table.cmp th, table.cmp td { display: block; width: 100%; }
+    table.cmp { table-layout: auto; }
+    table.cmp thead { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+    table.cmp tr { border-bottom: 1px solid var(--line); padding: 10px 0; }
+    table.cmp tr:last-child { border-bottom: 0; }
+    table.cmp tbody th, table.cmp td { border: 0; padding: 3px 14px; }
+    table.cmp tbody th { padding-top: 6px; }
+    table.cmp td::before { content: attr(data-label); display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+  }
 </style>
 </head>
 <body>
@@ -108,8 +248,11 @@
     <nav aria-label="Hauptnavigation">
       <a class="brand" href="#top"><img src="bilder/logo.png" alt="" width="30" height="30">ortino.CAM</a>
       <a href="#funktionen">Funktionen</a>
+      <a href="#portal">Portal</a>
       <a href="#claude">Claude &amp; API</a>
+      <a href="#vergleich">Vergleich</a>
       <a href="#installation">Installation</a>
+      <a href="#fragen">Fragen</a>
       <a href="#mitmachen">Mitmachen</a>
       <a href="https://github.com/KlapSC/ortino-cam">GitHub</a>
     </nav>
@@ -122,12 +265,12 @@
           <a class="btn ghost" href="#funktionen">Alle Funktionen</a>
         </div>
         <p class="fine">Frühe Version 0.3.x · Windows 10/11 (64 Bit) · Updates im Programm</p>
-        <div class="chips"><span>V-Carving</span><span>3D-Relief</span><span>Plattenplaner</span><span>G-Code</span><span>GRBL</span><span>MCP für Claude</span></div>
+        <div class="chips"><span>V-Carving</span><span>3D-Relief</span><span>Plattenplaner</span><span>G-Code</span><span>GRBL</span><span>Community-Portal</span><span>MCP für Claude</span></div>
       </div>
       <div class="shot">
         <picture>
           <source media="(prefers-color-scheme: light)" srcset="bilder/entwurf-light.png">
-          <img src="bilder/entwurf-dark.png" width="1600" height="1000" alt="ortino.CAM: Entwurf eines Türschilds mit Text, Bohrungen und Außenkontur im Zeichenbereich">
+          <img src="bilder/entwurf-dark.png" width="1600" height="1000" alt="ortino.CAM: Entwurf eines Türschilds mit Text, Bohrungen und Außenkontur im Zeichenbereich / English: ortino.CAM: design of a door sign with text, holes and outline on the drawing canvas">
         </picture>
       </div>
     </div>
@@ -140,20 +283,39 @@
     <p class="sub">Die Oberfläche führt durch fünf Schritte – Projekt, Entwurf, Bearbeitung, Prüfen, Fräsen. Im Einfach-Modus stehen nur die wichtigsten Einstellungen, alles andere liegt unter »Mehr Einstellungen«.</p>
     <div class="steps">
       <article class="step">
-        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/bearbeitung-light.png"><img loading="lazy" src="bilder/bearbeitung-dark.png" width="1600" height="1000" alt="Bearbeitungen wie Bohren, Tasche und Profil mit Werkzeug, Tiefe und Haltestegen"></picture></div>
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/bearbeitung-light.png"><img loading="lazy" src="bilder/bearbeitung-dark.png" width="1600" height="1000" alt="Liste der Bearbeitungen (Bohren, Tasche, Profil) mit Werkzeug und Zeit, Werkzeugwege auf dem Türschild / English: List of operations (drilling, pocket, profile) with tool and time, toolpaths on the door sign"></picture></div>
         <small>1 · BEARBEITEN</small><h3>Werkzeugwege festlegen</h3>
         <p>Profil, Tasche, adaptives Räumen, Bohren, V-Carving, Inlay und 3D-Relief – mit Richtwerten für Vorschub und Drehzahl und kurzer Erklärung, warum.</p>
       </article>
       <article class="step">
-        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/simulation-light.png"><img loading="lazy" src="bilder/simulation-dark.png" width="1600" height="1000" alt="3D-Simulation des Materialabtrags mit Prüfliste und Lösungsvorschlägen"></picture></div>
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/simulation-light.png"><img loading="lazy" src="bilder/simulation-dark.png" width="1600" height="1000" alt="3D-Simulation des Materialabtrags mit Prüfliste und Vorschlägen / English: 3D simulation of material removal with pre-flight check and suggestions"></picture></div>
         <small>2 · PRÜFEN</small><h3>Simulieren und prüfen</h3>
         <p>Materialabtrag in 3D abspielen, Eilgang-Kollisionen und Übermaß finden, Prüfliste mit Lösungsvorschlägen. Bei Fehlern sind Export und Maschinenstart gesperrt.</p>
       </article>
       <article class="step">
-        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/fraesen-light.png"><img loading="lazy" src="bilder/fraesen-dark.png" width="1600" height="1000" alt="Schritt Fräsen mit Maschinenverbindung, Handsteuerung, Antasten und Start-Check"></picture></div>
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/fraesen-light.png"><img loading="lazy" src="bilder/fraesen-dark.png" width="1600" height="1000" alt="Schritt Fräsen: simulierte Maschine verbunden, G-Code-Ansicht und Start-Check mit Hinweisen / English: Cut step: simulated machine connected, G-code view and start check with notes"></picture></div>
         <small>3 · FRÄSEN</small><h3>Direkt an die Maschine</h3>
         <p>Verbinden per USB oder TCP, Nullpunkt und Antasten, Werkzeugwechsel-Assistent, Start-Check vor jedem Lauf, Pause, Stopp und Start ab Zeile.</p>
       </article>
+    </div>
+  </section>
+
+  <section id="ansichten" aria-labelledby="h-ansichten">
+    <h2 id="h-ansichten">Mehr aus dem Programm</h2>
+    <p class="sub">Aufnahmen der Oberfläche; die Maschine im Schritt »Fräsen« ist der eingebaute Simulator, Namen, Preise und Werte in den Beispielen sind erfunden. <span class="en" lang="en" style="display:block;margin-top:6px">Screenshots of the interface; the machine in the “Cut” step is the built-in simulator, names, prices and values in the examples are made up.</span></p>
+    <div class="gallery">
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/ruestblatt-light.png"><img loading="lazy" src="bilder/ruestblatt-dark.png" width="1600" height="1000" alt="Dialog Rüstblatt und Angebot mit Kosteneingaben und Seitenvorschau (erfundene Beispielwerte) / English: Setup sheet and quote dialog with cost inputs and page preview (made-up sample values)"></picture></div>
+        <figcaption><b>Rüstblatt und Angebot</b>Vorschau des PDFs mit Werkzeugliste, Reihenfolge und Zeitschätzung, dazu eine Kostenrechnung.<span class="en" lang="en">Setup sheet and quote: PDF preview with tool list, sequence and time estimate, plus a cost calculation.</span></figcaption>
+      </figure>
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/einrichtung-light.png"><img loading="lazy" src="bilder/einrichtung-dark.png" width="1600" height="1000" alt="Assistent „Maschine einrichten“: Maschinenkatalog mit Größen und gekennzeichneten Herstellerangaben / English: Machine setup assistant: machine catalogue with sizes and flagged manufacturer data"></picture></div>
+        <figcaption><b>Maschine einrichten</b>Katalog mit Größen; Werte aus Händlerangaben sind als »ungeprüft« oder »Herstellerangabe, bitte prüfen« gekennzeichnet.<span class="en" lang="en">Machine setup: catalogue with sizes; values from dealer data are flagged “unverified” or “manufacturer data, please check”.</span></figcaption>
+      </figure>
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/moebel-light.png"><img loading="lazy" src="bilder/moebel-dark.png" width="1600" height="1000" alt="Möbel- und Küchen-Designer: Küchenzeile in 3D und Frontansicht mit Schrankliste / English: Furniture and kitchen designer: kitchen row in 3D and front view with cabinet list"></picture></div>
+        <figcaption><b>Möbel und Küche</b>Küchenzeile in 3D und Frontansicht, mit Stückliste und Zuschnitt (Beispiel).<span class="en" lang="en">Furniture and kitchen: kitchen row in 3D and front view, with parts list and cutting plan (example).</span></figcaption>
+      </figure>
     </div>
   </section>
 
@@ -169,7 +331,69 @@
       <div class="card"><div class="ico">🛡️</div><h3>Start-Check</h3><p>Verfahrweg, Referenzfahrt, Nullpunkt, Werkzeug, Absaugung und mehr werden vor jedem Lauf geprüft. Das Programm schreibt nie Einstellungen in die Steuerung.</p></div>
       <div class="card"><div class="ico">📱</div><h3>Handy-Fernbedienung</h3><p>Per QR-Code koppeln, in kleinen Schritten verfahren, Pause und Stopp – nur im eigenen WLAN, bei stabiler Verbindung, aus beim Start.</p></div>
       <div class="card"><div class="ico">📄</div><h3>Rüstblatt &amp; Angebot</h3><p>PDF mit Werkzeugliste, Reihenfolge, Zeitschätzung und Vorschau – dazu eine Kostenrechnung aus Material, Maschinenzeit und Aufschlag.</p></div>
-      <div class="card"><div class="ico">🌍</div><h3>Community-Portal</h3><p>Fräsdesigns entdecken, mit einem Klick laden und eigene teilen. Im Programm integriert, vom Betreiber gehostet.</p></div>
+      <div class="card"><div class="ico">🌍</div><h3>Community-Portal</h3><p>Fräsdesigns entdecken, mit einem Klick laden und eigene teilen. Im Programm integriert, vom Betreiber gehostet. <a href="#portal">Mehr dazu</a></p></div>
+    </div>
+  </section>
+
+  <section id="portal" aria-labelledby="h-portal">
+    <h2 id="h-portal">Community-Portal und Designs</h2>
+    <p class="sub">Neben dem Programm gibt es ein <strong>Community-Portal</strong>: eine Webseite, auf der Fräsdesigns gesammelt, durchsucht und geteilt werden – jeweils mit den Werkzeugen, Tiefen, Vorschüben und einer Anleitung, die zum Design gehören.</p>
+    <div class="cards">
+      <div class="card"><div class="ico">🔎</div><h3>Entdecken und suchen</h3><p>Kategorien, Suche mit Vorschlägen und Filter nach Art, Material, Plattenstärke, Fräser und Lizenz – dazu <strong>»Passt auf meine Maschine«</strong>: Das Portal vergleicht den Verfahrweg deiner Maschine mit dem Design. Stöbern und Herunterladen gehen ohne Konto.</p></div>
+      <div class="card"><div class="ico">🖱️</div><h3>Mit einem Klick ins Programm</h3><p>In ortino.CAM öffnest du die Community über die <strong>Weltkugel in der Kopfleiste</strong> (oder Strg+Umschalt+D) und lädst ein Design mit »Laden &amp; öffnen«. Das Programm prüft das Paket vorher (Prüfsumme, Pfade, keine ausführbaren Inhalte); Skripte aus Paketen werden nie ausgeführt. Auf der Webseite gibt es zusätzlich »In ortino.CAM öffnen« und den Download der Datei.</p></div>
+      <div class="card"><div class="ico">📤</div><h3>Eigene Designs teilen</h3><p>Im Programm über »Design teilen« oder auf der Webseite über »Hochladen«, mit einem kostenlosen Konto. Titel, Kategorie, Bilder, Beschreibung und Anleitung ergänzt du selbst; veröffentlichen kannst du öffentlich oder nicht gelistet. Beim Teilen aus dem Programm sucht ortino.CAM nach Dateipfaden und deinem Benutzernamen im Projekt und entfernt sie auf Wunsch aus dem Paket. Auch Vorlagen mit Eingabeformular lassen sich als Design teilen.</p></div>
+      <div class="card"><div class="ico">⚖️</div><h3>Rechte und Lizenz</h3><p>Lade nur hoch, was du selbst erstellt hast oder teilen darfst. Jedes Design trägt eine Lizenz (CC BY, BY-SA, BY-NC, BY-NC-SA, BY-ND, CC0 oder »Alle Rechte vorbehalten«). Laut Community-Richtlinien nicht erlaubt: fremde Werke ohne Erlaubnis, geschützte Logos und Marken, Waffen oder rechtlich eingeschränkte Teile, gefährliche Anleitungen, absichtlich falsche Einstellungen, Schadsoftware. Verstöße lassen sich über »Melden« der Moderation anzeigen.</p></div>
+      <div class="card"><div class="ico">🪑</div><h3>Katalog eigener Designs</h3><p>Als Grundstock ist ein Katalog mit 17 eigenen Beispiel-Designs vorbereitet: Leuchten, Wandbilder, Stühle und Tische. Sie stammen vom KI-Konto »Claude«, wurden <strong>nur am Rechner geprüft</strong> (Prüfliste, G-Code, Simulation) und <strong>nie gefräst oder belastet</strong>; bei Möbeln erst einen Prototyp bauen.</p></div>
+      <div class="card"><div class="ico">🌍</div><h3>Adresse und Kontakt</h3><p>Das Portal erreichst du unter <a href="https://benini.access.ly:8088" rel="noopener">benini.access.ly:8088</a>; im Programm ist es schon eingetragen. Fragen, Fehler und Wünsche zum Portal wie überall über <a href="https://github.com/KlapSC/ortino-cam/issues/new/choose">GitHub Issues</a>.</p></div>
+    </div>
+    <div class="callout" style="margin-top:22px">
+      <h3>Stand – ehrlich gesagt</h3>
+      <ul>
+        <li>Das Portal wird von einer <strong>Einzelperson</strong> betrieben und ist <strong>noch im Aufbau</strong>.</li>
+        <li>Das Zusammenspiel von Programm und Portal ist gegen eine lokale Testinstallation geprüft. Nicht alles ist im Betrieb im Internet erprobt, zum Beispiel »In ortino.CAM öffnen« aus dem Browser unter Windows.</li>
+        <li>Schnittwerte (Vorschub, Drehzahl, Tiefe) in Designs sind Angaben der Ersteller und gehören zu deren Maschine und Material. Vor dem Fräsen im Programm prüfen und mit einem Reststück beginnen.</li>
+      </ul>
+    </div>
+    <p style="margin:22px 0"><a class="btn primary" href="https://benini.access.ly:8088" rel="noopener">Zum Community-Portal</a></p>
+    <div class="gallery" style="margin-top:8px">
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/portal-startseite-light.png"><img loading="lazy" src="bilder/portal-startseite-dark.png" width="1440" height="672" alt="Startseite des Community-Portals mit Suche (Beispieldaten einer lokalen Installation) / English: Community portal home page with search (sample data from a local installation)"></picture></div>
+        <figcaption><b>Startseite</b>mit Suche und Top Picks.<span class="en" lang="en">Home page: with search.</span></figcaption>
+      </figure>
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/portal-suche-light.png"><img loading="lazy" src="bilder/portal-suche-dark.png" width="1440" height="600" alt="Suche im Portal mit Filtern nach Kategorie, Art und Maschine und Ergebnissen (Beispieldaten einer lokalen Installation) / English: Portal search with filters for category, type and machine, and results (sample data from a local installation)"></picture></div>
+        <figcaption><b>Suche und Filter</b>nach Kategorie, Art und Maschine.<span class="en" lang="en">Search and filters: by category, type and machine.</span></figcaption>
+      </figure>
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/portal-design-light.png"><img loading="lazy" src="bilder/portal-design-dark.png" width="1440" height="600" alt="Designseite im Portal mit Galerie, Beschreibung, Herunterladen und „In ortino.CAM öffnen“ (Beispieldaten einer lokalen Installation) / English: Design page in the portal with gallery, description, download and “Open in ortino.CAM” (sample data from a local installation)"></picture></div>
+        <figcaption><b>Designseite</b>mit Galerie, Herunterladen und »In ortino.CAM öffnen«.<span class="en" lang="en">Design page: with gallery, download and “Open in ortino.CAM”.</span></figcaption>
+      </figure>
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/community-im-programm-light.png"><img loading="lazy" src="bilder/community-im-programm-dark.png" width="1600" height="1000" alt="Community im Programm: Designseite mit „Laden &amp; öffnen“, Lizenz und Beschreibung (Beispieldaten einer lokalen Installation) / English: Community inside the app: design page with load and open, licence and description (sample data from a local installation)"></picture></div>
+        <figcaption><b>Im Programm</b>Designseite in der Community mit »Laden &amp; öffnen« und Lizenz.<span class="en" lang="en">Inside the app: design page in Community with “Load &amp; open” and licence.</span></figcaption>
+      </figure>
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/portal-hochladen-light.png"><img loading="lazy" src="bilder/portal-hochladen-dark.png" width="1440" height="900" alt="Hochladen-Assistent des Portals: Design-Paket gelesen (Beispieldaten einer lokalen Installation) / English: Portal upload assistant: design package read (sample data from a local installation)"></picture></div>
+        <figcaption><b>Hochladen</b>Der Assistent liest das Design-Paket aus dem Programm.<span class="en" lang="en">Upload: the assistant reads the design package from the app.</span></figcaption>
+      </figure>
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/portal-lizenz-light.png"><img loading="lazy" src="bilder/portal-lizenz-dark.png" width="1440" height="900" alt="Lizenzwahl beim Hochladen: CC BY, BY-SA, BY-NC, BY-NC-SA, BY-ND, CC0 oder Alle Rechte vorbehalten / English: Choosing a licence when uploading: CC BY, BY-SA, BY-NC, BY-NC-SA, BY-ND, CC0 or all rights reserved"></picture></div>
+        <figcaption><b>Lizenz wählen</b>Jedes Design trägt eine Lizenz.<span class="en" lang="en">Choose a licence: every design carries a licence.</span></figcaption>
+      </figure>
+    </div>
+    <p class="fine-print">Die Bilder zeigen <strong>Beispieldaten aus einer lokalen Installation</strong> des Portals: die Katalog-Designs, ohne Nutzerzahlen; das Portal im Internet kann anders aussehen. <span class="en" lang="en" style="display:block">The images show <strong>sample data from a local installation</strong> of the portal: the catalogue designs, without user numbers; the portal on the internet may look different.</span></p>
+
+    <div class="en-block" lang="en">
+      <h3>Community portal and designs</h3>
+      <p>Alongside the app there is a <strong>community portal</strong>: a website where milling designs are collected, searched and shared – each with the tools, depths, feeds and instructions that belong to the design.</p>
+      <ul>
+        <li><strong>Discover and search:</strong> categories, search with suggestions, filters (type, material, sheet thickness, bit, licence) and “fits my machine”. Browsing and downloading work without an account.</li>
+        <li><strong>One click into the app:</strong> open Community with the globe icon in the top bar (or Ctrl+Shift+D) and load a design with “Load &amp; open”. The app checks the package first (checksum, paths, no executable content) and never runs scripts from packages. The website also offers “Open in ortino.CAM” and the file download.</li>
+        <li><strong>Share your own:</strong> from the app (“Share design”) or on the website (“Upload”), with a free account. The app looks for file paths and your user name in the project and can strip them from the package. Templates with an input form can be shared as designs, too.</li>
+        <li><strong>Rights and licence:</strong> upload only what you made yourself or are allowed to share. Every design carries a licence (CC BY, BY-SA, BY-NC, BY-NC-SA, BY-ND, CC0 or all rights reserved). The community guidelines do not allow other people’s work without permission, protected logos and trademarks, weapons or legally restricted parts, dangerous instructions, deliberately wrong settings, or malware.</li>
+        <li><strong>Catalogue:</strong> 17 own sample designs (lamps, wall art, chairs, tables) are prepared as a starting stock. They come from the AI account “Claude”, were checked on the computer only (pre-flight check, G-code, simulation) and were never milled or load-tested.</li>
+        <li><strong>Status:</strong> the portal is run by one person and is still being built. The interplay of app and portal is tested against a local test installation, not everything in live operation on the internet. Feeds and speeds in designs are the creators’ values: check them before cutting. Contact: GitHub Issues only. <a href="https://benini.access.ly:8088" rel="noopener">benini.access.ly:8088</a></li>
+      </ul>
     </div>
   </section>
 
@@ -215,6 +439,60 @@ ortino export tuerschild.ocam --format dxf -o tuerschild.dxf</code></pre>
     </table>
   </section>
 
+  <section id="vergleich" aria-labelledby="h-vergleich">
+    <h2 id="h-vergleich">ortino.CAM und Vectric Aspire</h2>
+    <p class="sub">Eine kurze, sachliche Gegenüberstellung mit den Stärken beider Seiten. Verglichen wird mit Vectric Aspire, dem teuersten Programm der Vectric-Reihe.</p>
+      <div class="tablewrap"><table class="cmp" aria-label="ortino.CAM und Vectric Aspire im Vergleich">
+        <thead><tr><th scope="col">Kriterium</th><th scope="col">ortino.CAM</th><th scope="col">Vectric Aspire</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Preis</th><td data-label="ortino.CAM">kostenlos</td><td data-label="Vectric Aspire">einmalig rund 1.800 € (laut Preisliste des Herstellers; Updates im ersten Jahr inklusive)</td></tr>
+          <tr><th scope="row">System</th><td data-label="ortino.CAM">Windows 10/11, 64 Bit</td><td data-label="Vectric Aspire">Windows (Mac nur über eine Windows-Virtualisierung)</td></tr>
+          <tr><th scope="row">2D-Entwurf, Profil, Tasche, V-Carving, Gravur, Inlay</th><td data-label="ortino.CAM">ja</td><td data-label="Vectric Aspire">ja</td></tr>
+          <tr><th scope="row">3D-Relief</th><td data-label="ortino.CAM">Reliefs aus Mustern, Höhenbildern und Formen erzeugen und fräsen; kleiner Umfang; Modellierwerkzeuge (Skulptieren, Komponenten) für Version 0.4.0 geplant</td><td data-label="Vectric Aspire">umfangreiche 3D-Modellierung (Formen, Skulptieren, Komponenten) – <strong>hier ist Aspire klar stärker</strong></td></tr>
+          <tr><th scope="row">Vierte Achse (Rotary)</th><td data-label="ortino.CAM">nein – für Version 0.4.0 geplant</td><td data-label="Vectric Aspire">ja</td></tr>
+          <tr><th scope="row">Nesting</th><td data-label="ortino.CAM">ja (Plattenplaner mit Freiform-Nesting)</td><td data-label="Vectric Aspire">ja</td></tr>
+          <tr><th scope="row">Zur Maschine schicken</th><td data-label="ortino.CAM">direkt aus dem Programm an GRBL-Steuerungen (USB/COM, TCP), mit Start-Check, Antasten und Werkzeugwechsel-Assistent</td><td data-label="Vectric Aspire">erzeugt G-Code-Dateien, die ein separates Steuerungsprogramm ausführt</td></tr>
+          <tr><th scope="row">Postprozessoren</th><td data-label="ortino.CAM">GRBL, grblHAL, FluidNC, Mach3/4, LinuxCNC; weitere Steuerungen laufend, Beiträge willkommen</td><td data-label="Vectric Aspire">sehr großer Katalog, online verwaltet; deutlich mehr Steuerungen</td></tr>
+          <tr><th scope="row">Steuerung durch Claude (MCP-Server, lokale API)</th><td data-label="ortino.CAM">ja</td><td data-label="Vectric Aspire">keine Angabe des Herstellers gefunden</td></tr>
+          <tr><th scope="row">Reife</th><td data-label="ortino.CAM">junge Software (0.3.x), nur Teile an einer echten Maschine erprobt</td><td data-label="Vectric Aspire">seit Jahren etabliert, große Nutzergemeinde</td></tr>
+          <tr><th scope="row">Hilfe</th><td data-label="ortino.CAM">Anleitungen im Repository, Fragen über GitHub Issues (Einzelperson)</td><td data-label="Vectric Aspire">Hersteller-Support, Handbuch, Videos, Forum</td></tr>
+          <tr><th scope="row">Kompatibilität</th><td data-label="ortino.CAM">liest Vectric-Werkzeugdatenbanken (.vtdb; das Format ist nicht offiziell dokumentiert, mit einer echten Vectric-Datei bisher nicht getestet)</td><td data-label="Vectric Aspire">–</td></tr>
+        </tbody>
+      </table></div>
+    <div class="pair">
+      <div class="card"><h3>Aspire ist die bessere Wahl, wenn du …</h3><p>eine vierte Achse (Rotary) brauchst, umfangreich in 3D modellieren willst (Skulptieren, Komponenten), auf einem Mac arbeitest (über eine Windows-Virtualisierung), Hersteller-Support möchtest oder auf lange Praxis und eine große Nutzergemeinde setzt.</p></div>
+      <div class="card"><h3>ortino.CAM passt, wenn du …</h3><p>eine GRBL-Maschine direkt aus dem Programm fahren willst, einen Möbel- und Küchen-Designer mit Stückliste suchst, das Community-Portal nutzen möchtest, dein CAM per Claude (MCP) steuern willst und ein kostenloses Programm bevorzugst – und mit einer jungen Software leben kannst.</p></div>
+    </div>
+    <p class="fine-print" style="margin-top:18px">Angaben zu Vectric nach öffentlich zugänglichen Herstellerangaben und Fachseiten, Stand Oktober 2026, ohne Gewähr; Preise und Umfang ändern sich – bitte beim Hersteller prüfen (<a href="https://www.vectric.com/products/aspire/" rel="noopener">Produktseite Aspire</a>). Vectric, VCarve und Aspire sind Marken der Vectric Ltd.; ortino.CAM ist unabhängig und steht in keiner Verbindung zu Vectric. »Geplant« ist die Absicht des Entwicklers, keine Zusage; Umfang und Zeitpunkt können sich ändern.</p>
+
+    <div class="en-block" lang="en">
+      <h3>ortino.CAM and Vectric Aspire</h3>
+      <p>A short, factual comparison that names the strengths of both sides. The comparison is with Vectric Aspire, the most expensive program in the Vectric range.</p>
+      <div class="tablewrap"><table class="cmp" aria-label="ortino.CAM and Vectric Aspire compared" lang="en">
+        <thead><tr><th scope="col">Criterion</th><th scope="col">ortino.CAM</th><th scope="col">Vectric Aspire</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Price</th><td data-label="ortino.CAM">free</td><td data-label="Vectric Aspire">one-off, about €1,800 (according to the manufacturer’s price list; updates included in the first year)</td></tr>
+          <tr><th scope="row">System</th><td data-label="ortino.CAM">Windows 10/11, 64-bit</td><td data-label="Vectric Aspire">Windows (Mac only through Windows virtualisation)</td></tr>
+          <tr><th scope="row">2D design, profile, pocket, V-carving, engraving, inlay</th><td data-label="ortino.CAM">yes</td><td data-label="Vectric Aspire">yes</td></tr>
+          <tr><th scope="row">3D relief</th><td data-label="ortino.CAM">creates and mills reliefs from patterns, height images and shapes; small scope; modelling tools (sculpting, components) planned for version 0.4.0</td><td data-label="Vectric Aspire">extensive 3D modelling (shapes, sculpting, components) – <strong>Aspire is clearly stronger here</strong></td></tr>
+          <tr><th scope="row">Fourth axis (rotary)</th><td data-label="ortino.CAM">no – planned for version 0.4.0</td><td data-label="Vectric Aspire">yes</td></tr>
+          <tr><th scope="row">Nesting</th><td data-label="ortino.CAM">yes (sheet planner with free-form nesting)</td><td data-label="Vectric Aspire">yes</td></tr>
+          <tr><th scope="row">Sending to the machine</th><td data-label="ortino.CAM">straight from the app to GRBL controllers (USB/COM, TCP), with start check, probing and tool-change assistant</td><td data-label="Vectric Aspire">produces G-code files that a separate control program runs</td></tr>
+          <tr><th scope="row">Post-processors</th><td data-label="ortino.CAM">GRBL, grblHAL, FluidNC, Mach3/4, LinuxCNC; more controllers ongoing, contributions welcome</td><td data-label="Vectric Aspire">very large catalogue, managed online; considerably more controllers</td></tr>
+          <tr><th scope="row">Control by Claude (MCP server, local API)</th><td data-label="ortino.CAM">yes</td><td data-label="Vectric Aspire">no statement from the manufacturer found</td></tr>
+          <tr><th scope="row">Maturity</th><td data-label="ortino.CAM">young software (0.3.x), only parts tested on a real machine</td><td data-label="Vectric Aspire">established for years, large user community</td></tr>
+          <tr><th scope="row">Help</th><td data-label="ortino.CAM">guides in the repository, questions via GitHub issues (one person)</td><td data-label="Vectric Aspire">manufacturer support, manual, videos, forum</td></tr>
+          <tr><th scope="row">Compatibility</th><td data-label="ortino.CAM">reads Vectric tool databases (.vtdb; the format is not officially documented, not yet tested with a real Vectric file)</td><td data-label="Vectric Aspire">–</td></tr>
+        </tbody>
+      </table></div>
+      <div class="pair">
+        <div class="card"><h3>Aspire is the better choice if you …</h3><p>need a fourth axis (rotary), want extensive 3D modelling (sculpting, components), work on a Mac (through Windows virtualisation), want manufacturer support or rely on long practice and a large user community.</p></div>
+        <div class="card"><h3>ortino.CAM fits if you …</h3><p>want to run a GRBL machine straight from the program, want a furniture and kitchen designer with a parts list, want to use the community portal, want to drive your CAM with Claude (MCP) and prefer a free program – and can live with young software.</p></div>
+      </div>
+      <p class="fine-print" style="margin-top:18px">Statements about Vectric are based on publicly available manufacturer information and trade sites, as of October 2026, without guarantee; prices and scope change – please check with the manufacturer (<a href="https://www.vectric.com/products/aspire/" rel="noopener">Aspire product page</a>). Vectric, VCarve and Aspire are trademarks of Vectric Ltd.; ortino.CAM is independent and not affiliated with Vectric. “Planned” is the developer’s intention, not a commitment; scope and timing may change.</p>
+    </div>
+  </section>
+
   <section id="stand" aria-labelledby="h-stand">
     <h2 id="h-stand">Stand und Grenzen – ehrlich gesagt</h2>
     <div class="callout">
@@ -238,6 +516,21 @@ ortino export tuerschild.ocam --format dxf -o tuerschild.dxf</code></pre>
     <p class="sub"><strong>Updates</strong> kommen im Programm selbst über das Portal des Betreibers (nicht über GitHub): Die Kopfleiste zeigt einen Hinweis, installiert wird nur nach deinem Klick, mit geprüfter Signatur und nie mitten in einem Fräsauftrag. Übermittelt werden nur Systemart, Architektur, Installationsart und die installierte Version.</p>
   </section>
 
+  <section id="fragen" aria-labelledby="h-fragen">
+    <h2 id="h-fragen">Häufige Fragen</h2>
+    <div class="faq-list">
+      <details class="faq"><summary>Kostet ortino.CAM etwas?</summary><p>Nein. Private und gewerbliche Nutzung sind kostenlos erlaubt (Bedingungen in der Datei LICENSE im Repository). Der Quelltext ist nicht öffentlich.</p></details>
+      <details class="faq"><summary>Läuft es auf Mac oder Linux?</summary><p>Nein, derzeit nur unter Windows 10 und 11 (64 Bit).</p></details>
+      <details class="faq"><summary>Brauche ich Claude oder einen Anthropic-Schlüssel?</summary><p>Nein. Alles Wesentliche läuft ohne. Den MCP-Server und den Assistenten im Programm kannst du zusätzlich nutzen; der Assistent braucht deinen eigenen Anthropic-Schlüssel.</p></details>
+      <details class="faq"><summary>Funktioniert es mit meiner Maschine?</summary><p>Mit GRBL-kompatiblen Steuerungen (GRBL 1.1, grblHAL, FluidNC) ja, direkt aus dem Programm. Erprobt ist bisher nur die Ultimate Bee mit xPRO V5, alles andere ist nicht an einer echten Maschine geprüft. Für Mach3/Mach4 und LinuxCNC erzeugt das Programm G-Code zum Export. Prüfe die Maße im Maschinenprofil und fahre zuerst ohne Werkzeug und Material.</p></details>
+      <details class="faq"><summary>Warum warnt Windows beim Installieren?</summary><p>Der Installer ist mit einem selbst erstellten Zertifikat signiert, nicht von einer Zertifizierungsstelle. Windows (SmartScreen) zeigt deshalb eine Warnung: »Weitere Informationen → Trotzdem ausführen«. Die Prüfsumme (SHA-256) steht in den Hinweisen jeder Version.</p></details>
+      <details class="faq"><summary>Sind die vorgeschlagenen Vorschübe und Drehzahlen sicher?</summary><p>Nein, es sind Richtwerte. Sie hängen von deiner Maschine, deinem Fräser und deinem Material ab. Prüfe sie, fange vorsichtig an und probiere an einem Reststück.</p></details>
+      <details class="faq"><summary>Kann ich meine Fräserbibliothek mitnehmen?</summary><p>Das Programm bringt über 250 Fräser mit und kann Fräserdatenbanken anderer Programme einlesen (Vectric-.vtdb, Fusion, CSV). Das .vtdb-Format ist nicht offiziell dokumentiert und wurde mit einer echten Vectric-Datei bisher nicht getestet.</p></details>
+      <details class="faq"><summary>Welche Daten sendet das Programm?</summary><p>Bei der Update-Abfrage nur Systemart, Architektur, Installationsart und die installierte Version, an das Portal des Betreibers (nicht an GitHub). Mit dem Community-Portal sprichst du nur, wenn du es benutzt. Der Assistent spricht mit Anthropic, wenn du ihn mit deinem Schlüssel einschaltest. Die lokale API ist aus, bis du sie einschaltest, und nur auf 127.0.0.1 erreichbar.</p></details>
+      <details class="faq"><summary>Wie kann ich helfen?</summary><p>Am wertvollsten sind Tests an echten Maschinen und Fehlermeldungen, am besten als Issue auf GitHub.</p></details>
+    </div>
+  </section>
+
   <section id="mitmachen" aria-labelledby="h-mitmachen">
     <h2 id="h-mitmachen">Mitmachen</h2>
     <p class="sub"><strong>Neue Mitwirkende sind willkommen.</strong> Alles läuft über <a href="https://github.com/KlapSC/ortino-cam/issues/new/choose">GitHub Issues</a>: Fragen, Fehler, Wünsche und vor allem <strong>Berichte von Tests an echten Maschinen</strong>. Maschinenprofile, Postprozessor-Vorlagen, Beispielprojekte, Übersetzungen und Anleitungen kannst du als Pull Request beitragen (<a href="https://github.com/KlapSC/ortino-cam/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>). Wer an der Entwicklung des Programms selbst mitarbeiten möchte, meldet sich per Issue »Mitarbeit am Programm«; der Betreiber gibt Interessierten den Zugang frei.</p>
@@ -253,7 +546,7 @@ ortino export tuerschild.ocam --format dxf -o tuerschild.dxf</code></pre>
     </div>
     <div>
       <h2>Links</h2>
-      <p><a href="https://github.com/KlapSC/ortino-cam/releases/latest">Releases</a><br><a href="https://github.com/KlapSC/ortino-cam/issues/new/choose">Issues – Kontakt, Fehler, Wünsche</a><br><a href="https://github.com/KlapSC/ortino-cam/blob/main/CONTRIBUTING.md">Mitmachen</a><br><a href="https://github.com/KlapSC/ortino-cam/blob/main/SECURITY.md">Sicherheitslücken melden</a><br><a href="https://github.com/KlapSC/ortino-cam/blob/main/LICENSE">Nutzungsbedingungen</a> · <a href="https://github.com/KlapSC/ortino-cam/blob/main/THIRD-PARTY-NOTICES.txt">Drittlizenzen</a></p>
+      <p><a href="https://github.com/KlapSC/ortino-cam/releases/latest">Releases</a><br><a href="https://benini.access.ly:8088" rel="noopener">Community-Portal</a><br><a href="https://github.com/KlapSC/ortino-cam/issues/new/choose">Issues – Kontakt, Fehler, Wünsche</a><br><a href="https://github.com/KlapSC/ortino-cam/blob/main/CONTRIBUTING.md">Mitmachen</a><br><a href="https://github.com/KlapSC/ortino-cam/blob/main/SECURITY.md">Sicherheitslücken melden</a><br><a href="https://github.com/KlapSC/ortino-cam/blob/main/LICENSE">Nutzungsbedingungen</a> · <a href="https://github.com/KlapSC/ortino-cam/blob/main/THIRD-PARTY-NOTICES.txt">Drittlizenzen</a></p>
     </div>
   </div>
 </footer>

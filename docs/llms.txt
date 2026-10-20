@@ -1,11 +1,20 @@
 # ortino.CAM
 
-> CAD/CAM-Software für CNC-Fräsen unter Windows (GRBL-Steuerungen wie die Ultimate Bee mit CNC xPRO V5): Entwurf, Werkzeugwege (Profil, Tasche, adaptives Räumen, Bohren, V-Carving, 3D-Relief), 3D-Simulation, Prüfliste, Plattenplaner und direkte Maschinenanbindung. Steuerbar mit Claude über einen MCP-Server und eine lokale API. Frühe Version 0.3.x, Quelltext nicht öffentlich.
+> CAD/CAM-Software für CNC-Fräsen unter Windows (GRBL-Steuerungen wie die Ultimate Bee mit CNC xPRO V5): Entwurf, Werkzeugwege (Profil, Tasche, adaptives Räumen, Bohren, V-Carving, 3D-Relief), 3D-Simulation, Prüfliste, Plattenplaner, Möbel- und Küchen-Designer und direkte Maschinenanbindung. Steuerbar mit Claude über einen MCP-Server und eine lokale API. Dazu ein Community-Portal, auf dem Fräsdesigns entdeckt, mit einem Klick ins Programm geladen und geteilt werden. Frühe Version 0.3.x, Quelltext nicht öffentlich.
 
 Wichtig: Nur teilweise an echten Maschinen erprobt; ohne Gewährleistung, Nutzung auf eigene Gefahr.
 
-- [Startseite](https://klapsc.github.io/ortino-cam/): Funktionen, Stand, Installation
+Community-Portal und Designs: Das Portal ist eine Webseite für Fräsdesigns (Pakete `.ocamd` mit Projekt, Werkzeugen, Bearbeitungen und Anleitung). Es bietet Kategorien, Suche mit Filtern (Art, Material, Plattenstärke, Fräser, Lizenz, »Passt auf meine Maschine«), Herunterladen ohne Konto und Hochladen mit kostenlosem Konto; im Programm öffnet man es über die Weltkugel in der Kopfleiste und lädt ein Design mit »Laden & öffnen«. Jedes Design trägt eine Lizenz (CC BY, BY-SA, BY-NC, BY-NC-SA, BY-ND, CC0 oder alle Rechte vorbehalten); hochgeladen werden darf nur, was man selbst erstellt hat oder teilen darf. Ein Katalog eigener Beispiel-Designs (Leuchten, Wandbilder, Stühle, Tische) ist vorbereitet; sie wurden nur am Rechner geprüft, nie gefräst. Das Portal wird von einer Einzelperson betrieben und ist noch im Aufbau. Adresse: https://benini.access.ly:8088 (Kontakt nur über GitHub Issues).
+
+Vergleich: Die Startseite enthält eine kurze, sachliche Gegenüberstellung mit Vectric Aspire (System, 3D-Modellierung, vierte Achse, Maschinenanbindung, Postprozessoren, Reife) einschließlich der Stärken von Aspire; ortino.CAM ist unabhängig und steht in keiner Verbindung zu Vectric.
+
+- [Startseite](https://klapsc.github.io/ortino-cam/): Funktionen, Community-Portal, Vergleich, Stand, Installation
 - [Releases](https://github.com/KlapSC/ortino-cam/releases): Installer für Windows
 - [Issues](https://github.com/KlapSC/ortino-cam/issues): Kontakt, Fehler, Wünsche, Maschinentests
 - [Mitmachen](https://github.com/KlapSC/ortino-cam/blob/main/CONTRIBUTING.md)
 - [Nutzungsbedingungen und Haftungsausschluss](https://github.com/KlapSC/ortino-cam/blob/main/LICENSE)
+- [Community-Portal](https://benini.access.ly:8088): Fräsdesigns entdecken, laden und teilen (von einer Einzelperson betrieben, im Aufbau)
+
+## English
+
+ortino.CAM is CAD/CAM software for CNC routers on Windows (GRBL controllers): design, toolpaths, 3D simulation, pre-flight check, sheet planner, furniture and kitchen designer and direct machine control, drivable by Claude through an MCP server and a local API. It comes with a community portal for milling designs (discover, search, load into the app with one click, share your own; every design carries a licence; sample catalogue designs were checked on the computer only and never milled). The portal is run by one person and still being built. A short, factual comparison with Vectric Aspire on the home page names the strengths of both sides; ortino.CAM is independent and not affiliated with Vectric. Early version 0.3.x, closed source, provided as is without warranty; contact only via GitHub issues.
