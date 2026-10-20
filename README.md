@@ -97,7 +97,7 @@ ortino export tuerschild.ocam --format dxf -o tuerschild.dxf
 
 ## Installation (Windows 10/11, 64 Bit)
 
-1. Unter [**Releases**](https://github.com/KlapSC/ortino-cam/releases/latest) die Datei `ortino.CAM_<Version>_x64-setup.exe` herunterladen (alternativ die `.msi`). Die Prüfsumme (SHA-256) steht in den Hinweisen der Version.
+1. Unter [**Releases**](https://github.com/KlapSC/ortino-cam/releases/latest) die Datei `ortino.cam_<Version>_x64-setup.exe` herunterladen (alternativ die `.msi`, `…_x64_de-de.msi`). Die Prüfsumme (SHA-256) steht in den Hinweisen der Version.
 2. Starten und installieren. **Windows warnt beim ersten Start** (SmartScreen: »Weitere Informationen → Trotzdem ausführen«): Der Installer ist mit einem **selbst erstellten Zertifikat** signiert, nicht von einer Zertifizierungsstelle.
 3. `.ocam`-Projekte öffnen sich danach per Doppelklick. Ein Beispielprojekt liegt den Releases bei.
 
