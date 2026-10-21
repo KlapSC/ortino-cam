@@ -1,0 +1,93 @@
+# Überträgt den Ordner wiki/ dieses Repositorys in das GitHub-Wiki (Repository <Name>.wiki.git).
+# Die Seiten werden hier gepflegt und von hier aus gespiegelt; Änderungen, die nur im Wiki selbst gemacht werden, gehen bei der
+# nächsten Übertragung verloren (alle *.md im Wiki werden durch die aus wiki/ ersetzt).
+# Startet von Hand oder bei Änderungen unter wiki/ auf main. Vorher muss das Wiki in den Einstellungen des Repositorys
+# aktiviert und einmal eine erste Seite angelegt sein, sonst gibt es das Wiki-Repository noch nicht (siehe wiki/README.md).
+# Die Datei wiki/README.md ist eine Anleitung für den Betreiber und wird nicht übertragen.
+name: Wiki synchronisieren
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "wiki/**"
+
+permissions:
+  contents: write
+
+# Nie zwei Übertragungen gleichzeitig: Die zweite wartet, statt mit der ersten um das Wiki zu streiten.
+concurrency:
+  group: wiki-synchronisieren
+  cancel-in-progress: false
+
+jobs:
+  synchronisieren:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Quelle prüfen
+        run: |
+          set -euo pipefail
+          if [ ! -f wiki/Home.md ]; then
+            echo "wiki/Home.md fehlt. Lösung: den Ordner wiki/ mit der Startseite Home.md im Repository ablegen."
+            exit 1
+          fi
+          echo "Seiten in wiki/:"
+          ls -1 wiki/*.md | grep -v '^wiki/README.md$'
+
+      - name: Wiki-Repository klonen
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          export GIT_TERMINAL_PROMPT=0
+          # Der Zugangsschlüssel kommt nur aus der Umgebungsvariablen GH_TOKEN. Er steht weder in der Adresse noch in der Befehlszeile.
+          helfer='!f() { echo username=x-access-token; echo "password=$GH_TOKEN"; }; f'
+          if ! git -c credential.helper="$helfer" clone --quiet "https://github.com/${REPO}.wiki.git" wiki-ziel 2> klon-fehler.txt; then
+            echo "Das Wiki-Repository https://github.com/${REPO}.wiki.git lässt sich nicht klonen."
+            echo "Lösung: In den Einstellungen des Repositorys (Abschnitt Features) das Wiki aktivieren und einmal eine erste Seite anlegen, danach den Workflow erneut starten."
+            echo "Meldung von Git:"
+            sed 's/^/  /' klon-fehler.txt
+            exit 1
+          fi
+          git -C wiki-ziel config credential.helper "$helfer"
+
+      - name: Seiten ersetzen
+        run: |
+          set -euo pipefail
+          # Alte Seiten entfernen, damit gelöschte oder umbenannte Seiten nicht stehen bleiben.
+          find wiki-ziel -maxdepth 1 -type f -name '*.md' -delete
+          for f in wiki/*.md; do
+            [ "$(basename "$f")" = "README.md" ] && continue
+            cp "$f" wiki-ziel/
+          done
+          echo "Seiten im Wiki nach dem Kopieren:"
+          ls -1 wiki-ziel/*.md
+
+      - name: Änderungen übertragen
+        env:
+          GH_TOKEN: ${{ github.token }}
+          QUELLE: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          export GIT_TERMINAL_PROMPT=0
+          cd wiki-ziel
+          git add --all
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen: Das Wiki ist schon auf dem Stand von wiki/."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit --quiet -m "Wiki aus wiki/ übertragen (Stand ${QUELLE:0:7})"
+          if ! git push --quiet origin HEAD 2> ../push-fehler.txt; then
+            echo "Das Übertragen in das Wiki ist fehlgeschlagen."
+            echo "Lösung: Prüfen, ob das Wiki aktiviert ist und ob der Workflow Schreibrechte hat (Einstellungen, Actions, Allgemein, Berechtigungen für Workflows: Lese- und Schreibzugriff). Danach erneut starten."
+            echo "Meldung von Git:"
+            sed 's/^/  /' ../push-fehler.txt
+            exit 1
+          fi
+          echo "Das Wiki ist aktualisiert."
