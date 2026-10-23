@@ -36,7 +36,10 @@ Text bleibt **editierbar**: mehrzeilig, mit Ausrichtung sowie Buchstaben- und Ze
 * **Text auf Pfad:** Der Text folgt einer Linie, einem Bogen, einem Kreis, Rechteck, Vieleck oder beliebigen Pfad und **bleibt Text**. Typisch ist ein Kreisschild mit Schrift außen herum. Du wählst die Form, öffnest den Abschnitt »Text auf diesem Pfad« und gibst den Text ein. Einstellbar sind Seite (außen, innen, mittig), Startversatz oder Winkel, Abstand zur Linie, die Leserichtung, »Kopf stehend vermeiden« und »Auf Pfadlänge einpassen«. Ändert sich die Pfadform, folgt der Text. Das Programm warnt, wenn der Pfad zu kurz oder zu eng ist oder sich Buchstaben berühren würden. Gebundene Texte verschachtelt der Plattenplaner nicht einzeln.
 * **Einzellinienschriften:** Elf Hershey-Schriften (zum Beispiel Roman Simplex, Script, Gothic) liefern **offene Linien** statt Flächen, gedacht zum Gravieren mit dem Profil »Auf Linie«. Umlaute (Ä Ö Ü ä ö ü) setzt das Programm aus Buchstabe und zwei Punkten zusammen. **ß, €, Akzente und der Unterstrich fehlen** und werden gemeldet statt ersetzt.
 
-> **Nie gefräst oder graviert.** Text auf Pfad und Einzellinienschrift sind rechnerisch und im Browser geprüft. Gravurqualität, Eintauchen an Strichenden und Reihenfolge der Striche sind ungeprüft.
+* **Variable Felder und Seriennummern:** In einem Text darfst du Platzhalter in geschweiften Klammern setzen: `{n}` (Zähler, Start 1), `{n:001}` (Zähler mit drei Ziffern und Start 001: Die Ziffern geben Mindestbreite und Startwert an, `{n:100}` zählt 100, 101 …), `{datum}` (heutiges Datum, auch mit Muster wie `{datum:TT.MM.JJ}`), `{projekt}` (Projektname) und `{platte}` (Name der Platte). `{{` und `}}` ergeben je eine Klammer. Im Eigenschaften-Panel eines Textes zeigt der Abschnitt **»Variable Felder«** eine Vorschau des Ergebnisses. Die Zähler zählen in **Rechteck-, Kreis- und Pfad-Arrays** und in **Serien** hoch (Start und Schrittweite einstellbar, das Original ist Nr. 0; in einer Serie zählt jede Tabellenzeile). **Ungültige Platzhalter** bleiben wörtlich im Text stehen und lösen eine Warnung mit Lösung aus, nichts wird still verworfen.
+  * **Grenzen:** `{datum}` kommt aus der Systemuhr in **UTC** (kurz nach Mitternacht Ortszeit kann es noch der Vortag sein). Der Zähler zählt je Kopie, nicht je Exemplar einer Stückzahl. Rechenausdrücke wie `{n+1}` gibt es nicht.
+
+> **Nie gefräst oder graviert.** Text auf Pfad, Einzellinienschrift und Seriennummern sind rechnerisch und im Browser geprüft. Gravurqualität, Eintauchen an Strichenden und Reihenfolge der Striche sind ungeprüft.
 
 ## Formen bearbeiten
 
@@ -46,8 +49,17 @@ Im Eigenschaften-Panel und in der Befehlspalette (`Strg+K`) findest du:
 * **Kombinieren** (Boolesche Operationen): **Verschweißen** (Vereinigung), **Subtrahieren**, **Schnittmenge**, **Ausschluss**. Beim Subtrahieren werden alle Formen von der zuerst gewählten abgezogen. »Originale behalten« ist wählbar.
 * **Versatz:** eine Kontur nach außen oder innen um einen Abstand parallel verschieben.
 * **Ecken runden**, **Fase**, **Kürzen** und **Verlängern** (Tasten `O`, `H`, `X`, `N`). Eine Vorschau zeigt das Ergebnis, das entfernte Stück gestrichelt in Rot. Bögen bleiben Bögen.
-* **Array:** Kopien in einem **Raster** (Spalten, Zeilen, Lücken) oder auf einem **Kreis** (Anzahl, Winkel, Mitte, Kopien mitdrehen).
+* **Array:** Kopien in einem **Raster** (Spalten, Zeilen, Lücken), auf einem **Kreis** (Anzahl, Winkel, Mitte, Kopien mitdrehen) oder **entlang eines Pfads** (siehe unten).
 * **Verbinden:** offene Linien zu geschlossenen Konturen verketten.
+
+### Array entlang eines Pfads
+
+Wähle die Formen, öffne im Eigenschaften-Panel **Array …** und dort das dritte Segment **Entlang Pfad**. Als Pfad dienen Linie, Polylinie, Bogen, Kreis, Rechteck, Vieleck und Bézier-Kurve. Du gibst entweder die **Anzahl** oder den **Abstand** an, gemessen entlang der Bogenlänge. Unter »Mehr Einstellungen« stellst du Anfangs- und Endversatz ein, ob die letzte Kopie am Ende steht, die Richtung, ob die Kopien an der Tangente ausgerichtet werden, die Zusatzdrehung und den Bezugspunkt. Im Zeichenbereich siehst du live, wo die Kopien entstehen. **Kopien anlegen** ist ein einziger Rückgängig-Schritt.
+
+* Bei einem **geschlossenen** Pfad wird die letzte Lage nicht doppelt gesetzt: Ein Kreis mit dem Abstand »Umfang durch 10« ergibt genau 10 Kopien.
+* Bei Bézier-Pfaden gilt die auf Bögen gerundete Bahn. Die Abstände weichen höchstens um den Rundungsfehler von der echten Kurvenlänge ab.
+* Text und Muster musst du vorher in Kurven umwandeln, wenn sie Pfad sein sollen. Höchstens 10 000 Kopien je Schritt. Bei jedem Fehler bleibt das Projekt unverändert, und das Programm nennt eine Lösung.
+* **Nie gefräst:** Die Abstände sind mit Tests nachgemessen, geprüft ist nur gegen den Simulator und einen Browser.
 
 ### Knoten bearbeiten
 
@@ -78,7 +90,7 @@ Mit `Strg+I` (Datei-Menü: »Importieren …«) oder per **Drag & Drop** auf das
 
 Im Importdialog wählst du die **Platzierung** (automatisch auf die Platte passend, Position beibehalten, an der Plattenecke, zentriert), die Skalierung, die Ziel-Platte und den Ziel-Layer. Der Dialog zeigt Hinweise zum Import an.
 
-**Was bei SVG und PDF mit Kurven passiert:** Kurven werden in **Strecken und Kreisbögen** umgerechnet (einstellbare Toleranz, Voreinstellung 0,02 mm) und nicht als Kurven übernommen. Das ist für Fräsbahnen praktisch, nur beim späteren Bearbeiten der Knoten siehst du Segmente statt Kurven.
+**Was bei SVG und PDF mit Kurven passiert:** Freie Kurven (S-Kurven, Schriftzüge, Blobs) bleiben als **Bézier-Kurven mit Knoten und Griffen** erhalten und lassen sich mit dem Knotenwerkzeug nachbearbeiten. Kreise, Rundungen an Rechtecken, Langlöcher werden zu **Strecken und Kreisbögen** (einstellbare Toleranz, Voreinstellung 0,02 mm; beim PDF war das schon so, beim SVG ist es neu, dort kamen Kreise und Rundungen bisher als dichte Strecken). Sehr große oder aufwendige Dateien (mehr als 20 000 Kurvensegmente, über 4 Millionen Kurvenpunkte oder 10 Sekunden Rechenzeit) werden mit Hinweis wie bei ausgeschaltetem Schalter in Strecken zerlegt. Der Schalter **»Kurven als Béziers mit Knoten übernehmen«** im Importdialog (bei PDF unter »Mehr Einstellungen«) ist standardmäßig an, ausgeschaltet gilt das frühere Verhalten. Offene Kurven, die sich beim Verbinden zu einer Kontur verketten, verlieren dabei ihre Bézier-Fassung. Bei DXF (Splines) und beim Nachzeichnen von Bildern bleibt es bei Strecken und Bögen, Text aus PDF-Schriften bleibt ein Umriss. **Nur mit selbst erzeugten SVG- und PDF-Dateien geprüft**, nicht mit echten Dateien aus Illustrator, Inkscape oder CorelDRAW.
 
 **Grenzen beim PDF-Import:**
 
@@ -91,7 +103,7 @@ Im Importdialog wählst du die **Platzierung** (automatisch auf die Platte passe
 
 ### Bild nachzeichnen
 
-Der Assistent zeichnet Fotos, Logos und Skizzen als fräsbare Konturen nach. Du wählst eine Voreinstellung (**Logo**, **Skizze**, **Foto-Kontur**, **Stufen**, **Farben**), die Zielgröße (oder »Auf Plattengröße«) und mit **einem Regler** den Detailgrad. Eine **Live-Vorschau** zeigt Original, Schwarzweiß, Pfade und Überlagerung. Hinweise sagen dir, wenn das Bild zu klein ist, zu wenig Kontrast hat oder eher ein Foto ist (dann »Foto-Kontur« wählen). Mit »Dunkles / Helles nachzeichnen« und »Invertieren« legst du fest, was Vordergrund ist. Innenliegende Konturen werden zu Löchern. Das Ergebnis ist ein Rückgängig-Schritt.
+Der Assistent zeichnet Fotos, Logos und Skizzen als fräsbare Konturen nach. Du wählst eine Voreinstellung (**Logo**, **Skizze**, **Foto-Kontur**, **Stufen**, **Farben**), die Zielgröße (oder »An die Platte anpassen (…)«) und mit **einem Regler** den Detailgrad. Eine **Live-Vorschau** zeigt Original, Schwarzweiß, Pfade und Überlagerung. Hinweise sagen dir, wenn das Bild zu klein ist, zu wenig Kontrast hat oder eher ein Foto ist (dann »Foto-Kontur« wählen). Mit »Dunkles / Helles nachzeichnen« und »Invertieren« legst du fest, was Vordergrund ist. Innenliegende Konturen werden zu Löchern. Das Ergebnis ist ein Rückgängig-Schritt.
 
 ## Exportieren
 

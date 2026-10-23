@@ -21,7 +21,7 @@ Grenzen: Sperrzonen für Spannmittel kennt der Plattenplaner nicht. Teile aus me
 
 ## Passungs-Assistent: Wie viel Spiel braucht dein Material?
 
-Ob Zinken in *deinem* Sperrholz passen, hängt von der echten Dicke und von deinem Fräser ab. Der **Passungs-Assistent** (Datei-Menü, Befehlspalette oder die Karte »Passung & Verbindungen« im Projekt-Schritt) findet das mit einem **Testcoupon** heraus:
+Ob Zinken in *deinem* Sperrholz passen, hängt von der echten Dicke und von deinem Fräser ab. Der **Passungs-Assistent** (Menü Erstellen, Befehlspalette oder die Karte »Passung & Verbindungen« im Projekt-Schritt) findet das mit einem **Testcoupon** heraus:
 
 1. **Dicke messen:** Trage die mit dem Messschieber gemessene Dicke ein (Mittelwert).
 2. **Testcoupon erzeugen:** Eine kleine Platte mit mehreren Schlitzen, jeder etwas breiter oder schmaler (Standard: 9 Stufen in Schritten von 0,05 mm). Die Spiele stehen graviert über jedem Schlitz. Fräse den Coupon.
@@ -45,7 +45,7 @@ Nicht gebaut: Schwalbenschwänze, Gehrungen, Federn dünner als das Brett, Verbi
 
 ## Möbel- und Küchen-Designer
 
-Öffnen: Datei → *Möbel & Küche …*, `Strg+Umschalt+M` oder die Karte im Projekt-Schritt. Der Designer entwirft Schränke und Küchenzeilen mit wenigen Eingaben und leitet daraus alle Teile mit Bohrungen, Nuten und Taschen ab. Er erstellt Stückliste und Zuschnitt und legt am Ende normale Platten, Formen und Bearbeitungen im Projekt an. Ab da gilt der gewohnte Weg: Bearbeitung → Prüfen → Fräsen.
+Öffnen: Erstellen → *Möbel & Küche …*, `Strg+Umschalt+M` oder die Karte im Projekt-Schritt. Der Designer entwirft Schränke und Küchenzeilen mit wenigen Eingaben und leitet daraus alle Teile mit Bohrungen, Nuten und Taschen ab. Er erstellt Stückliste und Zuschnitt und legt am Ende normale Platten, Formen und Bearbeitungen im Projekt an. Ab da gilt der gewohnte Weg: Bearbeitung → Prüfen → Fräsen.
 
 * **Start in drei Schritten:** Material und Platten wählen (Korpus, Fronten, Rückwand, Plattenformat, Kantenband), Schränke hinzufügen oder die Küchenzeile aus der Raumbreite vorschlagen lassen, dann ändern, was nicht passt.
 * **Schranktypen:** Unterschrank, Schubladenschrank, Spülenschrank, Hängeschrank, Hochschrank und Eckschränke (L-Form, Blindeckschrank, auch hängend). Nicht umgesetzt: diagonaler Eckschrank, Karussell, Auszugstechnik, Falttür, 90°-Winkelscharnier.
@@ -65,7 +65,7 @@ Was **nicht** auf der CNC passiert, steht als »Arbeiten von Hand« in Stücklis
 Ein Projekt kann zur **Vorlage** werden: Wer sie öffnet, sieht ein Formular mit Maßen, Texten, Material und Schaltern. Das Programm rechnet Formen und Bahnen neu und zeigt Vorschau und Prüfliste daneben.
 
 * **Anlegen:** Projekt-Schritt → Karte »Vorlage & Serie« → »Vorlage anlegen« (oder Befehlspalette: »Als Vorlage speichern …«). Eingabearten: Maß, Zahl, Text, Auswahl, Ja/Nein, Material.
-* **Öffnen:** Datei → »Neu aus Vorlage …« oder der Streifen »Vorlagen mit Formular« im Dialog »Neues Projekt«. Mitgeliefert sind ein Namensschild, ein Schneidebrett mit Griff, ein Regalboden mit Bohrraster und ein Lochblech-Panel. Ihre Schnittwerte sind Richtwerte.
+* **Öffnen:** Erstellen → »Neu aus Vorlage …« oder der Streifen »Vorlagen mit Formular« im Dialog »Neues Projekt«. Mitgeliefert sind ein Namensschild, ein Schneidebrett mit Griff, ein Regalboden mit Bohrraster und ein Lochblech-Panel. Ihre Schnittwerte sind Richtwerte.
 * **Formular:** Live-Vorschau und Prüfliste, Fehler am Feld mit Lösung, in jedem Maßfeld Formeln möglich. `Strg+Enter` legt das Projekt an.
 * Du kannst Vorlagen als Design im [Community-Portal](Community-Portal) teilen.
 

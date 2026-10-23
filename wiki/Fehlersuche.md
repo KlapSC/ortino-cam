@@ -9,7 +9,7 @@ Hier stehen häufige Probleme mit der Ursache und einer Lösung. Bei jedem Probl
 | **Windows warnt beim Installieren** (SmartScreen) | Der Installer ist mit einem selbst erstellten Zertifikat signiert. Wenn du ihn von der offiziellen Release-Seite hast und die Prüfsumme stimmt: »Weitere Informationen« → »Trotzdem ausführen«. Siehe [Installation und Updates](Installation-und-Updates). |
 | »3D-Ansicht nicht verfügbar« oder »WebGL ist nicht verfügbar« | Der Grafiktreiber stellt WebGL nicht bereit. Treiber aktualisieren, Hardwarebeschleunigung einschalten, ortino.CAM neu starten. Prüfliste und Auftragsübersicht funktionieren auch ohne. |
 | Installation oder Update meldet, eine Datei könne nicht überschrieben werden | Meist hält Claude Desktop `ortino-mcp.exe` gesperrt. Claude Desktop beenden und erneut installieren. |
-| Fehlertexte in der englischen Oberfläche sind deutsch | Bekannte Einschränkung in 0.3.8: Meldungen des Kerns (Fehlertexte, Prüfliste) sind teils noch deutsch. |
+| Fehlertexte in der englischen Oberfläche sind deutsch | Bekannte Einschränkung (auch in 0.3.11): Meldungen des Kerns (Fehlertexte, Prüfliste) sind teils noch deutsch. |
 | Nach einem Absturz fehlt Arbeit | Beim Start bietet die Willkommensseite an, den automatisch gesicherten Stand wiederherzustellen. Speichere ihn danach unter einem Namen. |
 
 ## Verbindung zur Maschine
@@ -67,6 +67,7 @@ Hier stehen häufige Probleme mit der Ursache und einer Lösung. Bei jedem Probl
 | **Die Kamera findet die Marken nicht** | (1) Marken im Bild zu klein: näher heran, höhere Auflösung oder größere Marken (bis 100 mm). (2) Verrauscht, unscharf oder spiegelnd: gleichmäßiges, weiches Licht, matt gedruckte Marken, kein Gegenlicht. (3) Marken am Bildrand abgeschnitten: Kamera so ausrichten, dass alle vier ganz im Bild liegen. (4) Mindestens drei Marken müssen brauchbar sein, vier sind besser. (5) Das Blatt wurde nicht mit 100 % gedruckt: Prüfe den 100-mm-Maßstab. (6) Marken verschiedener Blätter oder doppelt: ein Blatt, jede Nummer einmal. |
 | »Zuordnung nicht eindeutig« | Das Programm rät nicht. Häufig ist das Bild gespiegelt, oder die Marken liegen nicht in den Ecken. |
 | Das Bild passt nicht zum Entwurf | Parallaxe: Die Marken müssen auf Höhe der Materialoberfläche liegen. Wurde die Kamera angestoßen, neu kalibrieren. |
+| Das Kamera-Symbol fehlt in der Kopfleiste | In schmalen Fenstern (unter 1180 Pixeln Breite) entfällt das Symbol, damit es den Schritt »Fräsen« nicht überlappt. Die Kamera bleibt über `Strg+K`, die Werkzeugpalette im Schritt »Design« und die Statusleiste erreichbar. |
 | Der Zugriff auf die Kamera wird verweigert | **Einstellungen → Datenschutz & Sicherheit → Kamera:** Kamerazugriff, »Apps den Zugriff auf Ihre Kamera erlauben« und »Desktop-Apps …« einschalten. Das ist unter Windows noch nicht geprüft. Mit »Bild aus Datei …« geht es auch ohne Kamera. |
 
 Mehr dazu auf [Kamera auf der Arbeitsplatte](Kamera-auf-der-Arbeitsplatte).

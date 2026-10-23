@@ -37,6 +37,8 @@ Nach dem Verbinden fragt das Programm die Firmware ab und liest die Einstellunge
 
 Bei der **Referenzfahrt** (englisch *Homing*) fährt die Maschine zu den Endschaltern und kennt danach ihre Position. Ohne Referenzfahrt kann das Programm den Verfahrweg nicht prüfen. Der Start-Check warnt dann. Die Referenzfahrt braucht Endschalter und `$22=1` in der Steuerung. Der Arbeitsbereich muss frei sein, das Programm fragt vorher nach.
 
+**Erst referenzieren, dann den Nullpunkt setzen.** Die Referenzfahrt legt die Maschinenkoordinaten neu fest; ein vorher gesetzter Nullpunkt liegt danach woanders, und der Start-Check verlangt ihn neu. Dasselbe gilt nach einem Alarm, bei dem die Position verloren geht, oder nach einem Neustart der Steuerung: Bis zur nächsten Referenzfahrt (oder bis du ihn neu setzt) gilt der Nullpunkt als nicht gesetzt. *Nur Simulator.*
+
 ## 3. Handsteuerung und Nullpunkt
 
 * **Handsteuerung (Jog):** Pfeiltasten bewegen X und Y, Bild↑ und Bild↓ bewegen Z, mit Umschalt ist der Schritt zehnmal so groß. Die Schrittweite stellst du ein. Im Modus »Dauer« fährt die Maschine, solange du die Taste hältst. Während ein Programm läuft, ist die Handsteuerung gesperrt.
@@ -53,7 +55,9 @@ Eine **Tastplatte** ist eine flache Metallplatte bekannter Dicke, die über eine
 3. In der Karte »Z-Antasten« die **Dicke der Tastplatte** prüfen und **Z antasten** starten. Der Fräser fährt langsam nach unten, setzt Z0 und hebt wieder ab.
 4. Tastplatte entfernen.
 
-Steht im Projekt Z-Null auf »Tisch (Opferplatte)«, fragt die Karte, ob die Platte auf dem Werkstück oder auf der Opferplatte liegt, und rechnet die Materialdicke ein. Ist die Dicke unbekannt, bleibt das Antasten gesperrt. Das Programm rät nicht. *Im Echtbetrieb bestätigt (Ultimate Bee).*
+Steht im Projekt Z-Null auf »Tisch (Opferplatte)«, fragt die Karte, ob die Platte auf dem Werkstück oder auf der Opferplatte liegt, und rechnet die Materialdicke ein. Ist die Dicke unbekannt, bleibt das Antasten gesperrt. Das Programm rät nicht. Genauer ist es, die Tastplatte auf die Opferplatte zu legen: Dann zählt die eingetragene Materialdicke nicht. *Nur Simulator* (Tisch-Null und die Frage nach der Lage der Tastplatte kamen nach Version 0.3.3 und sind an keiner echten Maschine erprobt).
+
+Das Programm merkt sich beim Antasten und Nullen, für welches Projekt, welche Platte und welche Z-Null-Art Z gesetzt wurde. Öffnest du danach ein anderes Projekt oder stellst die Z-Null-Art der Platte um, verlangt der Start-Check ein neues Antasten. Vor **»Z=0«** in der Positionsanzeige fragt das Programm einmal nach, wo die Fräserspitze dafür stehen muss (Plattenoberseite oder Opferplatte). *Nur Simulator.*
 
 ### Antasten mit dem XYZ-Eckblock
 
@@ -75,6 +79,7 @@ Der **Start-Check** vergleicht den Zustand der Steuerung mit deinem Projekt. Jed
 | Referenzfahrt in dieser Verbindung | Sonst stimmen Maschinenkoordinaten und Verfahrweg-Prüfung nicht. |
 | Programm passt in den Verfahrweg (X, Y, Z-Reserve) | Sonst bräche die Steuerung mit einem Alarm ab. Fehler nur, wenn der Verfahrweg aus der Steuerung stammt, sonst Warnung. |
 | Nullpunkt in dieser Verbindung gesetzt | Ein Nullpunkt aus dem Speicher der Steuerung kann veraltet sein. |
+| Z-Null passt zu Projekt, Platte, Z-Null-Art, Materialdicke und (beim Wechsel-Assistenten) Werkzeug | Ein Z-Null für eine andere Platte, ein anderes Projekt oder auf dem Tisch statt auf der Oberseite läge um die Materialdicke daneben. Das ist ein Fehler, »Z-Null neu setzen« löst ihn. *Nur Simulator.* |
 | Prüfliste des Projekts | Fehler der [Prüfliste](Prüfen-und-Simulation) sperren auch den Start. |
 | Koordinatensystem, Einheit, Abstandsmodus (G54, mm, absolut) | Das Programm liest den Zustand der Steuerung mit `$G` und bietet »G54 wählen«, »G21 wählen«, »G90 wählen« an. |
 | Vorschub-, Eilgang- und Spindel-Override auf 100 % | GRBL behält sie über das Programmende. |
@@ -95,9 +100,9 @@ Hat dein Projekt mehrere Werkzeuge, stoppt das Programm beim Wechsel. Im Start-D
 | Modus | Ablauf | Stand |
 |---|---|---|
 | **Pause (M0)** | Das Programm hält an, du wechselst. Die Fräser müssen gleich lang eingespannt werden. | Standard |
-| **Tastplatte** | Nach dem Wechsel tastest du Z mit der Tastplatte neu an. Der Assistent führt dich durch: anhalten, wechseln, antasten, weiter. | **Im Echtbetrieb bestätigt** (Ultimate Bee) |
+| **Tastplatte** | Nach dem Wechsel tastest du Z mit der Tastplatte neu an. Der Assistent führt dich durch: anhalten, wechseln, antasten, weiter. | **Im Echtbetrieb bestätigt** (Ultimate Bee, Version 0.3.3, Z-Null = Plattenoberseite). Mit Z-Null = Tisch (Materialdicke zur Plattendicke), mit einer Wechselposition und die Prüfung im Start-Check, dass Z-Null zum ersten Werkzeug des nächsten Laufs gehört: **nur Simulator**. |
 | **Längensensor** | Ein fest montierter Sensor misst die Länge des neuen Werkzeugs. | **Nie an einer echten Maschine erprobt.** Falsche Sensorposition heißt: Der Fräser fährt an die falsche Stelle. Erster Versuch ohne Material mit niedrigem Override. |
-| **Fester Taster** | Die Maschine misst jedes Werkzeug und legt Z-Null auf die Opferplatte. | **Nur Simulator**, siehe [Fester Taster und Opferplatte](Fester-Taster-und-Opferplatte). |
+| **Fester Taster** | Die Maschine misst jedes Werkzeug und legt Z-Null auf die Opferplatte. | Einrichten und Einmessen laut Betreiber an einer echten Maschine bestätigt (0.3.10); **Wechsel im Programm nur Simulator**, siehe [Fester Taster und Opferplatte](Fester-Taster-und-Opferplatte). |
 
 Während des Wechsels ist die Handsteuerung erlaubt, sonst nichts. Eine **Wechselposition** und eine sichere Höhe stellst du im Zubehör ein. Ein automatischer Werkzeugwechsler (`M6`) wird nicht unterstützt.
 

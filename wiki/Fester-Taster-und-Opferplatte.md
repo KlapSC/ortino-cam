@@ -2,7 +2,7 @@
 
 Diese Seite gehört zu [Fräsen an der Maschine](Fräsen-an-der-Maschine). Sie erklärt zwei Hilfen für Maschinen mit fest eingebautem Werkzeugtaster: Der **feste Taster** misst die Länge jedes eingespannten Fräsers. Die **Höhenkarte** gleicht die Unebenheit der Opferplatte aus.
 
-> **Ehrlich zum Stand:** Beides ist **nur gegen den Simulator und automatische Tests geprüft, nie an einer echten Maschine**, nie mit einem echten Taster und nie mit einer echten Opferplatte. Die Verdrahtungshinweise stammen vom Betreiber (Ultimate Bee mit xPRO V5) und sind nicht an der Hardware nachgeprüft. Lies vor dem Anschließen das Handbuch deiner Steuerung. Erste Messung ohne Material, Hand am Not-Aus.
+> **Ehrlich zum Stand:** Laut Rückmeldung des Betreibers (Ultimate Bee mit xPRO V5, Version 0.3.10) laufen an einer echten Maschine das **Einrichten des festen Tasters und das Einmessen eines Werkzeugs**. **Nur gegen den Simulator und automatische Tests geprüft** sind der Werkzeugwechsel am festen Taster mitten im Programm und die Messung der Opferplatte mit Höhenkarte, nie mit einer echten Opferplatte. Die Verdrahtungshinweise stammen vom Betreiber (Ultimate Bee mit xPRO V5) und sind nicht an der Hardware nachgeprüft. Lies vor dem Anschließen das Handbuch deiner Steuerung. Erste Messung ohne Material, Hand am Not-Aus.
 
 Wenn dein Setup einfacher ist (Tastplatte, Werkzeugwechsel mit Pause), brauchst du diese Seite nicht.
 
@@ -45,10 +45,12 @@ In der Karte **Fester Taster** im Schritt »Fräsen«:
 1. Referenzfahrt.
 2. Fräser einspannen und auf **»Werkzeug einmessen«** klicken. Die Maschine misst und legt Z-Null auf die Opferplatte.
 3. X/Y-Nullpunkt am Werkstück von Hand setzen.
-4. Im Projekt Z-Null auf **»Tisch (Opferplatte)«** stellen. Steht es auf »Plattenoberseite«, warnt die Karte und fragt zweimal nach, denn das Programm würde sonst um die Materialdicke zu tief fräsen.
+4. Im Projekt Z-Null auf **»Tisch (Opferplatte)«** stellen. Ab Version 0.3.11 ist das mit eingerichtetem festem Taster die Vorgabe für neue Projekte (umstellbar im Menü »Einstellungen« ▸ »Maschine & Z-Null …«); ein älteres Projekt stellst du mit dem Knopf **»Auf Opferplatte stellen«** in der Karte um. Steht es auf »Plattenoberseite«, warnt die Karte und fragt zweimal nach, denn das Programm würde sonst um die Materialdicke zu tief fräsen.
 5. Start-Check, Lauf. Im Start-Dialog den Werkzeugwechsel auf **»Fester Taster«** stellen.
 
 Beim Wechsel im Programm läuft es so: Anhalten, auf die Annäherungshöhe fahren, du wechselst und drückst »Weiter«, die Maschine misst das neue Werkzeug, setzt Z-Null und fährt zurück an die alte Stelle. Beide Werkzeuge stehen danach bei gleichem Werkstück-Z auf derselben Höhe über der Opferplatte (im Simulator mit Fräsern unterschiedlicher Länge geprüft).
+
+Nach einem Lauf mit Wechsel gehört Z-Null zum **zuletzt gemessenen** Werkzeug. Beginnt der nächste Lauf wieder mit T1, spannst du T1 ein und klickst noch einmal auf **»Werkzeug einmessen«** – der Start-Check sperrt bis dahin (»Z-Null gehört zu einem anderen Werkzeug«). *Nur Simulator.*
 
 ### Sicherheit
 

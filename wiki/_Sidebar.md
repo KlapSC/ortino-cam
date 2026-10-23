@@ -16,6 +16,7 @@
 **An der Maschine**
 
 * [Fräsen an der Maschine](Fräsen-an-der-Maschine)
+* [Doppelseitig fräsen](Doppelseitig-fraesen)
 * [Fester Taster und Opferplatte](Fester-Taster-und-Opferplatte)
 * [Handy-Fernbedienung](Handy-Fernbedienung)
 * [Kamera auf der Arbeitsplatte](Kamera-auf-der-Arbeitsplatte)

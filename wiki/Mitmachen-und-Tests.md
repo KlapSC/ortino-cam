@@ -2,7 +2,7 @@
 
 **Neue Mitwirkende sind willkommen.** Der Quelltext von ortino.CAM ist nicht öffentlich, mitmachen kannst du trotzdem an vielem. Am wertvollsten sind **Tests an echten Maschinen**, denn ortino.CAM entsteht zum größten Teil mit Claude Code (Anthropic) als Co-Autor. Tausende automatische Tests prüfen die Rechnung, aber sie stammen aus derselben Quelle wie der Code. Nur ein Test an einer echten Maschine zeigt, ob etwas wirklich funktioniert.
 
-Die ausführlichen Regeln stehen in der [CONTRIBUTING.md](https://github.com/KlapSC/ortino-cam/blob/main/CONTRIBUTING.md). Kontakt gibt es **ausschließlich über [GitHub Issues](https://github.com/KlapSC/ortino-cam/issues/new/choose)**.
+Die ausführlichen Regeln stehen in der [CONTRIBUTING.md](https://github.com/KlapSC/ortino-cam/blob/main/CONTRIBUTING.md). Fragen, Fehler, Wünsche und Maschinenberichte gehen über **[GitHub Issues](https://github.com/KlapSC/ortino-cam/issues/new/choose)**. Issues sind öffentlich: Schreib dort keine persönlichen Daten hinein. Datenschutzanfragen und rechtliche Anliegen zum Community-Portal gehen an die E-Mail-Adresse im [Impressum des Portals](https://benini.access.ly:8088/imprint).
 
 ## Was willkommen ist
 
@@ -46,7 +46,9 @@ Nur an der **Ultimate Bee mit xPRO V5** sind bisher erprobt: Taschen, V-Carving,
 * Gewindefräsen, Wartungsplan und Standzeit-Grenzen,
 * die Kamera auf der Arbeitsplatte (mit einer echten Kamera),
 * die neuen Postprozessoren (UCCNC, Centroid, ShopBot, MASSO, PlanetCNC) und andere Steuerungen als die xPRO V5,
-* gefräste Passungen, Fingerzinken, Inlays, Reliefs und Möbelteile.
+* gefräste Passungen, Fingerzinken, Inlays, Reliefs und Möbelteile,
+* die **Beispiele** der Galerie, gefräst in einem Reststück (**nicht gefräst**), und ob die **Lektionen** zu deiner Erfahrung passen,
+* **Béziers aus echten Illustrator-, Inkscape- oder CorelDRAW-Dateien** (bisher nur mit selbst erzeugten SVG- und PDF-Dateien geprüft) und Seriennummern auf gefrästen Teilen.
 
 ## Beiträge als Dateien (Pull Request)
 
@@ -73,4 +75,4 @@ Melde Sicherheitslücken **nicht** als öffentliches Issue. Im Reiter **Security
 
 ## English
 
-ortino.CAM is closed source, but you can still help in many ways. The most valuable contribution is a **test report from a real machine**, including failures. Use the issue template "Test an einer echten Maschine" (test on a real machine), and test without tool and material first, with the emergency stop within reach. Machine profiles, post-processor templates, example projects, translations and guides are welcome as pull requests with data files only (see the CONTRIBUTING.md in the repository). Milling designs belong in the community portal, and contact is through GitHub issues only. The software is provided as is, without warranty.
+ortino.CAM is closed source, but you can still help in many ways. The most valuable contribution is a **test report from a real machine**, including failures. Use the issue template "Test an einer echten Maschine" (test on a real machine), and test without tool and material first, with the emergency stop within reach. Machine profiles, post-processor templates, example projects, translations and guides are welcome as pull requests with data files only (see the CONTRIBUTING.md in the repository). Milling designs belong in the community portal. Questions and bugs go through GitHub issues (public, so no personal data); data protection requests and legal matters about the portal go to the e-mail address in the [portal's imprint](https://benini.access.ly:8088/imprint). The software is provided as is, without warranty.

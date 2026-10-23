@@ -12,7 +12,7 @@ Mit dem MCP-Server können Claude und andere Clients zeichnen, Bearbeitungen anl
 
 ### Einrichten
 
-1. **Externe Steuerung einschalten (empfohlen):** Datei → *Erweiterungen & KI …* → **Externe Steuerung erlauben**. ortino.CAM startet dann eine Schnittstelle, die **nur auf diesem Rechner** (`127.0.0.1`) mit einem zufälligen Zugangsschlüssel erreichbar ist. In der Statusleiste steht »Externe Steuerung«. Ohne diesen Schritt arbeitet `ortino-mcp` **eigenständig** mit einem eigenen Projekt im Speicher, und das Programmfenster sieht davon nichts.
+1. **Externe Steuerung einschalten (empfohlen):** Extras → *Erweiterungen & KI …* → **Externe Steuerung erlauben**. ortino.CAM startet dann eine Schnittstelle, die **nur auf diesem Rechner** (`127.0.0.1`) mit einem zufälligen Zugangsschlüssel erreichbar ist. In der Statusleiste steht »Externe Steuerung«. Ohne diesen Schritt arbeitet `ortino-mcp` **eigenständig** mit einem eigenen Projekt im Speicher, und das Programmfenster sieht davon nichts.
 2. **Claude Desktop:** *Einstellungen → Entwickler → Konfiguration bearbeiten* öffnet die Datei `claude_desktop_config.json`. Ergänze den Eintrag (den richtigen Pfad zeigt ortino.CAM unter *Erweiterungen & KI → Claude verbinden* zum Kopieren an):
 
    ```json

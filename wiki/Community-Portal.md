@@ -21,7 +21,7 @@ Stöbern und Herunterladen gehen **ohne Konto**.
 
 ## Im Programm laden und öffnen
 
-1. Öffne die Community über die **Weltkugel in der Kopfleiste**, mit `Strg+Umschalt+D`, über das Datei-Menü (»Community-Designs entdecken«) oder die Befehlspalette (`Strg+K`, »Community«).
+1. Öffne die Community über die **Weltkugel in der Kopfleiste**, mit `Strg+Umschalt+D`, über das Menü Extras (»Community-Designs entdecken«) oder die Befehlspalette (`Strg+K`, »Community«).
 2. Wähle ein Design und klicke **»Laden & öffnen«** (oder »Nur laden«).
 3. Das Programm prüft das Paket, **bevor** du es öffnest: Die Prüfsumme muss stimmen, Pfade im Paket dürfen nicht aus dem Ordner herausführen, Größen und Kompression müssen plausibel sein, und **ausführbare Inhalte werden abgelehnt**. Ein Paket ist höchstens 150 MB groß. Skripte aus Paketen werden **nie** ausgeführt, und aus einem Paket wird nie eine Maschinenaktion ausgelöst.
 4. Danach wählst du: **Als neues Projekt öffnen** (bei ungespeicherten Änderungen fragt das Programm zuerst) oder **In das aktuelle Projekt einfügen**. Beim Einfügen kommen nur die **Formen** (Umrisse) der Platte mittig auf die aktive Platte, als ein Rückgängig-Schritt. **Bearbeitungen, Werkzeuge und Variablen werden dabei nicht übernommen**, Texte kommen als Pfade.
@@ -74,4 +74,4 @@ Unter *Konto & Portale → Fehlersuche → Protokoll anzeigen* siehst du die Abl
 
 ## Kontakt
 
-Fragen, Fehler und Wünsche zum Portal gehen wie überall über [GitHub Issues](https://github.com/KlapSC/ortino-cam/issues/new/choose). Fräsdesigns (Schilder, Möbel, Muster) gehören ins Portal und nicht in das öffentliche Repository.
+Fragen, Fehler und Wünsche zum Portal gehen wie überall über [GitHub Issues](https://github.com/KlapSC/ortino-cam/issues/new/choose). Issues sind öffentlich: Schreib dort keine persönlichen Daten hinein. **Datenschutzanfragen und rechtliche Anliegen** zum Portal (Konto, Auskunft, Löschung, Sperre, Widerspruch gegen eine Entscheidung der Moderation) gehen an die E-Mail-Adresse im [Impressum des Portals](https://benini.access.ly:8088/imprint). Fräsdesigns (Schilder, Möbel, Muster) gehören ins Portal und nicht in das öffentliche Repository.

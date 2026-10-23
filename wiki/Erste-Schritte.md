@@ -8,10 +8,10 @@ Diese Seite führt dich vom ersten Start bis zum ersten Werkstück. Du lernst zu
 
 ## 1. Installieren und starten
 
-Wie du ortino.CAM installierst, steht unter [Installation und Updates](Installation-und-Updates). Beim ersten Start siehst du die **Willkommensseite**. Sie bietet vier Karten an:
+Wie du ortino.CAM installierst, steht unter [Installation und Updates](Installation-und-Updates). Beim ersten Start siehst du die **Willkommensseite**. Sie bietet vier Karten an (und, einmal nach dem Angebot »Maschine einrichten«, eine geführte Einführung, siehe Abschnitt 4):
 
 * **Neues Projekt:** Platte, Material und Maschine festlegen.
-* **Beispielprojekt Türschild:** ein fertiges Projekt ansehen.
+* **Beispiele ansehen:** die Beispielgalerie mit 13 fertigen Projekten, darunter das Türschild (siehe Abschnitt 4).
 * **Projekt öffnen:** eine gespeicherte `.ocam`-Datei weiterbearbeiten.
 * **Datei importieren:** SVG, DXF, PDF/AI oder ein Bild übernehmen.
 
@@ -19,7 +19,7 @@ Neue Nutzer starten im **Einfach-Modus**. Er zeigt je Bearbeitung nur die wichti
 
 ## 2. Das Beispielprojekt öffnen
 
-Auf der Willkommensseite klickst du auf **Beispielprojekt Türschild**. Alternativ lädst du die Datei `tuerschild.ocam` von der [Release-Seite](https://github.com/KlapSC/ortino-cam/releases/latest) herunter und öffnest sie per Doppelklick oder mit `Strg+O`. Auch die Befehlspalette (`Strg+K`) kennt »Beispielprojekt „Türschild“ laden«.
+Auf der Willkommensseite klickst du auf **Beispiele ansehen** und wählst das **Türschild**. Alternativ lädst du die Datei `tuerschild.ocam` von der [Release-Seite](https://github.com/KlapSC/ortino-cam/releases/latest) herunter und öffnest sie per Doppelklick oder mit `Strg+O`. Auch die Befehlspalette (`Strg+K`) kennt »Beispielprojekt „Türschild“ laden«.
 
 Das Projekt ist ein Namensschild: 400 × 200 mm groß, 12 mm Sperrholz, mit der Aufschrift »Büro 12«, zwei Befestigungslöchern und einer abgerundeten Außenkontur. Die Maschine im Projekt ist eine **generische GRBL-Fräse 600 × 400**. Das ist nur eine Vorlage, deine Maße trägst du später ein (siehe [Maschine einrichten](Maschine-einrichten)).
 
@@ -53,7 +53,57 @@ Gehe die Schritte am Beispiel durch:
 
 **Wichtig bei Schnittwerten:** Alle Vorschläge für Vorschub und Drehzahl sind **Richtwerte**, keine Gewähr. Sie hängen von deiner Maschine, deinem Fräser und deinem Material ab. Prüfe sie, fange vorsichtig an und probiere mit einem Reststück. Mehr unter [Werkzeuge und Schnittdaten](Werkzeuge-und-Schnittdaten).
 
-## 4. Speichern und Rückgängig
+## 4. Beispiele, Einführung und Lektionen
+
+Drei Hilfen für den Anfang. Du findest sie im Menü **Hilfe** der Kopfleiste und in der Befehlspalette (`Strg+K`).
+
+> **Ehrlich zum Stand:** Alle Beispiele und Lektionen sind **nicht gefräst**. Sie sind mit Tests, der Simulation und einem Browser (Chromium) geprüft, nie an einer echten Maschine und nicht unter Windows (WebView2). Fahre ein Beispiel zuerst ohne Werkzeug und ohne Material, und fange danach mit einem Reststück an.
+
+### Beispielgalerie
+
+![Beispielgalerie mit Türschild, Namensschild, Untersetzer-Set und weiteren Projekten](https://raw.githubusercontent.com/KlapSC/ortino-cam/main/docs/bilder/galerie-light.png)
+
+Der Dialog **»Beispiele«** zeigt 13 fertige kleine Projekte als Kacheln. Jede Kachel nennt Vorschau, Material und Dicke, geschätzte Fräszeit, Plattengröße, die Arten der Bearbeitungen und die Stufe (**Einsteiger** oder **Fortgeschritten**). Filter und Suche (auch auf Englisch) helfen beim Finden. Du öffnest die Galerie im Datei-Menü (»Beispiele ansehen …«), auf der Willkommensseite, im leeren Zeichenbereich, im Hilfe-Menü oder mit `Strg+K`.
+
+* Ein Klick öffnet das Beispiel **als neues Projekt** im Schritt »Design«. Hat das offene Projekt ungespeicherte Änderungen, fragt das Programm vorher nach. Beim Speichern fragt es nach einem Namen, das Original bleibt unverändert.
+* **Einsteiger:** Türschild, Namensschild (mit Eingabeformular), Untersetzer-Set, Schneidebrett mit Griff, Regalseiten mit Dübellöchern, Regalboden mit Lochraster, Lochblech-Panel.
+* **Fortgeschritten:** Gravurkarte, rundes Schild mit Bogentext, Fingerzinken-Ecke, Wandpaneel mit Wabenmuster, Intarsie Stern, Relief-Rosette.
+* Die Zeiten sind Schätzungen der reinen Bahnzeit, ohne Aufspannen, Nullpunkt und Werkzeugwechsel. Das Relief rechnet in Entwurfsqualität und ist mit rund 45 Minuten das längste Beispiel.
+* Beim ersten Öffnen der Galerie rechnet das Programm die Vorschauen. Das dauert einige Sekunden.
+* Nimmt das Beispiel die Maschine aus deiner Einrichtung, übernimmt es auch deren Voreinstellungen. Ist ein Beispiel größer als der Arbeitsbereich deiner Maschine, steht das auf der Kachel.
+
+### Geführte Einführung
+
+![Geführte Einführung: Karte »Fünf Schritte, ein Weg« mit hervorgehobener Schrittleiste](https://raw.githubusercontent.com/KlapSC/ortino-cam/main/docs/bilder/einfuehrung-light.png)
+
+Ein Rundgang durch die fünf Schritte und die wichtigsten Stellen: 11 Karten im Experten-Modus, 12 im Einfach-Modus. Das hervorgehobene Element bleibt **bedienbar**, die Überlagerung fängt keine Klicks ab. Die Karte hat Zurück, Weiter und Beenden. `Esc` beendet jederzeit, mit `←` und `→` blätterst du, wenn der Fokus in der Karte liegt.
+
+* Er startet **einmal von selbst**, nachdem das Angebot »Maschine einrichten« erledigt ist, und nur auf der Willkommensseite eines leeren Projekts, nie über einem Dialog.
+* Erneut starten: **Hilfe → Einführung starten** oder `Strg+K` → »Einführung starten«.
+* Die Einführung wechselt nur die Arbeitsschritte und **ändert nie dein Projekt**. Findet sie ein Element nicht (zum Beispiel weil es in diesem Modus fehlt), erklärt sie den Schritt an der Schrittleiste oder überspringt ihn.
+* **Ungeprüft:** Position und Fokus der Karte sind nur im Browser getestet, nicht unter Windows (WebView2) und nicht bei 125 oder 150 % Skalierung.
+
+### Lektionen
+
+![Dialog »Lernen« mit sechs Lektionen und den Aufgaben der ersten Lektion](https://raw.githubusercontent.com/KlapSC/ortino-cam/main/docs/bilder/lektionen-light.png)
+
+Der Dialog **»Lernen«** (Hilfe → Lektionen) bietet sechs Lektionen mit Fortschrittsring, Richtzeit und Stufe. Läuft eine Lektion, zeigt eine Karte in einer Ecke die Aufgaben. **Jede Aufgabe hakt sich selbst ab**, sobald dein Projekt den Zustand erreicht hat. Die Karte lässt sich einklappen, in eine andere Ecke legen und pausieren. Der Fortschritt bleibt auf diesem Rechner erhalten.
+
+| Lektion | Stufe, Richtzeit |
+|---|---|
+| Erstes Schild: Text gravieren und ausschneiden | Einsteiger, ca. 15 min |
+| Teil ausschneiden mit Haltestegen | Einsteiger, ca. 10 min |
+| Tasche und Gravur mit V-Fräser | Fortgeschritten, ca. 20 min |
+| Nullpunkt und Antasten (Simulator) | Einsteiger, ca. 10 min |
+| Mehrere Teile auf eine Platte (Plattenplaner) | Fortgeschritten, ca. 10 min |
+| Maschine einrichten (Profil, Post, Verbindung) | Einsteiger, ca. 10 min |
+
+* Die Lektionen beginnen auf Wunsch in einem **neuen leeren Projekt** (mit Rückfrage bei ungespeicherten Änderungen). Wer im offenen Projekt weitermacht, bekommt sofort abgehakt, was dort schon stimmt.
+* Die Lektionen »Nullpunkt und Antasten« und »Maschine einrichten« laufen gegen den **Simulator**. Das Antasten ist an einer echten Maschine in diesem Zusammenhang nicht getestet.
+* Jede Lektion verweist auf eine Anleitung. Das Programm bringt sie mit und zeigt sie in einem kleinen Leser. Die Anleitungen gibt es **nur auf Deutsch**, auch in der englischen Oberfläche.
+* Die Erkennung sieht nur, was im Projekt und in den beobachteten Aktionen steckt. Ob ein Rechteck »ein Schild« ist, weiß sie nicht. Ein Meilenstein wie »Simulation abgespielt« gilt je Sitzung: Nach einem Neustart zählt er erst wieder, wenn du es erneut tust. Bereits abgehakte Aufgaben bleiben abgehakt.
+
+## 5. Speichern und Rückgängig
 
 * `Strg+S` speichert das Projekt als `.ocam`-Datei, `Strg+Umschalt+S` speichert unter einem neuen Namen.
 * `Strg+Z` macht Schritte rückgängig (bis zu 200), `Strg+Y` oder `Strg+Umschalt+Z` stellt sie wieder her. Auch Aktionen von Assistenten, Schnellstart und Claude sind je ein Schritt.

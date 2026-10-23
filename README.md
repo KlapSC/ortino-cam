@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img alt="Version 0.3.8" src="https://img.shields.io/badge/Version-0.3.8-ff9a40?style=flat-square">
+  <img alt="Version 0.3.11" src="https://img.shields.io/badge/Version-0.3.11-ff9a40?style=flat-square">
   <img alt="Windows 10 und 11" src="https://img.shields.io/badge/Windows-10%20%7C%2011-0078d4?style=flat-square&logo=windows&logoColor=white">
   <img alt="GRBL" src="https://img.shields.io/badge/Steuerung-GRBL-2b6cb0?style=flat-square">
   <img alt="MCP für Claude" src="https://img.shields.io/badge/Claude-MCP%20%26%20API-d97757?style=flat-square">
@@ -38,17 +38,17 @@
 </p>
 
 > [!WARNING]
-> **Frühe Version (0.3.x): nicht alles ist an einer echten Maschine erprobt.** An echter Hardware erprobt sind bisher nur Taschen, V-Carving, Konturen, Referenzfahrt und Werkzeugwechsel mit der Tastplatte (Version 0.3.3, Ultimate Bee mit xPRO V5). **Nur gegen Simulator und Tests geprüft** sind fester Taster, Messung der Opferplatte, Höhenkarte, Handy-Fernbedienung, »An Position fahren«, der Längensensor, **Gewindefräsen, Wartungsplan, die Kamera auf der Arbeitsplatte** und die neuen Postprozessoren. Immer zuerst **ohne Werkzeug und Material** testen, Not-Aus in Reichweite. Siehe [Haftungsausschluss](#haftungsausschluss).
+> **Frühe Version (0.3.x): nicht alles ist an einer echten Maschine erprobt.** An echter Hardware erprobt sind bisher nur Taschen, V-Carving, Konturen, Referenzfahrt und Werkzeugwechsel mit der Tastplatte (Version 0.3.3, Ultimate Bee mit xPRO V5, **GRBL**); dazu laut Rückmeldung des Betreibers das **Einrichten des festen Tasters und das Einmessen eines Werkzeugs an ihm** (Version 0.3.10, dieselbe Maschine). **Alle anderen Postprozessoren und Steuerungen** (grblHAL, FluidNC, Mach3/4, LinuxCNC, UCCNC, Centroid, ShopBot, MASSO, PlanetCNC) sind **nicht an einer echten Maschine erprobt**. **Nur gegen Simulator und Tests geprüft** sind der Werkzeugwechsel am festen Taster mitten im Programm, Messung der Opferplatte, Höhenkarte, Handy-Fernbedienung, »An Position fahren«, der Längensensor, **Gewindefräsen, Wartungsplan und die Kamera auf der Arbeitsplatte**. **Alles Neue aus 0.3.9 und 0.3.11** (Beispielgalerie, Einführung, Lektionen, Array entlang eines Pfads, Béziers, Seriennummern, Stückzahl; **doppelseitiges Fräsen mit Passstiften**, Z-Null »Opferplatte« als Vorgabe bei festem Taster, aufgeteilte Menüleiste, Einstellungen-Dialog) lief nur gegen Tests, Simulator und im Browser (Chromium) und ist **nicht systematisch unter Windows (WebView2)** geprüft. Die **Beispiele** der Galerie und die **Lektionen** sind nicht gefräst, und **Béziers aus SVG und PDF** sind nur mit selbst erzeugten Dateien geprüft. Die **Handy-Fernbedienung ist unverschlüsselt** (nur im eigenen, vertrauenswürdigen WLAN). Immer zuerst **ohne Werkzeug und Material** testen, Not-Aus in Reichweite. Siehe [Haftungsausschluss](#haftungsausschluss).
 
 ## Auf einen Blick
 
 * **Alles in einer Anwendung:** zeichnen, Werkzeugwege berechnen, in 3D simulieren, prüfen und die Maschine fahren – kein Dateien-Hin-und-Her zwischen mehreren Programmen.
 * **Prüft, bevor es fräst:** Prüfliste mit Lösungsvorschlägen und ein Start-Check vor jedem Lauf; bei Fehlern sind Export und Maschinenstart gesperrt.
-* **Für Einsteiger und Erfahrene:** Der Einfach-Modus schlägt Werkzeug, Tiefen und Schnittwerte vor und begründet sie; der Experten-Modus zeigt alle Einstellungen.
+* **Für Einsteiger und Erfahrene:** Der Einfach-Modus schlägt Werkzeug, Tiefen und Schnittwerte vor und begründet sie; der Experten-Modus zeigt alle Einstellungen. Eine **Beispielgalerie**, eine **geführte Einführung** und **Lektionen** helfen beim Einstieg.
 * **Direkt an die Maschine:** GRBL-Steuerungen über USB/COM oder Netzwerk, mit Handsteuerung, Referenzfahrt, Antasten und Werkzeugwechsel-Assistent.
 * **Möbel und Platten:** Plattenplaner mit Freiform-Nesting, Fingerzinken, Küchen- und Schrank-Designer mit Stückliste.
 * **Gemeinsam:** Community-Portal mit Fräsdesigns zum Laden und Teilen, dazu ein MCP-Server, mit dem **Claude** das Programm bedienen kann.
-* **Kostenlos** für private und gewerbliche Nutzung, **Windows 10/11 (64 Bit)**. Ehrlich zum Stand: Es ist eine frühe Version, und was an einer echten Maschine erprobt ist und was nicht, steht [oben](#in-drei-schritten-zum-werkstück) und im [Haftungsausschluss](#haftungsausschluss).
+* **Kostenlos** für private und gewerbliche Nutzung, **Windows 10/11 (64 Bit)**. Ehrlich zum Stand: Es ist eine frühe Version, und was an einer echten Maschine erprobt ist und was nicht, steht im Warnhinweis ganz oben, unter [Maschinen und Steuerungen](#maschinen-und-steuerungen) und im [Haftungsausschluss](#haftungsausschluss).
 
 ## In drei Schritten zum Werkstück
 
@@ -64,23 +64,38 @@
 | <picture><source media="(prefers-color-scheme: light)" srcset="docs/bilder/ruestblatt-light.png"><img src="docs/bilder/ruestblatt-dark.png" alt="Dialog Rüstblatt und Angebot mit Kosteneingaben und Seitenvorschau (erfundene Beispielwerte) / English: Setup sheet and quote dialog with cost inputs and page preview (made-up sample values)" width="100%"></picture> | <picture><source media="(prefers-color-scheme: light)" srcset="docs/bilder/einrichtung-light.png"><img src="docs/bilder/einrichtung-dark.png" alt="Assistent „Maschine einrichten“: Maschinenkatalog mit Größen und gekennzeichneten Herstellerangaben / English: Machine setup assistant: machine catalogue with sizes and flagged manufacturer data" width="100%"></picture> | <picture><source media="(prefers-color-scheme: light)" srcset="docs/bilder/moebel-light.png"><img src="docs/bilder/moebel-dark.png" alt="Möbel- und Küchen-Designer: Küchenzeile in 3D und Frontansicht mit Schrankliste / English: Furniture and kitchen designer: kitchen row in 3D and front view with cabinet list" width="100%"></picture> |
 | Vorschau des PDFs mit Werkzeugliste, Reihenfolge und Zeitschätzung, dazu Kostenrechnung<br><sub>Setup sheet and quote: PDF preview, tool list, sequence, time estimate, costs</sub> | Katalog mit Größen; Händlerwerte sind als »ungeprüft« oder »Herstellerangabe, bitte prüfen« gekennzeichnet<br><sub>Machine setup: catalogue with sizes; dealer values are flagged</sub> | Küchenzeile in 3D und Frontansicht, mit Stückliste und Zuschnitt (Beispiel)<br><sub>Furniture and kitchen: kitchen row in 3D and front view, parts list and cutting plan</sub> |
 
+### Neu in 0.3.11: Z-Null, Menüs, doppelseitig fräsen
+
+* **Z-Null liegt mit festem Taster von selbst auf der Opferplatte.** Neue Projekte beginnen dann mit »Tisch (Opferplatte)«; ohne festen Taster bleibt es bei der Plattenoberseite. Wer es anders will, stellt es unter **Einstellungen ▸ Maschine & Z-Null** ein. Bestehende Projekte ändern sich nie; ein Klick (»Auf Opferplatte stellen«) stellt ein älteres Projekt um, mit Rückfrage, weil sich die Tiefen im G-Code ändern.
+* **Aufgeteilte Menüleiste und eigenes Einstellungen-Menü:** *Datei*, *Erstellen*, *Extras* und *Einstellungen* (Maschine, Fräser, Postprozessor, Darstellung). Der Einstellungen-Dialog öffnet sich auch mit **Strg+,** und braucht kein geöffnetes Projekt. Zu lange Menüs scrollen, statt abgeschnitten zu werden.
+* **Doppelseitig fräsen mit Passstiften:** Seite A fräsen, wenden, Seite B fräsen. Das Programm von Seite A bohrt zwei Passlöcher im Verschnittrand bis in die Opferplatte; Wendeachse links ↔ rechts oder oben ↔ unten. Mit Prüfungen, Abschnitt im Rüstblatt und Bestätigung im Start-Check. Anleitung: [Doppelseitig fräsen](https://github.com/KlapSC/ortino-cam/wiki/Doppelseitig-fraesen) im Wiki. *(Nur gegen Tests, Simulator und Chromium geprüft, nicht an einer echten Maschine; es gibt keine gemeinsame Simulation beider Seiten.)*
+* **Bestätigt an einer echten Maschine** (Rückmeldung des Betreibers, Version 0.3.10, Ultimate Bee mit xPRO V5): das Einrichten des festen Tasters und das Einmessen eines Werkzeugs an ihm. Alles andere Neue bleibt in der Liste unten und im Warnhinweis ganz oben als nicht an einer Maschine erprobt gekennzeichnet.
+
+### Neu in 0.3.9: Einstieg und Stückzahl
+
+| Beispielgalerie | Geführte Einführung | Stückzahl &amp; Staffel |
+|:--:|:--:|:--:|
+| <picture><source media="(prefers-color-scheme: light)" srcset="docs/bilder/galerie-light.png"><img src="docs/bilder/galerie-dark.png" alt="Beispielgalerie mit Türschild, Namensschild, Untersetzer-Set und weiteren Projekten, Hinweis „Nicht gefräst“ / English: Example gallery with door sign, name sign, coaster set and more projects, note “Not milled”" width="100%"></picture> | <picture><source media="(prefers-color-scheme: light)" srcset="docs/bilder/einfuehrung-light.png"><img src="docs/bilder/einfuehrung-dark.png" alt="Geführte Einführung: Karte „Fünf Schritte, ein Weg“ mit hervorgehobener Schrittleiste / English: Guided tour: card “Five steps, one way” with the step bar highlighted" width="100%"></picture> | <picture><source media="(prefers-color-scheme: light)" srcset="docs/bilder/stueckzahl-light.png"><img src="docs/bilder/stueckzahl-dark.png" alt="Dialog Rüstblatt und Angebot mit Staffeltabelle für 1, 5, 10 und 25 Lose und Angebotsvorschau (erfundene Beispielwerte) / English: Setup sheet and quote dialog with a tier table for 1, 5, 10 and 25 lots and quote preview (made-up sample values)" width="100%"></picture> |
+| 13 Beispielprojekte zum Öffnen und Abwandeln; sie sind **nicht gefräst**<br><sub>Example gallery: 13 projects to open and adapt; not milled</sub> | Rundgang durch die fünf Schritte; dazu 6 Lektionen mit Aufgaben, die sich selbst abhaken<br><sub>Guided tour of the five steps, plus 6 lessons with self-checking tasks</sub> | Menge, Staffel und Ausschuss im Angebot: Rüsten fällt einmal je Auftrag an<br><sub>Quantity, price tiers and scrap in the quote: setup counts once per job</sub> |
+
 <sub>Aufnahmen der Oberfläche; die Maschine im Schritt »Fräsen« ist der eingebaute Simulator, Namen, Preise und Werte in den Beispielen sind erfunden. / Screenshots of the interface; the machine in the “Cut” step is the built-in simulator, names, prices and values in the examples are made up.</sub>
 
 ## Funktionen
 
 | | |
 |---|---|
-| ✏️ **Entwerfen** | Formen, Text (auch auf Pfad, Einzellinienschriften), Bézier-Stift, Knoten bearbeiten, Boolesche Operationen, Offset, Verrunden, Arrays, Variablen und Formeln mit Einheiten (`Breite/2 - 5mm`). Import von SVG, DXF, PDF/Illustrator und Bildern (nachzeichnen). |
-| 🧭 **Werkzeugwege** | Profil, Tasche, adaptives Räumen, Bohren, **Gewindefräsen** (metrisch, innen und außen), V-Carving, Inlay, Gravur, 3D-Relief. Postprozessoren für GRBL, grblHAL, FluidNC, Mach3/4 und LinuxCNC – dazu UCCNC, Centroid, ShopBot, MASSO und PlanetCNC *(nur nach Herstellerunterlagen, nicht erprobt)*. |
+| ✏️ **Entwerfen** | Formen, Text (auch auf Pfad, Einzellinienschriften), Bézier-Stift, Knoten bearbeiten, Boolesche Operationen, Offset, Verrunden, Arrays (auch **entlang eines Pfads**), **Seriennummern** in Texten (`{n:001}`), Variablen und Formeln mit Einheiten (`Breite/2 - 5mm`). Import von SVG, DXF, PDF/Illustrator und Bildern (nachzeichnen); **Béziers aus SVG und PDF bleiben Kurven** *(nur mit selbst erzeugten Dateien geprüft)*. |
+| 🧭 **Werkzeugwege** | Profil, Tasche, adaptives Räumen, Bohren, **Gewindefräsen** (metrisch, innen und außen; *nur Simulator, nicht an einer Maschine erprobt*), V-Carving, Inlay, Gravur, 3D-Relief. Postprozessoren für GRBL *(an der Ultimate Bee erprobt)*, grblHAL, FluidNC, Mach3/4 und LinuxCNC – dazu UCCNC, Centroid, ShopBot, MASSO und PlanetCNC *(nur nach Herstellerunterlagen)*. **Außer GRBL ist keiner an einer echten Maschine erprobt.** |
 | 🧊 **Prüfen** | Materialabtrag-Simulation in 3D, Eilgang-Kollision, Übermaß, Prüfliste mit Lösungsvorschlägen. Bei Fehlern sind Export und Maschinenstart gesperrt. |
 | 🪚 **Platten & Möbel** | Plattenplaner mit Freiform-Nesting, Passungen und Fingerzinken, Küchen- und Schrank-Designer mit Stückliste und Kantenband, Vorlagen und Serien aus CSV. |
 | 🎛️ **Maschinenanbindung** | GRBL-kompatibel über USB/COM oder TCP: Handsteuerung, Referenzfahrt, Antasten (Tastplatte oder XYZ-Eckblock), Werkzeugwechsel-Assistent (Längensensor, Tastplatte oder fester Taster), **Start-Check** vor jedem Lauf, Pause, Stopp, Start ab Zeile. |
+| 🔁 **Doppelseitig fräsen** | Seite A, wenden, Seite B – mit zwei Passstiften in der Opferplatte, wählbarer Wendeachse, 15 Prüfungen und Rüstblatt-Abschnitt. *(Nur Simulator, nicht an echter Maschine erprobt.)* |
 | 🧱 **Opferplatte** | Höhenkarte messen und beim Fräsen ausgleichen *(nur Simulator, nicht an echter Maschine erprobt)*. |
 | 📷 **Kamera auf der Arbeitsplatte** | Vier QR-Marken in den Ecken, das Kamerabild wird entzerrt und liegt millimetergenau unter dem Entwurf; Werkstück-Umriss erkennen. *(Nur mit erzeugten Bildern geprüft, nie mit einer echten Kamera.)* |
 | 🛠️ **Wartung & Standzeit** | Standzeit-Grenzen je Werkzeug, Wartungsplan je Maschine, Hinweise im Start-Check. *(Richtwerte, nur Simulator.)* |
-| 📱 **Handy-Fernbedienung** | Per QR-Code koppeln, in kleinen Schritten verfahren, Pause und Stopp – aus beim Start, nur im eigenen WLAN, unverschlüsselt. |
-| 🌱 **Für Einsteiger** | Einfach-Modus, Schnellstart »Was möchtest du fräsen?«, Hinweise mit Begründung, 250+ Fräser in einer Bibliothek, Richtwerte für Vorschub und Drehzahl. |
-| 📄 **Rüstblatt & Angebot** | PDF mit Werkzeugliste, Reihenfolge, Zeitschätzung und Vorschau – dazu Kostenrechnung. Deutsch und Englisch. |
+| 📱 **Handy-Fernbedienung** | Per QR-Code koppeln, in kleinen Schritten verfahren, Pause und Stopp – aus beim Start, nur im eigenen WLAN, unverschlüsselt. *(Nur Simulator, nicht an echter Maschine erprobt.)* |
+| 🌱 **Für Einsteiger** | Einfach-Modus, Schnellstart »Was möchtest du fräsen?«, **Beispielgalerie** mit 13 Beispielen, **geführte Einführung** durch die fünf Schritte, **6 Lektionen** mit Aufgaben, die sich selbst abhaken *(Beispiele und Lektionen sind nicht gefräst)*, Hinweise mit Begründung, 250+ Fräser in einer Bibliothek, Richtwerte für Vorschub und Drehzahl. |
+| 📄 **Rüstblatt & Angebot** | PDF mit Werkzeugliste, Reihenfolge, Zeitschätzung und Vorschau – dazu Kostenrechnung, auf Wunsch mit **Stückzahl, Staffel** (z. B. 1, 5, 10, 25) und Ausschusszuschlag. Deutsch und Englisch. |
 | 🌍 **Community-Portal** | Fräsdesigns entdecken, mit einem Klick laden und eigene teilen – im Programm integriert (Weltkugel in der Kopfleiste). [Mehr dazu](#community-portal-und-designs) |
 
 ## Community-Portal und Designs
@@ -92,7 +107,7 @@ Neben dem Programm gibt es ein **Community-Portal**: eine Webseite, auf der Frä
 * **Eigene Designs teilen:** im Programm über »Design teilen« oder auf der Webseite über »Hochladen«, mit einem kostenlosen Konto. Titel, Kategorie, Bilder, Beschreibung und Anleitung ergänzt du selbst; veröffentlichen kannst du öffentlich oder nicht gelistet. Beim Teilen aus dem Programm sucht ortino.CAM nach Dateipfaden und deinem Benutzernamen im Projekt und entfernt sie auf Wunsch aus dem Paket. Auch Vorlagen mit Eingabeformular lassen sich als Design teilen.
 * **Rechte und Lizenz:** Lade nur hoch, was du selbst erstellt hast oder teilen darfst. Jedes Design trägt eine Lizenz (CC BY, BY-SA, BY-NC, BY-NC-SA, BY-ND, CC0 oder »Alle Rechte vorbehalten«). Laut Community-Richtlinien nicht erlaubt: fremde Werke ohne Erlaubnis, geschützte Logos und Marken, Waffen oder rechtlich eingeschränkte Teile, gefährliche Anleitungen, absichtlich falsche Einstellungen, Schadsoftware. Verstöße lassen sich über »Melden« der Moderation anzeigen.
 * **Katalog eigener Designs:** Als Grundstock ist ein Katalog mit 17 eigenen Beispiel-Designs vorbereitet: Leuchten, Wandbilder, Stühle und Tische. Sie stammen vom KI-Konto »Claude«, wurden **nur am Rechner geprüft** (Prüfliste, G-Code, Simulation) und **nie gefräst oder belastet**; bei Möbeln erst einen Prototyp bauen.
-* **Adresse und Kontakt:** [benini.access.ly:8088](https://benini.access.ly:8088) – im Programm schon eingetragen. Fragen, Fehler und Wünsche zum Portal wie überall über [GitHub Issues](https://github.com/KlapSC/ortino-cam/issues/new/choose).
+* **Adresse und Kontakt:** [benini.access.ly:8088](https://benini.access.ly:8088) – im Programm schon eingetragen. Fragen, Fehler und Wünsche zum Portal wie überall über [GitHub Issues](https://github.com/KlapSC/ortino-cam/issues/new/choose). **Datenschutzanfragen und rechtliche Anliegen** zum Portal (Konto, Auskunft, Löschung, Sperre) gehen an die E-Mail-Adresse im [Impressum des Portals](https://benini.access.ly:8088/imprint), nicht in ein öffentliches Issue: Dort gehören keine persönlichen Daten hin.
 * **Stand:** Das Portal wird von einer **Einzelperson** betrieben und ist **noch im Aufbau**. Das Zusammenspiel von Programm und Portal ist gegen eine lokale Testinstallation geprüft; nicht alles ist im Betrieb im Internet erprobt, zum Beispiel »In ortino.CAM öffnen« aus dem Browser unter Windows. Schnittwerte in Designs (Vorschub, Drehzahl, Tiefe) sind Angaben der Ersteller und gehören zu deren Maschine und Material: vor dem Fräsen im Programm prüfen, mit einem Reststück beginnen.
 
 | Startseite | Suche | Designseite |
@@ -117,7 +132,7 @@ Alongside the app there is a **community portal**: a website where milling desig
 * **Share your own:** from the app (“Share design”) or on the website (“Upload”), with a free account. The app looks for file paths and your user name in the project and can strip them from the package. Templates with an input form can be shared as designs, too.
 * **Rights and licence:** upload only what you made yourself or are allowed to share. Every design carries a licence (CC BY, BY-SA, BY-NC, BY-NC-SA, BY-ND, CC0 or all rights reserved). The community guidelines do not allow other people’s work without permission, protected logos and trademarks, weapons or legally restricted parts, dangerous instructions, deliberately wrong settings, or malware.
 * **Catalogue:** 17 own sample designs (lamps, wall art, chairs, tables) are prepared as a starting stock. They come from the AI account “Claude”, were checked on the computer only (pre-flight check, G-code, simulation) and were never milled or load-tested.
-* **Address and contact:** [benini.access.ly:8088](https://benini.access.ly:8088), already set up in the app. Questions, bugs and wishes about the portal go through [GitHub issues](https://github.com/KlapSC/ortino-cam/issues/new/choose), as everywhere.
+* **Address and contact:** [benini.access.ly:8088](https://benini.access.ly:8088), already set up in the app. Questions, bugs and wishes about the portal go through [GitHub issues](https://github.com/KlapSC/ortino-cam/issues/new/choose), as everywhere. **Data protection requests and legal matters** about the portal (account, access, deletion, suspension) go to the e-mail address in the [portal’s imprint](https://benini.access.ly:8088/imprint), not into a public issue: personal data does not belong there.
 * **Status:** the portal is run by **one person** and is **still being built**. The interplay of app and portal is tested against a local test installation, not everything in live operation on the internet (for example “Open in ortino.CAM” from the browser on Windows). Feeds and speeds in designs are the creators’ values: check them before cutting and start with an offcut.
 
 The portal images show **sample data from a local installation** (the catalogue designs, without user numbers); the portal on the internet may look different.
@@ -155,6 +170,8 @@ Einstellungen der Steuerung (`$…=`) schreibt ortino.CAM **auf keiner Stufe**, 
 }
 ```
 
+Der Pfad gilt für die Installation mit der `setup.exe`. Den genauen Pfad auf deinem Rechner (auch nach einer Installation mit der `.msi`) zeigt ortino.CAM unter *Erweiterungen & KI → Claude verbinden* zum Kopieren an.
+
 ```bash
 ortino check  tuerschild.ocam
 ortino gcode  tuerschild.ocam -o tuerschild.nc --post grbl
@@ -170,13 +187,13 @@ Eine kurze, sachliche Gegenüberstellung mit den Stärken beider Seiten. Verglic
 | **Preis** | kostenlos | einmalig rund 1.800 € (laut Preisliste des Herstellers; Updates im ersten Jahr inklusive) |
 | **System** | Windows 10/11, 64 Bit | Windows (Mac nur über eine Windows-Virtualisierung) |
 | **2D-Entwurf, Profil, Tasche, V-Carving, Gravur, Inlay** | ja | ja |
-| **3D-Relief** | Reliefs aus Mustern, Höhenbildern und Formen erzeugen und fräsen; kleiner Umfang; Modellierwerkzeuge (Skulptieren, Komponenten) für Version 0.4.0 geplant | umfangreiche 3D-Modellierung (Formen, Skulptieren, Komponenten) – <strong>hier ist Aspire klar stärker</strong> |
+| **3D-Relief** | Reliefs aus Mustern, Höhenbildern und Formen erzeugen und Werkzeugwege dafür berechnen (nicht an einer echten Maschine erprobt); kleiner Umfang; Modellierwerkzeuge (Skulptieren, Komponenten) für Version 0.4.0 geplant | umfangreiche 3D-Modellierung (Formen, Skulptieren, Komponenten) – <strong>hier ist Aspire klar stärker</strong> |
 | **Vierte Achse (Rotary)** | nein – für Version 0.4.0 geplant | ja |
 | **Nesting** | ja (Plattenplaner mit Freiform-Nesting) | ja |
-| **Zur Maschine schicken** | direkt aus dem Programm an GRBL-Steuerungen (USB/COM, TCP), mit Start-Check, Antasten und Werkzeugwechsel-Assistent | erzeugt G-Code-Dateien, die ein separates Steuerungsprogramm ausführt |
-| **Postprozessoren** | GRBL, grblHAL, FluidNC, Mach3/4, LinuxCNC; UCCNC, Centroid, ShopBot, MASSO, PlanetCNC (nicht erprobt); weitere Steuerungen laufend, Beiträge willkommen | sehr großer Katalog, online verwaltet; deutlich mehr Steuerungen |
+| **Zur Maschine schicken** | direkt aus dem Programm an GRBL-Steuerungen (USB/COM, TCP), mit Start-Check, Antasten und Werkzeugwechsel-Assistent; an einer echten Maschine erprobt nur mit GRBL an der Ultimate Bee | erzeugt G-Code-Dateien, die ein separates Steuerungsprogramm ausführt |
+| **Postprozessoren** | GRBL (an der Ultimate Bee erprobt); grblHAL, FluidNC, Mach3/4, LinuxCNC, UCCNC, Centroid, ShopBot, MASSO, PlanetCNC (nicht an einer echten Maschine erprobt, die letzten fünf nur nach Herstellerunterlagen); weitere Steuerungen laufend, Beiträge willkommen | sehr großer Katalog, online verwaltet; deutlich mehr Steuerungen |
 | **Steuerung durch Claude (MCP-Server, lokale API)** | ja | keine Angabe des Herstellers gefunden |
-| **Reife** | junge Software (0.3.x), nur Teile an einer echten Maschine erprobt | seit Jahren etabliert, große Nutzergemeinde |
+| **Reife** | junge Software (0.3.x), nur Teile an einer echten Maschine erprobt (eine Maschine, GRBL); Neues aus 0.3.9 und 0.3.11 nicht systematisch unter Windows (WebView2) geprüft | seit Jahren etabliert, große Nutzergemeinde |
 | **Hilfe** | Anleitungen im Repository, Fragen über GitHub Issues (Einzelperson) | Hersteller-Support, Handbuch, Videos, Forum |
 | **Kompatibilität** | liest Vectric-Werkzeugdatenbanken (.vtdb; das Format ist nicht offiziell dokumentiert, mit einer echten Vectric-Datei bisher nicht getestet) | – |
 
@@ -196,13 +213,13 @@ A short, factual comparison that names the strengths of both sides. The comparis
 | **Price** | free | one-off, about €1,800 (according to the manufacturer’s price list; updates included in the first year) |
 | **System** | Windows 10/11, 64-bit | Windows (Mac only through Windows virtualisation) |
 | **2D design, profile, pocket, V-carving, engraving, inlay** | yes | yes |
-| **3D relief** | creates and mills reliefs from patterns, height images and shapes; small scope; modelling tools (sculpting, components) planned for version 0.4.0 | extensive 3D modelling (shapes, sculpting, components) – <strong>Aspire is clearly stronger here</strong> |
+| **3D relief** | creates reliefs from patterns, height images and shapes and computes toolpaths for them (not tested on a real machine); small scope; modelling tools (sculpting, components) planned for version 0.4.0 | extensive 3D modelling (shapes, sculpting, components) – <strong>Aspire is clearly stronger here</strong> |
 | **Fourth axis (rotary)** | no – planned for version 0.4.0 | yes |
 | **Nesting** | yes (sheet planner with free-form nesting) | yes |
-| **Sending to the machine** | straight from the app to GRBL controllers (USB/COM, TCP), with start check, probing and tool-change assistant | produces G-code files that a separate control program runs |
-| **Post-processors** | GRBL, grblHAL, FluidNC, Mach3/4, LinuxCNC; UCCNC, Centroid, ShopBot, MASSO, PlanetCNC (untested); more controllers ongoing, contributions welcome | very large catalogue, managed online; considerably more controllers |
+| **Sending to the machine** | straight from the app to GRBL controllers (USB/COM, TCP), with start check, probing and tool-change assistant; tested on a real machine only with GRBL on the Ultimate Bee | produces G-code files that a separate control program runs |
+| **Post-processors** | GRBL (tested on the Ultimate Bee); grblHAL, FluidNC, Mach3/4, LinuxCNC, UCCNC, Centroid, ShopBot, MASSO, PlanetCNC (not tested on a real machine, the last five written from manufacturer documentation only); more controllers ongoing, contributions welcome | very large catalogue, managed online; considerably more controllers |
 | **Control by Claude (MCP server, local API)** | yes | no statement from the manufacturer found |
-| **Maturity** | young software (0.3.x), only parts tested on a real machine | established for years, large user community |
+| **Maturity** | young software (0.3.x), only parts tested on a real machine (one machine, GRBL); what is new in 0.3.9 and 0.3.11 has not been systematically tested on Windows (WebView2) | established for years, large user community |
 | **Help** | guides in the repository, questions via GitHub issues (one person) | manufacturer support, manual, videos, forum |
 | **Compatibility** | reads Vectric tool databases (.vtdb; the format is not officially documented, not yet tested with a real Vectric file) | – |
 
@@ -226,7 +243,7 @@ A short, factual comparison that names the strengths of both sides. The comparis
 
 1. **Installieren** (siehe oben) und starten.
 2. **Maschine einrichten:** Der Assistent »Maschine einrichten« (Schritt »Projekt«) bietet einen Katalog mit Größen und Steuerung; eigene Maschinen sind möglich. Die Maße aus dem Katalog sind teils Herstellerangaben, teils abgeleitet – sie sind als solche gekennzeichnet; bitte einmal nachmessen.
-3. **Etwas zum Fräsen wählen:** über »Was möchtest du fräsen?« einen Startpunkt wählen oder das Beispielprojekt `tuerschild.ocam` aus den Releases öffnen.
+3. **Etwas zum Fräsen wählen:** über »Was möchtest du fräsen?« einen Startpunkt wählen, ein Projekt aus der **Beispielgalerie** öffnen (Datei-Menü oder Strg+K) oder das Beispielprojekt `tuerschild.ocam` aus den Releases laden. Wer möchte, startet vorher die **geführte Einführung** (Hilfe-Menü) oder übt mit den **Lektionen**.
 4. **Bearbeiten:** Bearbeitungen anlegen (Profil, Tasche, Bohren, V-Carving …). Im Einfach-Modus kommen Werkzeug, Tiefen und Schnittwerte als Vorschlag mit Begründung.
 5. **Prüfen:** 3D-Simulation ansehen und die Prüfliste abarbeiten.
 6. **Fräsen:** Maschine verbinden, Nullpunkt setzen, Start-Check lesen. **Zuerst ohne Werkzeug und ohne Material fahren**, Not-Aus in Reichweite, dann mit einem Reststück beginnen.
@@ -235,9 +252,9 @@ A short, factual comparison that names the strengths of both sides. The comparis
 
 | | |
 |---|---|
-| **Direkt angebunden** | GRBL-kompatible Steuerungen (GRBL 1.1, grblHAL, FluidNC) über USB/COM oder TCP |
+| **Direkt angebunden** | GRBL-kompatible Steuerungen (GRBL 1.1, grblHAL, FluidNC) über USB/COM oder TCP; an einer echten Maschine erprobt nur GRBL (Ultimate Bee) |
 | **Maschinenkatalog** | u. a. Bulkman3D (Ultimate Bee, CNC xPRO V5), Carbide 3D, Onefinity, Sienci Labs, SainSmart, OpenBuilds, Inventables und eine generische GRBL-Vorlage |
-| **G-Code zum Export** | Postprozessoren für Mach3/Mach4 und LinuxCNC sowie UCCNC, Centroid, ShopBot, MASSO und PlanetCNC (diese fünf nur nach Herstellerunterlagen, **nicht erprobt**; ohne direkte Anbindung); eigene Postprozessoren als Textdatei möglich ([`postprozessoren/`](postprozessoren/)) |
+| **G-Code zum Export** | Postprozessoren für Mach3/Mach4 und LinuxCNC sowie UCCNC, Centroid, ShopBot, MASSO und PlanetCNC (ohne direkte Anbindung; **keiner davon an einer echten Maschine erprobt**, die letzten fünf nur nach Herstellerunterlagen); eigene Postprozessoren als Textdatei möglich ([`postprozessoren/`](postprozessoren/)) |
 | **An echter Maschine erprobt** | bisher nur die Ultimate Bee mit xPRO V5 (siehe Hinweis oben) – **Berichte von anderen Maschinen sind sehr willkommen** ([Vorlage »Test an einer echten Maschine«](https://github.com/KlapSC/ortino-cam/issues/new/choose)) |
 
 ## Sicherheit
@@ -289,7 +306,7 @@ Nein. Alles Wesentliche läuft ohne. Den MCP-Server und den Assistenten im Progr
 <details>
 <summary><strong>Funktioniert es mit meiner Maschine?</strong></summary>
 
-Mit GRBL-kompatiblen Steuerungen (GRBL 1.1, grblHAL, FluidNC) ja, direkt aus dem Programm. Erprobt ist bisher nur die Ultimate Bee mit xPRO V5, alles andere ist **nicht an einer echten Maschine geprüft**. Für andere Steuerungen (Mach3/Mach4, LinuxCNC, UCCNC, Centroid, ShopBot, MASSO, PlanetCNC) erzeugt das Programm G-Code zum Export; die letzten fünf sind nicht erprobt. Prüfe die Maße im Maschinenprofil und fahre zuerst ohne Werkzeug und Material.
+Mit GRBL-kompatiblen Steuerungen (GRBL 1.1, grblHAL, FluidNC) ja, direkt aus dem Programm. Erprobt ist bisher nur die Ultimate Bee mit xPRO V5, alles andere ist **nicht an einer echten Maschine geprüft**. Für andere Steuerungen (Mach3/Mach4, LinuxCNC, UCCNC, Centroid, ShopBot, MASSO, PlanetCNC) erzeugt das Programm G-Code zum Export; keiner dieser Postprozessoren ist an einer echten Maschine erprobt, die letzten fünf sind nur nach Herstellerunterlagen geschrieben. Prüfe die Maße im Maschinenprofil und fahre zuerst ohne Werkzeug und Material.
 </details>
 
 <details>
@@ -346,7 +363,9 @@ ortino.CAM wird **zum größten Teil mit Claude Code (Anthropic) als Co-Autor en
 
 ## Kontakt
 
-Alles läuft über **[GitHub Issues](https://github.com/KlapSC/ortino-cam/issues/new/choose)**: Fragen, Fehler, Wünsche, Maschinenberichte.
+* **Fragen, Fehler, Wünsche, Maschinenberichte:** über **[GitHub Issues](https://github.com/KlapSC/ortino-cam/issues/new/choose)**. Issues sind öffentlich: Schreib dort **keine persönlichen Daten** hinein (Name, Anschrift, E-Mail-Adresse, Kontodaten).
+* **Datenschutzanfragen und rechtliche Anliegen zum Community-Portal** (Konto, Auskunft, Löschung, Sperre): an die E-Mail-Adresse im [Impressum des Portals](https://benini.access.ly:8088/imprint).
+* **Sicherheitslücken:** nicht als Issue, sondern wie in [`SECURITY.md`](SECURITY.md) beschrieben.
 
 ## Lizenz
 
@@ -356,4 +375,4 @@ ortino.CAM ist **keine Open-Source-Software**: Der Quelltext ist nicht öffentli
 
 ### In short (English)
 
-**ortino.CAM** is CAD/CAM software for CNC routers on Windows – design, toolpaths (profile, pocket, V-carving, 3D relief), 3D simulation, a pre-flight check and direct GRBL machine control, drivable by **Claude through an MCP server** and a local API. Early version (0.3.x): proven on a real machine so far only for pockets, V-carving, profiles, homing and touch-plate tool changes; newer features (fixed tool probe, spoilboard height map, phone remote) are tested against a simulator only. Download the installer under **Releases**; the app updates itself through the operator's portal. It comes with a **community portal** for milling designs (discover, search, load into the app, share your own; run by one person, still being built) and a short, factual comparison with Vectric Aspire. Developed mostly with Claude Code (Anthropic) as co-author, directed and accepted by the operator. Closed source; private and commercial use allowed, redistribution not – see `LICENSE`. Provided "as is", without warranty. Contributions welcome as issues (especially real-machine test reports) and as data files – see `CONTRIBUTING.md`.
+**ortino.CAM** is CAD/CAM software for CNC routers on Windows – design, toolpaths (profile, pocket, V-carving, 3D relief), 3D simulation, a pre-flight check and direct GRBL machine control, drivable by **Claude through an MCP server** and a local API. Early version (0.3.x): proven on a real machine so far only for pockets, V-carving, profiles, homing and touch-plate tool changes (GRBL on the Ultimate Bee with xPRO V5); no other post-processor or controller has been tested on a real machine. Setting up the fixed tool probe and measuring a tool on it were confirmed on the same machine (0.3.10); newer features (tool change at the fixed probe mid-program, spoilboard height map, phone remote, thread milling, maintenance plan, camera, double-sided milling with dowel pins) are tested against a simulator only; everything new in 0.3.9 and 0.3.11 ran only against tests, the simulator and in a browser (Chromium) and was not systematically tested on Windows (WebView2). The phone remote is unencrypted (own trusted Wi-Fi only). Download the installer under **Releases**; the app updates itself through the operator's portal. It comes with a **community portal** for milling designs (discover, search, load into the app, share your own; run by one person, still being built) and a short, factual comparison with Vectric Aspire. Developed mostly with Claude Code (Anthropic) as co-author, directed and accepted by the operator. Closed source; private and commercial use allowed, redistribution not – see `LICENSE`. Provided "as is", without warranty. Contributions welcome as issues (especially real-machine test reports) and as data files – see `CONTRIBUTING.md`. Questions and bugs go through GitHub issues (public: no personal data, please); data protection requests and legal matters about the portal go to the e-mail address in the [portal’s imprint](https://benini.access.ly:8088/imprint).

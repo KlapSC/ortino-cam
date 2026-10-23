@@ -71,7 +71,33 @@ Alle Eingaben sind freiwillig. Voreingestellt sind Mehrwertsteuer 19 % und Währ
 | Mehrwertsteuer 19 % | 29,24 € |
 | **Gesamtbetrag** | **183,11 €** |
 
-**Nicht eingerechnet** sind: Verschnitt und Restplatten (dafür ist der Aufschlag gedacht), Zeit für Werkzeugwechsel und Spindelhochlauf, das Einrichten des Programms, Energie, Absaugung und Transport. Das Angebot rechnet **einen Auftrag mit einem Durchlauf je Platte**. Für mehrere Exemplare passt du die Zahl der Platten oder die Handarbeit an. Es gibt auch keinen Kundenstamm, keine Angebotsnummern und keine Zahlungsbedingungen. Material aus dem Reststück-Lager wird mit dem eingegebenen Plattenpreis bewertet, einen geringeren Preis trägst du selbst ein. Schriften im PDF sind die Standardschriften (Helvetica), Zeichen außerhalb von Windows-1252 erscheinen als Ersatz oder `?`.
+**Nicht eingerechnet** sind: Verschnitt und Restplatten (dafür ist der Aufschlag gedacht), Zeit für Werkzeugwechsel und Spindelhochlauf, das Einrichten des Programms, Energie, Absaugung und Transport. Ohne Menge rechnet das Angebot **einen Auftrag mit einem Durchlauf je Platte**. Für mehrere Exemplare gibt es die **Menge** (siehe unten). Es gibt auch keinen Kundenstamm, keine Angebotsnummern und keine Zahlungsbedingungen. Material aus dem Reststück-Lager wird mit dem eingegebenen Plattenpreis bewertet, einen geringeren Preis trägst du selbst ein. Schriften im PDF sind die Standardschriften (Helvetica), Zeichen außerhalb von Windows-1252 erscheinen als Ersatz oder `?`.
+
+### Stückzahl und Staffel
+
+![Dialog Rüstblatt und Angebot mit Staffeltabelle für 1, 5, 10 und 25 Lose (erfundene Beispielwerte)](https://raw.githubusercontent.com/KlapSC/ortino-cam/main/docs/bilder/stueckzahl-light.png)
+
+Im Abschnitt **»Menge und Staffel«** legst du fest, wie viele **Lose** du anbietest. **Ein Los ist ein Satz aller Teile des Projekts**, also alle Platten einmal gefräst (wählst du im Dialog nur eine Platte, rechnet das Angebot nur diese).
+
+* **Menge (Lose):** immer sichtbar.
+* **Staffel:** weitere Mengen für die Tabelle, zum Beispiel 1, 5, 10, 25. Du tippst sie als Chips (getrennt mit Komma, Semikolon, Leerzeichen oder Enter) und entfernst sie mit × oder der Rücktaste. Höchstens 8 Stufen. Im Einfach-Modus liegt die Staffel unter »Mehr Einstellungen«.
+* **Ausschusszuschlag:** in Prozent, höchstens 50 %. Er wirkt nur auf die Posten je Los, **nicht auf das Rüsten**. Die angezeigte Fräszeit bleibt die echte.
+
+**Was mit der Menge wächst:** Das **Rüsten** fällt **einmal je Auftrag** an. Material (anteilig nach Plattenausnutzung), Maschinenzeit, Werkzeugverschleiß und Handarbeit fallen **je Los** an. Deshalb sinkt der Preis je Los mit der Menge, wenn eine Rüstzeit eingetragen ist; ohne Rüstzeit bleibt er gleich. Das Angebot zeigt bei Menge über 1 oder mit Staffel die Tabelle **Staffelpreise** (Gesamtpreis, Preis je Los netto und brutto, **Ersparnis**) mit der gewählten Menge hervorgehoben und die Positionen in den Gruppen »Je Los« und »Einmal je Auftrag«. Die Ersparnis vergleicht mit Einzelfertigung, bei der jedes Los sein eigenes Rüsten hat.
+
+Rechenbeispiel mit den Werten der Tabelle oben (je Los 115,80 €, einmal Rüsten 18,00 €, Aufschlag 15 %, Mehrwertsteuer 19 %):
+
+| Menge | Netto | Netto je Los | Brutto je Los | Ersparnis |
+|---:|---:|---:|---:|---:|
+| 1 | 153,87 € | 153,87 € | 183,11 € | – |
+| 5 | 686,55 € | 137,31 € | 163,40 € | 10,8 % |
+| 10 | 1.352,40 € | 135,24 € | 160,94 € | 12,1 % |
+| 50 | 6.679,20 € | 133,58 € | 158,97 € | 13,2 % |
+
+* Der **Preis je Los** ist ein auf Cent gerundeter **Mittelwert**: Menge mal Preis je Los kann um wenige Cent vom Gesamtbetrag abweichen. Bei sehr kleinen Rüstkosten und großen Mengen kann das Runden den Preis je Los um 1 Cent schwanken lassen.
+* **Programmieren** ist kein Posten. Wer es auf die Lose verteilen will, trägt es in die Rüstzeit ein.
+* Bei Menge 1, leerer Staffel und ohne Ausschuss ist das Angebot **unverändert** gegenüber früheren Versionen (mit einer Gegenprobe gegen den alten Stand geprüft).
+* Zeiten und Kosten sind **Näherungen** und kein verbindliches Angebot.
 
 ## Zeitschätzung mit deinen Läufen kalibrieren
 

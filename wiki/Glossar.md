@@ -12,7 +12,7 @@ Kurze Erklärungen der Begriffe, die in ortino.CAM und in diesem Wiki vorkommen.
 
 **Antasten:** Der Fräser fährt langsam auf eine Tastplatte oder einen Eckblock, bis ein Kontakt meldet, dass er aufgesetzt hat. Daraus setzt das Programm den Nullpunkt. Siehe [Fräsen an der Maschine](Fräsen-an-der-Maschine).
 
-**Array:** Mehrere Kopien einer Form, im Raster oder auf einem Kreis angeordnet.
+**Array:** Mehrere Kopien einer Form, im Raster, auf einem Kreis oder entlang eines Pfads angeordnet.
 
 **Bahnabstand (Stepover):** Seitlicher Abstand zweier benachbarter Fräsbahnen, meist in Prozent des Fräserdurchmessers.
 
@@ -66,6 +66,8 @@ Kurze Erklärungen der Begriffe, die in ortino.CAM und in diesem Wiki vorkommen.
 
 **Kugelfräser:** Ein Fräser mit halbkugelförmiger Spitze, zum Beispiel für 3D-Reliefs.
 
+**Los:** Im Angebot ein Satz aller Teile des Projekts, alle Platten einmal gefräst. Die Menge ist die Zahl der Lose.
+
 **Luftschnitt:** Das ganze Programm läuft angehoben und ohne Spindel. Ein Testlauf ohne Materialkontakt.
 
 **Maserung:** Faserrichtung des Holzes. Sie wirkt im Zuschnitt und im Plattenplaner.
@@ -100,6 +102,8 @@ Kurze Erklärungen der Begriffe, die in ortino.CAM und in diesem Wiki vorkommen.
 
 **Rhai:** Die eingebaute Skriptsprache für eigene Werkzeuge.
 
+**Seriennummer:** Ein Zähler im Text, zum Beispiel `{n:001}`. Er zählt in Arrays und Serien hoch (001, 002, 003 …).
+
 **Sicherheitshöhe:** Die Höhe über dem Werkstück, in der der Fräser für Eilgänge fährt.
 
 **Soft-Limits:** Eine Einstellung der Steuerung, die Fahrten über den Verfahrweg hinaus verhindert. Sie braucht eine Referenzfahrt.
@@ -107,6 +111,8 @@ Kurze Erklärungen der Begriffe, die in ortino.CAM und in diesem Wiki vorkommen.
 **Spannmittel:** Pratzen, Schrauben, Vakuumsauger, mit denen das Werkstück festgehalten wird.
 
 **Spindel:** Der Motor, der den Fräser dreht.
+
+**Staffel (Staffelpreise):** Eine Tabelle im Angebot, die den Preis je Los für mehrere Mengen zeigt, zum Beispiel 1, 5, 10 und 25. Das Rüsten fällt nur einmal an, deshalb sinkt der Preis je Los.
 
 **Start-Check:** Prüft vor jedem Lauf den Zustand der Steuerung gegen dein Projekt. Fehler sperren den Start.
 
