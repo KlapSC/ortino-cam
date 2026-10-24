@@ -37,10 +37,10 @@ Auch ein Bericht, in dem **nichts funktioniert hat**, hilft. Ein Bericht, dass e
 
 ### Was besonders gebraucht wird
 
-Nur an der **Ultimate Bee mit xPRO V5** sind bisher erprobt: Taschen, V-Carving, Konturen, Referenzfahrt und Werkzeugwechsel mit der Tastplatte (Version 0.3.3). Alles Folgende ist **nur gegen den Simulator, Tests oder erzeugte Bilder geprüft** und wartet auf deinen Bericht:
+Nur an der **Ultimate Bee mit xPRO V5** sind bisher erprobt: Taschen, V-Carving, Konturen, Referenzfahrt und Werkzeugwechsel mit der Tastplatte (Version 0.3.3); dazu laut Betreiber an der Handy-Fernbedienung Stopp, Verfahren und Nullpunkte setzen. Alles Folgende ist **nur gegen den Simulator, Tests oder erzeugte Bilder geprüft** und wartet auf deinen Bericht:
 
 * fester Taster, Messung der Opferplatte und Höhenkarte,
-* Handy-Fernbedienung (mit echtem Handy im echten WLAN),
+* Handy-Fernbedienung: Pause, Weiter und die Anzeige von Position und Fortschritt, andere Handys und Browser (Stopp, Verfahren und Nullpunkte setzen sind laut Betreiber an einer echten Maschine bestätigt),
 * »An Position fahren«, Wechsel-Assistent mit Längensensor, Antasten mit dem Eckblock, Absaugung,
 * Rahmen fahren, Luftschnitt, Pause und Start ab Zeile (an der echten Maschine nicht einzeln bestätigt),
 * Gewindefräsen, Wartungsplan und Standzeit-Grenzen,

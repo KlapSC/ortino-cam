@@ -2,7 +2,7 @@
 
 Du stehst an der Maschine, der Rechner mit ortino.CAM ist nicht in Reichweite? Mit dem Handy siehst du, was die Maschine tut, fährst sie in kleinen Schritten an eine Stelle (zum Beispiel zum Einrichten des Werkstücks), setzt den Nullpunkt in X und Y und hältst sie an.
 
-> **Ehrlich zum Stand:** Die Fernbedienung ist **nur gegen den Simulator und automatische Tests geprüft**. Nie an einer echten Maschine, nie mit einem echten Handy (iOS oder Android) und nie in einem echten WLAN. Die Handy-Seite wurde mit einem Browser im Handy-Format angesehen.
+> **Ehrlich zum Stand:** Laut Rückmeldung des Betreibers sind **Stopp, Verfahren (X, Y und Z, hoch und runter) und das Setzen der Nullpunkte** an einer **echten Maschine** (Ultimate Bee mit xPRO V5, mit einem Handy im WLAN) bestätigt. **Nicht einzeln bestätigt** sind Pause und Weiter, die Anzeige von Position und Fortschritt, mehrere gekoppelte Handys sowie andere Handys und Browser (welches Handy und welcher Browser benutzt wurden, ist nicht festgehalten). Alles Übrige ist gegen den Simulator und automatische Tests geprüft.
 >
 > **Die Verbindung ist nicht verschlüsselt.** Benutze die Fernbedienung nur in deinem **eigenen, vertrauenswürdigen WLAN**, nur an einer Maschine mit erreichbarem **Not-Aus**, und schalte sie aus, wenn du sie nicht brauchst. Der Stopp-Knopf am Handy ersetzt den Not-Aus nicht und ist nie die einzige Sicherung. Siehe den [Haftungsausschluss](https://github.com/KlapSC/ortino-cam#haftungsausschluss).
 
