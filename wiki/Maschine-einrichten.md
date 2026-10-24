@@ -84,7 +84,7 @@ Die Rahmengrößen 500 × 750, 750 × 750 und 750 × 1000 nennt der Händler nic
 
 Bei Katalogmaschinen sind die Verfahrwege Vorschläge. Der **Verfahrwege-Assistent** (Dialog »Maschinen« → Verfahrwege → »Verfahrwege messen …«) misst sie an deiner Maschine.
 
-> **Nur gegen den Simulator und Tests geprüft, nie an einer echten Maschine.** Erste Messung ohne Material, Spindel aus, Hand am Not-Aus.
+> **Laut Rückmeldung des Betreibers an einer echten Maschine ausprobiert, hat funktioniert** (Ultimate Bee mit xPRO V5; welche Achsen gemessen wurden, ist nicht festgehalten). Sonst gegen den Simulator und Tests geprüft; andere Steuerungen sind nicht erprobt. Erste Messung ohne Material, Spindel aus, Hand am Not-Aus.
 
 1. **Vorbereiten:** verbunden, **Referenzfahrt** ausgeführt (die Maschine fährt zu den Endschaltern und kennt danach ihre Position), Einstellungen gelesen, Anzeige in Millimetern. Der Assistent prüft das und erklärt Fehlendes.
 2. **Soft-Limits für die Messung aus:** Sonst begrenzt die Steuerung jede Fahrt auf den alten Wert. Der Assistent zeigt die Zeile `$20=0` zum Kopieren. Du gibst sie selbst in der Konsole ein. Ohne Soft-Limits schützen dich nur kleine Schritte, Aufmerksamkeit und der Not-Aus.
