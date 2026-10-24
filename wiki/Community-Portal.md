@@ -27,6 +27,8 @@ Stöbern und Herunterladen gehen **ohne Konto**.
 4. Danach wählst du: **Als neues Projekt öffnen** (bei ungespeicherten Änderungen fragt das Programm zuerst) oder **In das aktuelle Projekt einfügen**. Beim Einfügen kommen nur die **Formen** (Umrisse) der Platte mittig auf die aktive Platte, als ein Rückgängig-Schritt. **Bearbeitungen, Werkzeuge und Variablen werden dabei nicht übernommen**, Texte kommen als Pfade.
 5. Geladene Designs bleiben unter **»Meine geladenen«**. »Auf neue Versionen prüfen« zeigt, ob es eine neuere Fassung gibt. Zusatzdateien und Bilder eines Pakets kannst du speichern.
 
+**Welche Maschine gilt?** Ein Design trägt eine Kopie der Maschine seines Erstellers. Ab Version 0.3.12 öffnet ortino.CAM es standardmäßig mit **deiner eigenen Maschine** (Standardmaschine, mit Postprozessor, Zubehör, Taster und Kalibrierung); Platten, Material, Bearbeitungen und Werkzeuge des Designs bleiben. Über dem Knopf »Als neues Projekt öffnen« kannst du **»Die des Designs«** wählen (Name, Maße und Postprozessor); Taster, Wechselposition und Höhenkarte einer fremden Maschine werden **auch dann nie** übernommen. Nach dem Öffnen steht in der Meldung, womit geöffnet wurde, und ein Hinweis, wenn das Design größer ist als der Verfahrweg deiner Maschine.
+
 Eine `.ocamd`-Datei (so heißt ein Designpaket) öffnest du auch per Doppelklick oder über »Paket öffnen …«. Das Portal bietet außerdem »In ortino.CAM öffnen« als Link. Ein solcher Link **lädt nie sofort**: Zuerst erscheint eine Bestätigung mit Portal-Adresse, Designname und Autor. Ein unbekanntes Portal wird gar nicht erst angefragt, bis du ihm ausdrücklich vertraust.
 
 ## Anmelden
@@ -42,6 +44,8 @@ Der Assistent **»Design teilen«** (Community → Teilen) teilt immer das **off
 3. **Prüfen:** Du siehst, was veröffentlicht wird, samt den Angaben aus dem Projekt. Die **Datenschutzprüfung** sucht im Projekt nach Dateipfaden und deinem Benutzernamen. »Automatisch entfernen« ersetzt sie **nur im Paket**, dein Projekt bleibt unverändert. Inhalte von Formen (zum Beispiel ein Schildtext) ändert das Programm nie. Hier musst du bewusst bestätigen. Ohne Bereinigung oder Bestätigung wird nichts hochgeladen.
 4. **Hochladen:** Sichtbarkeit **Öffentlich**, **Nicht gelistet** oder **Entwurf**.
 
+Ab Version 0.3.12 kommen die **Einrichtung deiner Maschine** (Zubehör, fester Taster, Opferplatte, Kamera) und die **freie Notiz der Maschine** nicht mehr ins Paket; Name, Verfahrwege und Postprozessor bleiben als Information. Bereits veröffentlichte Pakete lassen sich nicht ändern: Hast du früher ein Design geteilt, kann es die Notiz noch enthalten – dann zurückziehen und neu teilen.
+
 Unter **Meine Designs** bearbeitest du Angaben, lädst neue Versionen hoch, veröffentlichst, ziehst zurück (das Design wird dann »nicht gelistet«) oder löschst. Auch Vorlagen mit Eingabeformular (siehe [Platten und Möbel](Platten-und-Möbel)) lassen sich als Design teilen. Mehr zum Thema Teilen durch Claude: [Claude, MCP und API](Claude-MCP-und-API).
 
 ## Rechte, Lizenzen und Richtlinien
@@ -50,6 +54,10 @@ Unter **Meine Designs** bearbeitest du Angaben, lädst neue Versionen hoch, ver�
 * Jedes Design trägt eine **Lizenz**: CC BY (Namensnennung), CC BY-SA (zusätzlich Weitergabe unter gleichen Bedingungen), CC BY-NC (nicht kommerziell), CC BY-NC-SA, CC BY-ND (keine Bearbeitung), CC0 (keine Einschränkung) oder »Alle Rechte vorbehalten«. Das ist eine Kurzfassung und keine Rechtsberatung. Maßgeblich sind die Lizenztexte, die zum Design angezeigt werden.
 * Laut Community-Richtlinien **nicht erlaubt** sind: fremde Werke ohne Erlaubnis, geschützte Logos und Marken, Waffen oder rechtlich eingeschränkte Teile, gefährliche Anleitungen, absichtlich falsche Einstellungen und Schadsoftware.
 * Verstöße meldest du über **»Melden«** bei der Moderation.
+
+## Sicherung im Portal
+
+Mit einem Konto kannst du Maschinenprofile, eigene Fräser und ausgewählte Einstellungen privat sichern und auf einem anderen Rechner abrufen. Das ist eine eigene Anleitung: [Sicherung im Portal](Sicherung-im-Portal).
 
 ## Der Katalog eigener Designs
 

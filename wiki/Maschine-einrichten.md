@@ -109,6 +109,12 @@ Nach dem Verbinden liest ortino.CAM die Einstellungen (`$$`) **von selbst**, sob
 
 Jedes Projekt trägt eine **Kopie** seiner Maschine, daneben gibt es die **Maschinenliste** mit deinen eigenen Maschinen. Weichen beide voneinander ab, zeigt der Dialog »Maschinen« das und lässt dich wählen, welcher Stand gilt. Mitgelieferte Vorlagen überschreibt das Programm nie. Als **Standardmaschine für neue Projekte** kannst du eine Maschine aus der Liste festlegen. Bestehende Projekte ändern sich dadurch nie.
 
+### Meine Maschine (ab 0.3.12)
+
+Fester Taster, Opferplatte, Kamera-Kalibrierung und Zubehör (Absaugung, Tastplatte, Werkzeugwechsel) beschreiben die **Maschine**, nicht ein Projekt. Steht die Maschine **in deiner Liste** und ist sie die Standardmaschine, bekommt **jedes neue Projekt** diese Einrichtung mit. Bei einer **mitgelieferten Vorlage** oder einer Maschine nur aus der Projektdatei zeigt das Programm den Hinweis »Diese Einrichtung gilt bisher nur für dieses Projekt. In jedem neuen Projekt haben?« mit dem Knopf **»Als meine Maschine speichern«**: Er legt eine Kopie in deiner Liste an (nie über eine vorhandene), macht sie zur Standardmaschine, und **Strg+Z** holt die Vorlage im Projekt zurück. Für ein älteres Projekt gibt es **»Einrichtung der Maschine aus der Liste übernehmen«**; das Programm vergisst dabei den Z-Bezug und sagt es. *Nur gegen Tests, Simulator und Chromium geprüft.*
+
+Deine Maschinenprofile lassen sich außerdem [im Portal sichern](Sicherung-im-Portal) und auf einem anderen Rechner abrufen.
+
 ## Weiter
 
 * Nächster Schritt: [Zeichnen und Importieren](Zeichnen-und-Importieren)

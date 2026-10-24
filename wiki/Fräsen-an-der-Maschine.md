@@ -99,7 +99,8 @@ Hat dein Projekt mehrere Werkzeuge, stoppt das Programm beim Wechsel. Im Start-D
 
 | Modus | Ablauf | Stand |
 |---|---|---|
-| **Pause (M0)** | Das Programm hält an, du wechselst. Die Fräser müssen gleich lang eingespannt werden. | Standard |
+| **Automatisch** | Mit eingerichtetem festem Taster wie »Fester Taster«, sonst wie »Pause«. Der Start-Check zeigt, was gilt. | Standard seit 0.3.12; die Auflösung ist nur Simulator und Tests geprüft |
+| **Pause (M0)** | Das Programm hält an, du wechselst. Die Fräser müssen gleich lang eingespannt werden. | Ohne festen Taster das Verhalten von »Automatisch« |
 | **Tastplatte** | Nach dem Wechsel tastest du Z mit der Tastplatte neu an. Der Assistent führt dich durch: anhalten, wechseln, antasten, weiter. | **Im Echtbetrieb bestätigt** (Ultimate Bee, Version 0.3.3, Z-Null = Plattenoberseite). Mit Z-Null = Tisch (Materialdicke zur Plattendicke), mit einer Wechselposition und die Prüfung im Start-Check, dass Z-Null zum ersten Werkzeug des nächsten Laufs gehört: **nur Simulator**. |
 | **Längensensor** | Ein fest montierter Sensor misst die Länge des neuen Werkzeugs. | **Nie an einer echten Maschine erprobt.** Falsche Sensorposition heißt: Der Fräser fährt an die falsche Stelle. Erster Versuch ohne Material mit niedrigem Override. |
 | **Fester Taster** | Die Maschine misst jedes Werkzeug und legt Z-Null auf die Opferplatte. | Einrichten und Einmessen laut Betreiber an einer echten Maschine bestätigt (0.3.10); **Wechsel im Programm nur Simulator**, siehe [Fester Taster und Opferplatte](Fester-Taster-und-Opferplatte). |

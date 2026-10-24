@@ -46,7 +46,7 @@ In der Karte **Fester Taster** im Schritt »Fräsen«:
 2. Fräser einspannen und auf **»Werkzeug einmessen«** klicken. Die Maschine misst und legt Z-Null auf die Opferplatte.
 3. X/Y-Nullpunkt am Werkstück von Hand setzen.
 4. Im Projekt Z-Null auf **»Tisch (Opferplatte)«** stellen. Ab Version 0.3.11 ist das mit eingerichtetem festem Taster die Vorgabe für neue Projekte (umstellbar im Menü »Einstellungen« ▸ »Maschine & Z-Null …«); ein älteres Projekt stellst du mit dem Knopf **»Auf Opferplatte stellen«** in der Karte um. Steht es auf »Plattenoberseite«, warnt die Karte und fragt zweimal nach, denn das Programm würde sonst um die Materialdicke zu tief fräsen.
-5. Start-Check, Lauf. Im Start-Dialog den Werkzeugwechsel auf **»Fester Taster«** stellen.
+5. Start-Check, Lauf. Mit eingerichtetem festem Taster wechselt das Programm ab Version 0.3.12 **von selbst am Taster** (Werkzeugwechsel »Automatisch«); der Start-Check sagt, was gilt. Wer lieber mit Pause wechselt, klickt **»Stattdessen Pause«**. Eine ausdrücklich gespeicherte Wahl bleibt, wie sie war.
 
 Beim Wechsel im Programm läuft es so: Anhalten, auf die Annäherungshöhe fahren, du wechselst und drückst »Weiter«, die Maschine misst das neue Werkzeug, setzt Z-Null und fährt zurück an die alte Stelle. Beide Werkzeuge stehen danach bei gleichem Werkstück-Z auf derselben Höhe über der Opferplatte (im Simulator mit Fräsern unterschiedlicher Länge geprüft).
 

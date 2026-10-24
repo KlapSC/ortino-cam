@@ -31,6 +31,7 @@
 * [Postprozessoren und Steuerungen](Postprozessoren-und-Steuerungen)
 * [Claude, MCP und API](Claude-MCP-und-API)
 * [Community-Portal](Community-Portal)
+* [Sicherung im Portal](Sicherung-im-Portal)
 
 **Hilfe**
 
