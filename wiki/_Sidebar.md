@@ -19,11 +19,13 @@
 * [Doppelseitig fräsen](Doppelseitig-fraesen)
 * [Fester Taster und Opferplatte](Fester-Taster-und-Opferplatte)
 * [Handy-Fernbedienung](Handy-Fernbedienung)
+* [Touch und Stift](Touch-und-Stift)
 * [Kamera auf der Arbeitsplatte](Kamera-auf-der-Arbeitsplatte)
 
 **Planen und Anbieten**
 
 * [Platten und Möbel](Platten-und-Möbel)
+* [Küchen-Rendering](Kuechen-Rendering)
 * [Rüstblatt und Angebot](Rüstblatt-und-Angebot)
 
 **Steuerungen und Vernetzung**

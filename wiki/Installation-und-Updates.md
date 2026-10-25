@@ -8,7 +8,7 @@ ortino.CAM läuft unter **Windows 10 und 11 (64 Bit)**. Für Mac und Linux gibt 
 2. **Prüfsumme vergleichen (empfohlen):** Die SHA-256-Prüfsumme jeder Datei steht in den Hinweisen der Version und in der Datei `SHA256SUMS.txt` am Release. Du berechnest sie in der Windows-PowerShell so und vergleichst sie mit der Angabe:
 
    ```powershell
-   Get-FileHash .\ortino.cam_0.3.12_x64-setup.exe -Algorithm SHA256
+   Get-FileHash .\ortino.cam_0.3.14_x64-setup.exe -Algorithm SHA256
    ```
 
 3. **Starten und installieren.** Der Installer richtet das Programm für deinen Benutzer ein (kein Administrator nötig) und gibt es auf Deutsch und Englisch. Das Programm braucht Microsofts **WebView2**. Fehlt es auf deinem Rechner, lädt der Installer es dafür nach, du brauchst dann eine Internetverbindung.
@@ -48,7 +48,7 @@ Deine Maschinenprofile, die eigene Fräserbibliothek, bewährte Schnittdaten, da
 
 ## Voraussetzungen und Hinweise
 
-* **Fenstergröße:** mindestens 1000 × 640 Pixel.
+* **Fenstergröße:** mindestens 760 × 640 Pixel (ein Tablet im Hochformat reicht), bequemer ab 1000 × 640.
 * **3D-Ansicht:** Sie braucht WebGL. Zeigt das Programm »3D-Ansicht nicht verfügbar«, aktualisiere den Grafiktreiber und schalte die Hardwarebeschleunigung ein. Prüfliste und Auftragsübersicht funktionieren auch ohne.
 * **Maschine:** Für den USB-Anschluss der Steuerung brauchst du deren USB-Treiber (siehe [Maschine einrichten](Maschine-einrichten)).
 

@@ -108,6 +108,8 @@ Diese Seite listet die Tastenkürzel von ortino.CAM unter Windows. Im Programm z
 | `M` | Maße anzeigen |
 | `B` | Bohrungen anzeigen |
 | `C` | Teile nach Schrank einfärben |
+| `V` | Echtfarben (gewählte Farben und Glanzgrade) anzeigen |
+| `R` | Rendering exportieren (Bild der Küche) |
 | `G` | Material und Platten der Küche |
 | `K` | Küche (einheitliche Einstellungen) |
 | `N` | neuer Unterschrank |
