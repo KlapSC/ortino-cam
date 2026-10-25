@@ -25,9 +25,11 @@ Im Möbel-Designer: der **Kamera-Knopf** in der Kopfleiste, die Taste `R` oder d
 * Gespeichert wird als **Download**; den Zielordner bestimmt Windows bzw. der Browser (meist »Downloads«).
 * Die Probebilder in den Tests wirken noch schlicht: Die Spüle überzeugt vor allem in der Nahaufnahme, die LED-Streifen geben einen weichen warmen Schleier statt eines Lichtkegels, und bei Hochglanz erscheint eine Lampe als runder heller Fleck auf einer Front.
 * Reliefs auf Fronten erscheinen im Bild als sanfte Schattierung (die Front bleibt eben).
+* **Möbel:** Besteht der Entwurf nur aus Möbelstücken ([Möbel-Designer](Moebel-Designer)), zeigt das Rendering eine **Möbelszene** statt der Küche: Parkett, Wand hinter dem hintersten Wandmöbel, Seitenwände, wählbarer Teppich und Holzmaserung entlang der Faser. Spritzschutz und LED-Streifen entfallen. Die Grenzen sind dieselben (Software-Grafik in Chromium, nie unter Windows geprüft).
 
 ## Weiter
 
 * [Platten und Möbel](Platten-und-Möbel)
+* [Möbel-Designer](Moebel-Designer)
 * [Tastenkürzel](Tastenkürzel)
 * [Fehlersuche](Fehlersuche)

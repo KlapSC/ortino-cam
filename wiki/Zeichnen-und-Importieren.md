@@ -87,6 +87,7 @@ Mit `Strg+I` (Datei-Menü: »Importieren …«) oder per **Drag & Drop** auf das
 | **DXF** | Vektoren, Layer wahlweise als Layer übernommen. Eine Einheitenangabe in der Datei wird automatisch in Millimeter umgerechnet. Unterstützt werden DXF R12 bis 2018. |
 | **PDF** und **AI** (mit PDF-Teil) | Vektoren, Seitenvorschau, Seitenwahl, Einheit und Maßstab, Ebenen werden zu Ebenen, eingebettete Schriften werden Umrisse. |
 | **PNG, JPEG, WebP** | Das Bild wird zu Vektoren **nachgezeichnet**. |
+| **STL**, **STEP** (`.step`, `.stp`) | Ein 3D-Modell öffnet einen eigenen Dialog und wird als Relief, Umriss oder Schichtmodell übernommen, siehe [3D-Modelle importieren](3D-Modelle-importieren). **Nur mit selbst erzeugten Dateien geprüft, nie mit Dateien aus einem echten CAD-Programm.** |
 
 Im Importdialog wählst du die **Platzierung** (automatisch auf die Platte passend, Position beibehalten, an der Plattenecke, zentriert), die Skalierung, die Ziel-Platte und den Ziel-Layer. Der Dialog zeigt Hinweise zum Import an.
 

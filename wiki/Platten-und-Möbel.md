@@ -1,6 +1,6 @@
 # Platten und Möbel
 
-Diese Seite beschreibt, wie du viele Teile auf Platten verteilst (**Plattenplaner**), Holzverbindungen erzeugst (**Passungen und Fingerzinken**), Schränke und Küchen entwirfst (**Möbel-Designer**) und Projekte als **Vorlagen** und **Serien aus einer Tabelle** fertigst.
+Diese Seite beschreibt, wie du viele Teile auf Platten verteilst (**Plattenplaner**), Holzverbindungen erzeugst (**Passungen und Fingerzinken**), Schränke und Küchen entwirfst (**Küchen-Designer**; Tische, Regale und Sitzmöbel stehen im [Möbel-Designer](Moebel-Designer)) und Projekte als **Vorlagen** und **Serien aus einer Tabelle** fertigst.
 
 ![Möbel- und Küchen-Designer: Küchenzeile in 3D und Frontansicht mit Schrankliste](https://raw.githubusercontent.com/KlapSC/ortino-cam/main/docs/bilder/moebel-light.png)
 
@@ -57,11 +57,15 @@ Nicht gebaut: Schwalbenschwänze, Gehrungen, Federn dünner als das Brett, Verbi
 * **3D-Reliefs auf Fronten:** parametrische **Wellen** (Richtung, Wellenlänge, Tiefe, Profil, Phase, Mäander, Querwellen), **Lamellen, Rauten, Ripples, Dünen** – nur auf glatten Fronten. **»Muster über Auswahl«** legt ein Relief über mehrere Fronten (zum Beispiel drei Hochschränke) als eine durchgehende Fläche samt Fugen. Die Prüfliste kennt Restdicke, Topfband-Bereich, zu feine Rippen und Griffe im Relief. Gefräst wird als normale 3D-Bearbeitung. **Nie gefräst;** die Vorschau zeigt das Relief nur schattiert.
 * **Rendering:** ein Bild der Küche mit Licht, Schatten, Glanz und Spüle, siehe [Küchen-Rendering](Kuechen-Rendering).
 * **Kantenband:** Standardband, Matrix aller Teile und Kanten, Zuschnittmaß mit Bandstärke und Fräszugabe.
-* **Eigene Bausteine:** Einen Schrank oder eine Gruppe speicherst du als Baustein und fügst ihn wieder ein.
+* **Eigene Bausteine:** Einen Schrank oder eine Gruppe speicherst du als Baustein und fügst ihn wieder ein. Mit `Strg+C` und `Strg+V` kopierst du Schränke auch in ein anderes Projekt, und die **ganze Küche** (mit Raumbreite, Spüle, Kochfeld und Mustergruppen) lässt sich als Vorlage speichern.
+* **Speichern, Öffnen, Fortfahren:** Dateiname und Speicherstand stehen im Designer, *Speichern* (`Strg+S`), *Speichern unter* und *Öffnen* im Dateimenü des Designers, der Fenstertitel zeigt »●« bei ungespeicherten Änderungen. Wer eine Datei mit Küche öffnet (Datei ▸ Öffnen, Zuletzt geöffnet, Doppelklick, ins Fenster ziehen, Wiederherstellen), landet **wieder im Designer**, und die Startseite bietet »Weiterarbeiten«.
+* **Varianten:** Mehrere Entwürfe derselben Küche in **einer** Datei (zum Beispiel »A schwarz matt« und »B Eiche«), bis zu zwölf. Erzeugte Teile gehören zur Variante, für die sie erzeugt wurden; nach dem Wechsel gelten sie als veraltet, bis du neu erzeugst.
+* **Kundenblatt:** Dateimenü ▸ *Kundenblatt drucken*: Planansicht der Zeile mit Frontfarben, Griffen, Maßkette, Höhen, Schrankliste, Oberflächen und Beschlägen, als unverbindliche Planungsskizze gekennzeichnet. Gedruckt wird über den Druckdialog von Windows, dort auch *Als PDF speichern*. Nur die Ansicht der Zeile, kein Grundriss, keine Geräte, kein Raum.
+* **Beschlagbibliothek:** 41 Einträge (Griffe, Knöpfe, Topfscharniere, Auszüge, Klappenhalter, Bodenträger, Sockelfüße, Verbinder) mit Bezugsquelle und Link bei Jumbo, Bauhaus.ch und Hettich. *Verwenden* setzt Lochabstand, Länge, Bohrbild-Profil oder Verbinder der Küche; die Stückliste nennt Bezeichnung und Bezug, auf Wunsch mit eigenem Preis und Summe. Eigene Einträge sind möglich. **Es sind Produktangaben und Suchergebnisse, kein Datenblatt-Abgleich:** nur die Hettich-Einträge tragen »laut Datenblatt« (Angaben des Hettich-Shops), alles von Jumbo und Bauhaus ist **ungeprüft**. Keine Preise, Texte oder Bilder der Shops, keine Partnerschaft. Das Scharnierprofil »48/6 (z. B. Hettich)« ließ sich bei Hettich nicht belegen (dort TB 45 × 9,5 und TH 52 × 5,5): vor dem Bohren mit dem Datenblatt vergleichen.
 * **Stückliste und Zuschnitt:** Stückliste nach Schrank oder Werkstoff, Export als CSV (Excel-tauglich) und druckbares HTML. Der Zuschnitt verteilt die Teile auf Platten (MaxRects oder sägegerecht als Guillotine) mit Maserung, Abstand und Randabstand.
 * **»Teile erzeugen & fräsen vorbereiten«** macht aus allem normale Platten und Bearbeitungen.
 
-Was **nicht** auf der CNC passiert, steht als »Arbeiten von Hand« in Stückliste und Prüfliste: Kantenbohrungen, Auszüge, Klappenbeschläge und die Arbeitsplatte. Griffe selbst sind keine Beschläge im Programm.
+Was **nicht** auf der CNC passiert, steht als »Arbeiten von Hand« in Stückliste und Prüfliste: Kantenbohrungen, Auszüge, Klappenbeschläge und die Arbeitsplatte. Griffe stehen als Zukaufteile in der Stückliste, ihre Maße sind Katalogangaben.
 
 > **Prüfe die Beschlagmaße.** Belegt aus einer Quelle sind nur wenige Werte: der Topf des Topfscharniers Ø 35 mm mit Tiefe 13 mm, das Bohrmaß des Exzenterverbinders und das System-32-Raster. Alle Maße von Hettich-Scharnieren, Dübeln und Konfirmaten stammen aus Werkstattpraxis, die Scharnierarme (Überdeckung, Kröpfung) sind Annahmen. Eckschränke und Kantenband sind **intern konsistent, aber nicht gegen Herstellerstandards geprüft**. Vor dem Fräsen mit dem Datenblatt vergleichen und ein Probeteil bauen.
 
@@ -88,5 +92,7 @@ Grenzen: höchstens 2000 Zeilen je Lauf, 20 MB je Tabelle. Im Plattenmodus gilt 
 
 ## Weiter
 
+* [Möbel-Designer](Moebel-Designer) (Tische, Sideboards, Regale, Sitzmöbel)
+* [3D-Modelle importieren](3D-Modelle-importieren)
 * [Bearbeitungen](Bearbeitungen)
 * [Rüstblatt und Angebot](Rüstblatt-und-Angebot)

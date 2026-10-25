@@ -9,6 +9,7 @@
 **Entwerfen und Bearbeiten**
 
 * [Zeichnen und Importieren](Zeichnen-und-Importieren)
+* [3D-Modelle importieren](3D-Modelle-importieren)
 * [Bearbeitungen](Bearbeitungen)
 * [Werkzeuge und Schnittdaten](Werkzeuge-und-Schnittdaten)
 * [Prüfen und Simulation](Prüfen-und-Simulation)
@@ -25,6 +26,7 @@
 **Planen und Anbieten**
 
 * [Platten und Möbel](Platten-und-Möbel)
+* [Möbel-Designer](Moebel-Designer)
 * [Küchen-Rendering](Kuechen-Rendering)
 * [Rüstblatt und Angebot](Rüstblatt-und-Angebot)
 

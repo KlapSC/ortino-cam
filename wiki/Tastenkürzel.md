@@ -118,7 +118,11 @@ Diese Seite listet die Tastenkürzel von ortino.CAM unter Windows. Im Programm z
 | `Alt+←`, `Alt+→` | Schrank verschieben |
 | `Entf` | löschen |
 | `Strg+D` | duplizieren |
+| `Strg+S`, `Strg+Umschalt+S`, `Strg+O` | Küche speichern, speichern unter, öffnen |
+| `Strg+C`, `Strg+V` | gewählte Schränke kopieren, einfügen (auch in einem anderen Projekt) |
 | `Esc` | schließen |
+
+Im Bereich **Möbel** gelten dieselben Tasten für Auswahl, `N` (neues Stück der gewählten Art), `Entf`, `K` (Überblick), `R` und `Strg+Z`/`Strg+Y`; Stücke werden im Grundriss gezogen, siehe [Möbel-Designer](Moebel-Designer).
 
 ## Fräser-Bibliothek
 

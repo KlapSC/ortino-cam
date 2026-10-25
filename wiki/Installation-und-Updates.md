@@ -8,7 +8,7 @@ ortino.CAM läuft unter **Windows 10 und 11 (64 Bit)**. Für Mac und Linux gibt 
 2. **Prüfsumme vergleichen (empfohlen):** Die SHA-256-Prüfsumme jeder Datei steht in den Hinweisen der Version und in der Datei `SHA256SUMS.txt` am Release. Du berechnest sie in der Windows-PowerShell so und vergleichst sie mit der Angabe:
 
    ```powershell
-   Get-FileHash .\ortino.cam_0.3.14_x64-setup.exe -Algorithm SHA256
+   Get-FileHash .\ortino.cam_0.4.0_x64-setup.exe -Algorithm SHA256
    ```
 
 3. **Starten und installieren.** Der Installer richtet das Programm für deinen Benutzer ein (kein Administrator nötig) und gibt es auf Deutsch und Englisch. Das Programm braucht Microsofts **WebView2**. Fehlt es auf deinem Rechner, lädt der Installer es dafür nach, du brauchst dann eine Internetverbindung.

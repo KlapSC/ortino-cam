@@ -89,7 +89,7 @@ Neue Bearbeitung **Gewinde** mit der Werkzeugart **Gewindefräser** (60°-Profil
 * **3D-Relief fräsen:** legt mit einem Klick Schruppen und Schlichten an (bei Bedarf Restbearbeitung und eine Stufe für ebene Flächen). Du entscheidest nur über die **Qualität** (Entwurf, Standard, Fein, Ultra), das Programm wählt Kugelfräser, Zustellung, Bahnabstand und Vorschub und zeigt jeweils die Zeit. Ein **Soll-Ist-Vergleich** zeigt, wo die Bahn vom Relief abweicht.
 * **Muster-Studio:** Lochpaneele (Waben, Sterne, Gitter, Voronoi, Blätter, Rasterverlauf, Text und Bild als Lochraster). Die **Fräsbarkeit** wird gemessen (Mindeststeg, Öffnungsweite, Inseln, Ecken), als Ampel gezeigt und lässt sich mit einem Klick korrigieren. Der Mindeststeg 1,5 mm ist eine Voreinstellung, keine Materialgarantie.
 
-Grenzen beim Relief: Nur Höhenfelder (keine Hinterschneidungen), keine STL-Projektion. An senkrechten Wänden lässt der Kugelfräser eine Kehle in der Größe seines Radius stehen. **Nicht gefräst.**
+Grenzen beim Relief: Nur Höhenfelder (keine Hinterschneidungen). Ein 3D-Modell aus einer STL- oder STEP-Datei wird von oben auf ein Höhenfeld abgebildet, siehe [3D-Modelle importieren](3D-Modelle-importieren). An senkrechten Wänden lässt der Kugelfräser eine Kehle in der Größe seines Radius stehen. **Nicht gefräst.**
 
 ## Planfräsen, Dogbone, Reihenfolge
 
