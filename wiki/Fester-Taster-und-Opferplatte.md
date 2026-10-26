@@ -102,4 +102,5 @@ Im Start-Dialog erscheint dann der Schalter **»Höhenkarte der Opferplatte anwe
 ## Mehr
 
 * Das Planfräsen der Opferplatte (Bearbeitung »Planfräsen«) steht auf der Seite [Bearbeitungen](Bearbeitungen).
+* Markierungen (Kreuz, Rahmen, Lineal, Anschlag-Linien, Lochraster) in die Opferplatte fräsen: [Opferplatte markieren](Opferplatte-markieren) (seit 0.4.1; die Tisch-Ansicht der Karte im Schritt »Fräsen« zeigt sie als geplant oder gefräst).
 * Zurück zu [Fräsen an der Maschine](Fräsen-an-der-Maschine).

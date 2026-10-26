@@ -28,6 +28,11 @@ Standardmaß Breite × Höhe × Tiefe in mm.
 | **Hocker**, **Plattenhocker** | 360 × 450 × 360, 380 × 450 × 320 | Sitz auf Zarge, Plattenfüßen oder Kreuzfuß bzw. auf zwei Seitenplatten |
 | **Sitzbank** | 1400 × 450 × 380 | Platte auf Plattenfüßen, Zarge, Kreuzfuß oder A-Gestell |
 | **Sperrholzstuhl** | 440 × 840 × 520 | zwei profilierte Seitenplatten, schräger Sitz und Lehne, Querstrebe |
+| **Kommode**, **Highboard** | (seit 0.4.1) | Schubladenkorpus mit Schubkästen auf Vollauszug (13 mm Seitenluft), Sockel, Beinen oder Kufe, Rückwand; Fächer nach der Breite vorgeschlagen |
+| **Nachttisch** | (seit 0.4.1) | Fach mit Schublade, auch Schublade über offenem Fach; Höhe zur Matratze als Richtwert |
+| **Schreibtisch** | (seit 0.4.1) | Wangen mit Knieblende, Zarge, Plattenfüße oder Kufe; optional Schubladencontainer links oder rechts und Kabeldurchlass (rund oder Schlitz) |
+| **Garderobe** | (seit 0.4.1) | Wandpaneel mit Hakenleiste und Ablage auf gesteckten Konsolen; Haken und Wandbefestigung stehen in der Stückliste |
+| **Schuhbank / Schuhschrank** | (seit 0.4.1) | bis 480 mm Höhe eine Bank mit offenen Fächern, darüber ein Schrank |
 
 Einen **Loungesessel** gibt es bewusst nicht, ebenso keine Polster, Armlehnen, Drehstühle oder Betten.
 
@@ -36,7 +41,7 @@ Einen **Loungesessel** gibt es bewusst nicht, ebenso keine Polster, Armlehnen, D
 * **Leimlos steckbar:** Zapfen durch Schlitze. Das Spiel kommt aus dem Passungs-Assistenten (Projektvariable `Spiel`), sonst nimmt das Programm 0,15 mm an. Die Schlitzecken bekommen **Hundeknochen** passend zum Fräser. **Zapfen und Schlitz entstehen aus einer Beschreibung** und passen daher rechnerisch immer zusammen.
 * **Klassisch:** Zapfen in Sacktaschen (verleimt), Dübel oder Konfirmatschrauben (als Zukaufteil in der Stückliste).
 * Beim **Sideboard** ist nur der Fuß leimlos steckbar; der Korpus bleibt bei den Verbindern des Küchen-Baukastens.
-* Nicht angeschlossen sind Fingerzinken, Schwalbenschwanz und Gehrung.
+* **Fingerzinken** (seit 0.4.1) sitzen an den Außenecken des Korpus und an den Schubkastenecken, nur in Multiplex und Massivholz; bei beschichteter Platte, Span oder OSB bleibt die klassische Verbindung mit Warnung. Nicht angeschlossen sind Schwalbenschwanz und Gehrung, und Zinken nur an den Außenecken, nicht an inneren Verbindungen.
 
 ## Stilvorlagen
 
@@ -58,6 +63,7 @@ Jede Meldung nennt Annahme, Rechnung und einen **Lösungsvorschlag**:
 * **Stege und Fräser:** Stegbreite, Schlitzbreite und Innenradien gegen den Fräser der Maschine.
 * **Verfahrweg:** passt ein Teil nicht in den Verfahrweg, nennt die Liste Lösungen (teilen, Maßstab, andere Platte oder Maschine, mehrere Aufspannungen).
 * **Probeteil:** bei Stuhl, Hocker, Plattenhocker und Bank immer.
+* **Neu in 0.4.1:** **Kippsicherung** bei Kommode und Highboard (Wandbefestigung als Pflicht-Hinweis) und **Kippen mit ausgezogener Schublade**; Schubladen (Auszug, Last, Breite, Anschlag, Boden); Schreibtisch (Höhe, Tiefe, Beinfreiheit, Kabeldurchlass); Nachttisch gegen die Matratzenhöhe; Garderobe (Last je Wandschraube, Hakenabstand); Schuhbank als Sitz; **Verwindung** bei fehlender Rückwand; Zinken (Fräser, Breite, Werkstoff). Die Lasten (zum Beispiel 30 kg je Auszugspaar, 20 kg Zusatzlast beim Kippen) sind **Annahmen**, die Verwindung ist eine Erfahrungsregel.
 
 Die Rechnungen nehmen einen frei aufliegenden Balken und starre Verbindungen an; Verbindungen, Beschläge, Leimfugen und die Lastabtragung in den Beinen werden **nicht nachgewiesen**. Gewichte sind grob (Volumen mal Rohdichte, ohne Beschläge und Leim).
 

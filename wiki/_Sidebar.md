@@ -19,6 +19,7 @@
 * [Fräsen an der Maschine](Fräsen-an-der-Maschine)
 * [Doppelseitig fräsen](Doppelseitig-fraesen)
 * [Fester Taster und Opferplatte](Fester-Taster-und-Opferplatte)
+* [Opferplatte markieren](Opferplatte-markieren)
 * [Handy-Fernbedienung](Handy-Fernbedienung)
 * [Touch und Stift](Touch-und-Stift)
 * [Kamera auf der Arbeitsplatte](Kamera-auf-der-Arbeitsplatte)
