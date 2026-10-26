@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img alt="Version 0.4.1" src="https://img.shields.io/badge/Version-0.4.1-ff9a40?style=flat-square">
+  <img alt="Version 0.4.2" src="https://img.shields.io/badge/Version-0.4.2-ff9a40?style=flat-square">
   <img alt="Windows 10 und 11" src="https://img.shields.io/badge/Windows-10%20%7C%2011-0078d4?style=flat-square&logo=windows&logoColor=white">
   <img alt="GRBL" src="https://img.shields.io/badge/Steuerung-GRBL-2b6cb0?style=flat-square">
   <img alt="MCP für Claude" src="https://img.shields.io/badge/Claude-MCP%20%26%20API-d97757?style=flat-square">
@@ -65,6 +65,12 @@
 |:--:|:--:|:--:|
 | <picture><source media="(prefers-color-scheme: light)" srcset="docs/bilder/ruestblatt-light.png"><img src="docs/bilder/ruestblatt-dark.png" alt="Dialog Rüstblatt und Angebot mit Kosteneingaben und Seitenvorschau (erfundene Beispielwerte) / English: Setup sheet and quote dialog with cost inputs and page preview (made-up sample values)" width="100%"></picture> | <picture><source media="(prefers-color-scheme: light)" srcset="docs/bilder/einrichtung-light.png"><img src="docs/bilder/einrichtung-dark.png" alt="Assistent „Maschine einrichten“: Maschinenkatalog mit Größen und gekennzeichneten Herstellerangaben / English: Machine setup assistant: machine catalogue with sizes and flagged manufacturer data" width="100%"></picture> | <picture><source media="(prefers-color-scheme: light)" srcset="docs/bilder/moebel-light.png"><img src="docs/bilder/moebel-dark.png" alt="Möbel- und Küchen-Designer: Küchenzeile in 3D und Frontansicht mit Schrankliste / English: Furniture and kitchen designer: kitchen row in 3D and front view with cabinet list" width="100%"></picture> |
 | Vorschau des PDFs mit Werkzeugliste, Reihenfolge und Zeitschätzung, dazu Kostenrechnung<br><sub>Setup sheet and quote: PDF preview, tool list, sequence, time estimate, costs</sub> | Katalog mit Größen; Händlerwerte sind als »ungeprüft« oder »Herstellerangabe, bitte prüfen« gekennzeichnet<br><sub>Machine setup: catalogue with sizes; dealer values are flagged</sub> | Küchenzeile in 3D und Frontansicht, mit Stückliste und Zuschnitt (Beispiel)<br><sub>Furniture and kitchen: kitchen row in 3D and front view, parts list and cutting plan</sub> |
+
+### Neu in 0.4.2: drei Korrekturen (Schubkästen in der 3D-Vorschau, Fräserwahl und Höhe beim Planen der Opferplatte)
+
+* **Behoben:** In der 3D-Vorschau der Küche (mit »Schubkästen erzeugen«) und der Möbel (Nachttisch, Kommode, Highboard, Sideboard, Schreibtisch-Container) saß der Schubkasten **versetzt zur Front**: nicht mittig zwischen den Seiten und zu tief, teils im Zwischenboden. Die Teile, Maße, Stückliste und Fräsdaten waren richtig, nur die Anzeige. Nur in Chromium geprüft, nicht unter Windows (WebView2).
+* **Behoben:** Beim **Planfräsen** und bei **»Opferplatte planen«** schlägt der Assistent jetzt zuerst **deinen eigenen Planfräser** vor (angelegt als Planfräser, mit »Planfräser« im Namen oder ab 12 mm Durchmesser); bisher bekam ein Katalog-Planfräser (zum Beispiel von Amana) oft den Vorzug. Nur gegen Tests und Simulator geprüft.
+* **Behoben:** **»Opferplatte planen« mit festem Taster:** Der Fräser stand um die Plattendicke zu hoch (bei 16 mm Platte und 0,5 mm Abtrag auf 15,5 mm statt auf −0,5 mm); die Tiefen zählen jetzt bei der Opferplatte immer ab ihrer Oberseite. Nicht an einer echten Maschine geprüft: erst im Luftschnitt ohne Fräser prüfen.
 
 ### Neu in 0.4.1: Opferplatte markieren, neue Tisch-Ansicht, Geräte und Raum in der Küche, mehr Möbel
 
