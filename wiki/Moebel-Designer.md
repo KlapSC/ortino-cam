@@ -4,6 +4,8 @@ Neben der Küche entwirfst du im selben Dialog **Möbel**: Tische, Sideboards, R
 
 > **Ehrlich zum Stand:** Alles hier sind **Rechnungen und übliche Werkstattmaße**, geprüft nur gegen Tests, Simulator und Chromium. **Nichts davon wurde gefräst, gebaut oder belastet.** Die Prüfungen (Kippen, Durchbiegung, Stege, Innenradien) sind **Hinweise aus einfachen Formeln, kein Festigkeitsnachweis**; Werkstoffkennwerte, Lasten, Prüflasten, Steckspiel und Gewichte sind **Annahmen**, die in jeder Meldung stehen. **Vor jeder Serie ein Probeteil aus dem echten Material bauen und mit der vorgesehenen Last prüfen.** Bei Stuhl, Hocker und Bank ist das Voraussetzung.
 
+> **Auch im Browser:** Seit 0.5.0 gibt es diesen Designer auch im Community-Portal (ohne Programm, ohne Fräsen): [Web-Designer im Portal](Web-Designer-im-Portal).
+
 ## Öffnen
 
 Im Möbel-Designer (`Strg+Umschalt+M`) oben den Umschalter **Küche | Möbel**, oder in der Befehlspalette (`Strg+K`) »Möbel-Designer: Bereich Möbel öffnen«, »Möbel: Essgruppe anlegen« oder »Möbel hinzufügen: …«. Küchenschränke und Möbelstücke können im selben Projekt stehen; jeder Bereich zeigt nur seine Stücke, Stückliste, Zuschnitt und »Teile erzeugen« enthalten beide.

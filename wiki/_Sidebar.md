@@ -28,6 +28,7 @@
 
 * [Platten und Möbel](Platten-und-Möbel)
 * [Möbel-Designer](Moebel-Designer)
+* [Web-Designer im Portal](Web-Designer-im-Portal)
 * [Küchen-Rendering](Kuechen-Rendering)
 * [Rüstblatt und Angebot](Rüstblatt-und-Angebot)
 

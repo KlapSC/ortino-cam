@@ -55,6 +55,10 @@ Unter **Meine Designs** bearbeitest du Angaben, lädst neue Versionen hoch, ver�
 * Laut Community-Richtlinien **nicht erlaubt** sind: fremde Werke ohne Erlaubnis, geschützte Logos und Marken, Waffen oder rechtlich eingeschränkte Teile, gefährliche Anleitungen, absichtlich falsche Einstellungen und Schadsoftware.
 * Verstöße meldest du über **»Melden«** bei der Moderation.
 
+## Küche und Möbel im Browser
+
+Seit Version 0.5.0 laufen der Küchen- und der Möbel-Designer auch im Portal, ohne Installation, mit Entwürfen im eigenen Konto und Download als `.ocam` für das Programm. Das ist eine eigene Anleitung: [Web-Designer im Portal](Web-Designer-im-Portal). Es braucht ein Konto mit bestätigter E-Mail-Adresse und ein Portal ab Server-Version 0.5.0.
+
 ## Sicherung im Portal
 
 Mit einem Konto kannst du Maschinenprofile, eigene Fräser und ausgewählte Einstellungen privat sichern und auf einem anderen Rechner abrufen. Das ist eine eigene Anleitung: [Sicherung im Portal](Sicherung-im-Portal).
