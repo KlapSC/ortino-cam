@@ -57,7 +57,7 @@ Unter **Meine Designs** bearbeitest du Angaben, lädst neue Versionen hoch, ver�
 
 ## Küche und Möbel im Browser
 
-Seit Version 0.5.0 laufen der Küchen- und der Möbel-Designer auch im Portal, ohne Installation, mit Entwürfen im eigenen Konto und Download als `.ocam` für das Programm. Das ist eine eigene Anleitung: [Web-Designer im Portal](Web-Designer-im-Portal). Es braucht ein Konto mit bestätigter E-Mail-Adresse und ein Portal ab Server-Version 0.5.0.
+Seit Version 0.5.0 laufen der Küchen- und der Möbel-Designer auch im Portal, ohne Installation, mit Entwürfen im eigenen Konto und Download als `.ocam` für das Programm; seit 0.6.0 lassen sich Entwürfe teilen und abwechselnd bearbeiten. Das ist eine eigene Anleitung: [Web-Designer im Portal](Web-Designer-im-Portal). Es braucht ein Konto mit bestätigter E-Mail-Adresse und ein Portal ab Server-Version 0.5.0.
 
 ## Sicherung im Portal
 

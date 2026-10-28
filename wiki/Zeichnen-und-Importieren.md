@@ -99,7 +99,9 @@ Im Importdialog wählst du die **Platzierung** (automatisch auf die Platte passe
 * Bilder in der PDF, Transparenz und Beschneidungspfade werden **nur gemeldet**, nicht umgesetzt. Zu Rasterbildern gibt es den Knopf »Als Bild nachzeichnen«.
 * Strichbreiten und Strichelung werden ignoriert, es zählt die Mittellinie. Verläufe und Muster werden nur als Umriss übernommen.
 * Nicht eingebettete Schriften werden gemeldet und nicht geraten. Lösung: Text in der Quelle in Umrisse umwandeln.
-* EPS, `.ai` ohne PDF-Teil und DWG werden mit einer Erklärung abgelehnt. Speichere Illustrator-Dateien »PDF-kompatibel« oder exportiere aus dem CAD als DXF oder SVG.
+* **DWG** kann ortino.CAM nicht lesen und lehnt die Datei (auch unter anderer Endung) mit einer Erklärung ab. Speichere im CAD-Programm als **DXF** oder SVG.
+
+**EPS, PostScript und alte Illustrator-Dateien (seit 0.6.0):** `.eps`, `.ps` und `.ai` **ohne PDF-Teil** (Illustrator 1 bis 8) laufen über denselben Dialog wie das PDF, mit denselben Einstellungen (Seite, Einheit, Maßstab, Béziers, Ebenen); die Kopfzeile nennt die Dateiart. Dazu liest ein eigener kleiner PostScript-Leser die Pfade; er führt keine Datei-, Netz- oder Prozessbefehle aus und hat harte Grenzen für Zeit und Speicher. Flächen werden zu Formen, Linien zu Mittellinien, Verbundpfade mit Loch bleiben erhalten. **Text, Bilder, Muster und Beschneidungen werden nicht gezeichnet**, sondern gezählt und mit Lösung gemeldet (zum Beispiel: Text in der Quelle in Umrisse umwandeln). **Grenzen:** Es stand keine echte Datei von Illustrator, CorelDRAW oder Ghostscript zur Verfügung (echt nur von cairo, dem Ausgabemodul von Inkscape); Illustrator ab Version 9 als EPS ohne Privatdaten ist ungeprüft und kann unvollständig ankommen.
 * Passwortgeschützte PDFs werden abgelehnt.
 
 ### Bild nachzeichnen

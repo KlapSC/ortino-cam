@@ -9,7 +9,7 @@ Hier stehen häufige Probleme mit der Ursache und einer Lösung. Bei jedem Probl
 | **Windows warnt beim Installieren** (SmartScreen) | Der Installer ist mit einem selbst erstellten Zertifikat signiert. Wenn du ihn von der offiziellen Release-Seite hast und die Prüfsumme stimmt: »Weitere Informationen« → »Trotzdem ausführen«. Siehe [Installation und Updates](Installation-und-Updates). |
 | »3D-Ansicht nicht verfügbar« oder »WebGL ist nicht verfügbar« | Der Grafiktreiber stellt WebGL nicht bereit. Treiber aktualisieren, Hardwarebeschleunigung einschalten, ortino.CAM neu starten. Prüfliste und Auftragsübersicht funktionieren auch ohne. |
 | Installation oder Update meldet, eine Datei könne nicht überschrieben werden | Meist hält Claude Desktop `ortino-mcp.exe` gesperrt. Claude Desktop beenden und erneut installieren. |
-| Fehlertexte in der englischen Oberfläche sind deutsch | Bekannte Einschränkung (auch in 0.5.0): Meldungen des Kerns (Fehlertexte, Prüfliste) sind teils noch deutsch. |
+| Fehlertexte in der englischen Oberfläche sind deutsch | Bekannte Einschränkung (auch in 0.6.0): Meldungen des Kerns (Fehlertexte, Prüfliste) sind teils noch deutsch. |
 | »Sicherung im Portal« meldet, das Portal sei zu alt, oder bietet sie nicht an | Die Sicherung braucht ein Portal ab Version 0.3.12. Der Betreiber des Portals muss den Server aktualisieren; bis dahin funktioniert alles andere wie bisher. Siehe [Sicherung im Portal](Sicherung-im-Portal). |
 | Nach einem Absturz fehlt Arbeit | Beim Start bietet die Willkommensseite an, den automatisch gesicherten Stand wiederherzustellen. Speichere ihn danach unter einem Namen. |
 

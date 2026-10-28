@@ -67,10 +67,20 @@ Manche Werkstücke brauchen Bearbeitungen von **beiden Seiten**: eine Tasche obe
 * Jede Seite bekommt ihre eigene G-Code-Datei, zum Beispiel `Kiste_Seite_A.nc` und `Kiste_Seite_B.nc`.
 * Das [Rüstblatt](Rüstblatt-und-Angebot) jeder Seite hat einen Abschnitt »Doppelseitig: Seite A → Wenden → Seite B« mit Wendeachse, Stiften, Stiftlagen, Bohrtiefe und den Schritten am Tisch. Auf Seite B steht ein zusätzliches Kästchen »Seite A ist gefräst, Werkstück gewendet«.
 
+## Wenden an einer Anschlagkante (seit 0.6.0)
+
+Statt zweier Passstifte legst du das Werkstück für **beide** Seiten in eine **Anschlagecke** auf der Opferplatte: eine gerade **Leiste** entlang einer Kante und ein **Endanschlag** an der Nachbarkante. Nach Seite A wird das Werkstück an der Leiste gewendet und wieder in die Ecke gelegt. Im Assistenten wählst du im zweiten Schritt oben »Ausrichten nach dem Wenden: **Anschlag (Kante)**« und die Ecke; die Vorschau zeigt Leiste, Endanschlag und die Ecke, die auf Seite B dort liegt.
+
+* **Maß in Wenderichtung:** Am Endanschlag sitzt Seite B in Wenderichtung um die Abweichung des echten Werkstückmaßes verschoben (mit Stiften nie). Das Maß muss deshalb stimmen; die Prüfliste erinnert daran.
+* **Prüfliste:** Anschlag vorhanden und rechtwinklig? Anlage genau? Nullpunkt an der Anschlagecke? Bahnen über Leiste oder Endanschlag hinaus (Fehler, wenn dort fast durchgefräst wird)? Die Höhe der Leiste kennt das Programm nicht.
+* **Anleitung am Tisch, Start-Check, Rüstblatt und Plattenplaner** kennen die Variante (der Plattenplaner sperrt innen an Leiste und Endanschlag einen 3 mm breiten Streifen). Tipp: Mit »Opferplatte markieren → Anschlag-Linien« reißt du die Leiste an.
+* Alte Dateien laden unverändert. Ältere Programmversionen lesen eine Anschlag-Datei nur als unvollständige Passstift-Kopplung und zeigen Fehler in der Prüfliste.
+* Nichts davon wurde an einer echten Maschine geprüft.
+
 ## Grenzen
 
-* Die **Simulation** zeigt jede Seite für sich. Seite B wird aus einem vollen Block simuliert, die schon gefräste Seite A wird nicht berücksichtigt.
-* Immer **zwei Stifte**. Wenden an einer Anschlagkante oder eine Passform in der Opferplatte gibt es nicht.
+* Die **Simulation** rechnet seit 0.6.0 beide Seiten zusammen: Seite B startet vom Materialzustand nach Seite A (an der Wendeachse gespiegelt), Durchbrüche und Passlöcher erscheinen im Bild, eine Warnung kommt, wenn zwischen beiden Seiten weniger als 1 mm stehen bleibt oder eine Bahn von Seite B in einen Passstift reicht. Der Schalter **»Nur Seite B«** rechnet wie früher aus dem vollen Block. Die Simulation ist auf eine Rasterzelle genau, setzt Fräsen von oben voraus und simuliert weder Wendefehler noch das Spiel der Stifte.
+* Mit Stiften immer **zwei Stifte**; eine Passform in der Opferplatte gibt es nicht. Statt der Stifte gibt es seit 0.6.0 das **Wenden an einer Anschlagkante** (unten).
 * Ohne **Versatz** passt das Werkstück auch falsch gewendet auf die Stifte (um 180° gedreht). Ein Versatz von einigen Millimetern verhindert das.
 * **Gespiegelt kopieren** spiegelt auch Texte (Spiegelschrift). Für Schrift auf Seite B lieber neu schreiben.
 * Das Job-Protokoll erkennt Seite A am Projekt- und Plattennamen. Nach dem Umbenennen oder bei einem Lauf an einem anderen Rechner bleibt es bei der Warnung zum Bestätigen.

@@ -36,7 +36,14 @@ Standardmaß Breite × Höhe × Tiefe in mm.
 | **Garderobe** | (seit 0.4.1) | Wandpaneel mit Hakenleiste und Ablage auf gesteckten Konsolen; Haken und Wandbefestigung stehen in der Stückliste |
 | **Schuhbank / Schuhschrank** | (seit 0.4.1) | bis 480 mm Höhe eine Bank mit offenen Fächern, darüber ein Schrank |
 
-Einen **Loungesessel** gibt es bewusst nicht, ebenso keine Polster, Armlehnen, Drehstühle oder Betten.
+Seit 0.6.0 gibt es zwei weitere Sitzmöbel:
+
+| Art | Aufbau |
+|---|---|
+| **Loungesessel** | zwei große Wangen als Konturplatten (Füße mit Bogen, Sitzlinie, geneigte Lehne), Sitz- und Lehnenbrett, wählbare Querstreben, optional eine Armlehne als Teil der Wange (steckt durch einen Schlitz im Lehnenbrett). Kein Polster: **ein Kissen steht nur als Zukaufteil mit Richtmaßen in der Stückliste**. |
+| **Drehstuhl** | **Sitz und Rückenlehne** aus Platte; **Drehkreuz, Gaslift, Rollen, Sitzaufnahme und Lehnenträger sind Zukaufteile** (in 3D als einfache Platzhalter, in der Stückliste aufgeführt). Bohrungen für Einschraubmuffen M8 an Sitzunterseite und Lehnenrückseite. |
+
+Die fünf neuen Zukaufteile der Beschlagbibliothek sind **generisch** (ohne Hersteller, Link oder Preis, als »ungeprüft – am echten Teil prüfen« gekennzeichnet); die Bohrbilder sind Annahmen, **prüfe sie am echten Drehkreuz, bevor du bohrst**. Die Prüfungen (Sitzhöhe, Tiefe, Lehnenneigung, Kippen nach hinten und vorn, Drehkreuz-Durchmesser, Gaslift-Hub, Durchbiegung des Sitzbretts) sind Hinweise aus einfachen Formeln, **kein Festigkeitsnachweis**; EN 1335 und EN 16139 sind nicht geprüft. Nichts davon wurde gefräst, gebaut oder belastet. Polstermöbel, Betten, Wippmechanik und Armlehnen am Drehstuhl gibt es weiterhin nicht.
 
 ## Verbindungen
 
