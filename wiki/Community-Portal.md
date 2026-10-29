@@ -1,6 +1,6 @@
 # Community-Portal
 
-Neben dem Programm gibt es ein **Community-Portal**: eine Webseite, auf der Fräsdesigns gesammelt, durchsucht und geteilt werden, jeweils mit den Werkzeugen, Tiefen, Vorschüben und einer Anleitung, die zum Design gehören. Du erreichst es unter **[https://benini.access.ly:8088](https://benini.access.ly:8088)**. Im Programm ist diese Adresse schon eingetragen, du musst nichts einrichten.
+Neben dem Programm gibt es ein **Community-Portal**: eine Webseite, auf der Fräsdesigns gesammelt, durchsucht und geteilt werden, jeweils mit den Werkzeugen, Tiefen, Vorschüben und einer Anleitung, die zum Design gehören. Du erreichst es unter **[https://ortino-cam.com](https://ortino-cam.com)**. Im Programm ist diese Adresse schon eingetragen, du musst nichts einrichten.
 
 ![Community im Programm: Designseite mit „Laden & öffnen“, Lizenz und Beschreibung (Beispieldaten einer lokalen Installation)](https://raw.githubusercontent.com/KlapSC/ortino-cam/main/docs/bilder/community-im-programm-light.png)
 
@@ -31,6 +31,10 @@ Stöbern und Herunterladen gehen **ohne Konto**.
 
 Eine `.ocamd`-Datei (so heißt ein Designpaket) öffnest du auch per Doppelklick oder über »Paket öffnen …«. Das Portal bietet außerdem »In ortino.CAM öffnen« als Link. Ein solcher Link **lädt nie sofort**: Zuerst erscheint eine Bestätigung mit Portal-Adresse, Designname und Autor. Ein unbekanntes Portal wird gar nicht erst angefragt, bis du ihm ausdrücklich vertraust.
 
+## Neue Adresse (seit 0.7.0)
+
+Das Portal ist umgezogen: Es liegt jetzt unter **[ortino-cam.com](https://ortino-cam.com)**, früher unter `benini.access.ly:8088`. ortino.CAM ab Version 0.7.0 hat die neue Adresse schon eingetragen. Ältere Programmversionen fragen für ihr Update noch eine Übergangszeit bei der alten Adresse nach; nach dem Update zeigen sie auf die neue. Dein Konto und deine Designs sind mitgekommen. Weil die Adresse neu ist, musst du dich **einmal neu anmelden** (Browser und Programm). Alte Links aus E-Mails zeigen auf die alte Adresse und führen für diese Übergangszeit nur auf einen Umzugshinweis.
+
 ## Anmelden
 
 Zum Teilen brauchst du ein **kostenloses Konto**. Die Anmeldung im Programm läuft wie am Fernseher über einen Code: ortino.CAM zeigt dir einen kurzen Code und öffnet die Bestätigungsseite des Portals im Browser. Dort meldest du dich an und bestätigst das Gerät. **ortino.CAM sieht dein Passwort nie.** Der Zugangsschlüssel für dein Konto liegt unter Windows im Windows-Anmeldeinformationsspeicher, nicht in Dateien. »Abmelden« löscht ihn auf diesem Rechner.
@@ -57,7 +61,15 @@ Unter **Meine Designs** bearbeitest du Angaben, lädst neue Versionen hoch, ver�
 
 ## Küche und Möbel im Browser
 
-Seit Version 0.5.0 laufen der Küchen- und der Möbel-Designer auch im Portal, ohne Installation, mit Entwürfen im eigenen Konto und Download als `.ocam` für das Programm; seit 0.6.0 lassen sich Entwürfe teilen und abwechselnd bearbeiten. Das ist eine eigene Anleitung: [Web-Designer im Portal](Web-Designer-im-Portal). Es braucht ein Konto mit bestätigter E-Mail-Adresse und ein Portal ab Server-Version 0.5.0.
+Seit Version 0.5.0 laufen der Küchen- und der Möbel-Designer auch im Portal, ohne Installation, mit Entwürfen im eigenen Konto und Download als `.ocam` für das Programm; seit 0.6.0 lassen sich Entwürfe teilen und abwechselnd bearbeiten, seit 0.7.0 auf Wunsch des Besitzers auch gleichzeitig (live). Das ist eine eigene Anleitung: [Web-Designer im Portal](Web-Designer-im-Portal). Es braucht ein Konto mit bestätigter E-Mail-Adresse und ein Portal ab Server-Version 0.5.0.
+
+## Boosts und Punkte (seit 0.7.0)
+
+Jedes Konto mit bestätigter E-Mail-Adresse, das mindestens drei Tage alt ist, kann je **Kalendermonat** (Zeitzone Europe/Zurich) **4 Boosts** an Designs **anderer** verteilen: einmal je Design, höchstens zwei an denselben Ersteller, nie an eigene Designs. Nicht verteilte Boosts verfallen am Monatsende; einen Boost kannst du kurz nach dem Vergeben zurücknehmen. Wer ein Design erstellt hat, bekommt je Boost **Punkte**: zuerst vorgemerkt, nach 14 Tagen verfügbar. Öffentlich sichtbar ist nur die **Anzahl** der Boosts, wer geboostet hat, sehen nur Moderation und Administration. **Punkte sind kein Geld, nicht übertragbar und nicht auszahlbar; einen Shop gibt es noch nicht.** Bei Missbrauch werden Punkte zurückgebucht. Der Betreiber kann das Programm abschalten (`ORTINO_HUB_BOOST=off`). Nur gegen lokale Server und Chromium geprüft, nie mit echten Nutzern.
+
+## Maschinenprofile aus der Community (seit 0.7.0)
+
+Konten können die **technischen Angaben** ihrer Fräse (Hersteller, Modell, Steuerung, Firmware, Verfahrweg, Spindel, Vorschub, Eilgang, Beschleunigung, Postprozessor, Referenzecke) als Profil veröffentlichen, nicht Kalibrierung, Tasterlage, Pfade oder Namen. Andere finden es im Portal oder im Programm (`Strg+K` → *Maschine aus dem Portal*), **laden** es (es überschreibt nie dein Profil und ist als »ungeprüft« gekennzeichnet) und können mit einem Klick **»läuft bei mir«** sagen. **»Bestätigt von n Nutzern«** ist eine Angabe von Konten, **keine Prüfung durch ortino.CAM**: Vergleiche die Werte vor dem ersten Einsatz mit dem Handbuch deiner Maschine. Bestätigen dürfen nur andere Konten mit bestätigter Adresse, die mindestens 24 Stunden alt sind.
 
 ## Sicherung im Portal
 
@@ -86,4 +98,4 @@ Unter *Konto & Portale → Fehlersuche → Protokoll anzeigen* siehst du die Abl
 
 ## Kontakt
 
-Fragen, Fehler und Wünsche zum Portal gehen wie überall über [GitHub Issues](https://github.com/KlapSC/ortino-cam/issues/new/choose). Issues sind öffentlich: Schreib dort keine persönlichen Daten hinein. **Datenschutzanfragen und rechtliche Anliegen** zum Portal (Konto, Auskunft, Löschung, Sperre, Widerspruch gegen eine Entscheidung der Moderation) gehen an die E-Mail-Adresse im [Impressum des Portals](https://benini.access.ly:8088/imprint). Fräsdesigns (Schilder, Möbel, Muster) gehören ins Portal und nicht in das öffentliche Repository.
+Fragen, Fehler und Wünsche zum Portal gehen wie überall über [GitHub Issues](https://github.com/KlapSC/ortino-cam/issues/new/choose). Issues sind öffentlich: Schreib dort keine persönlichen Daten hinein. **Datenschutzanfragen und rechtliche Anliegen** zum Portal (Konto, Auskunft, Löschung, Sperre, Widerspruch gegen eine Entscheidung der Moderation) gehen an die E-Mail-Adresse im [Impressum des Portals](https://ortino-cam.com/imprint). Fräsdesigns (Schilder, Möbel, Muster) gehören ins Portal und nicht in das öffentliche Repository.

@@ -48,7 +48,7 @@ jobs:
           VERSION: ${{ inputs.version }}
         run: |
           set -euo pipefail
-          base="https://benini.access.ly:8088/api/v1/app/download/$VERSION"
+          base="https://ortino-cam.com/api/v1/app/download/$VERSION"
           mkdir -p dl
           cd dl
           for kind in nsis msi; do

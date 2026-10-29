@@ -37,6 +37,8 @@ Nach dem Verbinden fragt das Programm die Firmware ab und liest die Einstellunge
 
 Bei der **Referenzfahrt** (englisch *Homing*) fährt die Maschine zu den Endschaltern und kennt danach ihre Position. Ohne Referenzfahrt kann das Programm den Verfahrweg nicht prüfen. Der Start-Check warnt dann. Die Referenzfahrt braucht Endschalter und `$22=1` in der Steuerung. Der Arbeitsbereich muss frei sein, das Programm fragt vorher nach.
 
+**Immer zur Hand:** Oben in der rechten Spalte steht die Leiste **»Steuerung«**. Sie bleibt beim Scrollen stehen und bietet **Referenzfahrt**, **Entsperren**, **Nullpunkt XY** und **Zu X0 Y0** an, nicht nur beim ersten Mal. Daneben steht, ob die Maschine in dieser Verbindung **referenziert** ist; solange nicht, ist die Referenzfahrt hervorgehoben. Gesperrte Knöpfe bleiben sichtbar, der Satz darunter nennt den Grund (zum Beispiel »nicht verbunden«, »Alarm«, »Programm läuft«). Die Referenzfahrt fragt wie immer vorher nach. *Nur Simulator und Chromium.*
+
 **Erst referenzieren, dann den Nullpunkt setzen.** Die Referenzfahrt legt die Maschinenkoordinaten neu fest; ein vorher gesetzter Nullpunkt liegt danach woanders, und der Start-Check verlangt ihn neu. Dasselbe gilt nach einem Alarm, bei dem die Position verloren geht, oder nach einem Neustart der Steuerung: Bis zur nächsten Referenzfahrt (oder bis du ihn neu setzt) gilt der Nullpunkt als nicht gesetzt. *Nur Simulator.*
 
 ## 3. Handsteuerung und Nullpunkt

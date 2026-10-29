@@ -33,6 +33,10 @@ Du kannst einen gespeicherten Entwurf mit anderen Konten teilen, zum Beispiel mi
 * **Nicht dabei:** gleichzeitiges Live-Bearbeiten, Kommentare, Chat, Versionsverlauf.
 * **Ehrlich zum Stand:** Nie von mehreren echten Menschen benutzt, nur in Chromium und mit Tests geprüft. Wenn zwei Personen im selben Konto in zwei Tabs arbeiten, teilen sie weiterhin eine Rechnung; wer im zweiten Tab einen anderen Entwurf öffnet und im ersten speichert, bekommt eine Meldung statt eines Überschreibens.
 
+## Gleichzeitig bearbeiten (Live, seit 0.7.0)
+
+Der **Besitzer** kann für einen Entwurf, den er mit mindestens einer Person geteilt hat, **Live-Bearbeitung** einschalten. Dann arbeiten bis zu vier Personen **gleichzeitig** auf einer gemeinsamen Rechnung im Server: Änderungen erscheinen bei allen nach wenigen hundert Millisekunden, dazu siehst du, wer da ist und was gerade ausgewählt ist. Gespeichert wird automatisch und mit Versionsprüfung; **Rückgängig** nimmt nur deine eigene letzte Änderung zurück. Ohne diese Erlaubnis bleibt es beim abwechselnden Bearbeiten mit Sperre. Es gibt nur **wenige Live-Plätze** (Standard: zwei Live-Sitzungen gleichzeitig, höchstens vier Stunden je Sitzung); ist keiner frei, bleibt es beim abwechselnden Bearbeiten. **Grenzen:** nie von mehreren echten Menschen gleichzeitig benutzt, läuft nur auf einer Server-Instanz.
+
 ## Was es im Web nicht gibt
 
 Fräsen, die Maschine, G-Code, die Einstellungen des Programms, Dateizugriff, eigene Bausteine und eigene Beschläge (die mitgelieferten kannst du wählen), *Teile erzeugen & fräsen vorbereiten*, Claude/MCP und die Kamera. Stückliste (als CSV oder HTML), Zuschnitt, Rendering, Prüfliste, Varianten, Kundenblatt, Muster und Reliefs gibt es. Wo ein Knopf fehlt, steht der Hinweis, den Entwurf herunterzuladen und im Programm weiterzubearbeiten.

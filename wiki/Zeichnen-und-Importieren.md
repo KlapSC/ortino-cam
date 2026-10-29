@@ -9,7 +9,7 @@ Die Platte ist das Material, aus dem du fräst. Ihr Ursprung liegt links unten, 
 ## Navigieren und Fangen
 
 * **Zoom:** Mausrad. **Verschieben:** mittlere Maustaste ziehen oder Leertaste halten und mit der linken Taste ziehen. **Einpassen:** `F` passt die Ansicht an die Platte an, `Z` zoomt auf die Auswahl.
-* **Fangen** rastet auf Raster, Endpunkte, Mitten, Plattenränder und Hilfslinien ein. Beim Ziehen von Knoten schaltet `Alt` das Fangen ab.
+* **Fangen** rastet auf Raster, Endpunkte, Mitten, Plattenränder und Hilfslinien ein. Beim Ziehen von Knoten schaltet `Alt` das Fangen ab. **Seit 0.7.0** kommen dazu (jede Art mit eigener Form, Farbe und Kurztext, je Art schaltbar im Fenster **»Fangarten«** der Statusleiste und unter *Einstellungen ▸ Zeichnen*): **Schnittpunkte** (Linie, Kreis, Bogen), **Verlängerung** (Endpunkt einer Linie oder eines Bogens etwa 0,3 s überfahren, dann erscheint ein **+** und der Zeiger rastet auf der gestrichelten Verlängerung ein), **Lot** und **Tangente** vom letzten Punkt aus, **senkrechte und parallele Spuren** eines überfahrenen Segments und **Polar** im eingestellten Winkelschritt (Standard 90°, bis 5°) mit angezeigtem Winkel sowie **auf der Kontur**. Nur in Tests und in Chromium gesehen, nie mit Touch oder Stift.
 * **Rückgängig:** `Strg+Z` (bis zu 200 Schritte, getippte Änderungen werden zusammengefasst). **Autosave** speichert alle 30 Sekunden in eine Wiederherstellungsdatei. Findet das Programm beim Start einen automatisch gesicherten Stand, bietet es auf der Willkommensseite an, ihn wiederherzustellen.
 
 ## Formen zeichnen
@@ -28,6 +28,10 @@ Die Platte ist das Material, aus dem du fräst. Ihr Ursprung liegt links unten, 
 | Messen | `M` | |
 
 Jede Form hat Eigenschaften (Lage, Größe, Eckenradius, Drehung), in die du Zahlen **oder Formeln** schreiben kannst.
+
+## Bemaßung (seit 0.7.0)
+
+Mit dem Werkzeug **D** setzt du Maße in die Zeichnung: **waagerecht, senkrecht, ausgerichtet, Radius, Durchmesser, Winkel und Bogenlänge**. Ein Maß hängt an Punkten von Formen; verschiebst oder skalierst du die Form oder änderst ihre Parameter, folgt das Maß. Löschst du die Form, bleibt ein freies Maß mit Hinweis. Maße sind **reine Beschriftung**: Sie erzeugen **nie Werkzeugwege** und erscheinen nicht im G-Code, in der Simulation oder in der Prüfliste. Export: **SVG** (als Gruppe) und **DXF** (Ebene `BEMASSUNG`). **Grenzen:** nicht im Rüstblatt und im PDF; die Exporte wurden in keinem fremden CAD-Programm geöffnet; unter Windows nicht ausprobiert.
 
 ## Text und Schriften
 

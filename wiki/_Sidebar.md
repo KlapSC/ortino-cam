@@ -10,6 +10,7 @@
 
 * [Zeichnen und Importieren](Zeichnen-und-Importieren)
 * [Foto → Relief](Foto-zu-Relief)
+* [Reliefs modellieren](Modellieren-von-Reliefs)
 * [3D-Modelle importieren](3D-Modelle-importieren)
 * [Bearbeitungen](Bearbeitungen)
 * [Werkzeuge und Schnittdaten](Werkzeuge-und-Schnittdaten)
@@ -19,6 +20,7 @@
 
 * [Fräsen an der Maschine](Fräsen-an-der-Maschine)
 * [Doppelseitig fräsen](Doppelseitig-fraesen)
+* [Große Teile kacheln](Grosse-Teile-kacheln)
 * [Fester Taster und Opferplatte](Fester-Taster-und-Opferplatte)
 * [Opferplatte markieren](Opferplatte-markieren)
 * [Handy-Fernbedienung](Handy-Fernbedienung)

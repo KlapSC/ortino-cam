@@ -4,7 +4,7 @@
 
 Willkommen. **ortino.CAM** ist eine **CAD/CAM-Software für CNC-Fräsen** unter Windows: zeichnen, Werkzeugwege berechnen (Profil, Tasche, V-Carving, 3D-Relief), in 3D simulieren, prüfen und direkt an eine **GRBL-Steuerung** wie die der Ultimate Bee (CNC xPRO V5) schicken, alles in einer Anwendung. Mit einem MCP-Server und einer lokalen Schnittstelle lässt sie sich auch von **Claude** und eigenen Skripten steuern.
 
-Dieses Wiki ist für Menschen, die ortino.CAM **benutzen**: Hobby-Fräser, Tischler und Werkstätten. Du musst nichts über den Quelltext wissen. Es beschreibt die veröffentlichte **Version 0.6.0**.
+Dieses Wiki ist für Menschen, die ortino.CAM **benutzen**: Hobby-Fräser, Tischler und Werkstätten. Du musst nichts über den Quelltext wissen. Es beschreibt die veröffentlichte **Version 0.7.0**.
 
 ## Bitte zuerst lesen
 
@@ -60,11 +60,11 @@ Die Software entsteht **zum größten Teil mit Claude Code (Anthropic) als Co-Au
 ## Links
 
 * **Download:** [Releases](https://github.com/KlapSC/ortino-cam/releases/latest)
-* **Fragen, Fehler, Wünsche, Maschinenberichte:** [GitHub Issues](https://github.com/KlapSC/ortino-cam/issues/new/choose). Issues sind öffentlich, bitte keine persönlichen Daten hineinschreiben. **Datenschutzanfragen und rechtliche Anliegen zum Community-Portal** gehen an die E-Mail-Adresse im [Impressum des Portals](https://benini.access.ly:8088/imprint).
+* **Fragen, Fehler, Wünsche, Maschinenberichte:** [GitHub Issues](https://github.com/KlapSC/ortino-cam/issues/new/choose). Issues sind öffentlich, bitte keine persönlichen Daten hineinschreiben. **Datenschutzanfragen und rechtliche Anliegen zum Community-Portal** gehen an die E-Mail-Adresse im [Impressum des Portals](https://ortino-cam.com/imprint).
 * **Überblick, Vergleich und Fragen:** die [README](https://github.com/KlapSC/ortino-cam#readme) und die [Projektseite](https://klapsc.github.io/ortino-cam/)
-* **Community-Portal:** [https://benini.access.ly:8088](https://benini.access.ly:8088)
+* **Community-Portal:** [https://ortino-cam.com](https://ortino-cam.com)
 * **Mitmachen:** [CONTRIBUTING.md](https://github.com/KlapSC/ortino-cam/blob/main/CONTRIBUTING.md)
 
 ## English
 
-This wiki is the user guide for **ortino.CAM**, CAD/CAM software for CNC routers on Windows with direct GRBL machine control (version 0.6.0). It is an early version: proven on a real machine so far only for pockets, V-carving, profiles, homing and touch-plate tool changes, while newer features are tested against a simulator only. Always test without tool and material first and keep the emergency stop within reach. The software is provided "as is", without warranty, and you use it at your own risk (see the [disclaimer](https://github.com/KlapSC/ortino-cam#haftungsausschluss)). The pages are in German, and the main project page and the README have English summaries. Questions and bugs go through [GitHub issues](https://github.com/KlapSC/ortino-cam/issues/new/choose) (public, so no personal data); data protection requests and legal matters about the community portal go to the e-mail address in the [portal's imprint](https://benini.access.ly:8088/imprint).
+This wiki is the user guide for **ortino.CAM**, CAD/CAM software for CNC routers on Windows with direct GRBL machine control (version 0.7.0). It is an early version: proven on a real machine so far only for pockets, V-carving, profiles, homing and touch-plate tool changes, while newer features are tested against a simulator only. Always test without tool and material first and keep the emergency stop within reach. The software is provided "as is", without warranty, and you use it at your own risk (see the [disclaimer](https://github.com/KlapSC/ortino-cam#haftungsausschluss)). The pages are in German, and the main project page and the README have English summaries. Questions and bugs go through [GitHub issues](https://github.com/KlapSC/ortino-cam/issues/new/choose) (public, so no personal data); data protection requests and legal matters about the community portal go to the e-mail address in the [portal's imprint](https://ortino-cam.com/imprint).

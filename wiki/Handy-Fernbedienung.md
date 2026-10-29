@@ -20,7 +20,7 @@ Bis zu **vier Handys** lassen sich koppeln. Die Karte listet sie mit der Verbind
 | Darf | Einzelheiten |
 |---|---|
 | **Ansehen** | Zustand (bereit, fräst, pausiert, Alarm …), Positionen, Vorschub, Drehzahl, Fortschritt des Programms |
-| **Verfahren** | X, Y und Z getrennt. Schritte in XY 0,1 / 1 / 10 mm, in Z 0,1 / 1 / 5 mm. Tempo langsam (300), mittel (1000), schnell (2000 mm/min), nie über der Grenze deiner Maschine. **Kein Dauerfahren:** Jeder Tipp ist eine begrenzte Strecke. Nur im Leerlauf. |
+| **Verfahren** | X, Y und Z einzeln, in X und Y auch **schräg** (die vier Pfeile in den Ecken des Kreuzes: beide Achsen fahren denselben Schritt, also genau 45°; Z fährt immer allein). Schritte in XY 0,1 / 1 / 10 mm, in Z 0,1 / 1 / 5 mm. Tempo langsam (300), mittel (1000), schnell (2000 mm/min), nie über der Grenze deiner Maschine. **Kein Dauerfahren:** Jeder Tipp ist eine begrenzte Strecke. Nur im Leerlauf. |
 | **Fahrt abbrechen** | jederzeit |
 | **Nullpunkt X und Y** setzen | nur im Leerlauf, mit Rückfrage auf dem Handy |
 | **Pause, Weiter, Stopp** | Der rote Stopp-Knopf ist immer sichtbar. »Weiter« geht nicht, solange ein Werkzeugwechsel am Rechner wartet. |
@@ -30,7 +30,7 @@ Bis zu **vier Handys** lassen sich koppeln. Die Karte listet sie mit der Verbind
 
 ## Bremsen und Sperren
 
-* **Streckenbudget:** Pro Handy sind in jedem Fenster von 5 Sekunden höchstens **60 mm** Verfahrstrecke erlaubt, mit 250 ms Mindestabstand zwischen zwei Schritten. Ein paar Tipps beim Einrichten bleiben ungebremst. Wer darüber hinaus weitertippt, bekommt »Zu viel Strecke in kurzer Zeit«, und der Befehl geht nicht zur Maschine. Größere Wege fährst du am Rechner.
+* **Streckenbudget:** Pro Handy sind in jedem Fenster von 5 Sekunden höchstens **60 mm** Verfahrstrecke erlaubt (ein Schrägschritt zählt mit seiner Diagonale: 10 mm schräg sind 14,1 mm), mit 250 ms Mindestabstand zwischen zwei Schritten. Ein paar Tipps beim Einrichten bleiben ungebremst. Wer darüber hinaus weitertippt, bekommt »Zu viel Strecke in kurzer Zeit«, und der Befehl geht nicht zur Maschine. Größere Wege fährst du am Rechner.
 * **Verbindungsgüte:** Das Handy meldet alle halbe Sekunde einen »Herzschlag«. Ist die Verbindung unruhig, sperrt die Steuerung (Verfahren, Nullpunkt, Weiter) sofort und gibt erst wieder frei, wenn sie **5 Sekunden lang durchgehend gut** war. **Immer erlaubt** bleiben Stopp, Fahrt abbrechen, Pause, Spindel aus und der Status. Die Schwellen sind Annahmen, keine Messungen.
 * **Ausfall während einer Fahrt:** Bleibt der Herzschlag länger als 1,5 Sekunden aus, bricht das Programm die laufende Fahrt ab. Ein **laufendes Programm hält dabei nicht an**, wenn das Handy wegfällt.
 * **Nur im selben Netz:** Das Programm prüft, dass das Handy im gleichen lokalen Netz liegt (gleiches `/24`-Netz) und die Verbindung stabil ist. Es kann **nicht unterscheiden, ob WLAN oder Kabel**. Liegt dein Handy in einem anderen Adressblock deines Heimnetzes, wird es abgewiesen.
