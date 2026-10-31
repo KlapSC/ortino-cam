@@ -71,6 +71,12 @@ Jedes Konto mit bestätigter E-Mail-Adresse, das mindestens drei Tage alt ist, k
 
 Konten können die **technischen Angaben** ihrer Fräse (Hersteller, Modell, Steuerung, Firmware, Verfahrweg, Spindel, Vorschub, Eilgang, Beschleunigung, Postprozessor, Referenzecke) als Profil veröffentlichen, nicht Kalibrierung, Tasterlage, Pfade oder Namen. Andere finden es im Portal oder im Programm (`Strg+K` → *Maschine aus dem Portal*), **laden** es (es überschreibt nie dein Profil und ist als »ungeprüft« gekennzeichnet) und können mit einem Klick **»läuft bei mir«** sagen. **»Bestätigt von n Nutzern«** ist eine Angabe von Konten, **keine Prüfung durch ortino.CAM**: Vergleiche die Werte vor dem ersten Einsatz mit dem Handbuch deiner Maschine. Bestätigen dürfen nur andere Konten mit bestätigter Adresse, die mindestens 24 Stunden alt sind.
 
+## Marktplatz (seit 0.8.0, standardmäßig aus)
+
+Das Portal kann **Designs** und **Schnittdaten-Sätze** (Vorschub, Drehzahl und Zustellung je Fräser und Material) gegen **Punkte** anbieten. Punkte sind **keine Währung**: Es gibt kein Geld und keinen Zahlungsanbieter. Die Verkäuferin oder der Verkäufer bekommt 90 % des Preises, **10 % verfallen**; die Gutschrift kommt nach einer Wartezeit von 14 Tagen. Eine **Rückgabe gibt es nicht**, eine Erstattung nur bei einem Mangel (Datei defekt oder Inhalt anders als beschrieben), nach Prüfung durch die Moderation und innerhalb von 30 Tagen. Verkaufen dürfen nur Konten mit bestätigter E-Mail-Adresse, die die Moderation einmal freigeschaltet hat; jedes bezahlte Angebot wird vor der Veröffentlichung geprüft. Titel, Beschreibung, Bilder und Vorschau sind frei sichtbar, die Dateien und Werte erst nach dem Kauf.
+
+**Der Marktplatz ist auf einem neuen Portal ausgeschaltet.** Der Betreiber kann ihn erst einschalten, wenn er bestätigt hat, dass die Rechtstexte geprüft sind; die mitgelieferten Texte sind **Entwürfe ohne Prüfung durch eine Fachperson**. Das Windows-Programm kann bezahlte Designs **nicht kaufen**: Es zeigt eine Meldung mit Link zum Kauf im Browser. Ein Verkäufer-Konto lässt sich erst löschen, wenn die Erstattungsfristen seiner Verkäufe abgelaufen sind. Nichts davon ist mit echten Nutzern erprobt.
+
 ## Sicherung im Portal
 
 Mit einem Konto kannst du Maschinenprofile, eigene Fräser und ausgewählte Einstellungen privat sichern und auf einem anderen Rechner abrufen. Das ist eine eigene Anleitung: [Sicherung im Portal](Sicherung-im-Portal).

@@ -28,6 +28,15 @@ Bis zu **vier Handys** lassen sich koppeln. Die Karte listet sie mit der Verbind
 
 **Ausdrücklich nicht:** Programm starten, Referenzfahrt, Antasten, Alarm lösen, Spindel einschalten, Z-Nullpunkt setzen, an eine Position fahren, freie G-Code-Zeilen, Werkzeugwechsel, Projekt ändern. Das sind bewusste Grenzen. Sie bleiben am Rechner, wo der Start-Check läuft. Der Server nimmt vom Handy nur die oben genannten sieben Arten von Befehlen an und prüft jeden Wert.
 
+## Design senden und Rüstblatt lesen (seit 0.8.0)
+
+Seit 0.8.0 hat die Fernbedienung zwei weitere Rechte, die für die **kommende Handy-App** gedacht sind. **Es gibt noch keine App, die sie nutzt**; geprüft sind sie nur mit Tests und dem Simulator, nicht mit einem echten Telefon.
+
+* **Design an diesen Rechner senden:** Das Handy kann einen Link auf ein Design aus dem Portal an den Rechner schicken. Es öffnet sich **nichts von selbst**: Im Programm erscheint ein Hinweis (das Fenster blinkt), geöffnet wird erst nach deiner Bestätigung am Rechner. Höchstens 6 Sendungen je Minute und Handy, höchstens 3 offene Hinweise.
+* **Rüstblatt auf dem Handy lesen:** Material, Nullpunkt, Werkzeuge in der Reihenfolge der Verwendung und Spannhinweise des geladenen Projekts, **nur lesen**. Es steuert nichts, und die Häkchen setzt die App lokal.
+
+Beide Rechte stehen auf der Karte »Handy-Fernbedienung« **je gekoppeltem Handy** zur Auswahl und sind ab Werk erlaubt. Die Not-Aus-Regeln und die Grenzen oben ändern sich dadurch nicht.
+
 ## Bremsen und Sperren
 
 * **Streckenbudget:** Pro Handy sind in jedem Fenster von 5 Sekunden höchstens **60 mm** Verfahrstrecke erlaubt (ein Schrägschritt zählt mit seiner Diagonale: 10 mm schräg sind 14,1 mm), mit 250 ms Mindestabstand zwischen zwei Schritten. Ein paar Tipps beim Einrichten bleiben ungebremst. Wer darüber hinaus weitertippt, bekommt »Zu viel Strecke in kurzer Zeit«, und der Befehl geht nicht zur Maschine. Größere Wege fährst du am Rechner.
