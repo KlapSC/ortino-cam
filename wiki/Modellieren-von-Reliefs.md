@@ -22,3 +22,12 @@ Gefräst wird wie jedes Relief: Schruppen, Schlichten, Simulation und Soll-Ist-V
 * Vor dem ersten Einsatz an der Maschine in der Simulation ansehen, ohne Werkzeug und ohne Material fahren und mit einem Reststück beginnen.
 
 Weiter: [Foto → Relief](Foto-zu-Relief), [Bearbeitungen](Bearbeitungen), [Prüfen und Simulation](Prüfen-und-Simulation).
+
+<!-- videos:start -->
+## Videos (English)
+
+* [![Create a relief and sculpt it with the brush (video, English captions)](https://klapsc.github.io/ortino-cam/videos/relief-sculpt-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#relief-sculpt)  
+**Create a relief and sculpt it with the brush** · 15 s
+
+Alle Videos: [Videos](Videos).
+<!-- videos:end -->

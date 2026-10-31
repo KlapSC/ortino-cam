@@ -115,3 +115,18 @@ Der Dialog **»Lernen«** (Hilfe → Lektionen) bietet sechs Lektionen mit Forts
 * [Fräsen an der Maschine](Fräsen-an-der-Maschine): verbinden, Nullpunkt, Start-Check
 * [Tastenkürzel](Tastenkürzel) und [Glossar](Glossar)
 * Wenn etwas hakt: [Fehlersuche](Fehlersuche)
+
+<!-- videos:start -->
+## Videos (English)
+
+* [![The five steps at a glance (video, English captions)](https://klapsc.github.io/ortino-cam/videos/five-steps-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#five-steps)  
+**The five steps at a glance** · 14 s
+
+* [![Set up the sheet: size, thickness, material, work zero (video, English captions)](https://klapsc.github.io/ortino-cam/videos/project-sheet-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#project-sheet)  
+**Set up the sheet: size, thickness, material, work zero** · 15 s
+
+* [![Easy mode and Expert mode (video, English captions)](https://klapsc.github.io/ortino-cam/videos/easy-mode-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#easy-mode)  
+**Easy mode and Expert mode** · 12 s
+
+Alle Videos: [Videos](Videos).
+<!-- videos:end -->

@@ -99,6 +99,24 @@ Grenzen beim Relief: Nur Höhenfelder (keine Hinterschneidungen). Ein 3D-Modell 
 
 Auch das ist **nicht an einer echten Maschine erprobt**.
 
+<!-- videos:start -->
+## Videos (English)
+
+* [![Cut out a shape with a Profile (video, English captions)](https://klapsc.github.io/ortino-cam/videos/add-profile-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#add-profile)  
+**Cut out a shape with a Profile** · 16 s
+
+* [![Clear out lettering with a Pocket (video, English captions)](https://klapsc.github.io/ortino-cam/videos/add-pocket-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#add-pocket)  
+**Clear out lettering with a Pocket** · 13 s
+
+* [![Drill holes at the centre of circles (video, English captions)](https://klapsc.github.io/ortino-cam/videos/add-drilling-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#add-drilling)  
+**Drill holes at the centre of circles** · 11 s
+
+* [![Carve lettering with a V-bit (video, English captions)](https://klapsc.github.io/ortino-cam/videos/vcarve-lettering-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#vcarve-lettering)  
+**Carve lettering with a V-bit** · 12 s
+
+Alle Videos: [Videos](Videos).
+<!-- videos:end -->
+
 ## Weiter
 
 * [Werkzeuge und Schnittdaten](Werkzeuge-und-Schnittdaten): Fräser wählen, Vorschub und Drehzahl

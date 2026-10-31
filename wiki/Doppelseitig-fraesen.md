@@ -85,3 +85,12 @@ Statt zweier Passstifte legst du das Werkstück für **beide** Seiten in eine **
 * **Gespiegelt kopieren** spiegelt auch Texte (Spiegelschrift). Für Schrift auf Seite B lieber neu schreiben.
 * Das Job-Protokoll erkennt Seite A am Projekt- und Plattennamen. Nach dem Umbenennen oder bei einem Lauf an einem anderen Rechner bleibt es bei der Warnung zum Bestätigen.
 * Die Prüfliste meldet auf Deutsch; der Assistent zeigt dieselben Meldungen auch auf Englisch.
+
+<!-- videos:start -->
+## Videos (English)
+
+* [![Machine both sides with dowel pins (video, English captions)](https://klapsc.github.io/ortino-cam/videos/double-sided-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#double-sided)  
+**Machine both sides with dowel pins** · 18 s
+
+Alle Videos: [Videos](Videos).
+<!-- videos:end -->

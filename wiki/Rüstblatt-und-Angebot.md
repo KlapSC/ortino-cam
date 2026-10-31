@@ -107,6 +107,18 @@ Weil die Zeitschätzung nicht mit echten Laufzeiten verglichen wurde, protokolli
 
 Kunde, Auftragsnummer, Spannhinweise und vor allem **Preise und Stundensätze sind privat**. Beim Erstellen eines Designpakets für das [Community-Portal](Community-Portal) lässt das Programm diese Eingaben weg. Wenn du aber eine `.ocam`-Projektdatei weitergibst, geben sie mit.
 
+<!-- videos:start -->
+## Videos (English)
+
+* [![Create a job sheet and quotation (video, English captions)](https://klapsc.github.io/ortino-cam/videos/setup-sheet-quote-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#setup-sheet-quote)  
+**Create a job sheet and quotation** · 15 s
+
+* [![Review your past jobs (video, English captions)](https://klapsc.github.io/ortino-cam/videos/job-log-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#job-log)  
+**Review your past jobs** · 12 s
+
+Alle Videos: [Videos](Videos).
+<!-- videos:end -->
+
 ## Weiter
 
 * [Prüfen und Simulation](Prüfen-und-Simulation)

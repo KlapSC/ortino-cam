@@ -71,6 +71,15 @@ Das **Job-Protokoll** hält fest, was du wirklich gefräst hast: ein Eintrag je 
 
 Die Zeit je Werkzeug ist eine Näherung (sie richtet sich nach der zuletzt von der Steuerung bestätigten Zeile und kann an Werkzeugwechseln um einige Sekunden abweichen). Grenzen und Intervalle sind **Richtwerte ohne Messung und ohne Herstellervorgabe**.
 
+<!-- videos:start -->
+## Videos (English)
+
+* [![Pick a cutter from the library (video, English captions)](https://klapsc.github.io/ortino-cam/videos/tool-library-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#tool-library)  
+**Pick a cutter from the library** · 13 s
+
+Alle Videos: [Videos](Videos).
+<!-- videos:end -->
+
 ## Weiter
 
 * [Bearbeitungen](Bearbeitungen)

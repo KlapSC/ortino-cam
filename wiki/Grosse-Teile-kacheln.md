@@ -17,3 +17,12 @@ Ist ein Werkstück größer als der **Verfahrweg** deiner Maschine (zum Beispiel
 * Die Prüfung an Marke 2 nie überspringen. **Das erste Mal an einem Reststück mit zwei Kacheln**, die Naht durch Verschnitt legen.
 
 Verwandt: [Doppelseitig fräsen](Doppelseitig-fraesen) (mehrere Aufspannungen mit gemeinsamen Bezugspunkten), [Fräsen an der Maschine](Fräsen-an-der-Maschine), [Rüstblatt und Angebot](Rüstblatt-und-Angebot).
+
+<!-- videos:start -->
+## Videos (English)
+
+* [![Tile parts larger than the machine travel (video, English captions)](https://klapsc.github.io/ortino-cam/videos/tiling-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#tiling)  
+**Tile parts larger than the machine travel** · 17 s
+
+Alle Videos: [Videos](Videos).
+<!-- videos:end -->

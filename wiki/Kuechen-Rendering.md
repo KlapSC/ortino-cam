@@ -27,6 +27,15 @@ Im Möbel-Designer: der **Kamera-Knopf** in der Kopfleiste, die Taste `R` oder d
 * Reliefs auf Fronten erscheinen im Bild als sanfte Schattierung (die Front bleibt eben).
 * **Möbel:** Besteht der Entwurf nur aus Möbelstücken ([Möbel-Designer](Moebel-Designer)), zeigt das Rendering eine **Möbelszene** statt der Küche: Parkett, Wand hinter dem hintersten Wandmöbel, Seitenwände, wählbarer Teppich und Holzmaserung entlang der Faser. Spritzschutz und LED-Streifen entfallen. Die Grenzen sind dieselben (Software-Grafik in Chromium, nie unter Windows geprüft).
 
+<!-- videos:start -->
+## Videos (English)
+
+* [![Design a kitchen with the cabinet designer (video, English captions)](https://klapsc.github.io/ortino-cam/videos/kitchen-designer-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#kitchen-designer)  
+**Design a kitchen with the cabinet designer** · 17 s
+
+Alle Videos: [Videos](Videos).
+<!-- videos:end -->
+
 ## Weiter
 
 * [Platten und Möbel](Platten-und-Möbel)

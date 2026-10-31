@@ -44,6 +44,7 @@ Die Software entsteht **zum größten Teil mit Claude Code (Anthropic) als Co-Au
 | einen anderen G-Code-Dialekt oder eigene Postprozessoren | [Postprozessoren und Steuerungen](Postprozessoren-und-Steuerungen) |
 | Claude, MCP, die lokale Schnittstelle oder die Kommandozeile nutzen | [Claude, MCP und API](Claude-MCP-und-API) |
 | Designs entdecken, laden und teilen | [Community-Portal](Community-Portal) |
+| kurze Anleitungsvideos ansehen (5–20 Sekunden, englisch beschriftet) | [Videos](Videos) |
 | ein Problem lösen | [Fehlersuche](Fehlersuche) |
 | ein Tastenkürzel nachschlagen | [Tastenkürzel](Tastenkürzel) |
 | einen Begriff nachschlagen | [Glossar](Glossar) |

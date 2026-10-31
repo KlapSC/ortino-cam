@@ -129,6 +129,30 @@ Nach einer Unterbrechung (Stromausfall, Fräserbruch, Alarm) kannst du ab einer 
 
 Im Zubehör legst du fest, an welchem Ausgang deine Absaugung hängt (`M8`, `M7`, `M62` oder `M64`), mit Vorlauf (Standard 2 s) und Nachlauf (5 s). Der Ausgang liefert nur ein Steuersignal. Die Absaugung braucht ein passendes Relais oder Schütz, Netzspannung gehört in die Hände einer Fachkraft. Welche Ausgänge deine Firmware kennt, steht in deren Dokumentation. Die Tabelle im Programm stammt daraus, **nicht aus Versuchen**.
 
+<!-- videos:start -->
+## Videos (English)
+
+* [![Save the G-code (video, English captions)](https://klapsc.github.io/ortino-cam/videos/save-gcode-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#save-gcode)  
+**Save the G-code** · 12 s
+
+* [![Connect the machine (video, English captions)](https://klapsc.github.io/ortino-cam/videos/connect-machine-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#connect-machine)  
+**Connect the machine** · 10 s
+
+* [![Home the machine and set the zero point (video, English captions)](https://klapsc.github.io/ortino-cam/videos/homing-zero-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#homing-zero)  
+**Home the machine and set the zero point** · 14 s
+
+* [![Move the machine by hand (video, English captions)](https://klapsc.github.io/ortino-cam/videos/jog-controls-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#jog-controls)  
+**Move the machine by hand** · 15 s
+
+* [![Run the program: start, pause, stop (video, English captions)](https://klapsc.github.io/ortino-cam/videos/run-program-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#run-program)  
+**Run the program: start, pause, stop** · 17 s
+
+* [![Probe Z with the touch plate (video, English captions)](https://klapsc.github.io/ortino-cam/videos/z-probe-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#z-probe)  
+**Probe Z with the touch plate** · 18 s
+
+Alle Videos: [Videos](Videos).
+<!-- videos:end -->
+
 ## Weiter
 
 * [Fester Taster und Opferplatte](Fester-Taster-und-Opferplatte)

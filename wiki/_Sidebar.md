@@ -5,6 +5,7 @@
 * [Installation und Updates](Installation-und-Updates)
 * [Erste Schritte](Erste-Schritte)
 * [Maschine einrichten](Maschine-einrichten)
+* [Videos (English)](Videos)
 
 **Entwerfen und Bearbeiten**
 

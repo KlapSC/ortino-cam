@@ -95,3 +95,12 @@ Die Rechnungen nehmen einen frei aufliegenden Balken und starre Verbindungen an;
 * [Platten und Möbel](Platten-und-Möbel) (Küche, Plattenplaner, Passungen)
 * [Küchen-Rendering](Kuechen-Rendering)
 * [Rüstblatt und Angebot](Rüstblatt-und-Angebot)
+
+<!-- videos:start -->
+## Videos (English)
+
+* [![Design furniture: tables, shelves, chairs (video, English captions)](https://klapsc.github.io/ortino-cam/videos/furniture-designer-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#furniture-designer)  
+**Design furniture: tables, shelves, chairs** · 14 s
+
+Alle Videos: [Videos](Videos).
+<!-- videos:end -->

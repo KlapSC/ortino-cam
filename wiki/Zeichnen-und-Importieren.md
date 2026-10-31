@@ -124,6 +124,30 @@ Die **Geometrie-Prüfung** findet offene oder fast geschlossene Konturen, Doppel
 
 Zwei Studios erzeugen aufwendige Flächen mit wenigen Reglern: das **Muster-Studio** für gelochte Paneele (Waben, Sterne, Voronoi, Text und Bild als Lochraster) und das **Relief-Studio** für 3D-Reliefs. Du öffnest sie über die Werkzeugpalette oder die Befehlspalette (»Muster & Reliefs …«). Wie du daraus Werkzeugwege machst, steht unter [Bearbeitungen](Bearbeitungen).
 
+<!-- videos:start -->
+## Videos (English)
+
+* [![Draw a rectangle and a circle (video, English captions)](https://klapsc.github.io/ortino-cam/videos/draw-shapes-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#draw-shapes)  
+**Draw a rectangle and a circle** · 17 s
+
+* [![Add text and change its size and font (video, English captions)](https://klapsc.github.io/ortino-cam/videos/text-tool-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#text-tool)  
+**Add text and change its size and font** · 16 s
+
+* [![Import an SVG file (video, English captions)](https://klapsc.github.io/ortino-cam/videos/import-svg-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#import-svg)  
+**Import an SVG file** · 12 s
+
+* [![Snap points and dimensions (video, English captions)](https://klapsc.github.io/ortino-cam/videos/snap-and-dimension-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#snap-and-dimension)  
+**Snap points and dimensions** · 15 s
+
+* [![Variables: change one value, the shape follows (video, English captions)](https://klapsc.github.io/ortino-cam/videos/parametric-variables-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#parametric-variables)  
+**Variables: change one value, the shape follows** · 13 s
+
+* [![Make copies of a shape with Array (video, English captions)](https://klapsc.github.io/ortino-cam/videos/copies-array-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#copies-array)  
+**Make copies of a shape with Array** · 12 s
+
+Alle Videos: [Videos](Videos).
+<!-- videos:end -->
+
 ## Weiter
 
 * [Bearbeitungen](Bearbeitungen)

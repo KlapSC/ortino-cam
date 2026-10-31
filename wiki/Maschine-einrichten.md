@@ -115,6 +115,15 @@ Fester Taster, Opferplatte, Kamera-Kalibrierung und Zubehör (Absaugung, Tastpla
 
 Deine Maschinenprofile lassen sich außerdem [im Portal sichern](Sicherung-im-Portal) und auf einem anderen Rechner abrufen.
 
+<!-- videos:start -->
+## Videos (English)
+
+* [![Choose the machine and the post-processor (video, English captions)](https://klapsc.github.io/ortino-cam/videos/machine-choose-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#machine-choose)  
+**Choose the machine and the post-processor** · 11 s
+
+Alle Videos: [Videos](Videos).
+<!-- videos:end -->
+
 ## Weiter
 
 * Nächster Schritt: [Zeichnen und Importieren](Zeichnen-und-Importieren)

@@ -59,3 +59,12 @@ Hat das Projekt die Platte schon, öffnet der Assistent mit ihren Werten; **»Ne
 * [Fester Taster und Opferplatte](Fester-Taster-und-Opferplatte)
 * [Fräsen an der Maschine](Fräsen-an-der-Maschine)
 * [Doppelseitig fräsen](Doppelseitig-fraesen)
+
+<!-- videos:start -->
+## Videos (English)
+
+* [![Plan marks for the spoilboard (video, English captions)](https://klapsc.github.io/ortino-cam/videos/spoilboard-marks-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#spoilboard-marks)  
+**Plan marks for the spoilboard** · 14 s
+
+Alle Videos: [Videos](Videos).
+<!-- videos:end -->

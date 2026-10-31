@@ -74,6 +74,18 @@ Du kannst Pratzen, Schrauben, Vakuumsauger und Sperrzonen (Bereiche, in die nich
 3. In der Zeitleiste kritische Stellen anspringen: Eintauchen, Ecken, Haltestege.
 4. Erst dann zum Schritt »Fräsen« wechseln.
 
+<!-- videos:start -->
+## Videos (English)
+
+* [![Watch the 3D simulation (video, English captions)](https://klapsc.github.io/ortino-cam/videos/simulation-3d-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#simulation-3d)  
+**Watch the 3D simulation** · 15 s
+
+* [![Read the checklist before you cut (video, English captions)](https://klapsc.github.io/ortino-cam/videos/preflight-check-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#preflight-check)  
+**Read the checklist before you cut** · 15 s
+
+Alle Videos: [Videos](Videos).
+<!-- videos:end -->
+
 ## Weiter
 
 * [Fräsen an der Maschine](Fräsen-an-der-Maschine)

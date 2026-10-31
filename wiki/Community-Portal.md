@@ -105,3 +105,15 @@ Unter *Konto & Portale → Fehlersuche → Protokoll anzeigen* siehst du die Abl
 ## Kontakt
 
 Fragen, Fehler und Wünsche zum Portal gehen wie überall über [GitHub Issues](https://github.com/KlapSC/ortino-cam/issues/new/choose). Issues sind öffentlich: Schreib dort keine persönlichen Daten hinein. **Datenschutzanfragen und rechtliche Anliegen** zum Portal (Konto, Auskunft, Löschung, Sperre, Widerspruch gegen eine Entscheidung der Moderation) gehen an die E-Mail-Adresse im [Impressum des Portals](https://ortino-cam.com/imprint). Fräsdesigns (Schilder, Möbel, Muster) gehören ins Portal und nicht in das öffentliche Repository.
+
+<!-- videos:start -->
+## Videos (English)
+
+* [![Find a design in the community portal (video, English captions)](https://klapsc.github.io/ortino-cam/videos/portal-browse-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#portal-browse)  
+**Find a design in the community portal** · 14 s
+
+* [![Share your own design in the community portal (video, English captions)](https://klapsc.github.io/ortino-cam/videos/portal-share-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#portal-share)  
+**Share your own design in the community portal** · 18 s
+
+Alle Videos: [Videos](Videos).
+<!-- videos:end -->

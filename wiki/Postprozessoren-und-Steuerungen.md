@@ -70,6 +70,15 @@ In den Vorlagen stehen Variablen wie `project.name`, `sheet.thickness`, `tools`,
 
 Hast du ein Profil für eine Steuerung gebaut oder verbessert? Dann freuen wir uns über einen Pull Request mit der Datei im Ordner `postprozessoren/` des öffentlichen Repositorys, dazu ein Satz, **auf welcher Steuerung und Firmware du es getestet hast** und wie (an der Maschine oder nur die Ausgabe geprüft). Die Regeln stehen in der [CONTRIBUTING.md](https://github.com/KlapSC/ortino-cam/blob/main/CONTRIBUTING.md), eine Kurzfassung auf der Seite [Mitmachen und Tests](Mitmachen-und-Tests). Ein Bericht über einen Test an einer echten Steuerung hilft auch dann, wenn etwas nicht klappt.
 
+<!-- videos:start -->
+## Videos (English)
+
+* [![Save the G-code (video, English captions)](https://klapsc.github.io/ortino-cam/videos/save-gcode-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#save-gcode)  
+**Save the G-code** · 12 s
+
+Alle Videos: [Videos](Videos).
+<!-- videos:end -->
+
 ## Weiter
 
 * [Maschine einrichten](Maschine-einrichten)

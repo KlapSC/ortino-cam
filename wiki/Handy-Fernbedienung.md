@@ -73,6 +73,18 @@ Die Soft-Limits und Alarme der Steuerung gelten unverändert.
 
 Ob die Seite im Energiesparmodus des Handys weiterfunkt, ist nicht untersucht. Im Hintergrund funkt sie nicht, dann sperrt die Steuerung.
 
+<!-- videos:start -->
+## Videos (English)
+
+* [![Pair the phone remote with a QR code (video, English captions)](https://klapsc.github.io/ortino-cam/videos/phone-pair-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#phone-pair)  
+**Pair the phone remote with a QR code** · 19 s
+
+* [![Jog the machine from your phone (video, English captions)](https://klapsc.github.io/ortino-cam/videos/phone-jog-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#phone-jog)  
+**Jog the machine from your phone** · 11 s
+
+Alle Videos: [Videos](Videos).
+<!-- videos:end -->
+
 ## Weiter
 
 * [Fräsen an der Maschine](Fräsen-an-der-Maschine)

@@ -94,6 +94,15 @@ Die Ausgabeart ist entweder **je Zeile eine G-Code-Datei** oder **alle Teile auf
 
 Grenzen: höchstens 2000 Zeilen je Lauf, 20 MB je Tabelle. Im Plattenmodus gilt nur die erste Platte der Vorlage, Inlay und 3D-Relief gehen dort nicht, die Beschriftung sitzt unten mittig im Teil. Ordnerwahl und Pfade unter Windows sowie das Fräsen sind **nicht erprobt**.
 
+<!-- videos:start -->
+## Videos (English)
+
+* [![Arrange parts on a sheet with the sheet planner (video, English captions)](https://klapsc.github.io/ortino-cam/videos/sheet-planner-poster.jpg)](https://klapsc.github.io/ortino-cam/videos/#sheet-planner)  
+**Arrange parts on a sheet with the sheet planner** · 12 s
+
+Alle Videos: [Videos](Videos).
+<!-- videos:end -->
+
 ## Weiter
 
 * [Möbel-Designer](Moebel-Designer) (Tische, Sideboards, Regale, Sitzmöbel)
