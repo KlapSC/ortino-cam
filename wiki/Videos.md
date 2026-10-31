@@ -1,6 +1,6 @@
 # Videos
 
-Kurze Anleitungsvideos (5–20 Sekunden, ohne Ton). **Die Beschriftung ist immer englisch**, damit ein Video für alle Sprachen gilt; die Wiki-Seiten dazu sind deutsch. Ein Klick auf ein Bild öffnet das Video auf der Videoseite ([alle Videos auf einer Seite](https://klapsc.github.io/ortino-cam/videos/)). Im Programm stehen dieselben Videos unter **Hilfe → Video-Anleitungen**.
+Kurze Anleitungsvideos (5–20 Sekunden, ohne Ton). **Die Beschriftung ist immer englisch**, damit ein Video für alle Sprachen gilt; die Wiki-Seiten dazu sind deutsch. Ein Klick auf ein Bild öffnet das Video auf der Videoseite ([alle Videos auf einer Seite](https://klapsc.github.io/ortino-cam/videos/)). Im Programm stehen dieselben Videos unter **Hilfe → Video-Anleitungen** (ab Version 0.8.2).
 
 > **Ehrlich zum Stand:** Die Videos zeigen die echte Oberfläche und das Portal (Testserver) mit dem Maschinen-**Simulator**, nicht eine echte Maschine. Das Handy ist ein simuliertes Telefon, das Kamerabild beim Scannen ist nachgestellt. Unter Windows kann das Programm in Kleinigkeiten anders aussehen.
 
