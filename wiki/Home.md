@@ -4,7 +4,7 @@
 
 Willkommen. **ortino.CAM** ist eine **CAD/CAM-Software für CNC-Fräsen** unter Windows: zeichnen, Werkzeugwege berechnen (Profil, Tasche, V-Carving, 3D-Relief), in 3D simulieren, prüfen und direkt an eine **GRBL-Steuerung** wie die der Ultimate Bee (CNC xPRO V5) schicken, alles in einer Anwendung. Mit einem MCP-Server und einer lokalen Schnittstelle lässt sie sich auch von **Claude** und eigenen Skripten steuern.
 
-Dieses Wiki ist für Menschen, die ortino.CAM **benutzen**: Hobby-Fräser, Tischler und Werkstätten. Du musst nichts über den Quelltext wissen. Es beschreibt die veröffentlichte **Version 0.8.2**.
+Dieses Wiki ist für Menschen, die ortino.CAM **benutzen**: Hobby-Fräser, Tischler und Werkstätten. Du musst nichts über den Quelltext wissen. Es beschreibt die veröffentlichte **Version 0.9.0**.
 
 ## Bitte zuerst lesen
 
@@ -37,6 +37,7 @@ Die Software entsteht **zum größten Teil mit Claude Code (Anthropic) als Co-Au
 | Tische, Sideboards, Regale und Stühle entwerfen (leimlos steckbar) | [Möbel-Designer](Moebel-Designer) |
 | Küche und Möbel im Browser entwerfen, teilen und abwechselnd bearbeiten (Portal) | [Web-Designer im Portal](Web-Designer-im-Portal) |
 | aus einem Foto ein Relief machen (KI-Tiefenschätzung auf deinem Rechner) | [Foto → Relief](Foto-zu-Relief) |
+| ein Wandbild aus Holz entwerfen (geschnitzt oder Schichtholz) | [Art Designer](Art-Designer) |
 | ein 3D-Modell (STL, STEP) als Relief, Umriss oder Schichtmodell fräsen | [3D-Modelle importieren](3D-Modelle-importieren) |
 | ein Bild der Küche für den Kunden rendern (Licht, Schatten, Glanz, Spüle) | [Küchen-Rendering](Kuechen-Rendering) |
 | mit Finger oder Stift bedienen (Tablet, Touch-Laptop) | [Touch und Stift](Touch-und-Stift) |

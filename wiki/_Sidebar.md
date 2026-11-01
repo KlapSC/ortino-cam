@@ -10,6 +10,7 @@
 **Entwerfen und Bearbeiten**
 
 * [Zeichnen und Importieren](Zeichnen-und-Importieren)
+* [Art Designer](Art-Designer)
 * [Foto → Relief](Foto-zu-Relief)
 * [Reliefs modellieren](Modellieren-von-Reliefs)
 * [3D-Modelle importieren](3D-Modelle-importieren)
