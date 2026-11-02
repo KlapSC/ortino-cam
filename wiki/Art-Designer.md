@@ -42,10 +42,22 @@ Im Schritt **Motiv** schaltest du von **Geschnitzt** auf **Schichtholz**. Das Mo
 
 **Grenzen im Schichtholz:** Die oberste Lage besteht bei fast allen Motiven nur aus dem Rahmen. Ginkgo und Farn haben in den oberen Lagen sehr dünne Stege (das Programm warnt vor »dünnen Engstellen«). Der Blattstrom ist im Hochformat ab der vierten Lage dünn besetzt. Teile in den Löchern anderer Teile werden nicht geschachtelt, der Verschnitt ist deshalb höher als bei [Platten und Möbel](Platten-und-Möbel).
 
+## Eigenes Bild (ab 0.10.0)
+
+Im Schritt **Motiv** gibt es den Abschnitt **»Eigenes Bild«**. Du wählst eine Datei (PNG, JPEG oder WebP) oder ziehst sie auf den Dialog. Das Programm verkleinert sie vor dem Rechnen auf höchstens 1024 Bildpunkte. **Die Helligkeit des Bildes ist die Höhe:** hell = hoch, dunkel = tief.
+
+* **Lage:** Regler für links–rechts, unten–oben, **Größe** und **Drehung**; in der Draufsicht verschiebst du das Bild mit der Maus und skalierst es mit dem Mausrad (auch Pfeiltasten und +/−).
+* **Verschwimmen mit dem Muster:** Du wählst die **Seite** (ganzes Bild, linke, rechte, obere oder untere Hälfte oder Mitte) und stellst **Grenze**, **Weichheit des Übergangs** und **Bildanteil** ein. So kann ein Gesicht zur Hälfte als Bild gezeichnet sein und auf der anderen Seite nur noch das Muster zeigen. Optional: weich ausklingender Bildrand und »Muster unter dem Bild«.
+* **Ton** (unter »Mehr«): Kontrast, Gamma, Weichzeichnen, Invertieren.
+* **Tiefe schätzen (KI):** für Fotos, wenn das Tiefenmodell von **Foto → Relief** vorhanden ist; sonst ist die Auswahl gesperrt, mit Hinweis.
+* Geht im Modus **Geschnitzt** und im **Schichtholz** (dort wird der weiche Übergang zu schmalen Bändern, eine je Lagenstärke).
+
+**Ehrlich zum Ergebnis:** Ein Gesicht von vorn ergibt als Helligkeit nur ein **flaches Relief**, eher ein sanftes Siegel als ein Porträt. Besser gelingen Seitenansichten und Bilder mit klaren Hell-Dunkel-Flächen. Ein **dunkler Hintergrund** wird zu tiefem Grund (das Bild sitzt dann in einer Mulde): nimm einen hellen Hintergrund oder »Invertieren«. **Harte Kanten** (Weichheit 0) sind senkrechte Wände und nur als Stufe fräsbar; bei Fotos mit viel Struktur das Weichzeichnen erhöhen. Transparenz zählt nicht (durchsichtige Teile werden weiß). Das Bild gehört zum geöffneten Dialog; beim Schließen ist es weg. **Nichts davon wurde gefräst;** die KI-Schätzung ist nicht mit dem echten Modell geprüft. Bei Fotos von Personen brauchst du das Einverständnis der Abgebildeten, bei fremden Bildern die Erlaubnis des Urhebers.
+
 ## Gut zu wissen
 
 * **Nur im Programm,** nicht im [Web-Designer des Portals](Web-Designer-im-Portal).
-* Mit Claude: Der Art Designer ist über die lokale Schnittstelle erreichbar (`art.formats`, `art.plan`, `art.layers`, `art.assembly`, `art.create`); siehe [Claude, MCP und API](Claude-MCP-und-API).
+* Mit Claude: Der Art Designer ist über die lokale Schnittstelle erreichbar (`art.formats`, `art.plan`, `art.layers`, `art.assembly`, `art.create`; das Bild über `motif.image`); siehe [Claude, MCP und API](Claude-MCP-und-API).
 * Die 3D-Vorschau läuft ohne Grafikkarte langsam.
 
 Weiter: [Reliefs modellieren](Modellieren-von-Reliefs), [Foto → Relief](Foto-zu-Relief), [Prüfen und Simulation](Prüfen-und-Simulation).

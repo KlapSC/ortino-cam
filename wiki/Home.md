@@ -4,7 +4,7 @@
 
 Willkommen. **ortino.CAM** ist eine **CAD/CAM-Software für CNC-Fräsen** unter Windows: zeichnen, Werkzeugwege berechnen (Profil, Tasche, V-Carving, 3D-Relief), in 3D simulieren, prüfen und direkt an eine **GRBL-Steuerung** wie die der Ultimate Bee (CNC xPRO V5) schicken, alles in einer Anwendung. Mit einem MCP-Server und einer lokalen Schnittstelle lässt sie sich auch von **Claude** und eigenen Skripten steuern.
 
-Dieses Wiki ist für Menschen, die ortino.CAM **benutzen**: Hobby-Fräser, Tischler und Werkstätten. Du musst nichts über den Quelltext wissen. Es beschreibt die veröffentlichte **Version 0.9.0**.
+Dieses Wiki ist für Menschen, die ortino.CAM **benutzen**: Hobby-Fräser, Tischler und Werkstätten. Du musst nichts über den Quelltext wissen. Es beschreibt die veröffentlichte **Version 0.10.0**.
 
 ## Bitte zuerst lesen
 
