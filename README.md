@@ -363,6 +363,8 @@ A short, factual comparison that names the strengths of both sides. The comparis
 
 **Updates** kommen **im Programm** selbst: Gibt es eine neue Version, zeigt die Kopfleiste einen Hinweis; installiert wird nur nach deinem Klick, mit geprüfter Signatur und nie mitten in einem Fräsauftrag. Das Programm spricht dafür mit dem offiziellen Portal des Betreibers, nicht mit GitHub; übermittelt werden nur Systemart, Architektur, Installationsart und die installierte Version. Diese Seite zeigt nur die Versionen zum Herunterladen.
 
+**Android-App:** Zu ortino.CAM gibt es eine App im Google Play Store: [ortino.CAM bei Google Play](https://play.google.com/store/apps/details?id=com.ortinocam.app). Was sie kann, steht im Eintrag dort; diese Seiten machen dazu bewusst keine Aussage. Das Windows-Programm braucht sie nicht.
+
 ## Erste Schritte
 
 1. **Installieren** (siehe oben) und starten.

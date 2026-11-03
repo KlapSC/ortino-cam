@@ -23,7 +23,7 @@ Die Software entsteht **zum größten Teil mit Claude Code (Anthropic) als Co-Au
 | das Programm installieren und aktuell halten | [Installation und Updates](Installation-und-Updates) |
 | vom leeren Projekt zum ersten Werkstück kommen, mit Beispielgalerie, Einführung und Lektionen | [Erste Schritte](Erste-Schritte) |
 | meine Fräse eintragen und die Verfahrwege messen | [Maschine einrichten](Maschine-einrichten) |
-| zeichnen, Text setzen, SVG/DXF/PDF oder ein Bild importieren | [Zeichnen und Importieren](Zeichnen-und-Importieren) |
+| zeichnen, Text setzen, SVG/DXF/PDF/EPS oder ein Bild importieren | [Zeichnen und Importieren](Zeichnen-und-Importieren) |
 | wissen, was Profil, Tasche, V-Carving und Gewinde tun, und was Gleichlauf und Gegenlauf heißt | [Bearbeitungen](Bearbeitungen) |
 | Fräser und Schnittwerte wählen | [Werkzeuge und Schnittdaten](Werkzeuge-und-Schnittdaten) |
 | prüfen, bevor ich fräse | [Prüfen und Simulation](Prüfen-und-Simulation) |
@@ -39,12 +39,15 @@ Die Software entsteht **zum größten Teil mit Claude Code (Anthropic) als Co-Au
 | aus einem Foto ein Relief machen (KI-Tiefenschätzung auf deinem Rechner) | [Foto → Relief](Foto-zu-Relief) |
 | ein Wandbild aus Holz entwerfen (geschnitzt oder Schichtholz) | [Art Designer](Art-Designer) |
 | ein 3D-Modell (STL, STEP) als Relief, Umriss oder Schichtmodell fräsen | [3D-Modelle importieren](3D-Modelle-importieren) |
+| ein Relief mit dem Pinsel nachmodellieren (aufbauen, abtragen, glätten) | [Modellieren von Reliefs](Modellieren-von-Reliefs) |
+| ein Teil fräsen, das größer ist als der Verfahrweg (Kachelung) | [Große Teile kacheln](Grosse-Teile-kacheln) |
 | ein Bild der Küche für den Kunden rendern (Licht, Schatten, Glanz, Spüle) | [Küchen-Rendering](Kuechen-Rendering) |
 | mit Finger oder Stift bedienen (Tablet, Touch-Laptop) | [Touch und Stift](Touch-und-Stift) |
 | ein Rüstblatt und ein Angebot erzeugen, auch mit Stückzahl und Staffel | [Rüstblatt und Angebot](Rüstblatt-und-Angebot) |
 | einen anderen G-Code-Dialekt oder eigene Postprozessoren | [Postprozessoren und Steuerungen](Postprozessoren-und-Steuerungen) |
 | Claude, MCP, die lokale Schnittstelle oder die Kommandozeile nutzen | [Claude, MCP und API](Claude-MCP-und-API) |
 | Designs entdecken, laden und teilen | [Community-Portal](Community-Portal) |
+| Maschinenprofile, Fräser und Einstellungen privat im Portal sichern | [Sicherung im Portal](Sicherung-im-Portal) |
 | kurze Anleitungsvideos ansehen (5–20 Sekunden, englisch beschriftet) | [Videos](Videos) |
 | ein Problem lösen | [Fehlersuche](Fehlersuche) |
 | ein Tastenkürzel nachschlagen | [Tastenkürzel](Tastenkürzel) |

@@ -29,6 +29,7 @@ Vergleich: Die Startseite enthält eine kurze, sachliche Gegenüberstellung mit 
 - [Mitmachen](https://github.com/KlapSC/ortino-cam/blob/main/CONTRIBUTING.md)
 - [Nutzungsbedingungen und Haftungsausschluss](https://github.com/KlapSC/ortino-cam/blob/main/LICENSE)
 - [Community-Portal](https://ortino-cam.com): Fräsdesigns entdecken, laden und teilen (von einer Einzelperson betrieben, im Aufbau)
+- [Android-App](https://play.google.com/store/apps/details?id=com.ortinocam.app): ortino.CAM im Google Play Store (Funktionen stehen im Store-Eintrag)
 
 ## English
 
