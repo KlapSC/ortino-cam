@@ -11,6 +11,10 @@ Im **Relief-Studio** gibt es den Modus **»Modellieren«**: Du formst ein erzeug
 * Bis zu **8 Ebenen** mit Mischmodi; eine Ebene lässt sich ausblenden, leeren und löschen. **Rückgängig** nimmt einen Strich zurück.
 * **Einbacken** macht aus Relief und Ebenen eine feste Höhenkarte (danach reagiert sie nicht mehr auf die Regler).
 
+## Komponenten (seit 0.12.0)
+
+Im Relief-Studio gibt es neben **Muster** und **Modellieren** den Modus **Komponenten**. Ein Relief besteht dann aus einer geordneten Liste von Ebenen. Jede Komponente hat eine **Quelle** (Profil: Fläche, Kuppel, Kegel, Pyramide, Rampe, Welle, Rundstab; ein Muster; ein Bild), einen **Modus** (addieren, abziehen, Maximum, Minimum, überblenden, multiplizieren), eine **Lage** (verschieben, skalieren, drehen – auch mit der Maus), **Höhe**, **Anheben**, **Anteil** und **Randglättung**; dazu Gruppen, Sichtbarkeit und Sperre. Vorschau, Prüfliste, Werkzeugwege und Export sehen dasselbe Höhenraster. Bis zu 64 Komponenten je Relief. Die Pinselebenen liegen weiter über den Komponenten; die Pinsel-Ebene ist keine Quelle. *Nur gegen Tests und Chromium geprüft, nie gefräst.*
+
 ## Fräsen
 
 Gefräst wird wie jedes Relief: Schruppen, Schlichten, Simulation und Soll-Ist-Vergleich laufen über dieselbe Pipeline und kennen die Ebenen. Im **Web-Designer des Portals** ist das Modellieren gesperrt.

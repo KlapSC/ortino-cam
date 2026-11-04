@@ -32,6 +32,7 @@
 **Planen und Anbieten**
 
 * [Platten und Möbel](Platten-und-Möbel)
+* [Werkstatt und Team](Werkstatt-und-Team)
 * [Möbel-Designer](Moebel-Designer)
 * [Web-Designer im Portal](Web-Designer-im-Portal)
 * [Küchen-Rendering](Kuechen-Rendering)

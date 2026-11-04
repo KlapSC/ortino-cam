@@ -33,6 +33,14 @@ Jede Form hat Eigenschaften (Lage, Größe, Eckenradius, Drehung), in die du Zah
 
 Mit dem Werkzeug **D** setzt du Maße in die Zeichnung: **waagerecht, senkrecht, ausgerichtet, Radius, Durchmesser, Winkel und Bogenlänge**. Ein Maß hängt an Punkten von Formen; verschiebst oder skalierst du die Form oder änderst ihre Parameter, folgt das Maß. Löschst du die Form, bleibt ein freies Maß mit Hinweis. Maße sind **reine Beschriftung**: Sie erzeugen **nie Werkzeugwege** und erscheinen nicht im G-Code, in der Simulation oder in der Prüfliste. Export: **SVG** (als Gruppe) und **DXF** (Ebene `BEMASSUNG`). **Grenzen:** nicht im Rüstblatt und im PDF; die Exporte wurden in keinem fremden CAD-Programm geöffnet; unter Windows nicht ausprobiert.
 
+## Parametrische Skizzen (seit 0.12.0)
+
+> **Ehrlich zum Stand:** Nur gegen Tests und Chromium geprüft, nicht mit einem CAD-Programm verglichen, nie gefräst.
+
+Menü **Erstellen ▸ Parametrische Skizzen & Verlauf** öffnet einen eigenen Dialog mit eigener Zeichenfläche. Du zeichnest **Punkte, Strecken, Kreise und Bögen** (Tasten P, L, C) und legst **Abhängigkeiten** fest: Koinzidenz, Punkt auf Linie oder Kreis, waagrecht (H), senkrecht (V), parallel, rechtwinklig, gleich lang, gleicher Radius, tangential, fest (F). **Maße** (D) sind Abstand, Radius, Durchmesser oder Winkel, als Zahl oder als **Formel mit Variablen** des Projekts. Der Löser zeigt die **Freiheitsgrade** und meldet überflüssige oder widersprüchliche Abhängigkeiten mit einem Lösungsvorschlag. Aus der Skizze entstehen gewöhnliche Formen, mit denen alles Übrige (Boolesche Operationen, Bearbeitungen, Simulation, Export) weiter funktioniert. Der **Verlauf** listet Skizzen und Bearbeitungen in Reihenfolge; du kannst Schritte umbenennen, ausschalten, zurückrollen und vorrollen. Ändert sich eine Variable, rechnet das Programm nur die betroffenen Skizzen neu.
+
+**Grenzen:** keine Splines, Ellipsen oder Wiederholungsmuster; kein Skizzieren direkt in der Hauptzeichenfläche; höchstens 50 Skizzen mit je 250 Elementen und 250 Abhängigkeiten; bei mehreren möglichen Lösungen gewinnt die der Ausgangslage nächste.
+
 ## Text und Schriften
 
 Text bleibt **editierbar**: mehrzeilig, mit Ausrichtung sowie Buchstaben- und Zeilenabstand. Zur Wahl stehen die Schriften deines Windows und die mitgelieferten DejaVu-Schriften, mit Kerning und Ligaturen. Für Fräsbahnen wird Text in Umrisse aufgelöst. Mit »In Kurven« wird aus Text ein freier Pfad.
