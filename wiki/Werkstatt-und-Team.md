@@ -4,6 +4,10 @@
 
 Für eine kleine Werkstatt mit mehreren Leuten und Rechnern.
 
+![Dashboard der Werkstatt: Karten für Läufe, Maschinenstunden, Wartung, Lager und offene Angebote, je mit Quelle und Zeitraum (erfundene Beispieldaten)](https://raw.githubusercontent.com/KlapSC/ortino-cam/main/docs/bilder/werkstatt-light.png)
+
+<sub>Die Zahlen im Bild sind erfunden.</sub>
+
 ## Werkstatt-Ordner
 
 Menü **Extras ▸ Werkstatt**: Ordner anlegen oder beitreten (zum Beispiel ein Ordner auf dem NAS). Darin liegen `werkstatt.json`, `personen.json` und die gemeinsame Bibliothek. Mehrere Rechner dürfen gleichzeitig schreiben: Eine Sperrdatei und eine Revisionsnummer sorgen dafür, dass nichts verloren geht; bei einem Konflikt zeigt das Programm eine Meldung. Ohne Werkstatt-Ordner verhält sich das Programm wie bisher.
@@ -23,5 +27,6 @@ Menü **Extras ▸ Dashboard**: für Heute, Woche, Monat, 7 oder 30 Tage oder ei
 ## Weiter
 
 * [Rüstblatt und Angebot](Rüstblatt-und-Angebot)
+* [Kunden und Angebote](Kunden-und-Angebote) (die offenen Angebote im Dashboard)
 * [Werkzeuge und Schnittdaten](Werkzeuge-und-Schnittdaten)
 * [Platten und Möbel](Platten-und-Möbel)

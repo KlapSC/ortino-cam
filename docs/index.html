@@ -33,17 +33,84 @@
   "applicationCategory": "DesignApplication",
   "applicationSubCategory": "CAD/CAM",
   "operatingSystem": "Windows 10, Windows 11",
-  "softwareVersion": "0.12.0",
+  "softwareVersion": "0.13.0",
   "inLanguage": ["de", "en"],
   "url": "https://klapsc.github.io/ortino-cam/",
   "downloadUrl": "https://github.com/KlapSC/ortino-cam/releases/latest",
-  "image": "https://klapsc.github.io/ortino-cam/bilder/social-preview.png",
+  "image":
+  {
+    "@type": "ImageObject",
+    "contentUrl": "https://klapsc.github.io/ortino-cam/bilder/social-preview.png",
+    "width": 1280,
+    "height": 640,
+    "caption": "ortino.CAM – Vom Entwurf zum Werkstück, CAD/CAM für CNC-Fräsen",
+    "license": "https://github.com/KlapSC/ortino-cam/blob/main/LICENSE",
+    "acquireLicensePage": "https://github.com/KlapSC/ortino-cam/issues",
+    "copyrightNotice": "© 2026 KlapSC. Alle Rechte vorbehalten.",
+    "creditText": "ortino.CAM, KlapSC",
+    "creator": { "@type": "Person", "name": "KlapSC", "url": "https://github.com/KlapSC" }
+  },
   "screenshot": [
-    "https://klapsc.github.io/ortino-cam/bilder/simulation-dark.png",
-    "https://klapsc.github.io/ortino-cam/bilder/entwurf-dark.png",
-    "https://klapsc.github.io/ortino-cam/bilder/moebel-dark.png",
-    "https://klapsc.github.io/ortino-cam/bilder/community-im-programm-dark.png",
-    "https://klapsc.github.io/ortino-cam/bilder/portal-startseite-dark.png"
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://klapsc.github.io/ortino-cam/bilder/simulation-dark.png",
+      "width": 1600,
+      "height": 1000,
+      "caption": "3D-Simulation des Materialabtrags mit Prüfliste und Vorschlägen",
+      "license": "https://github.com/KlapSC/ortino-cam/blob/main/LICENSE",
+      "acquireLicensePage": "https://github.com/KlapSC/ortino-cam/issues",
+      "copyrightNotice": "© 2026 KlapSC. Alle Rechte vorbehalten.",
+      "creditText": "ortino.CAM, KlapSC",
+      "creator": { "@type": "Person", "name": "KlapSC", "url": "https://github.com/KlapSC" }
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://klapsc.github.io/ortino-cam/bilder/entwurf-dark.png",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Entwurf eines Türschilds mit Text, Bohrungen und Außenkontur im Zeichenbereich",
+      "license": "https://github.com/KlapSC/ortino-cam/blob/main/LICENSE",
+      "acquireLicensePage": "https://github.com/KlapSC/ortino-cam/issues",
+      "copyrightNotice": "© 2026 KlapSC. Alle Rechte vorbehalten.",
+      "creditText": "ortino.CAM, KlapSC",
+      "creator": { "@type": "Person", "name": "KlapSC", "url": "https://github.com/KlapSC" }
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://klapsc.github.io/ortino-cam/bilder/moebel-dark.png",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Möbel- und Küchen-Designer: Küchenzeile in 3D und Frontansicht mit Schrankliste",
+      "license": "https://github.com/KlapSC/ortino-cam/blob/main/LICENSE",
+      "acquireLicensePage": "https://github.com/KlapSC/ortino-cam/issues",
+      "copyrightNotice": "© 2026 KlapSC. Alle Rechte vorbehalten.",
+      "creditText": "ortino.CAM, KlapSC",
+      "creator": { "@type": "Person", "name": "KlapSC", "url": "https://github.com/KlapSC" }
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://klapsc.github.io/ortino-cam/bilder/community-im-programm-dark.png",
+      "width": 1600,
+      "height": 1000,
+      "caption": "Community im Programm: Designseite mit Laden und Öffnen, Lizenz und Beschreibung",
+      "license": "https://github.com/KlapSC/ortino-cam/blob/main/LICENSE",
+      "acquireLicensePage": "https://github.com/KlapSC/ortino-cam/issues",
+      "copyrightNotice": "© 2026 KlapSC. Alle Rechte vorbehalten.",
+      "creditText": "ortino.CAM, KlapSC",
+      "creator": { "@type": "Person", "name": "KlapSC", "url": "https://github.com/KlapSC" }
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://klapsc.github.io/ortino-cam/bilder/portal-startseite-dark.png",
+      "width": 1440,
+      "height": 672,
+      "caption": "Startseite des Community-Portals mit Suche (Beispieldaten einer lokalen Installation)",
+      "license": "https://github.com/KlapSC/ortino-cam/blob/main/LICENSE",
+      "acquireLicensePage": "https://github.com/KlapSC/ortino-cam/issues",
+      "copyrightNotice": "© 2026 KlapSC. Alle Rechte vorbehalten.",
+      "creditText": "ortino.CAM, KlapSC",
+      "creator": { "@type": "Person", "name": "KlapSC", "url": "https://github.com/KlapSC" }
+    }
   ],
   "featureList": [
     "Entwurf, Werkzeugwege (Profil, Tasche, V-Carving, 3D-Relief), 3D-Simulation, Prüfliste",
@@ -55,6 +122,7 @@
     "Art Designer: Wandbilder aus Holz (geschnitzt oder als Schichtholzbild mit Montageplan), seit 0.10.0 mit eigenem Bild (nur gerechnet, nicht gefräst)",
     "Foto → Relief mit lokalem KI-Tiefenmodell, Modellieren von Reliefs mit dem Pinsel, EPS- und PostScript-Import (nur gegen Tests, Simulator und Chromium geprüft)",
     "Gewindefräsen, Kamera auf der Arbeitsplatte mit QR-Marken, Wartungsplan und Standzeit-Grenzen (nur gegen Simulator und Tests geprüft)",
+    "Neu in 0.13.0: Creator mit 18 parametrischen Werkstück-Generatoren in fünf Gruppen, Wahl der Reihenfolge der Zustellungen bei Profil und Tasche, Dialog KI-Modelle, Startseite mit Schnellzugriffen (nur gegen Tests, Simulator und Chromium geprüft, nichts gefräst oder verleimt)",
     "Beispielgalerie, geführte Einführung und Lernlektionen, Array entlang eines Pfads, Seriennummern in Texten, Stückzahl und Staffel im Angebot, Kundenstamm, Angebotsnummern und Zahlungsbedingungen, Schablonen-Schrift mit Stegen, parametrische Skizzen mit Abhängigkeiten, Komponenten für Reliefs, Werkstatt-Ordner mit Rollen und Dashboard, DXF-Splines als Kurven (nur gegen Tests, Simulator und Chromium geprüft, nicht unter Windows)"
   ],
   "keywords": "CAD/CAM, CNC, G-Code, GRBL, V-Carving, Toolpath, Nesting, MCP, Claude, Community-Portal, Fräsdesigns, CNC designs, share designs",
@@ -217,6 +285,7 @@
   figure.fig figcaption { font-size: 14.5px; color: var(--muted); }
   figure.fig figcaption b { display: block; color: var(--ink); font-size: 15.5px; margin-bottom: 2px; }
   figure.fig figcaption .en { display: block; margin-top: 6px; font-size: 13.5px; }
+  .sub-h { margin: 34px 0 10px; font-size: 22px; letter-spacing: -.3px; }
   .btn.line { border: 1.5px solid var(--accent); color: var(--accent); }
   .btn.line:hover { filter: none; background: var(--code); }
   .fine-print { font-size: 13.5px; color: var(--muted); max-width: 60em; }
@@ -253,6 +322,7 @@
     <nav aria-label="Hauptnavigation">
       <a class="brand" href="#top"><img src="bilder/logo.png" alt="" width="30" height="30">ortino.CAM</a>
       <a href="#funktionen">Funktionen</a>
+      <a href="#neu-0-13">Neu in 0.13.0</a>
       <a href="#portal">Portal</a>
       <a href="#claude">Claude &amp; API</a>
       <a href="#vergleich">Vergleich</a>
@@ -335,6 +405,127 @@
         <figcaption><b>Stückzahl und Staffel</b>Menge, Staffelpreise und Ausschuss im Angebot; das Rüsten fällt einmal je Auftrag an (erfundene Beispielwerte).<span class="en" lang="en">Quantity, price tiers and scrap in the quote; setup counts once per job (made-up sample values).</span></figcaption>
       </figure>
     </div>
+    <h3 class="sub-h">Seit 0.11.0 und 0.12.0</h3>
+    <p class="fine-print" style="margin-top:0">Nichts davon wurde gefräst, gesägt oder gedruckt. <span class="en" lang="en" style="display:block">None of it has been milled, sawn or printed.</span></p>
+    <div class="gallery">
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/skizzen-light.png"><img loading="lazy" src="bilder/skizzen-dark.png" width="1600" height="1000" alt="Dialog Parametrische Skizzen und Verlauf: Zeichenfläche mit einer Skizze, Liste der Abhängigkeiten und Maße, Freiheitsgrade und Verlauf der Schritte / English: Parametric sketches and history dialog: drawing area with a sketch, list of constraints and dimensions, degrees of freedom and history of steps"></picture></div>
+        <figcaption><b>Parametrische Skizzen (seit 0.12.0)</b>Abhängigkeiten und Maße als Formel, Freiheitsgrade, Verlauf zum Zurückrollen.<span class="en" lang="en">Constraints and dimensions as formulas, degrees of freedom, history to roll back.</span></figcaption>
+      </figure>
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/komponenten-light.png"><img loading="lazy" src="bilder/komponenten-dark.png" width="1600" height="1000" alt="Relief-Studio im Modus Komponenten: Liste der Ebenen mit Quelle und Modus, Eigenschaften und Draufsicht mit der Lage / English: Relief Studio in components mode: list of layers with source and mode, properties and top view with placement"></picture></div>
+        <figcaption><b>Relief-Komponenten (seit 0.12.0)</b>Ebenen aus Profil, Muster oder Bild, addiert, abgezogen oder gemischt; Lage mit der Maus.<span class="en" lang="en">Layers from a profile, pattern or image, added, subtracted or blended; placed with the mouse.</span></figcaption>
+      </figure>
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/werkstatt-light.png"><img loading="lazy" src="bilder/werkstatt-dark.png" width="1600" height="1000" alt="Dashboard der Werkstatt: Karten für Läufe, Maschinenstunden, Wartung, Lager und offene Angebote mit erfundenen Beispieldaten / English: Workshop dashboard: cards for runs, machine hours, maintenance, stock and open quotes with made-up sample data"></picture></div>
+        <figcaption><b>Werkstatt-Dashboard (seit 0.12.0)</b>Läufe, Maschinenstunden, Wartung, Lager und offene Angebote, alles lokal (erfundene Beispieldaten).<span class="en" lang="en">Runs, machine hours, maintenance, stock and open quotes, all local (made-up sample data).</span></figcaption>
+      </figure>
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/kunden-light.png"><img loading="lazy" src="bilder/kunden-dark.png" width="1600" height="1000" alt="Dialog Kunden und Angebote: Kundenliste mit Suche und Formular, Reiter für Angebote, Zahlungsbedingungen und Nummernkreis, erfundene Beispieldaten / English: Customers and quotes dialog: customer list with search and form, tabs for quotes, payment terms and number range, made-up sample data"></picture></div>
+        <figcaption><b>Kunden und Angebote (seit 0.11.0)</b>Kundenstamm, fortlaufende Angebotsnummern, Zahlungsbedingungen; bleibt auf dem Rechner.<span class="en" lang="en">Customer file, running quote numbers, payment terms; stays on the computer.</span></figcaption>
+      </figure>
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/zuschnitt-light.png"><img loading="lazy" src="bilder/zuschnitt-dark.png" width="1600" height="1000" alt="Dialog Plattenzuschnitt Sägeplan: Teileliste, Plattenbestand, Einstellungen der Säge und Skizze einer Platte mit nummerierten Schnitten / English: Panel cutting plan dialog: parts list, sheet stock, saw settings and a sketch of a sheet with numbered cuts"></picture></div>
+        <figcaption><b>Plattenzuschnitt (seit 0.11.0)</b>Sägeplan mit durchgehenden Schnitten, Schnittfolge und Optimierer; nie an einer echten Säge erprobt.<span class="en" lang="en">Cutting plan with through cuts, cut sequence and optimizer; never tried on a real saw.</span></figcaption>
+      </figure>
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/schablone-light.png"><img loading="lazy" src="bilder/schablone-dark.png" width="1600" height="1000" alt="Text als Schablone mit Stegen: Buchstaben mit Inseln und die Brücken aus Material, die sie am Umfeld halten / English: Text as a stencil with bridges: letters with islands and the bridges of material that hold them"></picture></div>
+        <figcaption><b>Schablonen-Schrift mit Stegen (seit 0.11.0)</b>Inseln in O, A, B und Co. bleiben über schmale Brücken am Umfeld.<span class="en" lang="en">Islands in O, A, B and the like stay attached through narrow bridges.</span></figcaption>
+      </figure>
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/export-light.png"><img loading="lazy" src="bilder/export-dark.png" width="1600" height="1000" alt="Dialog 3D-Körper exportieren: Auswahl der Quelle, Liste der Körper mit Maßen und Volumen und Hinweise vor dem Speichern / English: Export 3D bodies dialog: choice of source, list of bodies with dimensions and volume, and notes before saving"></picture></div>
+        <figcaption><b>Export als STL und 3MF (seit 0.11.0)</b>Modelle, Möbelteile und Reliefplatten; nur gegen Tests geprüft, nichts mit einem Slicer.<span class="en" lang="en">Models, furniture parts and relief slabs; tested only with unit tests, nothing with a slicer.</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="neu-0-13" aria-labelledby="h-neu-0-13">
+    <h2 id="h-neu-0-13">Neu in 0.13.0</h2>
+    <p class="sub">Seit Version 0.13.0: ein Creator mit 18 Werkstück-Generatoren, die Wahl der Reihenfolge der Zustellungen, der Dialog KI-Modelle und eine Startseite mit Schnellzugriffen; in 0.12.0 und früheren Versionen gibt es diese Funktionen nicht. Alles ist nur gegen Tests, Simulator und Chromium geprüft, <strong>kein Creator-Teil wurde gefräst oder verleimt</strong>. <a href="https://github.com/KlapSC/ortino-cam/blob/main/release-notes/0.13.0.md">Release-Hinweise 0.13.0</a></p>
+
+    <h3 class="sub-h" style="margin-top:0">Creator: Werkstücke aus wenigen Eingaben</h3>
+    <p class="sub">Ein Dialog (<em>Erstellen ▸ Creator …</em>) für <strong>18 parametrische Werkstück-Generatoren in fünf Gruppen</strong>. Du wählst in der Galerie einen Creator, stellst Maße, Spiel und Varianten im Formular ein (auch als Formel) und siehst sofort die Teile mit Maßlinien, die Teileliste, Montagehinweise und Hinweise mit Lösungsknopf. <em>Anlegen</em> setzt Platten, Formen und Bearbeitungen ins Projekt, in einem Rückgängig-Schritt; danach geht es wie gewohnt weiter mit Prüfliste, Simulation und Fräsen. Plattendicke, Fräser und das Spiel des Passungs-Assistenten übernimmt der Creator aus dem Projekt.</p>
+    <div class="gallery">
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/creator-light.png"><img loading="lazy" src="bilder/creator-dark.png" width="1600" height="1000" alt="Der Creator-Dialog: links die Galerie der Creator, in der Mitte das Formular, rechts die Vorschau der Teile mit Maßlinien / English: The Creator dialog: gallery of creators on the left, form in the middle, preview of the parts with dimension lines on the right"></picture></div>
+        <figcaption><b>Die Galerie</b>18 Creator mit Suche und Kategorien, Formular und Vorschau.<span class="en" lang="en">18 creators with search and categories, form and preview.</span></figcaption>
+      </figure>
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/creator-schachtel-light.png"><img loading="lazy" src="bilder/creator-schachtel-dark.png" width="1600" height="1000" alt="Creator Schachtel mit Fingerzinken: Teile mit Maßlinien und Platte mit den angeordneten Teilen / English: Box creator with finger joints: parts with dimension lines and the sheet with the arranged parts"></picture></div>
+        <figcaption><b>Schachtel mit Fingerzinken</b>Boden in Nut, Schiebedeckel, Trennwände, Griff, Beschriftung.<span class="en" lang="en">Floor in a groove, sliding lid, dividers, grip, label.</span></figcaption>
+      </figure>
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/creator-vogelhaus-light.png"><img loading="lazy" src="bilder/creator-vogelhaus-dark.png" width="1600" height="1000" alt="Creator Vogelhaus und Nistkasten: Teile mit Flugloch, Dach und Boden / English: Birdhouse creator: parts with entrance hole, roof and floor"></picture></div>
+        <figcaption><b>Vogelhaus / Nistkasten</b>Flugloch nach Vogelart (Richtwert, keine Garantie), Dach, Entwässerung.<span class="en" lang="en">Entrance hole by species (rule of thumb, no guarantee), roof, drainage.</span></figcaption>
+      </figure>
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/creator-zahnrad-light.png"><img loading="lazy" src="bilder/creator-zahnrad-dark.png" width="1600" height="1000" alt="Creator Zahnräder: Zahnrad mit Bohrung, Passfedernut und Speichen / English: Gears creator: gear with bore, keyway and spokes"></picture></div>
+        <figcaption><b>Zahnräder</b>Evolventenverzahnung mit Bohrung, Passfedernut und Speichen.<span class="en" lang="en">Involute teeth with bore, keyway and spokes.</span></figcaption>
+      </figure>
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/creator-rosette-light.png"><img loading="lazy" src="bilder/creator-rosette-dark.png" width="1600" height="1000" alt="Creator Rosette und Mandala: runde Scheibe mit drehsymmetrischen Ringen aus Motiven / English: Rosette creator: round disc with rotationally symmetric rings of motifs"></picture></div>
+        <figcaption><b>Rosette / Mandala</b>Drehsymmetrische Ringe, Durchbruch mit Stegen, damit nichts herausfällt.<span class="en" lang="en">Rotationally symmetric rings, cut-through with bridges so nothing falls out.</span></figcaption>
+      </figure>
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/creator-schild-light.png"><img loading="lazy" src="bilder/creator-schild-dark.png" width="1600" height="1000" alt="Creator Namensschild und Türschild: Schild mit Text, Rahmenlinie und Befestigungslöchern / English: Name sign creator: sign with text, frame line and mounting holes"></picture></div>
+        <figcaption><b>Namensschild / Türschild</b>Text, Rahmenlinie, Ornament, Befestigung; graviert, als Tasche oder ausgeschnitten.<span class="en" lang="en">Text, frame line, ornament, mounting; engraved, pocketed or cut out.</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="tablewrap" style="margin-top:22px"><table class="cmp" aria-label="Die 18 Creator in fünf Gruppen">
+      <thead><tr><th scope="col">Gruppe</th><th scope="col">Creator</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Schachtel (1)</th><td data-label="Creator"><strong>Schachtel mit Fingerzinken</strong>: Maße außen oder innen, Boden aufgelegt oder in Nut, Deckel aufgelegt oder Schiebedeckel, Trennwände, Griff, Beschriftung</td></tr>
+        <tr><th scope="row">Bauten und Figuren (3)</th><td data-label="Creator"><strong>Vogelhaus / Nistkasten</strong> (Flugloch nach Vogelart, Sattel- oder Pultdach, Entwässerung, Klappe; auch Futterhaus) · <strong>Schattenkasten</strong> (Schichten, Distanzrahmen, LED-Kanal) · <strong>3D-Steckfigur</strong> (Stern, Baum, Schneeflocke aus gekreuzten Scheiben)</td></tr>
+        <tr><th scope="row">Technik (5)</th><td data-label="Creator"><strong>Holzverbindungen</strong> (Schwalbenschwanz flach, Fingerzinken, Zapfen, Nut und Feder, Überblattung, Dübel, Stecknut) · <strong>Zahnräder</strong> (Stirnrad, Paar, Zahnstange) · <strong>Zahnriemenscheibe</strong> (GT2, HTD 3M/5M) · <strong>Lüftungsgitter</strong> · <strong>QR-Code</strong> (Adresse, Text, WLAN, Kontakt)</td></tr>
+        <tr><th scope="row">Ornament (3)</th><td data-label="Creator"><strong>Puzzle (Jigsaw)</strong> · <strong>Rosette / Mandala</strong> · <strong>Dekoration nach Jahreszeit</strong> (Schneeflocke, Stern, Baum, Osterei, Hase, Herbstblatt, Kürbis, Herz)</td></tr>
+        <tr><th scope="row">Schrift und Skala (6)</th><td data-label="Creator"><strong>Namensschild / Türschild</strong> (auch Hausnummer) · <strong>Geburtsbuchstabe</strong> · <strong>Letter Topper</strong> · <strong>Wortkacheln</strong> · <strong>Lineal</strong> (mm und Zoll) · <strong>Wanduhr-Zifferblatt</strong></td></tr>
+      </tbody>
+    </table></div>
+    <div class="callout" style="margin-top:22px">
+      <h3>Creator – ehrlich gesagt</h3>
+      <ul>
+        <li><strong>Nichts gefräst, nichts verleimt, nichts zusammengesteckt oder aufgehängt.</strong> Alle Creator sind nur mit Rust-Tests, Vitest-Tests, dem Simulator und Chromium geprüft.</li>
+        <li>Das <strong>Spiel</strong> (Richtwert 0,1 mm), Stegbreiten, Zahnflanken, Riemenrillen, die Teilung des Lineals und die Lesbarkeit des QR-Codes sind Rechenwerte und an echtem Material nicht erprobt. Zuerst ein Probeschnitt im Reststück und der Passungs-Testcoupon.</li>
+        <li>Die <strong>Vogelmaße</strong> sind Richtwerte, wie Naturschutzverbände sie üblicherweise nennen (bitte prüfen), ohne Garantie, dass eine Art einzieht. Die Fräszeit ist eine grobe Schätzung.</li>
+        <li>Nicht dabei: Tiere als Steckfiguren, der Eck-Schwalbenschwanz wie an Schubladen, Schrägverzahnung. Nur im Programm und für Claude, nicht im Web-Designer des Portals. <a href="https://github.com/KlapSC/ortino-cam/wiki/Creator">Anleitung im Wiki</a></li>
+      </ul>
+    </div>
+
+    <h3 class="sub-h">Reihenfolge der Zustellungen: Teil für Teil oder Ebene für Ebene</h3>
+    <div class="two">
+      <div>
+        <p>Bei <strong>mehreren Teilen und mehr als einer Zustellung</strong> wählst du bei Profil und Tasche unter »Erweitert«, ob jedes Teil bis zur Endtiefe gefräst wird, bevor das nächste folgt (<strong>Teil für Teil</strong>), oder ob erst alle Teile die erste Zustellung bekommen, dann die zweite (<strong>Ebene für Ebene</strong>). Der Standard bleibt das bisherige Verhalten: beim Profil Teil für Teil, bei der Tasche Ebene für Ebene.</p>
+        <ul>
+          <li><strong>Warum:</strong> Bis zur letzten Stufe hängen alle Teile am Material; mit Haltestegen oder Restschicht bleibt die Platte stabil.</li>
+          <li><strong>Was es kostet:</strong> mehr Leerfahrten, und bei einem Abbruch ist kein Teil fertig. Gemessen an drei Teilen, vier Zustellungen, Fräser Ø 6 mm: Eilweg <strong>1053 statt 2006 mm</strong>, geschätzte Zeit <strong>70 statt 89 Sekunden</strong> (Rechnung im Programm, nicht gefräst).</li>
+          <li><strong>Bisherige Projekte ändern sich nicht:</strong> Ein Test an elf mitgelieferten Beispielen und am Beispielprojekt zeigt denselben G-Code Byte für Byte.</li>
+          <li>Nur gegen Rust-Tests, die eigene Simulation und Chromium geprüft, nicht an einer Maschine.</li>
+        </ul>
+      </div>
+      <figure class="fig" style="margin:0">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/zustellung-light.png"><img loading="lazy" src="bilder/zustellung-dark.png" width="1600" height="1000" alt="Eigenschaften einer Profil-Bearbeitung mit dem Feld »Reihenfolge der Zustellungen«: Teil für Teil oder Ebene für Ebene / English: Properties of a profile operation with the field “Order of the depth passes”: part by part or level by level"></picture></div>
+        <figcaption><b>Reihenfolge der Zustellungen</b>Das Feld bei Profil und Tasche, mit Erklärung.<span class="en" lang="en">The field for profile and pocket, with an explanation.</span></figcaption>
+      </figure>
+    </div>
+
+    <h3 class="sub-h">Startseite mit Schnellzugriffen und der Dialog KI-Modelle</h3>
+    <p class="sub">Die <strong>Home-Schaltfläche</strong> (<code>Alt+Pos1</code>) führt immer zur Startseite zurück, auch über einem Projekt in Arbeit. Dort stehen <strong>11 Schnellzugriffe</strong>, zuerst die für deine eigenen Fotos und Bilder (Foto → Relief, Bild nachzeichnen, Eigenes Bild), dann die Designer und Werkzeuge. Überall, wo du eine Quelle wählst, stehen deine eigenen Fotos, Bilder und Bausteine <strong>vor</strong> den Generatoren (»Eigenes zuerst«). Der Dialog <strong>KI-Modelle</strong> (<em>Extras ▸ KI-Modelle …</em>) lädt, prüft, fortsetzt, importiert und entfernt das Tiefenmodell für »Foto → Relief« – <strong>nie ohne deinen Klick</strong>, und dein Foto verlässt den Rechner nie.</p>
+    <div class="gallery g2">
+      <figure class="fig">
+        <div class="shot"><picture><source media="(prefers-color-scheme: light)" srcset="bilder/startseite-light.png"><img loading="lazy" src="bilder/startseite-dark.png" width="1600" height="1000" alt="Startseite mit Schnellzugriffen: zuerst Foto → Relief, Bild nachzeichnen und Eigenes Bild, danach Art Designer, Creator und weitere Werkzeuge / English: Home page with quick access tiles: first photo to relief, trace an image and your own image, then Art Designer, Creator and more tools"></picture></div>
+        <figcaption><b>Startseite mit Schnellzugriffen</b>Eigenes zuerst, danach Designer und Werkzeuge; die Karte »Dein Projekt« führt zurück.<span class="en" lang="en">Your own sources first, then designers and tools; the “Your project” card leads back.</span></figcaption>
+      </figure>
+    </div>
+    <p class="fine-print" style="margin-top:14px">Nur mit Vitest und Chromium gegen den echten Kern geprüft, mit einem Ersatzmodell und einem Ersatz für das Portal. <strong>Der Download des echten Modells (47,3 MB) vom echten Portal ist nicht geprüft</strong>, nichts davon unter Windows (WebView2); ob <code>Alt+Pos1</code> dort ankommt, ist offen (die Schaltfläche und die Befehlspalette gehen in jedem Fall). <a href="https://github.com/KlapSC/ortino-cam/wiki/KI-Modelle-und-Startseite">Anleitung im Wiki</a></p>
+
+    <h3 class="sub-h">Korrektur: Bögen über 180°</h3>
+    <p class="fine-print" style="margin-top:0"><strong>Behoben:</strong> Das Hüllrechteck (Größe und Lage auf der Platte) und die Auflösung zu Linien rechneten Bögen mit mehr als 180° Öffnungswinkel falsch. Solche Bögen werden jetzt vorher in zwei gleiche Hälften auf demselben Kreis geteilt; Form und Flächeninhalt ändern sich dadurch nicht. Sichtbar wurde es bei den Creator-Teilen (Kreisabschnitte), es betrifft aber jede Kontur mit einem solchen Bogen. Ob Projekte aus 0.12.0 davon betroffen waren, ist nicht untersucht.</p>
+
+    <div class="en-block" lang="en">
+      <h3>New in 0.13.0</h3>
+      <p>Version 0.13.0 adds a <strong>creator</strong> dialog with 18 parametric workpiece generators in five groups (box with finger joints, birdhouse, shadow box, gears, puzzle, rosette, name sign, ruler and more), a choice between part-by-part and level-by-level depth passes for profile and pocket (existing projects give byte-identical G-code), an <strong>AI models</strong> dialog (the depth model is only downloaded when you click) and a <strong>home page</strong> with quick-access tiles. It also corrects the bounding box and line resolution of arcs of more than 180°. Everything is tested against unit tests, the simulator and Chromium only; <strong>no creator part has been milled or glued</strong>, the clearance is a rule of thumb, and the bird-house sizes are rules of thumb without any guarantee. <a href="https://github.com/KlapSC/ortino-cam/blob/main/release-notes/0.13.0.md">Release notes 0.13.0</a> (German)</p>
+    </div>
   </section>
 
   <section id="funktionen" aria-labelledby="h-funktionen">
@@ -342,17 +533,19 @@
     <p class="sub">Eine Anwendung für Entwurf, CAM, Simulation und Maschinenbedienung – mit Hilfen für Einsteiger und Werkzeugen für Fortgeschrittene.</p>
     <div class="cards">
       <div class="card"><div class="ico">✏️</div><h3>Entwerfen</h3><p>Formen, Text (auch auf Pfad, Einzellinienschriften, als Schablone mit Stegen), Bézier-Stift, Knoten, Boolesche Operationen, Offset, Arrays (auch entlang eines Pfads), Seriennummern in Texten, Variablen und Formeln mit Einheiten, parametrische Skizzen mit Abhängigkeiten und Verlauf (nicht mit einem CAD-Programm verglichen), erweitertes Fangen (Schnittpunkte, Verlängerung, Lot, Tangente, Polar) und Bemaßung. Import von SVG, DXF, PDF/AI, EPS/PostScript, Bildern und 3D-Modellen (STL, STEP: als Relief, Umriss oder Schichtmodell); Béziers aus SVG und PDF und Splines aus DXF bleiben Kurven; Export auch als STL und 3MF (nur mit selbst erzeugten Dateien geprüft, ebenso STL und STEP; 3MF nicht mit einem Slicer).</p></div>
-      <div class="card"><div class="ico">🧭</div><h3>Werkzeugwege</h3><p>Profil, Tasche, adaptives Räumen, Bohren, Gewindefräsen (nur Simulator, nicht an einer Maschine erprobt), V-Carving, Inlay, Gravur und 3D-Relief. Postprozessoren für GRBL (an der Ultimate Bee erprobt), grblHAL, FluidNC, Mach3/4 und LinuxCNC, dazu fünf weitere nach Herstellerunterlagen. Außer GRBL ist keiner an einer echten Maschine erprobt.</p></div>
+      <div class="card"><div class="ico">🧭</div><h3>Werkzeugwege</h3><p>Profil, Tasche (mit wählbarer Reihenfolge der Zustellungen: Teil für Teil oder Ebene für Ebene – seit 0.13.0), adaptives Räumen, Bohren, Gewindefräsen (nur Simulator, nicht an einer Maschine erprobt), V-Carving, Inlay, Gravur und 3D-Relief. Postprozessoren für GRBL (an der Ultimate Bee erprobt), grblHAL, FluidNC, Mach3/4 und LinuxCNC, dazu fünf weitere nach Herstellerunterlagen. Außer GRBL ist keiner an einer echten Maschine erprobt.</p></div>
       <div class="card"><div class="ico">🧊</div><h3>3D-Simulation</h3><p>Materialabtrag abspielen, Kollisionen und Übermaß erkennen, Zeit abschätzen.</p></div>
       <div class="card"><div class="ico">🧩</div><h3>Muster &amp; Relief</h3><p>25 parametrische Lochmuster mit Fräsbarkeits-Ampel; 3D-Relief aus Generatoren (40 Vorlagen), Formen, Graustufenbildern oder einem Foto (Foto → Relief mit lokalem KI-Tiefenmodell), Modellieren mit dem Pinsel, Kennzahlen zu Tiefe, Steilheit und Innenradius, Schruppen und Schlichten mit einem Klick. Nicht an einer echten Maschine erprobt.</p></div>
+      <div class="card"><div class="ico">🧰</div><h3>Creator</h3><p>Seit 0.13.0: 18 parametrische Werkstück-Generatoren in fünf Gruppen aus einem Dialog: Schachtel mit Fingerzinken, Vogelhaus, Schattenkasten, Steckfiguren, Holzverbindungen, Zahnräder, Zahnriemenscheibe, Lüftungsgitter, QR-Code, Puzzle, Rosette, Dekoration, Türschild, Geburtsbuchstabe, Letter Topper, Wortkacheln, Lineal und Zifferblatt. Teileliste und Montagehinweise inklusive. Nichts gefräst oder verleimt; das Spiel ist ein Richtwert. <a href="#neu-0-13">Mehr dazu</a></p></div>
       <div class="card"><div class="ico">🖼️</div><h3>Art Designer</h3><p>Wandbilder aus Holz in fünf Schritten: acht Motive, Formate von A-Reihe bis Panorama, Rahmen und Schrift; als geschnitztes Relief oder als Schichtholzbild aus gestapelten Sperrholzlagen mit Passstiften, Nummern und Montageplan. Seit 0.10.0 mit eigenem Bild (PNG, JPEG, WebP), das an einer Seite ins Muster übergehen kann. Gerechnet, nicht gefräst oder verleimt.</p></div>
       <div class="card"><div class="ico">🪚</div><h3>Plattenplaner &amp; Möbel</h3><p>Teile platzsparend auf Platten legen (auch Freiform), Plattenzuschnitt mit Optimierer als Sägeplan (nur gerechnet, nie an einer echten Säge), Passungen und Fingerzinken, Küchen- und Schrank-Designer mit Stückliste und Kantenband, Farben und Griffen, 3D-Reliefs auf Fronten, Möbel-Designer für Tische, Sideboards, Regale und Sitzmöbel, Speichern und Varianten der Küche, Beschlagbibliothek und Rendering als Bild.</p></div>
-      <div class="card"><div class="ico">🎛️</div><h3>Maschinenanbindung</h3><p>GRBL-kompatibel über USB/COM oder TCP: Handsteuerung, Referenzfahrt, Antasten mit Tastplatte oder XYZ-Eckblock, Werkzeugwechsel mit Längensensor, Tastplatte oder festem Taster.</p></div>
+      <div class="card"><div class="ico">🎛️</div><h3>Maschinenanbindung</h3><p>GRBL-kompatibel über USB/COM oder TCP: Handsteuerung, Referenzfahrt, Antasten mit Tastplatte oder XYZ-Eckblock, Werkzeugwechsel mit Längensensor, Tastplatte oder festem Taster. Laut Betreiber stimmte die Live-Animation der Werkzeugposition bei einem Lauf von rund einer Stunde mit Version 0.12.0 (Tasche und Kontur in Birke, ohne Pause, Vorschubänderung oder Werkzeugwechsel) »perfekt« mit dem Fräsen überein; eine Beobachtung, keine Messung.</p></div>
       <div class="card"><div class="ico">🛡️</div><h3>Start-Check</h3><p>Verfahrweg, Referenzfahrt, Nullpunkt, Werkzeug, Absaugung und mehr werden vor jedem Lauf geprüft. Das Programm schreibt nie Einstellungen in die Steuerung.</p></div>
       <div class="card"><div class="ico">📷</div><h3>Kamera auf der Arbeitsplatte</h3><p>Vier QR-Marken in den Ecken, das Kamerabild wird entzerrt und liegt millimetergenau unter dem Entwurf; Werkstück-Umriss erkennen. Nur mit erzeugten Bildern geprüft, nie mit einer echten Kamera.</p></div>
       <div class="card"><div class="ico">🛠️</div><h3>Wartung &amp; Standzeit</h3><p>Standzeit-Grenzen je Werkzeug und ein Wartungsplan je Maschine, mit Hinweisen im Start-Check. Richtwerte, nur Simulator.</p></div>
       <div class="card"><div class="ico">📱</div><h3>Handy-Fernbedienung</h3><p>Per QR-Code koppeln, in kleinen Schritten verfahren, Pause und Stopp – nur im eigenen WLAN, bei stabiler Verbindung, aus beim Start. Die Verbindung ist <strong>unverschlüsselt</strong>. Stopp, Verfahren und Nullpunkte setzen sind laut Betreiber an einer echten Maschine bestätigt; Pause und Anzeige nur gegen den Simulator geprüft.</p></div>
       <div class="card"><div class="ico">📄</div><h3>Rüstblatt &amp; Angebot</h3><p>PDF mit Werkzeugliste, Reihenfolge, Zeitschätzung und Vorschau – dazu eine Kostenrechnung aus Material, Maschinenzeit und Aufschlag, auf Wunsch mit Stückzahl, Staffel und Ausschusszuschlag. Kundenstamm, fortlaufende Angebotsnummern und Zahlungsbedingungen bleiben auf dem Rechner.</p></div>
+      <div class="card"><div class="ico">🏠</div><h3>Startseite &amp; KI-Modelle</h3><p>Seit 0.13.0: Eine Startseite mit 11 Schnellzugriffen und Home-Schaltfläche, auf der deine eigenen Fotos und Bilder vor den Generatoren stehen, und ein Dialog, in dem du das Tiefenmodell für »Foto → Relief« nur auf Klick lädst, prüfst oder entfernst. Nur gegen Tests und Chromium geprüft.</p></div>
       <div class="card"><div class="ico">🌱</div><h3>Beispiele, Einführung &amp; Lernen</h3><p>Eine Galerie mit 13 Beispielprojekten, eine geführte Einführung durch die fünf Schritte und 6 Lektionen, deren Aufgaben sich selbst abhaken. Die Beispiele sind nicht gefräst: erst im Reststück ausprobieren.</p></div>
       <div class="card"><div class="ico">🌍</div><h3>Community-Portal</h3><p>Fräsdesigns entdecken, mit einem Klick laden und eigene teilen. Im Programm integriert, vom Betreiber gehostet. <a href="#portal">Mehr dazu</a></p></div>
     </div>
@@ -451,7 +644,7 @@ ortino export tuerschild.ocam --format dxf -o tuerschild.dxf</code></pre>
       </div>
     </div>
     <h3 style="margin:26px 0 10px">Sicherheitsstufen für Claude und die API</h3>
-    <table aria-label="Sicherheitsstufen für Claude und die API">
+    <div class="tablewrap"><table aria-label="Sicherheitsstufen für Claude und die API">
           <thead><tr><th>Stufe</th><th>Was erlaubt ist</th><th>Standard</th></tr></thead>
           <tbody>
             <tr><td><code>read</code></td><td>Projekt, Prüfliste, Vorschau lesen</td><td>erlaubt</td></tr>
@@ -459,7 +652,7 @@ ortino export tuerschild.ocam --format dxf -o tuerschild.dxf</code></pre>
             <tr><td><code>machine</code></td><td>Verfahren, Spindel, Nullpunkt, Antasten</td><td>gesperrt, jede Aktion mit Bestätigung</td></tr>
             <tr><td><code>danger</code></td><td>Job starten, Dateien überschreiben</td><td>gesperrt, jede Aktion mit Bestätigung</td></tr>
           </tbody>
-    </table>
+    </table></div>
   </section>
 
   <section id="vergleich" aria-labelledby="h-vergleich">
@@ -471,13 +664,13 @@ ortino export tuerschild.ocam --format dxf -o tuerschild.dxf</code></pre>
           <tr><th scope="row">Preis</th><td data-label="ortino.CAM">kostenlos</td><td data-label="Vectric Aspire">einmalig rund 1.800 € (laut Preisliste des Herstellers; Updates im ersten Jahr inklusive)</td></tr>
           <tr><th scope="row">System</th><td data-label="ortino.CAM">Windows 10/11, 64 Bit</td><td data-label="Vectric Aspire">Windows (Mac nur über eine Windows-Virtualisierung)</td></tr>
           <tr><th scope="row">2D-Entwurf, Profil, Tasche, V-Carving, Gravur, Inlay</th><td data-label="ortino.CAM">ja</td><td data-label="Vectric Aspire">ja</td></tr>
-          <tr><th scope="row">3D-Relief</th><td data-label="ortino.CAM">Reliefs aus Mustern, Höhenbildern, Formen und Fotos (Foto → Relief) erzeugen und Werkzeugwege dafür berechnen (nicht an einer echten Maschine erprobt); kleiner Umfang; Import von STL und STEP in ein Relief (seit 0.4.0, nur von oben, nur mit selbst erzeugten Dateien geprüft); Modellieren mit dem Pinsel (seit 0.7.0, nur gegen Tests, Simulator und Chromium geprüft); keine Komponenten und keine freie 3D-Modellierung</td><td data-label="Vectric Aspire">umfangreiche 3D-Modellierung (Formen, Skulptieren, Komponenten) – <strong>hier ist Aspire klar stärker</strong></td></tr>
+          <tr><th scope="row">3D-Relief</th><td data-label="ortino.CAM">Reliefs aus Mustern, Höhenbildern, Formen und Fotos (Foto → Relief) erzeugen und Werkzeugwege dafür berechnen (nicht an einer echten Maschine erprobt); kleiner Umfang; Import von STL und STEP in ein Relief (seit 0.4.0, nur von oben, nur mit selbst erzeugten Dateien geprüft); Modellieren mit dem Pinsel (seit 0.7.0) und Relief-Komponenten aus Profil, Muster oder Bild (seit 0.12.0), beides nur gegen Tests, Simulator und Chromium geprüft; keine freie 3D-Modellierung von Körpern</td><td data-label="Vectric Aspire">umfangreiche 3D-Modellierung (Formen, Skulptieren, Komponenten) – <strong>hier ist Aspire klar stärker</strong></td></tr>
           <tr><th scope="row">Vierte Achse (Rotary)</th><td data-label="ortino.CAM">nein – für eine spätere Version geplant</td><td data-label="Vectric Aspire">ja</td></tr>
           <tr><th scope="row">Nesting</th><td data-label="ortino.CAM">ja (Plattenplaner mit Freiform-Nesting)</td><td data-label="Vectric Aspire">ja</td></tr>
           <tr><th scope="row">Zur Maschine schicken</th><td data-label="ortino.CAM">direkt aus dem Programm an GRBL-Steuerungen (USB/COM, TCP), mit Start-Check, Antasten und Werkzeugwechsel-Assistent; an einer echten Maschine erprobt nur mit GRBL an der Ultimate Bee</td><td data-label="Vectric Aspire">erzeugt G-Code-Dateien, die ein separates Steuerungsprogramm ausführt</td></tr>
           <tr><th scope="row">Postprozessoren</th><td data-label="ortino.CAM">GRBL (an der Ultimate Bee erprobt); grblHAL, FluidNC, Mach3/4, LinuxCNC, UCCNC, Centroid, ShopBot, MASSO, PlanetCNC (nicht an einer echten Maschine erprobt, die letzten fünf nur nach Herstellerunterlagen); weitere Steuerungen laufend, Beiträge willkommen</td><td data-label="Vectric Aspire">sehr großer Katalog, online verwaltet; deutlich mehr Steuerungen</td></tr>
           <tr><th scope="row">Steuerung durch Claude (MCP-Server, lokale API)</th><td data-label="ortino.CAM">ja</td><td data-label="Vectric Aspire">keine Angabe des Herstellers gefunden</td></tr>
-          <tr><th scope="row">Reife</th><td data-label="ortino.CAM">junge Software (0.x), nur Teile an einer echten Maschine erprobt (eine Maschine, GRBL); Neues aus 0.3.9, 0.3.11, 0.3.12, 0.3.14, 0.4.0, 0.4.1, 0.5.0, 0.6.0, 0.7.0, 0.8.0, 0.8.2, 0.9.0, 0.10.0, 0.11.0 und 0.12.0 (Parametrische Skizzen, Relief-Komponenten, Werkstatt und Dashboard, Export STL/3MF, Schablonen-Stege, Kundenstamm und Angebote, Sägeplan, Art Designer mit eigenem Bild, Web-Designer, Foto → Relief, EPS-Import, Fangen, Bemaßung, Modellieren, Kachelung, Marktplatz, Handy-Schnittstelle) nicht systematisch unter Windows (WebView2) geprüft</td><td data-label="Vectric Aspire">seit Jahren etabliert, große Nutzergemeinde</td></tr>
+          <tr><th scope="row">Reife</th><td data-label="ortino.CAM">junge Software (0.x), nur Teile an einer echten Maschine erprobt (eine Maschine, GRBL); Neues aus 0.3.9, 0.3.11, 0.3.12, 0.3.14, 0.4.0, 0.4.1, 0.5.0, 0.6.0, 0.7.0, 0.8.0, 0.8.2, 0.9.0, 0.10.0, 0.11.0, 0.12.0 und 0.13.0 (Creator, Reihenfolge der Zustellungen, KI-Modelle, Startseite, Parametrische Skizzen, Relief-Komponenten, Werkstatt und Dashboard, Export STL/3MF, Schablonen-Stege, Kundenstamm und Angebote, Sägeplan, Art Designer mit eigenem Bild, Web-Designer, Foto → Relief, EPS-Import, Fangen, Bemaßung, Modellieren, Kachelung, Marktplatz, Handy-Schnittstelle) nicht systematisch unter Windows (WebView2) geprüft</td><td data-label="Vectric Aspire">seit Jahren etabliert, große Nutzergemeinde</td></tr>
           <tr><th scope="row">Hilfe</th><td data-label="ortino.CAM">Anleitungen im Repository, Fragen über GitHub Issues (Einzelperson)</td><td data-label="Vectric Aspire">Hersteller-Support, Handbuch, Videos, Forum</td></tr>
           <tr><th scope="row">Kompatibilität</th><td data-label="ortino.CAM">liest Vectric-Werkzeugdatenbanken (.vtdb; das Format ist nicht offiziell dokumentiert, mit einer echten Vectric-Datei bisher nicht getestet)</td><td data-label="Vectric Aspire">–</td></tr>
         </tbody>
@@ -497,13 +690,13 @@ ortino export tuerschild.ocam --format dxf -o tuerschild.dxf</code></pre>
           <tr><th scope="row">Price</th><td data-label="ortino.CAM">free</td><td data-label="Vectric Aspire">one-off, about €1,800 (according to the manufacturer’s price list; updates included in the first year)</td></tr>
           <tr><th scope="row">System</th><td data-label="ortino.CAM">Windows 10/11, 64-bit</td><td data-label="Vectric Aspire">Windows (Mac only through Windows virtualisation)</td></tr>
           <tr><th scope="row">2D design, profile, pocket, V-carving, engraving, inlay</th><td data-label="ortino.CAM">yes</td><td data-label="Vectric Aspire">yes</td></tr>
-          <tr><th scope="row">3D relief</th><td data-label="ortino.CAM">creates reliefs from patterns, height images, shapes and photos (photo to relief) and computes toolpaths for them (not tested on a real machine); small scope; import of STL and STEP into a relief (since 0.4.0, top view only, tested only with self-made files); relief modelling with a brush (since 0.7.0, tested only against tests, simulator and Chromium); no components and no free 3D modelling</td><td data-label="Vectric Aspire">extensive 3D modelling (shapes, sculpting, components) – <strong>Aspire is clearly stronger here</strong></td></tr>
+          <tr><th scope="row">3D relief</th><td data-label="ortino.CAM">creates reliefs from patterns, height images, shapes and photos (photo to relief) and computes toolpaths for them (not tested on a real machine); small scope; import of STL and STEP into a relief (since 0.4.0, top view only, tested only with self-made files); relief modelling with a brush (since 0.7.0) and relief components from profile, pattern or image (since 0.12.0), both tested only against tests, simulator and Chromium; no free 3D modelling of solids</td><td data-label="Vectric Aspire">extensive 3D modelling (shapes, sculpting, components) – <strong>Aspire is clearly stronger here</strong></td></tr>
           <tr><th scope="row">Fourth axis (rotary)</th><td data-label="ortino.CAM">no – planned for a later version</td><td data-label="Vectric Aspire">yes</td></tr>
           <tr><th scope="row">Nesting</th><td data-label="ortino.CAM">yes (sheet planner with free-form nesting)</td><td data-label="Vectric Aspire">yes</td></tr>
           <tr><th scope="row">Sending to the machine</th><td data-label="ortino.CAM">straight from the app to GRBL controllers (USB/COM, TCP), with start check, probing and tool-change assistant; tested on a real machine only with GRBL on the Ultimate Bee</td><td data-label="Vectric Aspire">produces G-code files that a separate control program runs</td></tr>
           <tr><th scope="row">Post-processors</th><td data-label="ortino.CAM">GRBL (tested on the Ultimate Bee); grblHAL, FluidNC, Mach3/4, LinuxCNC, UCCNC, Centroid, ShopBot, MASSO, PlanetCNC (not tested on a real machine, the last five written from manufacturer documentation only); more controllers ongoing, contributions welcome</td><td data-label="Vectric Aspire">very large catalogue, managed online; considerably more controllers</td></tr>
           <tr><th scope="row">Control by Claude (MCP server, local API)</th><td data-label="ortino.CAM">yes</td><td data-label="Vectric Aspire">no statement from the manufacturer found</td></tr>
-          <tr><th scope="row">Maturity</th><td data-label="ortino.CAM">young software (0.x), only parts tested on a real machine (one machine, GRBL); what is new in 0.3.9, 0.3.11, 0.3.12, 0.3.14, 0.4.0, 0.4.1, 0.5.0, 0.6.0, 0.7.0, 0.8.0, 0.8.2, 0.9.0, 0.10.0, 0.11.0 and 0.12.0 (parametric sketches, relief components, workshop folder and dashboard, STL/3MF export, stencil bridges, customers and quotes, panel cutting plan, art designer with own image, web designer, photo to relief, EPS import, snapping, dimensions, sculpting, tiling, marketplace, phone interface) has not been systematically tested on Windows (WebView2)</td><td data-label="Vectric Aspire">established for years, large user community</td></tr>
+          <tr><th scope="row">Maturity</th><td data-label="ortino.CAM">young software (0.x), only parts tested on a real machine (one machine, GRBL); what is new in 0.3.9, 0.3.11, 0.3.12, 0.3.14, 0.4.0, 0.4.1, 0.5.0, 0.6.0, 0.7.0, 0.8.0, 0.8.2, 0.9.0, 0.10.0, 0.11.0, 0.12.0 and 0.13.0 (creators, order of the depth passes, AI models, home page, parametric sketches, relief components, workshop folder and dashboard, STL/3MF export, stencil bridges, customers and quotes, panel cutting plan, art designer with own image, web designer, photo to relief, EPS import, snapping, dimensions, sculpting, tiling, marketplace, phone interface) have not been systematically tested on Windows (WebView2)</td><td data-label="Vectric Aspire">established for years, large user community</td></tr>
           <tr><th scope="row">Help</th><td data-label="ortino.CAM">guides in the repository, questions via GitHub issues (one person)</td><td data-label="Vectric Aspire">manufacturer support, manual, videos, forum</td></tr>
           <tr><th scope="row">Compatibility</th><td data-label="ortino.CAM">reads Vectric tool databases (.vtdb; the format is not officially documented, not yet tested with a real Vectric file)</td><td data-label="Vectric Aspire">–</td></tr>
         </tbody>
@@ -522,10 +715,12 @@ ortino export tuerschild.ocam --format dxf -o tuerschild.dxf</code></pre>
       <h3>Frühe Version (0.x) – nicht alles ist an einer echten Maschine erprobt</h3>
       <ul>
         <li><strong>An echter Maschine erprobt</strong> (Version 0.3.3, Ultimate Bee mit xPRO V5, GRBL): Taschen, V-Carving, Konturen, Referenzfahrt, Werkzeugwechsel mit Tastplatte. Dazu laut Rückmeldung des Betreibers (Version 0.3.10, dieselbe Maschine): Einrichten des festen Tasters und Einmessen eines Werkzeugs an ihm; an der Handy-Fernbedienung Stopp, Verfahren und Nullpunkte setzen; ein Projekt von der Modellierung mit Claude (MCP) über »Reihenfolge optimieren« bis zum Fräsen (Einzelheiten nicht festgehalten).</li>
+        <li><strong>Rückmeldung zu Version 0.12.0</strong> (Betreiber, derselbe Maschinentyp): <strong>Tasche und Kontur in Birke</strong> in einem normalen Lauf von rund einer Stunde, <strong>ohne Pause, Vorschubänderung oder Werkzeugwechsel</strong>, alles beobachtet; die <strong>Live-Animation</strong> im Schritt »Fräsen« stimmte laut Betreiber »perfekt« mit dem Fräsen überein. Das ist <strong>ein Testlauf, kein Dauertest</strong> und sagt nichts über Pausen, Werkzeugwechsel im Lauf, andere Maschinen, Materialien oder Steuerungen.</li>
         <li><strong>Nicht an einer echten Maschine erprobt:</strong> alle anderen Postprozessoren und Steuerungen – grblHAL, FluidNC, Mach3/4, LinuxCNC, UCCNC, Centroid, ShopBot, MASSO, PlanetCNC (die letzten fünf nur nach Herstellerunterlagen geschrieben).</li>
         <li><strong>Nur gegen Simulator und Tests geprüft:</strong> Werkzeugwechsel am festen Taster mitten im Programm, Messung der Opferplatte und Höhenkarte, die übrigen Teile der Handy-Fernbedienung (Pause, Anzeige), »An Position fahren«, Längensensor, Gewindefräsen, Wartungsplan und Standzeit, Kamera auf der Arbeitsplatte (nur mit erzeugten Bildern, nie mit einer echten Kamera).</li>
         <li><strong>Neu in 0.3.9</strong> (Beispielgalerie, Einführung, Lektionen, Array entlang eines Pfads, Béziers, Seriennummern, Stückzahl): nur gegen Tests, Simulator und im Browser (Chromium) geprüft, <strong>nicht systematisch unter Windows (WebView2)</strong>. Beispiele und Lektionen sind nicht gefräst; Béziers aus SVG und PDF sind nur mit selbst erzeugten Dateien geprüft.</li>
         <li><strong>Neu in 0.3.11</strong> (doppelseitiges Fräsen mit Passstiften, Z-Null »Opferplatte« als Vorgabe bei festem Taster, aufgeteilte Menüleiste, Einstellungen-Dialog): nur gegen Tests, Simulator und im Browser (Chromium) geprüft, <strong>nicht an einer echten Maschine</strong> und nicht systematisch unter Windows (WebView2).</li>
+        <li><strong>Neu in 0.13.0</strong> (Creator mit 18 Werkstück-Generatoren, Reihenfolge der Zustellungen bei Profil und Tasche, Dialog KI-Modelle, Startseite mit Schnellzugriffen; dazu die Korrektur für Bögen über 180°): nur gegen Tests, Simulator und Chromium geprüft, <strong>kein Creator-Teil gefräst oder verleimt</strong>, der Download des echten Tiefenmodells vom echten Portal nicht geprüft, nicht unter Windows (WebView2) – <a href="https://github.com/KlapSC/ortino-cam/blob/main/release-notes/0.13.0.md">Release-Hinweise</a></li>
         <li><strong>Neu in 0.12.0</strong> (Parametrische Skizzen mit Abhängigkeiten, Maßen als Formel und Verlauf; Komponenten für Reliefs mit sechs Modi; Werkstatt-Ordner mit Rollen, gemeinsamer Bibliothek und Dashboard, alles lokal; nur gegen Tests und Browser geprüft, nichts gefräst) – <a href="https://github.com/KlapSC/ortino-cam/blob/main/release-notes/0.12.0.md">Release-Hinweise</a></li>
         <li><strong>Neu in 0.11.0</strong> (Export als STL und 3MF; DXF-Splines bleiben Kurven; Schablonen-Schrift mit Stegen; Kundenstamm, Angebotsnummern und Zahlungsbedingungen; Plattenzuschnitt mit Optimierer als Sägeplan; nur gegen Tests und Browser geprüft, nichts gefräst, gesägt oder gedruckt) – <a href="https://github.com/KlapSC/ortino-cam/blob/main/release-notes/0.11.0.md">Release-Hinweise</a></li>
         <li><strong>Neu in 0.10.0</strong> (Art Designer: eigenes Bild aus PNG, JPEG oder WebP mit Lage, Größe und Drehung; das Bild kann an einer Seite ins Muster übergehen; Geschnitzt und Schichtholz; dazu zwei Korrekturen: Handy-Fernbedienung, beschädigte Vectric-Dateien): nur gegen Tests, den echten Kern und Chromium geprüft, <strong>nicht unter Windows (WebView2), nichts gefräst oder verleimt; die KI-Schätzung der Tiefe nicht mit echtem Modell; ein Gesicht von vorn ergibt nur ein flaches Relief</strong>.</li>
@@ -584,7 +779,7 @@ ortino export tuerschild.ocam --format dxf -o tuerschild.dxf</code></pre>
     <div>
       <h2>Haftungsausschluss</h2>
       <p>ortino.CAM wird <strong>ohne jede Gewährleistung, »wie besehen«</strong> bereitgestellt; die Nutzung erfolgt <strong>auf eigene Gefahr</strong>. CNC-Maschinen können verletzen und Schäden verursachen. Simulation, Prüfliste und Start-Check sind Hilfen und keine Sicherheitsfunktion. Der Betreiber und die Mitwirkenden haften nicht für Schäden aus der Nutzung, soweit das Gesetz es zulässt; die Haftung bei Vorsatz, für Leben, Körper und Gesundheit und nach zwingendem Recht bleibt unberührt. Maßgeblich sind die <a href="https://github.com/KlapSC/ortino-cam/blob/main/LICENSE">Nutzungsbedingungen</a>.</p>
-      <p class="en" lang="en"><strong>English:</strong> ortino.CAM is CAD/CAM software for CNC routers on Windows – design, toolpaths, 3D simulation, a pre-flight check and direct GRBL machine control, drivable by Claude through an MCP server and a local API. Early version, proven on a real machine only in part (GRBL on one machine; no other post-processor tested on a real machine); what is new in 0.3.9, 0.3.11, 0.3.12, 0.3.14, 0.4.0, 0.4.1, 0.5.0, 0.6.0, 0.7.0, 0.8.0, 0.8.2, 0.9.0, 0.10.0, 0.11.0 and 0.12.0 (parametric sketches, relief components, workshop folder and dashboard, STL/3MF export, stencil bridges, customers and quotes, panel cutting plan, art designer with own image, web designer, photo to relief, EPS import, snapping, dimensions, sculpting, tiling, marketplace, phone interface) (including double-sided milling with dowel pins, colours, handles, 3D reliefs, the rendering export, touch input, STL and STEP import and the furniture designer) has not been systematically tested on Windows (WebView2); nothing imported or designed has been milled or built, and STEP import has never read a real CAD file; the phone remote is unencrypted. Provided "as is", without warranty, use at your own risk. Closed source; private and commercial use allowed, redistribution not. <a href="https://github.com/KlapSC/ortino-cam/releases/latest">Download</a> · <a href="https://github.com/KlapSC/ortino-cam/issues/new/choose">Issues</a></p>
+      <p class="en" lang="en"><strong>English:</strong> ortino.CAM is CAD/CAM software for CNC routers on Windows – design, toolpaths, 3D simulation, a pre-flight check and direct GRBL machine control, drivable by Claude through an MCP server and a local API. Early version, proven on a real machine only in part (GRBL on one machine; no other post-processor tested on a real machine); what is new in 0.3.9, 0.3.11, 0.3.12, 0.3.14, 0.4.0, 0.4.1, 0.5.0, 0.6.0, 0.7.0, 0.8.0, 0.8.2, 0.9.0, 0.10.0, 0.11.0, 0.12.0 and 0.13.0 (creators, order of the depth passes, AI models, home page, parametric sketches, relief components, workshop folder and dashboard, STL/3MF export, stencil bridges, customers and quotes, panel cutting plan, art designer with own image, web designer, photo to relief, EPS import, snapping, dimensions, sculpting, tiling, marketplace, phone interface) (including double-sided milling with dowel pins, colours, handles, 3D reliefs, the rendering export, touch input, STL and STEP import and the furniture designer) has not been systematically tested on Windows (WebView2); nothing imported or designed has been milled or built, and STEP import has never read a real CAD file; the phone remote is unencrypted. Provided "as is", without warranty, use at your own risk. Closed source; private and commercial use allowed, redistribution not. <a href="https://github.com/KlapSC/ortino-cam/releases/latest">Download</a> · <a href="https://github.com/KlapSC/ortino-cam/issues/new/choose">Issues</a></p>
     </div>
     <div>
       <h2>Links</h2>

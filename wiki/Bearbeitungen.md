@@ -4,7 +4,7 @@ Eine **Bearbeitung** sagt ortino.CAM, was mit einer Form passieren soll: ausschn
 
 ![Liste der Bearbeitungen (Bohren, Tasche, Profil) mit Werkzeug und Zeit, Werkzeugwege auf dem Türschild](https://raw.githubusercontent.com/KlapSC/ortino-cam/main/docs/bilder/bearbeitung-light.png)
 
-> **Ehrlich zum Stand:** An einer echten Maschine erprobt sind bisher nur **Taschen, V-Carving und Konturen** (Version 0.3.3, Ultimate Bee). Alles andere auf dieser Seite ist **nur gerechnet und simuliert**: adaptives Räumen, Gewindefräsen, Inlay, Gravur, 3D-Relief, Planfräsen, Dogbone, Muster. Zeiten und Schnittwerte sind Richtwerte. Teste jede neue Bearbeitung zuerst **ohne Werkzeug und Material** (Luftschnitt) und dann in Restmaterial.
+> **Ehrlich zum Stand:** An einer echten Maschine erprobt sind bisher nur **Taschen, V-Carving und Konturen** (Version 0.3.3, Ultimate Bee) und, laut Betreiber, ein einstündiger Lauf mit **Tasche und Kontur in Birke** mit Version 0.12.0 (siehe [Fräsen an der Maschine](Fräsen-an-der-Maschine)). Alles andere auf dieser Seite ist **nur gerechnet und simuliert**: adaptives Räumen, Gewindefräsen, Inlay, Gravur, 3D-Relief, Planfräsen, Dogbone, Muster. Zeiten und Schnittwerte sind Richtwerte. Teste jede neue Bearbeitung zuerst **ohne Werkzeug und Material** (Luftschnitt) und dann in Restmaterial.
 
 ## So legst du eine Bearbeitung an
 
@@ -29,7 +29,7 @@ Ein Fräser dreht sich. Je nachdem, ob die Drehung an der Schneide mit der Vorsc
 | Kante | meist **sauberer** in Holz und Kunststoff | etwas rauer |
 | Gut bei | steifer Maschine und sicher gespanntem Teil, denn er **zieht den Fräser ins Material** | wackliger Mechanik und dünnen Teilen mit Haltestegen, denn er läuft ruhiger |
 
-**Wie das in ortino.CAM heißt:** Im Abschnitt **Lauf** wählst du zwischen »Gleichlauf« und »Gegenlauf«. Die **Voreinstellung heißt Gegenlauf.** Für sauberere Kanten in Holz und Kunststoff wähle **Gleichlauf**. Das Programm weist darauf hin, wenn du bei Holz oder Kunststoff im Gegenlauf fräst (Hinweis »Gegenlauf bei Holz/Kunststoff«), und stellt auf Klick um.
+**Wie das in ortino.CAM heißt:** Im Abschnitt **Lauf** wählst du zwischen »Gleichlauf« und »Gegenlauf«. Die **Voreinstellung heißt Gegenlauf.** Für sauberere Kanten in Holz und Kunststoff wähle **Gleichlauf**. Das Programm weist darauf hin, wenn du bei Holz oder Kunststoff im Gegenlauf fräst (Hinweis »Gleichlauf gibt sauberere Kanten«; in den Hinweisregeln heißt die Regel »Gegenlauf bei Holz/Kunststoff«), und stellt auf Klick um.
 
 Bei einer Spindel, die im Uhrzeigersinn dreht (`M3`, Blick von oben), schneidet das Werkzeug im Gleichlauf, wenn das **Material rechts der Fahrtrichtung** liegt. Außen um ein Teil heißt das: im Uhrzeigersinn. In einer Tasche: gegen den Uhrzeigersinn.
 
@@ -55,6 +55,32 @@ Eine **Tasche** räumt eine Fläche aus. Die Standardstrategie ist **konturparal
 * **Raster:** parallele Bahnen unter einem einstellbaren Winkel, Zickzack oder einseitig, optional mit Randdurchgang.
 * **Helix-Einstieg:** Das Werkzeug schraubt sich ins Material, wenn Platz ist (sonst Rampe).
 * **Restbearbeitung:** Ein kleineres Werkzeug räumt, was das erste nicht erreicht hat.
+
+## Reihenfolge der Zustellungen: Teil für Teil oder Ebene für Ebene (seit 0.13.0)
+
+Hat eine Bearbeitung **mehrere Teile** (mehrere Konturen, Löcher und Außenkonturen, getrennte Flächen einer Tasche) und **mehr als eine Zustellung**, stellt sich die Frage, in welcher Reihenfolge die Tiefenstufen gefahren werden. Der Schalter **»Reihenfolge der Zustellungen«** steht bei Profil und Tasche unter **Erweitert** (im Einfach-Modus hinter »Mehr Einstellungen«) und hat zwei Werte:
+
+![Eigenschaften einer Profil-Bearbeitung mit dem Feld »Reihenfolge der Zustellungen«: Teil für Teil oder Ebene für Ebene, mit Erklärung](https://raw.githubusercontent.com/KlapSC/ortino-cam/main/docs/bilder/zustellung-light.png)
+
+| Wert | Ablauf |
+|---|---|
+| **Teil für Teil** | Jedes Teil bekommt alle Zustellungen bis zur Endtiefe, dann folgt das nächste. |
+| **Ebene für Ebene** | Erst die erste Zustellung an allen Teilen, dann die zweite, und so weiter. |
+
+**Die Vorgabe ist das bisherige Verhalten:** beim **Profil Teil für Teil**, bei der **Tasche Ebene für Ebene**. Der Standardwert wird nicht in die Datei geschrieben. Deine bisherigen Projekte laden und speichern unverändert, und ihr **G-Code bleibt Byte für Byte gleich**; das prüft ein Test an den elf mitgelieferten Beispielen und am Beispielprojekt `tuerschild.ocam`. Bei nur einem Teil oder nur einer Zustellung sind beide Werte gleich.
+
+**Wozu Ebene für Ebene?** Bis zur letzten Stufe hängen alle Teile am Material. Zusammen mit **Haltestegen** oder **Restschicht** bleibt die Platte bis zum letzten Schnitt stabil; ein fertig ausgeschnittenes Teil kann sich sonst lösen, während die anderen noch folgen, und vom Fräser erfasst werden. Das Durchtrennen der Restschicht kommt dann als letzte Stufe für alle Teile.
+
+**Was es kostet, ehrlich:**
+
+* Mehr Leerfahrten: Nach jeder Kontur zieht sich das Werkzeug auf die Sicherheitshöhe zurück. **Gemessen** an drei Teilen von 40 × 30 mm im Abstand von 150 bis 250 mm, vier Zustellungen, Fräser Ø 6 mm: Der Eilweg im G-Code wächst von **1053 auf 2006 mm**, die geschätzte Zeit von **70 auf 89 Sekunden** (Teil für Teil gegen Ebene für Ebene). Je weiter die Teile auseinanderliegen und je mehr Zustellungen es gibt, desto größer der Unterschied; bei dicht gepackten Teilen ist er klein. Das ist eine Rechnung im Programm, **kein gefräster Lauf**.
+* Bei einem **Abbruch** ist mit Ebene für Ebene **kein** Teil fertig, mit Teil für Teil zumindest das erste.
+
+**Beim Profil** (innen, außen, auf Linie, auch offene Linien) fährt das Werkzeug dieselben Schnittbewegungen, nur anders geordnet; Rampen, Anfahrbögen, Haltestege, Freistellungen und Schlichtaufmaß bleiben. Zwischen den Teilen zieht es sich auf die Sicherheitshöhe zurück; zurück in eine schon gefräste Nut geht es im Eilgang nur senkrecht und nur bis 0,5 mm über deren Boden, den Rest mit Eintauchvorschub. Die Reihenfolge der Teile wechselt je Stufe zwischen vorwärts und rückwärts, je nachdem, was den kürzeren Eilweg ergibt. Der **Materialabtrag in der Simulation ist am Ende derselbe** (Zelle für Zelle verglichen).
+
+**Bei der Tasche** heißt »Teil für Teil«: Jede **getrennte Teilfläche** wird zuerst vollständig bis zur Endtiefe ausgeräumt (samt Schlichtdurchgang an der Wand), dann die nächste. Innerhalb einer zusammenhängenden Fläche geht es immer Stufe für Stufe.
+
+**Grenzen:** Nur gegen Rust-Tests, die eigene Simulation und einen Browser-Test (Chromium) geprüft, **nicht an einer echten Maschine**; ob eine Platte mit Ebene für Ebene am Ende besser hält, hängt von Material, Stegen und Spannung ab und ist nicht gemessen. Die **Vorschau im Zeichenbereich** sieht bei beiden Werten gleich aus (sie zeigt Wege ohne Tiefe); den Unterschied siehst du in der Simulation im Schritt »Prüfen« und im G-Code. Zusammen mit Kachelung und doppelseitigem Fräsen ist Ebene für Ebene nur durch Durchsicht abgedeckt, nicht durch einen eigenen Test. Auch Claude kennt den Schalter (`pass_order`).
 
 ## Adaptives Räumen
 
@@ -95,6 +121,7 @@ Grenzen beim Relief: Nur Höhenfelder (keine Hinterschneidungen). Ein 3D-Modell 
 
 * **Planfräsen:** ebnet das Werkstück oder die **Opferplatte** (Neue Bearbeitung → Planfräsen). Ein Assistent rechnet auf einer Kopie und zeigt Fräser, Zeit und Warnungen. Die Planiertiefe wird eine Projektvariable, die anderen Bearbeitungen passen sich an.
 * **Innenecken (Dogbone, T-Bone, minimal):** Bei Profil und Tasche stellt das Programm Innenecken frei, damit ein eckiges Gegenstück hineinpasst. Das Programm prüft Fräserdurchmesser, Eckwinkel und Nachbarkanten und meldet blockierte Ecken.
+* **Reihenfolge der Zustellungen** (seit 0.13.0): Teil für Teil oder Ebene für Ebene, siehe den Abschnitt weiter oben.
 * **Reihenfolge optimieren:** schlägt eine Reihenfolge mit weniger Werkzeugwechseln und weniger Eilweg vor. Du siehst vorher und nachher und übernimmst per Klick (ein Rückgängig-Schritt). Durchschnitte kommen nach allem, was in der Form ihres Teils liegt.
 
 Auch das ist **nicht an einer echten Maschine erprobt**.

@@ -17,6 +17,8 @@ Der Plattenplaner legt Teile platzsparend auf eine oder mehrere Platten und erst
 * **Verschnitt-Bericht:** je Platte Ausnutzung, Verschnitt, das größte nutzbare Restrechteck, und eine Liste nicht platzierter Teile mit Grund und Lösung.
 * **Reststück-Lager:** Reststücke (mit Maßen, Dicke, Material, Maserung, optional Umriss) gehören zum Projekt. Mit »Reststücke zuerst verwenden« füllt der Plan passende Reststücke zuerst. »Größten Rest jeder Platte merken« trägt den größten freien Bereich nach dem Anordnen ein. Eingetragen wird nicht von selbst nach dem Fräsen. Das Reststück-Lager fließt auch **nicht** in die Kosten ein.
 
+Für **Plattensäge-Zuschnitt** mit durchgehenden Schnitten, Schnittfolge und einem Optimierer gibt es einen eigenen Dialog: [Plattenzuschnitt (Sägeplan)](Plattenzuschnitt), seit 0.11.0.
+
 Grenzen: Sperrzonen für Spannmittel kennt der Plattenplaner nicht. Teile aus mehr als 300 Konturen werden über ihre konvexe Hülle angeordnet (mit Lücken). Die Fugen sind wegen des Rasters bis zu etwa zwei Zellen breiter als der Mindestabstand. Schau dir vor dem ersten Schnitt die Simulation an.
 
 ## Passungs-Assistent: Wie viel Spiel braucht dein Material?
@@ -105,6 +107,8 @@ Alle Videos: [Videos](Videos).
 
 ## Weiter
 
+* [Plattenzuschnitt (Sägeplan)](Plattenzuschnitt)
+* [Creator](Creator) (seit 0.13.0: Schachtel mit Fingerzinken und weitere Werkstücke aus wenigen Eingaben)
 * [Möbel-Designer](Moebel-Designer) (Tische, Sideboards, Regale, Sitzmöbel)
 * [3D-Modelle importieren](3D-Modelle-importieren)
 * [Bearbeitungen](Bearbeitungen)

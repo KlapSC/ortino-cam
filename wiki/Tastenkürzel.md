@@ -11,6 +11,7 @@ Diese Seite listet die Tastenkürzel von ortino.CAM unter Windows. Im Programm z
 | `Strg+K` | Befehlspalette |
 | `?` | Tastenkürzel anzeigen |
 | `Alt+1` bis `Alt+5` | zum Schritt Projekt, Design, Bearbeitung, Prüfen, Fräsen |
+| `Alt+Pos1` (englisch `Alt+Home`) | zur Startseite mit den Schnellzugriffen (seit 0.13.0; unter Windows noch nicht erprobt, die Home-Schaltfläche in der Kopfleiste und die Befehlspalette gehen in jedem Fall) |
 | `Strg+N` | Neues Projekt |
 | `Strg+O` | Projekt öffnen |
 | `Strg+S` | Speichern |
@@ -96,6 +97,8 @@ Diese Seite listet die Tastenkürzel von ortino.CAM unter Windows. Im Programm z
 |---|---|
 | `Strg+Enter` | einfügen oder übernehmen (Bild nachzeichnen, Muster-Studio, Relief-Studio, Passungs-Assistent, Verbindungen, Vorlagenformular) |
 | `Esc` | Dialog schließen oder Eingabe verwerfen (bei ungespeicherten Eingaben fragt das Programm nach) |
+| `Strg+Enter` im Creator (seit 0.13.0) | das Werkstück im Projekt anlegen |
+| Pfeiltasten in der Galerie des Creators (seit 0.13.0) | Creator wählen; `Esc` leert die Suche |
 | Pfeiltasten im Muster-Studio | Vorlagenkarte wechseln |
 | `+`, `-`, `0` im Muster-Studio | zoomen, auf Platte einpassen |
 

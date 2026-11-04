@@ -22,9 +22,13 @@ Kurze Erklärungen der Begriffe, die in ortino.CAM und in diesem Wiki vorkommen.
 
 **Boolesche Operation:** Formen kombinieren: Verschweißen (vereinigen), Subtrahieren, Schnittmenge, Ausschluss.
 
+**Creator** (seit 0.13.0): Ein Generator, der aus wenigen Eingaben ein Werkstück aus Plattenmaterial erzeugt (Teile mit Nuten, Teileliste, Montagehinweise). Siehe [Creator](Creator).
+
 **Dogbone (Hundeknochen):** Eine kleine kreisförmige Freistellung in einer Innenecke, damit ein eckiges Gegenstück hineinpasst, obwohl der runde Fräser die Ecke rundet.
 
 **Drehzahl:** Umdrehungen der Spindel pro Minute (U/min). Sie hängt von Fräser und Material ab.
+
+**Ebene für Ebene, Teil für Teil:** siehe Zustellreihenfolge.
 
 **Eckblock (XYZ-Eckblock):** Ein L-förmiger Block, mit dem du X, Y und Z in einem Zug antasten kannst.
 
@@ -50,6 +54,8 @@ Kurze Erklärungen der Begriffe, die in ortino.CAM und in diesem Wiki vorkommen.
 
 **Gravierstichel:** Ein sehr spitzer Fräser für feine Linien.
 
+**Guillotine-Schnitt:** Ein Schnitt, der durch die ganze Restfläche einer Platte geht, wie an einer Plattensäge. Siehe [Plattenzuschnitt](Plattenzuschnitt).
+
 **Haltesteg (Tab):** Ein stehen gelassener Steg, der ein ausgeschnittenes Teil am Rest der Platte hält, bis du ihn von Hand trennst.
 
 **Handsteuerung (Jog):** Die Maschine mit Tasten oder der Maus in kleinen Schritten von Hand verfahren.
@@ -60,11 +66,19 @@ Kurze Erklärungen der Begriffe, die in ortino.CAM und in diesem Wiki vorkommen.
 
 **Inlay:** Zwei zusammenpassende Teile: eine Aussparung in einer Platte (Weibchen) und ein gespiegelter Einleger (Männchen), der hineinpasst.
 
+**Insel:** Ein Stück Material, das nach dem Ausfräsen ringsum frei geschnitten wäre, zum Beispiel die Mitte eines O. Bei einer Schablone halten **Stege** es am Umfeld. Siehe [Zeichnen und Importieren](Zeichnen-und-Importieren).
+
 **Kantenband:** Ein Streifen, der die Schmalseite einer Möbelplatte verdeckt. Er verändert das Zuschnittmaß.
 
 **Kernloch:** Das vorgebohrte Loch, in dem ein Innengewinde gefräst wird.
 
+**KI-Modell** (seit 0.13.0): Eine Datei mit dem Tiefenmodell für »Foto → Relief«, die auf deinem Rechner rechnet und im Dialog »KI-Modelle« geladen, geprüft oder entfernt wird. Siehe [KI-Modelle und Startseite](KI-Modelle-und-Startseite).
+
+**Komponente (Relief):** Eine Ebene eines Reliefs aus einem Profil, einem Muster oder einem Bild, die mit den anderen addiert, abgezogen oder gemischt wird. Siehe [Reliefs modellieren](Modellieren-von-Reliefs).
+
 **Kugelfräser:** Ein Fräser mit halbkugelförmiger Spitze, zum Beispiel für 3D-Reliefs.
+
+**Kundenstamm:** Die Liste deiner Kunden mit Nummer und Anschrift, aus der das Angebot den Adressblock nimmt. Liegt nur auf deinem Rechner. Siehe [Kunden und Angebote](Kunden-und-Angebote).
 
 **Los:** Im Angebot ein Satz aller Teile des Projekts, alle Platten einmal gefräst. Die Menge ist die Zahl der Lose.
 
@@ -88,6 +102,8 @@ Kurze Erklärungen der Begriffe, die in ortino.CAM und in diesem Wiki vorkommen.
 
 **Parallaxe:** Scheinbare Verschiebung eines Gegenstands, wenn die Kamera ihn aus einem anderen Winkel sieht als seine Umgebung. Bei der [Kamera](Kamera-auf-der-Arbeitsplatte) verschiebt die Dicke des Materials das Bild nach außen.
 
+**Parametrische Skizze:** Eine Zeichnung aus Punkten, Strecken, Kreisen und Bögen, deren Form durch Abhängigkeiten und Maße (auch Formeln) festgelegt ist. Siehe [Zeichnen und Importieren](Zeichnen-und-Importieren).
+
 **Platte:** In ortino.CAM das Material, aus dem du fräst (Größe, Dicke, Material, Nullpunkt).
 
 **Postprozessor:** Das Profil, das Werkzeugwege in den G-Code-Dialekt einer Steuerung übersetzt.
@@ -102,6 +118,10 @@ Kurze Erklärungen der Begriffe, die in ortino.CAM und in diesem Wiki vorkommen.
 
 **Rhai:** Die eingebaute Skriptsprache für eigene Werkzeuge.
 
+**Sägeplan:** Der Plan, wie rechteckige Teile mit durchgehenden Schnitten aus Platten gesägt werden. Siehe [Plattenzuschnitt](Plattenzuschnitt).
+
+**Schablonen-Steg:** Eine schmale Brücke aus Material, die eine Insel in einem Schablonenbuchstaben am Umfeld hält. Siehe [Zeichnen und Importieren](Zeichnen-und-Importieren).
+
 **Seriennummer:** Ein Zähler im Text, zum Beispiel `{n:001}`. Er zählt in Arrays und Serien hoch (001, 002, 003 …).
 
 **Sicherheitshöhe:** Die Höhe über dem Werkstück, in der der Fräser für Eilgänge fährt.
@@ -110,11 +130,17 @@ Kurze Erklärungen der Begriffe, die in ortino.CAM und in diesem Wiki vorkommen.
 
 **Spannmittel:** Pratzen, Schrauben, Vakuumsauger, mit denen das Werkstück festgehalten wird.
 
+**Spiel:** Der Luftspalt zwischen zwei ineinandergreifenden Teilen, zum Beispiel bei Fingerzinken (Richtwert 0,1 mm). Den passenden Wert für dein Material liefert der Testcoupon des Passungs-Assistenten. Siehe [Platten und Möbel](Platten-und-Möbel).
+
 **Spindel:** Der Motor, der den Fräser dreht.
 
 **Staffel (Staffelpreise):** Eine Tabelle im Angebot, die den Preis je Los für mehrere Mengen zeigt, zum Beispiel 1, 5, 10 und 25. Das Rüsten fällt nur einmal an, deshalb sinkt der Preis je Los.
 
 **Start-Check:** Prüft vor jedem Lauf den Zustand der Steuerung gegen dein Projekt. Fehler sperren den Start.
+
+**Startseite** (seit 0.13.0): Die Willkommensansicht mit den Schnellzugriffen; die Home-Schaltfläche in der Kopfleiste (`Alt+Pos1`) führt immer dorthin zurück. Siehe [KI-Modelle und Startseite](KI-Modelle-und-Startseite).
+
+**STL, 3MF:** Dateiformate für 3D-Körper. ortino.CAM liest STL (und STEP) ein und schreibt STL und 3MF. Siehe [3D-Körper exportieren](Export-STL-3MF).
 
 **Tasche:** Eine Bearbeitung, die eine Fläche bis zu einer Tiefe ausräumt.
 
@@ -127,6 +153,8 @@ Kurze Erklärungen der Begriffe, die in ortino.CAM und in diesem Wiki vorkommen.
 **Vorschub:** Die Geschwindigkeit, mit der der Fräser durchs Material fährt (mm/min).
 
 **Werkzeugweg:** Die berechnete Bahn des Fräsers.
+
+**Zustellreihenfolge** (seit 0.13.0): Ob bei mehreren Teilen jedes Teil bis zur Endtiefe gefräst wird, bevor das nächste folgt (**Teil für Teil**), oder erst alle Teile um eine Stufe tiefer gehen (**Ebene für Ebene**). Siehe [Bearbeitungen](Bearbeitungen).
 
 **Zustellung:** Wie tief der Fräser pro Durchgang schneidet.
 

@@ -71,7 +71,7 @@ Alle Eingaben sind freiwillig. Voreingestellt sind Mehrwertsteuer 19 % und Währ
 | Mehrwertsteuer 19 % | 29,24 € |
 | **Gesamtbetrag** | **183,11 €** |
 
-**Nicht eingerechnet** sind: Verschnitt und Restplatten (dafür ist der Aufschlag gedacht), Zeit für Werkzeugwechsel und Spindelhochlauf, das Einrichten des Programms, Energie, Absaugung und Transport. Ohne Menge rechnet das Angebot **einen Auftrag mit einem Durchlauf je Platte**. Für mehrere Exemplare gibt es die **Menge** (siehe unten). Es gibt auch keinen Kundenstamm, keine Angebotsnummern und keine Zahlungsbedingungen. Material aus dem Reststück-Lager wird mit dem eingegebenen Plattenpreis bewertet, einen geringeren Preis trägst du selbst ein. Schriften im PDF sind die Standardschriften (Helvetica), Zeichen außerhalb von Windows-1252 erscheinen als Ersatz oder `?`.
+**Nicht eingerechnet** sind: Verschnitt und Restplatten (dafür ist der Aufschlag gedacht), Zeit für Werkzeugwechsel und Spindelhochlauf, das Einrichten des Programms, Energie, Absaugung und Transport. Ohne Menge rechnet das Angebot **einen Auftrag mit einem Durchlauf je Platte**. Für mehrere Exemplare gibt es die **Menge** (siehe unten). Kundenstamm, Angebotsnummern und Zahlungsbedingungen gibt es seit 0.11.0, siehe [Kunden und Angebote](Kunden-und-Angebote); das Angebot druckt trotzdem keinen Absender (Briefkopf, Bankverbindung, eigene MWST-Nummer). Material aus dem Reststück-Lager wird mit dem eingegebenen Plattenpreis bewertet, einen geringeren Preis trägst du selbst ein. Schriften im PDF sind die Standardschriften (Helvetica), Zeichen außerhalb von Windows-1252 erscheinen als Ersatz oder `?`.
 
 ### Stückzahl und Staffel
 
@@ -121,5 +121,6 @@ Alle Videos: [Videos](Videos).
 
 ## Weiter
 
+* [Kunden und Angebote](Kunden-und-Angebote)
 * [Prüfen und Simulation](Prüfen-und-Simulation)
 * [Platten und Möbel](Platten-und-Möbel)

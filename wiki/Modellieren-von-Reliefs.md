@@ -13,7 +13,9 @@ Im **Relief-Studio** gibt es den Modus **»Modellieren«**: Du formst ein erzeug
 
 ## Komponenten (seit 0.12.0)
 
-Im Relief-Studio gibt es neben **Muster** und **Modellieren** den Modus **Komponenten**. Ein Relief besteht dann aus einer geordneten Liste von Ebenen. Jede Komponente hat eine **Quelle** (Profil: Fläche, Kuppel, Kegel, Pyramide, Rampe, Welle, Rundstab; ein Muster; ein Bild), einen **Modus** (addieren, abziehen, Maximum, Minimum, überblenden, multiplizieren), eine **Lage** (verschieben, skalieren, drehen – auch mit der Maus), **Höhe**, **Anheben**, **Anteil** und **Randglättung**; dazu Gruppen, Sichtbarkeit und Sperre. Vorschau, Prüfliste, Werkzeugwege und Export sehen dasselbe Höhenraster. Bis zu 64 Komponenten je Relief. Die Pinselebenen liegen weiter über den Komponenten; die Pinsel-Ebene ist keine Quelle. *Nur gegen Tests und Chromium geprüft, nie gefräst.*
+![Relief-Studio im Modus »Komponenten«: Liste der Ebenen mit Quelle und Modus, Eigenschaften der gewählten Komponente und die Draufsicht mit der Lage](https://raw.githubusercontent.com/KlapSC/ortino-cam/main/docs/bilder/komponenten-light.png)
+
+Im Relief-Studio gibt es neben **Muster** und **Modellieren** den Modus **Komponenten**. Ein Relief besteht dann aus einer geordneten Liste von Ebenen. Jede Komponente hat eine **Quelle** (Profil: Fläche, Kuppel, Kegel, Pyramide, Rampe, Welle, Rundstab; ein Muster; ein Bild), einen **Modus** (addieren, abziehen, Maximum, Minimum, überblenden, multiplizieren), eine **Lage** (verschieben, skalieren, drehen – auch mit der Maus), **Höhe**, **Anheben**, **Anteil** und **Randglättung**; dazu Gruppen, Sichtbarkeit und Sperre. Vorschau, Prüfliste, Werkzeugwege und Export sehen dasselbe Höhenraster. Bis zu 64 Komponenten je Relief. Das Ergebnis lässt sich auch als [STL oder 3MF exportieren](Export-STL-3MF). Die Pinselebenen liegen weiter über den Komponenten; die Pinsel-Ebene ist keine Quelle. *Nur gegen Tests und Chromium geprüft, nie gefräst.*
 
 ## Fräsen
 

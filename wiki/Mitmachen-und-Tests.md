@@ -37,7 +37,7 @@ Auch ein Bericht, in dem **nichts funktioniert hat**, hilft. Ein Bericht, dass e
 
 ### Was besonders gebraucht wird
 
-Nur an der **Ultimate Bee mit xPRO V5** sind bisher erprobt: Taschen, V-Carving, Konturen, Referenzfahrt und Werkzeugwechsel mit der Tastplatte (Version 0.3.3); dazu laut Betreiber an der Handy-Fernbedienung Stopp, Verfahren und Nullpunkte setzen. Alles Folgende ist **nur gegen den Simulator, Tests oder erzeugte Bilder geprüft** und wartet auf deinen Bericht:
+Nur an der **Ultimate Bee mit xPRO V5** sind bisher erprobt: Taschen, V-Carving, Konturen, Referenzfahrt und Werkzeugwechsel mit der Tastplatte (Version 0.3.3); dazu laut Betreiber an der Handy-Fernbedienung Stopp, Verfahren und Nullpunkte setzen und mit Version 0.12.0 ein einzelner Lauf von rund einer Stunde (Tasche und Kontur in Birke, ohne Pause, Vorschubänderung oder Werkzeugwechsel; die Live-Animation stimmte laut Betreiber »perfekt« mit dem Fräsen überein). Alles Folgende ist **nur gegen den Simulator, Tests oder erzeugte Bilder geprüft** und wartet auf deinen Bericht:
 
 * fester Taster, Messung der Opferplatte und Höhenkarte,
 * Handy-Fernbedienung: Pause, Weiter und die Anzeige von Position und Fortschritt, andere Handys und Browser (Stopp, Verfahren und Nullpunkte setzen sind laut Betreiber an einer echten Maschine bestätigt),
@@ -47,6 +47,8 @@ Nur an der **Ultimate Bee mit xPRO V5** sind bisher erprobt: Taschen, V-Carving,
 * die Kamera auf der Arbeitsplatte (mit einer echten Kamera),
 * die neuen Postprozessoren (UCCNC, Centroid, ShopBot, MASSO, PlanetCNC) und andere Steuerungen als die xPRO V5,
 * gefräste Passungen, Fingerzinken, Inlays, Reliefs und Möbelteile,
+* Läufe **mit Pause, Vorschubänderung (Overrides) und Werkzeugwechsel mitten im Programm**, in anderen Materialien als Birke und mit anderen Maschinen,
+* Teile aus dem [Creator](Creator) (seit 0.13.0): Schachtel, Zahnräder, Puzzle und die übrigen sind **nie gefräst oder verleimt**; bitte zuerst im Reststück und mit dem Passungs-Testcoupon,
 * die **Beispiele** der Galerie, gefräst in einem Reststück (**nicht gefräst**), und ob die **Lektionen** zu deiner Erfahrung passen,
 * **Béziers aus echten Illustrator-, Inkscape- oder CorelDRAW-Dateien** (bisher nur mit selbst erzeugten SVG- und PDF-Dateien geprüft) und Seriennummern auf gefrästen Teilen.
 

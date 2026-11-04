@@ -4,16 +4,19 @@
 
 * [Installation und Updates](Installation-und-Updates)
 * [Erste Schritte](Erste-Schritte)
+* [KI-Modelle und Startseite](KI-Modelle-und-Startseite)
 * [Maschine einrichten](Maschine-einrichten)
 * [Videos (English)](Videos)
 
 **Entwerfen und Bearbeiten**
 
 * [Zeichnen und Importieren](Zeichnen-und-Importieren)
+* [Creator](Creator)
 * [Art Designer](Art-Designer)
 * [Foto → Relief](Foto-zu-Relief)
 * [Reliefs modellieren](Modellieren-von-Reliefs)
 * [3D-Modelle importieren](3D-Modelle-importieren)
+* [3D-Körper exportieren (STL, 3MF)](Export-STL-3MF)
 * [Bearbeitungen](Bearbeitungen)
 * [Werkzeuge und Schnittdaten](Werkzeuge-und-Schnittdaten)
 * [Prüfen und Simulation](Prüfen-und-Simulation)
@@ -32,11 +35,13 @@
 **Planen und Anbieten**
 
 * [Platten und Möbel](Platten-und-Möbel)
+* [Plattenzuschnitt (Sägeplan)](Plattenzuschnitt)
 * [Werkstatt und Team](Werkstatt-und-Team)
 * [Möbel-Designer](Moebel-Designer)
 * [Web-Designer im Portal](Web-Designer-im-Portal)
 * [Küchen-Rendering](Kuechen-Rendering)
 * [Rüstblatt und Angebot](Rüstblatt-und-Angebot)
+* [Kunden und Angebote](Kunden-und-Angebote)
 
 **Steuerungen und Vernetzung**
 

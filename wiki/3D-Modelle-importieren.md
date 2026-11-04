@@ -41,11 +41,12 @@ Nicht unterstützt sind unter anderem Hyperbel- und Parabelkurven, Körper aus R
 * Nur die **Draufsicht**: Hinterschneidungen werden gemeldet, nicht gefräst. Zwei Seiten zu fräsen ist ein eigener Weg ([Doppelseitig fräsen](Doppelseitig-fraesen)), hier nicht verbunden.
 * Maßstab nur gleichmäßig in allen Achsen.
 * Das Netz lässt sich **nicht bearbeiten** (Löcher füllen, vereinfachen, reparieren).
-* **Export:** Seit 0.11.0 lassen sich importierte Modelle, Möbelteile (als Plattenkörper, ohne Bohrungen und Griffe) und Reliefplatten als **STL und 3MF** speichern (Datei-Menü, Möbel-Designer, Relief-Studio, Kommandozeile `ortino export --format 3mf`). Nur gegen Tests geprüft, nichts mit einem Slicer, CAD-Programm oder Drucker. **Nicht** nach STEP; 3MF lässt sich nicht einlesen.
+* **Export:** Seit 0.11.0 lassen sich importierte Modelle, Möbelteile (als Plattenkörper, ohne Bohrungen und Griffe) und Reliefplatten als **STL und 3MF** speichern (Datei-Menü, Möbel-Designer, Relief-Studio, Kommandozeile `ortino export --format 3mf`). Nur gegen Tests geprüft, nichts mit einem Slicer, CAD-Programm oder Drucker. **Nicht** nach STEP; 3MF lässt sich nicht einlesen. Einzelheiten stehen unter [3D-Körper exportieren: STL und 3MF](Export-STL-3MF).
 * **Nicht gemessen:** der Speicherbedarf bei sehr großen Modellen (Höchstgrenze fünf Millionen Dreiecke), Modelle mit sehr vielen kleinen oder sich schneidenden Teilen und echte CAD-Dateien.
 
 ## Siehe auch
 
 * [Zeichnen und Importieren](Zeichnen-und-Importieren)
+* [3D-Körper exportieren: STL und 3MF](Export-STL-3MF)
 * [Bearbeitungen](Bearbeitungen) (3D-Relief fräsen)
 * [Prüfen und Simulation](Prüfen-und-Simulation)

@@ -36,6 +36,8 @@ Optionen für `"args"` (Auswahl): `--attach` (nur an das laufende Programm anhä
 
 Es gibt bewusst wenige, zugeschnittene Werkzeuge: Projekt lesen und ändern, Formen anlegen und ändern (auch Boolesche Operationen, Verrunden, Knoten bearbeiten, Plattenplaner), Bearbeitungen anlegen und ändern, Werkzeuge verwalten, Prüfliste, Simulation und Vorschaubild, Vorschläge für Schnittwerte, Vorlagen ausfüllen, SVG/DXF importieren und exportieren. Alle Methoden der Schnittstelle listet `list_api_methods`, aufrufen lassen sie sich mit `call_api`. Zahlen sind Millimeter, Längen dürfen Formeln sein (`Breite/2 - 5mm`) und bleiben dann parametrisch.
 
+**Creator (seit 0.13.0):** Claude kann die [Creator](Creator) über `call_api` benutzen (`creator.list`, `creator.info`, `creator.preview`, `creator.create`); die Vorschau ändert nichts, das Anlegen ist ein Rückgängig-Schritt. Auch die [Reihenfolge der Zustellungen](Bearbeitungen) kennt Claude beim Anlegen und Ändern von Bearbeitungen. Kundenstamm und Angebote sind für Claude **nicht erreichbar**.
+
 **Dateien:** Claude hat keinen Zugriff auf deine Festplatte. Lesen darf es nur aus **freigegebenen Leseordnern** (Ordner des gespeicherten Projekts, `Dokumente\ortino.CAM` und Ordner, die du unter *Erweiterungen & KI → Claude verbinden* freigibst). Schreiben darf es nur in **Ausgabeordner**, nur mit passender Endung und nie in Systemordner. Alternativ übergibst du Inhalte als Text oder lädst große Dateien in Teilen hoch.
 
 ## Die vier Sicherheitsstufen

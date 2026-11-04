@@ -67,6 +67,10 @@ Schon beim Zeichnen und Importieren findet die Geometrie-Prüfung: offene oder f
 
 Du kannst Pratzen, Schrauben, Vakuumsauger und Sperrzonen (Bereiche, in die nicht geschnitten werden soll) im Projekt eintragen (Knopf in der Kopfzeile der Bearbeitungsliste). Die Prüfliste prüft dann alle Bewegungen, auch die Fahrten zwischen Bearbeitungen und die Rückfahrt zum Nullpunkt, gegen Fräser, Schaft, Spannmutter und Spindel. Eine Kollision ist ein **Fehler** und sperrt Export und Start. Grenzen: Die Maße von Spannmutter (Ø 22 mm) und Spindel (Ø 65 mm) sind **Annahmen** für eine typische Frässpindel, miss deine nach. Spannmittel gelten als senkrechte Säulen (keine Hinterschneidungen, keine schrägen Pratzenarme). Die erste Anfahrt aus der unbekannten Maschinenposition wird nicht geprüft.
 
+## Aus der Praxis: die Live-Animation beim Fräsen
+
+Im Schritt »Fräsen« zeigt das Programm die Werkzeugposition live an. Der Betreiber hat mit Version 0.12.0 an der Ultimate Bee (xPRO V5) **Tasche und Kontur in Birke** in einem normalen Lauf von rund einer Stunde gefräst, ohne Pause, Vorschubänderung oder Werkzeugwechsel, und alles beobachtet. Die **Live-Animation stimmte laut Betreiber »perfekt«** mit dem Fräsen überein. Das ist eine **Beobachtung bei einem einzigen Lauf**, keine Messung und kein Dauertest, und sie sagt nichts über andere Maschinen, Materialien oder Steuerungen. Eine Laufzeit wurde nicht berichtet; die **Zeitschätzung gilt deshalb weiter als nicht mit echten Laufzeiten verglichen**, und die 3D-Simulation im Schritt »Prüfen« ersetzt den Probelauf nicht.
+
 ## Sinnvoller Ablauf
 
 1. Prüfliste lesen, Fehler beheben, Warnungen verstehen (und nur bewusst akzeptieren).

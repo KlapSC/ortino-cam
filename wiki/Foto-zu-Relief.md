@@ -13,6 +13,12 @@ Seit Version 0.6.0 kann ortino.CAM aus einem **Foto** ein **Relief** machen: Ein
 5. **Regler** rechts: Tiefe in mm, Invertieren, Hintergrund abflachen, Glätten, Kontrast, Tiefenkompression, »Grundwölbung entfernen« (für flache Motive von vorn) und die Auflösung.
 6. **Einfügen** (`Strg+Enter`): Es entsteht ein Relief mit einer Bildebene (ein Rückgängig-Schritt). »Einfügen und im Studio öffnen« öffnet danach das Relief-Studio zum Weiterbearbeiten (mit Mustern mischen, Maske, Randauslauf, »Fräsen einrichten …«).
 
+## Das Modell im Menü verwalten (seit 0.13.0)
+
+> In Version 0.12.0 und früheren Versionen lädst und entfernst du das Modell nur im Dialog »Foto → Relief«.
+
+Seit Version 0.13.0 gibt es dafür einen eigenen Dialog: **Extras ▸ KI-Modelle …** (auch `Strg+K` »KI-Modelle«, **Einstellungen ▸ Allgemein** und eine Kachel auf der Startseite). Dort siehst du Zustand, Größe, Lizenz und Speicherort des Tiefenmodells, ob es auf deinem Portal bereitliegt, und kannst es **herunterladen** (mit Abbrechen und Fortsetzen), **erneut prüfen**, **von Hand einspielen** oder **entfernen**. Heruntergeladen wird nie ohne deinen Klick. Im Art Designer führt der Knopf **»Modell laden …«** (bei »Tiefe schätzen (KI)«) zur selben Karte. Alles Weitere steht unter [KI-Modelle und Startseite](KI-Modelle-und-Startseite); den Download des echten Modells vom echten Portal hat noch niemand geprüft.
+
 ## Gut zu wissen
 
 * **Das Foto verlässt deinen Rechner nie.** Die Rechnung läuft im Programm. Zum Portal geht nur die Anfrage, ob das Modell dort liegt, und der Download des Modells. Das **Originalfoto wird nicht im Projekt gespeichert**, nur das berechnete Höhenbild.
