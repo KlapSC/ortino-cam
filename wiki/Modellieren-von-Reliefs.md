@@ -25,6 +25,7 @@ Gefräst wird wie jedes Relief: Schruppen, Schlichten, Simulation und Soll-Ist-V
 
 * Die Karte kennt Maus und Stift (Druck, wenn »Stiftdruck nutzen« an ist) und Finger; beides ist nur in Chromium gesehen, nicht mit echten Geräten.
 * Zurück auf **»Muster«** wirken Vorlagen und Regler weiter; die Ebenen liegen darüber.
+* Das Relief, das du nachformst, kann aus einer der **62 Vorlagen** des Relief-Studios stammen (seit 0.14.0; 0.13.0: 40), siehe [Bearbeitungen](Bearbeitungen#3d-relief-und-muster). Bereits gespeicherte Reliefs rechnen unverändert; nichts davon wurde gefräst.
 * Vor dem ersten Einsatz an der Maschine in der Simulation ansehen, ohne Werkzeug und ohne Material fahren und mit einem Reststück beginnen.
 
 Weiter: [Foto → Relief](Foto-zu-Relief), [Bearbeitungen](Bearbeitungen), [Prüfen und Simulation](Prüfen-und-Simulation).

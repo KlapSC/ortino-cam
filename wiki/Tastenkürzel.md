@@ -100,6 +100,7 @@ Diese Seite listet die Tastenkürzel von ortino.CAM unter Windows. Im Programm z
 | `Strg+Enter` im Creator (seit 0.13.0) | das Werkstück im Projekt anlegen |
 | Pfeiltasten in der Galerie des Creators (seit 0.13.0) | Creator wählen; `Esc` leert die Suche |
 | Pfeiltasten im Muster-Studio | Vorlagenkarte wechseln |
+| `Esc` im Suchfeld des Muster-Studios (seit 0.14.0) | die Suche leeren |
 | `+`, `-`, `0` im Muster-Studio | zoomen, auf Platte einpassen |
 
 ## Möbel und Küche

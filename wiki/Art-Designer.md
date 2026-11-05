@@ -1,8 +1,8 @@
 # Art Designer (Wandbilder aus Holz)
 
-Seit Version 0.9.0 gibt es im Menü **Erstellen → Art Designer …** (oder mit `Strg+K` → »Art Designer«) einen Dialog, der in fünf Schritten ein **Wandbild aus Holz** macht: als **geschnitztes Relief** aus einem Block oder als **Schichtholzbild** aus gestapelten Sperrholzlagen. Er baut auf dem Relief-Studio auf und ersetzt es nicht.
+Seit Version 0.9.0 gibt es im Menü **Erstellen → Art Designer …** (oder mit `Strg+K` → »Art Designer«) einen Dialog, der in fünf Schritten ein **Wandbild aus Holz** macht: als **geschnitztes Relief** aus einem Block oder als **Schichtholzbild** aus gestapelten Sperrholzlagen. Er baut auf dem Relief-Studio auf und ersetzt es nicht. **Seit 0.14.0** gibt es **14 statt 8 Motive**; die sechs neuen sind unten gekennzeichnet.
 
-> **Ehrlich zum Stand:** Alles ist **gerechnet und am Bildschirm geprüft, nichts wurde gefräst oder verleimt.** Die Fräsbarkeit (steilste Flanke bis etwa 65°, kleinster Innenradius ab etwa 1,8 mm) ist ein Rechenwert, kein Erfahrungswert. Geprüft wurde mit Tests, dem Simulator und Chromium, **nicht unter Windows (WebView2) und nicht an einer echten Maschine.** Die Motive sind **eigene, am Rechner erzeugte Muster**; sie erinnern an Wandbilder aus Holz, sind aber keine Kopien und nicht alle gleich gelungen. Teste zuerst mit einem Stück Abfallholz.
+> **Ehrlich zum Stand:** Alles ist **gerechnet und am Bildschirm geprüft, nichts wurde gefräst oder verleimt.** Die Fräsbarkeit (steilste Flanke bis etwa 67°, kleinster Innenradius ab etwa 1,8 mm) ist ein Rechenwert, kein Erfahrungswert. Geprüft wurde mit Tests, dem Simulator und Chromium, **nicht unter Windows (WebView2) und nicht an einer echten Maschine.** Die Motive sind **eigene, am Rechner erzeugte Muster**; sie erinnern an Wandbilder aus Holz, sind aber keine Kopien und nicht alle gleich gelungen. Das gilt auch für die sechs Motive seit 0.14.0. Teste zuerst mit einem Stück Abfallholz.
 
 ## So geht es
 
@@ -14,18 +14,26 @@ Seit Version 0.9.0 gibt es im Menü **Erstellen → Art Designer …** (oder mit
 
 Die Vorschau zeigt **»Kugelfräser bis Ø …«**: Mit einem größeren Fräser gehen feine Rillen verloren. Unter der Vorschau stehen **Hinweise mit Lösung**, zum Beispiel zu zu steilen Flanken oder zu großen Platten (die Platte ist größer als der Arbeitsbereich der Maschine: kleineres Format wählen oder in mehreren Aufspannungen fräsen, siehe [Große Teile kacheln](Grosse-Teile-kacheln)).
 
-## Die acht Motive
+## Die 14 Motive
 
 | Motiv | Bild |
 |---|---|
 | **Blattstrom** | viele geschwungene, einander überlagernde Blätter in einer Strömung, Adern als Rillen; am besten im Querformat |
 | **Blattzweig** | wenige große Blätter an einem schlanken S-förmigen Zweig, ruhig (früher »Blattwirbel«) |
-| **Monstera** | große herzförmige Blätter mit Schlitzen und Löchern (die schwächste der neuen Vorlagen) |
+| **Monstera** | große herzförmige Blätter mit Schlitzen und Löchern (die schwächste der ersten acht Motive) |
 | **Ginkgo** | Fächerblätter mit Falten an einem geschwungenen Zweig |
 | **Farn** | gefiederte Wedel, die aus einem Punkt auffächern; dicht und spitzig |
 | **Palmwedel** | Wedel mit Fiedern an einer erhabenen Mittelrippe |
 | **Federfächer** | lange Bänder, die fächerförmig aus wenigen Punkten auslaufen |
 | **Fließende Bänder** | Wellen aus Bändern mit feinen Fugen |
+| **Geschichtete Berge** *(seit 0.14.0)* | mehrere Bergketten hintereinander mit spitzen Gipfeln und runden Tälern, hinten höher, dazu eine kleine Scheibe (Sonne oder Mond) im Himmel; empfohlen quer, 60 × 90 cm. Als Schichtholz das klarste der neuen Motive; als geschnitztes Relief sind die Flächen eben, sichtbar sind nur die Stufenränder |
+| **Sonnenaufgang** *(seit 0.14.0)* | halbe Sonne am Horizont, lange und kurze Strahlen im Wechsel, mehrere Wellenbänder davor; empfohlen quer, 60 × 90 cm. Grafisch klar; die schmalen Strahlen als Schichtholz wurden nicht im Bild geprüft |
+| **Mond und Wolken** *(seit 0.14.0)* | Mondsichel mit Hof, kleine vierzackige Sterne und Wolkenbänder aus aneinandergereihten Bögen; empfohlen hoch, 50 × 70 cm |
+| **Mondphasen** *(seit 0.14.0)* | fünf Monde in einer Reihe, zunehmend rechts, abnehmend links beleuchtet; empfohlen quer, Panorama 40 × 100 cm. Eher ein Zeichen als ein Landschaftsbild; nutzt nur drei Stufen, also wenige Lagen |
+| **Olivenzweig** *(seit 0.14.0)* | geschwungener Zweig mit lanzettlichen Blattpaaren und Oliven, dahinter ein zweiter, tieferer Zweig; empfohlen hoch, 50 × 70 cm. **Schematisch** (gleichmäßige Paare, einfache Ovale als Oliven) und als Schichtholz viele kleine Inseln |
+| **Gräser und Pampas** *(seit 0.14.0)* | Büschel überhängender Halme, darüber Halme mit Pampasfahnen; empfohlen hoch, 50 × 70 cm. Der Eindruck ist dem Farn näher als einem Gras im Wind; die Fahnen haben nur grobe Rillen |
+
+Die **Landschaften** (Berge, Sonnenaufgang, Mond und Wolken, Mondphasen) bestehen aus wenigen ebenen Stufen und sind für **Schichtholz** gedacht: Jede Stufe ergibt eine Lage, die Lagenzahl sollte mindestens so groß sein wie die Zahl der Stufen (sonst werden benachbarte Stufen zusammengefasst). Alle neuen Motive tragen ein empfohlenes Format und eine Ausrichtung; du kannst davon abweichen. Gefräst wurde keines.
 
 Alles ist ein **Höhenfeld** (wie im Relief-Studio), also mit Kugelfräser von oben fräsbar; es gibt keine Hinterschnitte und keine durchbrochenen Platten.
 

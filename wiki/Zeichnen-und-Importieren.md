@@ -138,6 +138,27 @@ Die **Geometrie-Prüfung** findet offene oder fast geschlossene Konturen, Doppel
 
 Zwei Studios erzeugen aufwendige Flächen mit wenigen Reglern: das **Muster-Studio** für gelochte Paneele (Waben, Sterne, Voronoi, Text und Bild als Lochraster) und das **Relief-Studio** für 3D-Reliefs. Du öffnest sie über die Werkzeugpalette oder die Befehlspalette (»Muster & Reliefs …«). Wie du daraus Werkzeugwege machst, steht unter [Bearbeitungen](Bearbeitungen).
 
+### Muster-Studio: 39 Arten und 76 Vorlagen (seit 0.14.0 erweitert)
+
+> **Ehrlich zum Stand:** Die Muster sind **nur gerechnet und am Bildschirm geprüft** (Rust-Tests, Vitest, Chromium, Simulator), **nichts wurde gefräst**. Die Fräsbarkeit (Steg, Öffnungsweite, Inseln, Ecken) ist gemessen, ob feine Stege im Holz halten, ist nicht erprobt. Der Mindeststeg von 1,5 mm ist eine Voreinstellung, keine Materialgarantie.
+
+* **So ist das Studio aufgebaut:** Links stehen die **Vorlagen** als Karten mit Vorschau; du filterst nach Kategorie oder tippst ins **Suchfeld** (*seit 0.14.0*: sucht in Name, Beschreibung, Musterart und Kategorie; alle Wörter müssen passen, Groß- und Kleinschreibung und Akzente sind egal, `Esc` leert das Feld). In der Mitte siehst du die Platte in Originalgröße mit allen Öffnungen und der **Ampel** für die Fräsbarkeit. Rechts stehen die einfachen Regler (Größe, Dichte, Steg, Variation, Zufall mit Würfel), darunter »Fläche und Rand« und »Erweitert« mit allen Parametern. **»Auf Platte einfügen«** (`Strg+Enter`) ist ein Rückgängig-Schritt; **»Fräsen einrichten«** legt die Innenkontur an und auf Wunsch eine Außenkontur mit Haltestegen.
+* **39 Arten in sechs Kategorien** (0.13.0: 25 Arten in fünf Kategorien; **fett** = neu seit 0.14.0):
+  * *Geometrisch:* Dreiecke, Waben, Gitter, Ziegelverband, Fischgrät, Würfel, Lamellen, Truchet-Bögen, Zickzack und Wellen, konzentrische Ringe, **Chevron-Lamellen, Argyle, Kreuzparkett, Penrose-Parkett**
+  * *Orientalisch:* Mashrabiya, Sterne mit sechs, acht und zwölf Zacken, **Ogee-Laterne, Fischschuppen (Seigaiha), Kagome**
+  * *Ornament (neue Kategorie):* **Vierpass-Maßwerk, überlappende Kreise (Shippo), Art-déco-Fächer, Spiralen**
+  * *Natur:* Blätter, Palmwedel, Blütenwirbel, Blumen, **Sonnenblume (Fibonacci), Schneeflocken, Wellenlinien**
+  * *Zufall:* zufällige Rechtecke, unterteilte Felder, Voronoi, Konfetti
+  * *Lochraster:* Rasterverlauf, Text aus Löchern, Bild als Lochraster
+* **76 Vorlagen** (0.13.0: 37), darunter elf neue für die bisherigen Arten. Alle sind mit den Voreinstellungen des Studios (Fräser 3,175 mm, Mindeststeg 1,5 mm, keine Inseln) laut Ampel **grün** – gemessen, nicht gefräst. Eine Vorlage, »Bild als Lochraster«, braucht ein Bild von dir.
+* **Option `trim`** (*seit 0.14.0*, unter »Erweitert«, bei Dreiecken, Waben, Gitter, Ziegel, Fischgrät, Würfeln und Lamellen): am Rand angeschnittene Zellen, von denen weniger als der gewählte Anteil übrig bleibt, entfallen. Ohne `trim` (Standard) entstehen am Rand schmale Schlitze, auch unterhalb der Fräserbreite. Bei den **Blumen** gibt es ein **versetztes, mittiges Gitter** mit gleichem Rand ringsum. Gespeicherte Muster ändern sich durch beides nicht.
+* **Bögen bleiben Bögen:** Die Ornament-Arten (Ogee, Fischschuppen, Vierpass, Shippo, Art-déco-Fächer, Spiralen, Kreuzparkett) rechnen mit echten Kreisbögen, nicht mit vielen kleinen Strecken. Dadurch ist die Rechnung schnell: auf dem Entwicklungsrechner unter 0,3 Sekunden je Art für eine ganze Platte von 1200 × 600 mm (eine Messung, keine Zusage).
+* **Grenzen:** Bei gedrehten Gittern und bei Ellipsen als Umriss werden Randzellen angeschnitten, dort entstehen Strecken statt Bögen. Spiralen, Schneeflocken und Sonnenblume setzen nur **ganze Elemente**, der Rand ist dadurch ungleich breit. Argyle zeigt nur ganze Rauten. **Shippo** ist die Kreisanordnung dieses Namens, nicht die »Blume des Lebens«. Dünne Spitzen (Ogee, Schneeflocken, Penrose), lange schmale Stege (Spiralen) und sehr feine Netze (Shippo, Fischschuppen) sind rechnerisch fräsbar, ihre **Haltbarkeit im Holz ist nicht erprobt**. Die Sterne folgen einer Konstruktion nach Augenmaß, es sind keine historisch exakten Rosetten; Palm- und Blattformen sind stilisiert.
+
+### Relief-Studio: 62 Vorlagen (seit 0.14.0 erweitert)
+
+Das Relief-Studio zeigt links Vorlagen mit Mini-Vorschau (Filter nach Kategorie), in der Mitte eine 3D-Vorschau und rechts die Regler Größe, Tiefe, Dichte, Weichheit, Variation und Zufall. Seit 0.14.0 gibt es **62 Vorlagen in 9 Kategorien** (0.13.0: 40 in 7); welche neu sind und was beim Fräsen gilt, steht unter [Bearbeitungen](Bearbeitungen#3d-relief-und-muster). Wie du ein Relief mit dem Pinsel nachformst, steht unter [Reliefs modellieren](Modellieren-von-Reliefs).
+
 <!-- videos:start -->
 ## Videos (English)
 
