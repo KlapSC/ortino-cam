@@ -97,7 +97,7 @@ Das Programm kennt Funktionen und erkennt Zirkelbezüge. Tiefen als `Dicke + 0,3
 
 ## Dateien importieren
 
-Mit `Strg+I` (Datei-Menü: »Importieren …«) oder per **Drag & Drop** auf das Fenster. Das Programm erkennt den Typ am Dateinamen.
+Mit `Strg+I` (Datei-Menü: »Importieren …«) oder per **Drag & Drop** auf das Fenster. Das Programm erkennt den Typ am Dateinamen. Dateien aus dem [Formen- und Muster-Generator](Formen-und-Muster-Generator) im Browser (SVG, DXF) importierst du hier wie jede andere; die Datei `.ortino-vorlage.json` desselben Generators gehört dagegen in die Sparte »Eigene« (siehe [Eigene Vorlagen](Eigene-Vorlagen)).
 
 | Format | Was passiert |
 |---|---|
@@ -153,11 +153,13 @@ Zwei Studios erzeugen aufwendige Flächen mit wenigen Reglern: das **Muster-Stud
 * **76 Vorlagen** (0.13.0: 37), darunter elf neue für die bisherigen Arten. Alle sind mit den Voreinstellungen des Studios (Fräser 3,175 mm, Mindeststeg 1,5 mm, keine Inseln) laut Ampel **grün** – gemessen, nicht gefräst. Eine Vorlage, »Bild als Lochraster«, braucht ein Bild von dir.
 * **Option `trim`** (*seit 0.14.0*, unter »Erweitert«, bei Dreiecken, Waben, Gitter, Ziegel, Fischgrät, Würfeln und Lamellen): am Rand angeschnittene Zellen, von denen weniger als der gewählte Anteil übrig bleibt, entfallen. Ohne `trim` (Standard) entstehen am Rand schmale Schlitze, auch unterhalb der Fräserbreite. Bei den **Blumen** gibt es ein **versetztes, mittiges Gitter** mit gleichem Rand ringsum. Gespeicherte Muster ändern sich durch beides nicht.
 * **Bögen bleiben Bögen:** Die Ornament-Arten (Ogee, Fischschuppen, Vierpass, Shippo, Art-déco-Fächer, Spiralen, Kreuzparkett) rechnen mit echten Kreisbögen, nicht mit vielen kleinen Strecken. Dadurch ist die Rechnung schnell: auf dem Entwicklungsrechner unter 0,3 Sekunden je Art für eine ganze Platte von 1200 × 600 mm (eine Messung, keine Zusage).
+* **Eigene Vorlagen (*seit 0.15.0*):** Im Reiter **»Eigene«** (der erste der Galerie) speicherst du den Stand des Studios mit **»Als eigene Vorlage speichern«**, benennst um, sicherst als Datei, importierst Dateien (auch aus dem [Online-Generator](Formen-und-Muster-Generator)) und beginnst mit **»Neu erstellen«**. Muster aus einem Bild lassen sich nicht speichern. Das Formen-Symbol im Kopf der Galerie öffnet den Dialog **»Formen«** mit zehn Grundformen. Alles dazu steht unter [Eigene Vorlagen](Eigene-Vorlagen); die Vorlagen sind nicht unter Windows (WebView2) geprüft.
+* **Rechenfrist (*seit 0.15.0*):** Die Rechnung endet bei Ausreißern nach der Rechenfrist des Programms (Standard 180 s) von selbst, mit Meldung; vorher wirkte die Frist bei Mustern nicht. Muster, die in der Frist fertig werden, rechnen unverändert.
 * **Grenzen:** Bei gedrehten Gittern und bei Ellipsen als Umriss werden Randzellen angeschnitten, dort entstehen Strecken statt Bögen. Spiralen, Schneeflocken und Sonnenblume setzen nur **ganze Elemente**, der Rand ist dadurch ungleich breit. Argyle zeigt nur ganze Rauten. **Shippo** ist die Kreisanordnung dieses Namens, nicht die »Blume des Lebens«. Dünne Spitzen (Ogee, Schneeflocken, Penrose), lange schmale Stege (Spiralen) und sehr feine Netze (Shippo, Fischschuppen) sind rechnerisch fräsbar, ihre **Haltbarkeit im Holz ist nicht erprobt**. Die Sterne folgen einer Konstruktion nach Augenmaß, es sind keine historisch exakten Rosetten; Palm- und Blattformen sind stilisiert.
 
 ### Relief-Studio: 62 Vorlagen (seit 0.14.0 erweitert)
 
-Das Relief-Studio zeigt links Vorlagen mit Mini-Vorschau (Filter nach Kategorie), in der Mitte eine 3D-Vorschau und rechts die Regler Größe, Tiefe, Dichte, Weichheit, Variation und Zufall. Seit 0.14.0 gibt es **62 Vorlagen in 9 Kategorien** (0.13.0: 40 in 7); welche neu sind und was beim Fräsen gilt, steht unter [Bearbeitungen](Bearbeitungen#3d-relief-und-muster). Wie du ein Relief mit dem Pinsel nachformst, steht unter [Reliefs modellieren](Modellieren-von-Reliefs).
+Das Relief-Studio zeigt links Vorlagen mit Mini-Vorschau (Filter nach Kategorie), in der Mitte eine 3D-Vorschau und rechts die Regler Größe, Tiefe, Dichte, Weichheit, Variation und Zufall. Seit 0.14.0 gibt es **62 Vorlagen in 9 Kategorien** (0.13.0: 40 in 7); welche neu sind und was beim Fräsen gilt, steht unter [Bearbeitungen](Bearbeitungen#3d-relief-und-muster). Wie du ein Relief mit dem Pinsel nachformst, steht unter [Reliefs modellieren](Modellieren-von-Reliefs). Seit 0.15.0 ist **»Eigene«** der erste Reiter der Galerie: Du speicherst ein eingestelltes Relief als eigene Vorlage (60 der 62 mitgelieferten Vorlagen lassen sich speichern; Reliefs aus Foto, Höhenbild, 3D-Modell, Maske, Komponenten oder Pinselstrichen werden abgelehnt), siehe [Eigene Vorlagen](Eigene-Vorlagen).
 
 <!-- videos:start -->
 ## Videos (English)
@@ -185,5 +187,7 @@ Alle Videos: [Videos](Videos).
 
 ## Weiter
 
+* [Eigene Vorlagen](Eigene-Vorlagen)
+* [Formen- und Muster-Generator](Formen-und-Muster-Generator)
 * [Bearbeitungen](Bearbeitungen)
 * [Werkzeuge und Schnittdaten](Werkzeuge-und-Schnittdaten)

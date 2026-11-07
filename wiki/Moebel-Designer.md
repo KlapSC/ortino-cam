@@ -76,6 +76,17 @@ Jede Meldung nennt Annahme, Rechnung und einen **Lösungsvorschlag**:
 
 Die Rechnungen nehmen einen frei aufliegenden Balken und starre Verbindungen an; Verbindungen, Beschläge, Leimfugen und die Lastabtragung in den Beinen werden **nicht nachgewiesen**. Gewichte sind grob (Volumen mal Rohdichte, ohne Beschläge und Leim).
 
+## Zuschnitt: »Optimiert« und Sägeplan (seit 0.15.0)
+
+In der Ansicht **Zuschnitt** (Taste `3`) gibt es drei Verfahren: **MaxRects** (dichteste Packung für die CNC), **Guillotine** (durchgehende Schnitte, sägegerecht) und seit 0.15.0 **Optimiert**.
+
+* Der Knopf **»Zuschnitt optimieren«** stellt das Verfahren **Optimiert** ein, rechnet den Zuschnitt neu und meldet vorher und nachher: weniger Platten (mit Ausnutzung), ein größeres Reststück auf der letzten Platte oder »keine bessere Aufteilung gefunden«. Er **bleibt im Designer**; bis 0.14.0 öffnete er stattdessen den Plattenzuschnitt-Dialog, dessen Ergebnis nicht in die Zuschnittansicht zurückkam.
+* **Optimiert** probiert MaxRects und Guillotine mit den festen Sortierungen und je 48 gestörten Reihenfolgen und nimmt die Aufteilung mit den wenigsten Platten, bei Gleichstand die mit der leereren letzten Platte (dem größeren Reststück). Gleiche Eingabe, gleiches Ergebnis. **»Teile erzeugen & fräsen vorbereiten«** nutzt dieselbe Aufteilung.
+* **Gemessen** an 30 Zufallsfällen am Rechner: nie schlechter als die festen Verfahren, einmal eine Platte weniger, 15-mal eine leerere letzte Platte. **Der Gewinn ist meist klein**, und er gilt für erfundene Fälle, nicht für deine Teile.
+* **Optimiert ist nicht der Sägeplan.** Es nimmt die Aufteilung mit den wenigsten Platten, auch wenn sie aus dem Verfahren MaxRects stammt und sich nicht mit durchgehenden Schnitten sägen lässt. Für die Plattensäge wählst du **Guillotine** oder öffnest den **Sägeplan**: Das ist der Knopf **»Sägeplan …«** (früher »Zuschnitt optimieren …«), er öffnet den [Plattenzuschnitt](Plattenzuschnitt) mit den Maßen aus der Stückliste und führt beim Schließen in den Designer zurück (gleiche Ansicht, gleiche Auswahl). Im Web-Designer des Portals gibt es den Sägeplan-Knopf nicht.
+* **Achtung bei Dateien:** Eine Datei, in der das Verfahren **Optimiert** gewählt ist, lässt sich in älteren Programmversionen (bis 0.14.0) nicht öffnen. Schon ein Klick auf »Zuschnitt optimieren« stellt es im Projekt ein; wer die Datei weitergeben will, wählt vorher MaxRects oder Guillotine.
+* **Nur gerechnet:** nie an einer echten Säge oder Fräse erprobt, nicht unter Windows (WebView2) geprüft.
+
 ## Rendering
 
 *Rendering* im Bereich Möbel zeigt eine **Möbelszene** mit Boden (Parkett), Wand hinter dem hintersten Wandmöbel, Seitenwänden, wählbarem Teppich und Holzmaserung entlang der Faser. Wie beim [Küchen-Rendering](Kuechen-Rendering): ein schnelles WebGL-Bild, **kein fotorealistischer Render**, nur in Chromium mit Software-Grafik geprüft, Bildschirmfarben sind keine Farbmuster.
@@ -89,6 +100,7 @@ Die Rechnungen nehmen einen frei aufliegenden Balken und starre Verbindungen an;
 * Radius- und Fasenkante sind in 3D nicht zu sehen; der Radius ist Handarbeit.
 * Kein Raumplaner, keine Prüfung gegen die Küche, kein automatisches Anordnen.
 * Das Rendering lief nie unter Windows (WebView2) oder auf einer echten Grafikkarte.
+* Der Zuschnitt **Optimiert** (seit 0.15.0) ist nur am Rechner gemessen, nicht gesägt (siehe oben).
 
 ## Siehe auch
 

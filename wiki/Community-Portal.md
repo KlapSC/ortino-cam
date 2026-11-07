@@ -63,6 +63,10 @@ Unter **Meine Designs** bearbeitest du Angaben, lädst neue Versionen hoch, ver�
 
 Seit Version 0.5.0 laufen der Küchen- und der Möbel-Designer auch im Portal, ohne Installation, mit Entwürfen im eigenen Konto und Download als `.ocam` für das Programm; seit 0.6.0 lassen sich Entwürfe teilen und abwechselnd bearbeiten, seit 0.7.0 auf Wunsch des Besitzers auch gleichzeitig (live). Das ist eine eigene Anleitung: [Web-Designer im Portal](Web-Designer-im-Portal). Es braucht ein Konto mit bestätigter E-Mail-Adresse und ein Portal ab Server-Version 0.5.0.
 
+## Formen- und Muster-Generator (seit 0.15.0)
+
+Unter [ortino-cam.com/tools/generator](https://ortino-cam.com/tools/generator) gibt es ein kostenloses Werkzeug ohne Konto: Muster und Formen einstellen, die Fräsbarkeit prüfen und als SVG oder DXF herunterladen. Es erzeugt keinen G-Code. Alles dazu steht unter [Formen- und Muster-Generator](Formen-und-Muster-Generator).
+
 ## Boosts und Punkte (seit 0.7.0)
 
 Jedes Konto mit bestätigter E-Mail-Adresse, das mindestens drei Tage alt ist, kann je **Kalendermonat** (Zeitzone Europe/Zurich) **4 Boosts** an Designs **anderer** verteilen: einmal je Design, höchstens zwei an denselben Ersteller, nie an eigene Designs. Nicht verteilte Boosts verfallen am Monatsende; einen Boost kannst du kurz nach dem Vergeben zurücknehmen. Wer ein Design erstellt hat, bekommt je Boost **Punkte**: zuerst vorgemerkt, nach 14 Tagen verfügbar. Öffentlich sichtbar ist nur die **Anzahl** der Boosts, wer geboostet hat, sehen nur Moderation und Administration. **Punkte sind kein Geld, nicht übertragbar und nicht auszahlbar; einen Shop gibt es noch nicht.** Bei Missbrauch werden Punkte zurückgebucht. Der Betreiber kann das Programm abschalten (`ORTINO_HUB_BOOST=off`). Nur gegen lokale Server und Chromium geprüft, nie mit echten Nutzern.

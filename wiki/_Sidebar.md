@@ -11,6 +11,8 @@
 **Entwerfen und Bearbeiten**
 
 * [Zeichnen und Importieren](Zeichnen-und-Importieren)
+* [Eigene Vorlagen und Formen](Eigene-Vorlagen)
+* [Formen- und Muster-Generator (Browser)](Formen-und-Muster-Generator)
 * [Creator](Creator)
 * [Art Designer](Art-Designer)
 * [Foto → Relief](Foto-zu-Relief)
