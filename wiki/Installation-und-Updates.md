@@ -1,14 +1,16 @@
+[English](Installation-and-Updates) | **Deutsch**
+
 # Installation und Updates
 
 ortino.CAM läuft unter **Windows 10 und 11 (64 Bit)**. Für Mac und Linux gibt es das Programm derzeit nicht. Es ist **kostenlos** für private und gewerbliche Nutzung. Die Nutzungsbedingungen stehen in der Datei [LICENSE](https://github.com/KlapSC/ortino-cam/blob/main/LICENSE).
 
 ## Installieren in vier Schritten
 
-1. **Herunterladen:** Auf der [Release-Seite](https://github.com/KlapSC/ortino-cam/releases/latest) liegt der Installer als `ortino.cam_<Version>_x64-setup.exe`. Alternativ gibt es eine `.msi`-Datei (`…_x64_de-de.msi`). Diese Dokumentation beschreibt die veröffentlichte Version **0.15.0**.
+1. **Herunterladen:** Auf der [Release-Seite](https://github.com/KlapSC/ortino-cam/releases/latest) liegt der Installer als `ortino.cam_<Version>_x64-setup.exe`. Alternativ gibt es eine `.msi`-Datei (`…_x64_de-de.msi`). Diese Dokumentation beschreibt die veröffentlichte Version **0.16.0**.
 2. **Prüfsumme vergleichen (empfohlen):** Die SHA-256-Prüfsumme jeder Datei steht in den Hinweisen der Version und in der Datei `SHA256SUMS.txt` am Release. Du berechnest sie in der Windows-PowerShell so und vergleichst sie mit der Angabe:
 
    ```powershell
-   Get-FileHash .\ortino.cam_0.15.0_x64-setup.exe -Algorithm SHA256
+   Get-FileHash .\ortino.cam_0.16.0_x64-setup.exe -Algorithm SHA256
    ```
 
 3. **Starten und installieren.** Der Installer richtet das Programm für deinen Benutzer ein (kein Administrator nötig) und gibt es auf Deutsch und Englisch. Das Programm braucht Microsofts **WebView2**. Fehlt es auf deinem Rechner, lädt der Installer es dafür nach, du brauchst dann eine Internetverbindung.

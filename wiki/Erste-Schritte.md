@@ -1,3 +1,5 @@
+[English](Getting-Started) | **Deutsch**
+
 # Erste Schritte
 
 Diese Seite führt dich vom ersten Start bis zum ersten Werkstück. Du lernst zuerst an einem fertigen **Beispielprojekt** (einem Türschild), danach legst du ein eigenes Projekt an. Alles, was die Maschine betrifft, übst du zuerst mit der **simulierten Demo-Maschine**. Dafür brauchst du keine Fräse.

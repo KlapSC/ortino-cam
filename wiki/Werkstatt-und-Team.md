@@ -1,3 +1,5 @@
+[English](Workshop-and-Team) | **Deutsch**
+
 # Werkstatt-Ordner, Rollen und Dashboard (seit 0.12.0)
 
 > **Ehrlich zum Stand:** Nur gegen Tests und Chromium geprüft. **Ein echtes Netzlaufwerk (NAS, SMB/NFS) und Windows sind nicht erprobt.** Rollen schützen vor **Fehlbedienung, nicht vor Zugriff auf die Dateien**; die optionale PIN ist kein Schutz dagegen. Alles bleibt auf den Rechnern der Werkstatt, **nichts geht ins Portal** oder an Claude.

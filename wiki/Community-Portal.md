@@ -1,3 +1,5 @@
+[English](Community-Portal-en) | **Deutsch**
+
 # Community-Portal
 
 Neben dem Programm gibt es ein **Community-Portal**: eine Webseite, auf der Fräsdesigns gesammelt, durchsucht und geteilt werden, jeweils mit den Werkzeugen, Tiefen, Vorschüben und einer Anleitung, die zum Design gehören. Du erreichst es unter **[https://ortino-cam.com](https://ortino-cam.com)**. Im Programm ist diese Adresse schon eingetragen, du musst nichts einrichten.
@@ -59,13 +61,17 @@ Unter **Meine Designs** bearbeitest du Angaben, lädst neue Versionen hoch, ver�
 * Laut Community-Richtlinien **nicht erlaubt** sind: fremde Werke ohne Erlaubnis, geschützte Logos und Marken, Waffen oder rechtlich eingeschränkte Teile, gefährliche Anleitungen, absichtlich falsche Einstellungen und Schadsoftware.
 * Verstöße meldest du über **»Melden«** bei der Moderation.
 
+## Auf dem Handy (seit Server-Version 0.16.0)
+
+Auf einem schmalen Bildschirm (unter 720 px) hat das Portal unten eine Leiste mit **fünf Einträgen**: Start, Entdecken, Plus (Hochladen, immer in der Mitte), Shop (ohne Shop: Maschinen) und Profil bzw. Anmelden. Die **Aktivität** ist kein eigener Eintrag mehr: Die Zahl der ungelesenen (ab 10 »9+«) steht als Abzeichen am Profilbild; im Konto-Menü und auf deiner Profilseite findest du den Eintrag »Aktivität«. Oben in der Kopfleiste fasst das Symbol **»Werkzeuge«** Küche, Möbel und Muster zusammen: Küche und Möbel öffnen den Web-Designer gleich im richtigen Bereich (dafür brauchst du ein Konto, ohne Anmeldung führt der Weg über die Anmeldung und zurück), Muster öffnet den [Generator](Formen-und-Muster-Generator).
+
 ## Küche und Möbel im Browser
 
 Seit Version 0.5.0 laufen der Küchen- und der Möbel-Designer auch im Portal, ohne Installation, mit Entwürfen im eigenen Konto und Download als `.ocam` für das Programm; seit 0.6.0 lassen sich Entwürfe teilen und abwechselnd bearbeiten, seit 0.7.0 auf Wunsch des Besitzers auch gleichzeitig (live). Das ist eine eigene Anleitung: [Web-Designer im Portal](Web-Designer-im-Portal). Es braucht ein Konto mit bestätigter E-Mail-Adresse und ein Portal ab Server-Version 0.5.0.
 
 ## Formen- und Muster-Generator (seit 0.15.0)
 
-Unter [ortino-cam.com/tools/generator](https://ortino-cam.com/tools/generator) gibt es ein kostenloses Werkzeug ohne Konto: Muster und Formen einstellen, die Fräsbarkeit prüfen und als SVG oder DXF herunterladen. Es erzeugt keinen G-Code. Alles dazu steht unter [Formen- und Muster-Generator](Formen-und-Muster-Generator).
+Unter [ortino-cam.com/tools/generator](https://ortino-cam.com/tools/generator) gibt es ein kostenloses Werkzeug ohne Konto: Muster und Formen einstellen, die Fräsbarkeit prüfen und als SVG oder DXF herunterladen. Seit 0.16.0 gehört die Wort- und Logo-Collage dazu (Wörter und Logos). Es erzeugt keinen G-Code. Alles dazu steht unter [Formen- und Muster-Generator](Formen-und-Muster-Generator).
 
 ## Boosts und Punkte (seit 0.7.0)
 

@@ -1,3 +1,5 @@
+[English](Fixed-Probe-and-Spoilboard) | **Deutsch**
+
 # Fester Taster und Opferplatte
 
 Diese Seite gehört zu [Fräsen an der Maschine](Fräsen-an-der-Maschine). Sie erklärt zwei Hilfen für Maschinen mit fest eingebautem Werkzeugtaster: Der **feste Taster** misst die Länge jedes eingespannten Fräsers. Die **Höhenkarte** gleicht die Unebenheit der Opferplatte aus.
@@ -76,7 +78,7 @@ Eine Opferplatte ist nie ganz eben und verzieht sich mit der Feuchte. Eine Höhe
 
 Schritt **Fräsen**, Karte **Opferplatte**. Voraussetzungen: verbunden, Referenzfahrt, Taster-Eingang offen, Platte frei.
 
-1. **Nullen:** Die aktuelle X/Y-Stelle ist der Bezugspunkt. Entweder *Antasten mit Taster* oder *von Hand* (Spitze auf die Oberfläche, Papier dazwischen, dessen Dicke wird abgezogen). Trage den **Referenzfräser** ein. Ein neues Nullen verwirft die alte Höhenkarte.
+1. **Nullen:** Die aktuelle X/Y-Stelle ist der Bezugspunkt. Entweder *Antasten mit Tastplatte* oder *von Hand* (Spitze auf die Oberfläche, Papier dazwischen, dessen Dicke wird abgezogen). Trage den **Referenzfräser** ein. Ein neues Nullen verwirft die alte Höhenkarte.
 2. **Raster wählen:** Bereich und Abstand (Vorgabe 50 mm, bei starker Welligkeit 25 mm). Das Programm zeigt Punktzahl und geschätzte Zeit. Höchstens 40 000 Punkte.
 3. **Messen:** Je Punkt fährt die Maschine auf Sicherheitshöhe, tastet schnell, zieht zurück und tastet langsam. Fortschritt und Abbrechen sind jederzeit möglich.
 4. **Ergebnis:** Eine Farbkarte (blau tief, orange hoch) zeigt Spanne und Streuung. »Speichern« legt die Höhenkarte ab.

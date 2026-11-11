@@ -1,3 +1,5 @@
+[English](Art-Designer-en) | **Deutsch**
+
 # Art Designer (Wandbilder aus Holz)
 
 Seit Version 0.9.0 gibt es im Menü **Erstellen → Art Designer …** (oder mit `Strg+K` → »Art Designer«) einen Dialog, der in fünf Schritten ein **Wandbild aus Holz** macht: als **geschnitztes Relief** aus einem Block oder als **Schichtholzbild** aus gestapelten Sperrholzlagen. Er baut auf dem Relief-Studio auf und ersetzt es nicht. **Seit 0.14.0** gibt es **14 statt 8 Motive**; die sechs neuen sind unten gekennzeichnet.

@@ -1,3 +1,5 @@
+[English](Creators) | **Deutsch**
+
 # Creator: Werkstücke aus wenigen Eingaben (seit 0.13.0, erweitert in 0.14.0)
 
 Ein **Creator** erzeugt aus wenigen Eingaben ein fertiges Werkstück aus Plattenmaterial: die Teile als Konturen, mit Nuten, Ausschnitten und Gravur, dazu Teileliste, Montagehinweise und Plattenbedarf. Auf Wunsch legt er das Werkstück samt Fräsbearbeitungen im Projekt an. Es gibt **22 Creator in sechs Gruppen**, vom Vogelhaus über Zahnräder und Türschild bis zum Adventskalender. **Seit 0.14.0** gehören die neue Gruppe »Feste und Jahreszeiten« mit vier Creatorn und die Dekoration nach Jahreszeit mit 35 statt 8 Motiven dazu (0.13.0: 18 Creator in fünf Gruppen).

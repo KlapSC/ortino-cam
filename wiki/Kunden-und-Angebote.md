@@ -1,3 +1,5 @@
+[English](Customers-and-Quotes) | **Deutsch**
+
 # Kunden und Angebote (seit 0.11.0)
 
 Das Angebot aus [Rüstblatt und Angebot](Rüstblatt-und-Angebot) kennt neben dem Freitext »Kunde« auch einen **Kundenstamm**, **fortlaufende Angebotsnummern** mit Revisionen und **Zahlungsbedingungen**. Das alles liegt **lokal im Datenordner deines Programms**: keine Cloud, nichts davon geht ins Portal oder an Claude.

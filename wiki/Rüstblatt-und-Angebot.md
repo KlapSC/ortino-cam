@@ -1,3 +1,5 @@
+[English](Setup-Sheet-and-Quote) | **Deutsch**
+
 # Rüstblatt und Angebot
 
 Mit einem Klick erzeugt ortino.CAM ein **PDF** für den Tisch der Maschine (das **Rüstblatt**) und für den Kunden (die **Kostenrechnung** oder das **Angebot**). Beide Teile stehen in einer Datei oder einzeln. Beides gibt es auf Deutsch und Englisch, je nach Programmsprache.

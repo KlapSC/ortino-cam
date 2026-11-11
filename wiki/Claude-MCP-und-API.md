@@ -1,3 +1,5 @@
+[English](Claude-MCP-and-API) | **Deutsch**
+
 # Claude, MCP und API
 
 ortino.CAM lässt sich von außen steuern: von **Claude** (Claude Desktop, Claude Code oder jedem anderen Programm, das das *Model Context Protocol*, kurz **MCP**, spricht), von eigenen Programmen über eine **lokale Schnittstelle (API)** und von der **Kommandozeile** `ortino`. Zusätzlich gibt es kleine **Skripte** und einen **Assistenten im Programm**.

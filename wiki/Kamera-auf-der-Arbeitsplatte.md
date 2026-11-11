@@ -1,3 +1,5 @@
+[English](Camera-on-the-Worktable) | **Deutsch**
+
 # Kamera auf der Arbeitsplatte
 
 Eine USB-Kamera über der Maschine liefert ein Bild der Arbeitsfläche. **Vier QR-Marken** in den Ecken verankern es in Millimetern. Das Programm berechnet Perspektive und Maßstab, **entzerrt** das Bild und legt es **unter deinen Entwurf**. So positionierst du Teile auf dem echten Material (Reststück, krummes Brett, bedruckte Platte). Außerdem kann das Programm den **Umriss eines Werkstücks** erkennen und als Form oder Reststück übernehmen.

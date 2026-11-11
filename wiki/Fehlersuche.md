@@ -1,3 +1,5 @@
+[English](Troubleshooting) | **Deutsch**
+
 # Fehlersuche
 
 Hier stehen häufige Probleme mit der Ursache und einer Lösung. Bei jedem Problem an der Maschine gilt: **Im Zweifel Not-Aus drücken, nicht erst »Stopp« in der Software.** Meldungen im Programm nennen meist selbst eine Lösung (»Lösung: …«). Lies sie zuerst. Findest du hier nichts, frag über [GitHub Issues](https://github.com/KlapSC/ortino-cam/issues/new/choose) (siehe [Mitmachen und Tests](Mitmachen-und-Tests)).

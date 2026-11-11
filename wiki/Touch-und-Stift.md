@@ -1,3 +1,5 @@
+[English](Touch-and-Pen) | **Deutsch**
+
 # Touch und Stift
 
 ortino.CAM lässt sich mit **Finger und Stift** bedienen, auf einem Tablet (auch im Hochformat, das Fenster darf 760 px schmal sein) oder einem Touch-Laptop. Mit Maus und Tastatur bleibt alles wie bisher.

@@ -1,3 +1,5 @@
+[English](Post-Processors-and-Controllers) | **Deutsch**
+
 # Postprozessoren und Steuerungen
 
 Jede Steuerung versteht ihren eigenen G-Code-Dialekt. Ein **Postprozessor** übersetzt die berechneten Werkzeugwege in diesen Dialekt: Kopf, Fuß, Werkzeugwechsel, Einheiten, Kommentare, Wartezeiten. Er besteht aus einer kleinen Textdatei (TOML-Einstellungen plus Vorlagen im Jinja-Format). Die Bewegungszeilen erzeugt das Programm selbst, deshalb ist die Ausgabe **deterministisch**: Gleiche Eingabe ergibt identischen G-Code.

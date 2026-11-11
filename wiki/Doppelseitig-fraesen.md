@@ -1,3 +1,5 @@
+[English](Double-Sided-Milling) | **Deutsch**
+
 # Doppelseitig fräsen
 
 Manche Werkstücke brauchen Bearbeitungen von **beiden Seiten**: eine Tasche oben und eine Fase unten, ein Griff, der von hinten ausgefräst wird, ein Schild mit Gravur auf Vorder- und Rückseite. ortino.CAM hilft dabei mit **zwei Passstiften**: Seite A bohrt zwei Löcher durch das Werkstück bis in die Opferplatte, du steckst Stifte hinein, wendest das Werkstück, steckst es auf die Stifte, und Seite B liegt genau dort, wo sie hingehört.
@@ -80,7 +82,7 @@ Statt zweier Passstifte legst du das Werkstück für **beide** Seiten in eine **
 ## Grenzen
 
 * Die **Simulation** rechnet seit 0.6.0 beide Seiten zusammen: Seite B startet vom Materialzustand nach Seite A (an der Wendeachse gespiegelt), Durchbrüche und Passlöcher erscheinen im Bild, eine Warnung kommt, wenn zwischen beiden Seiten weniger als 1 mm stehen bleibt oder eine Bahn von Seite B in einen Passstift reicht. Der Schalter **»Nur Seite B«** rechnet wie früher aus dem vollen Block. Die Simulation ist auf eine Rasterzelle genau, setzt Fräsen von oben voraus und simuliert weder Wendefehler noch das Spiel der Stifte.
-* Mit Stiften immer **zwei Stifte**; eine Passform in der Opferplatte gibt es nicht. Statt der Stifte gibt es seit 0.6.0 das **Wenden an einer Anschlagkante** (unten).
+* Mit Stiften immer **zwei Stifte**; eine Passform in der Opferplatte gibt es nicht. Statt der Stifte gibt es seit 0.6.0 das **Wenden an einer Anschlagkante** (oben).
 * Ohne **Versatz** passt das Werkstück auch falsch gewendet auf die Stifte (um 180° gedreht). Ein Versatz von einigen Millimetern verhindert das.
 * **Gespiegelt kopieren** spiegelt auch Texte (Spiegelschrift). Für Schrift auf Seite B lieber neu schreiben.
 * Das Job-Protokoll erkennt Seite A am Projekt- und Plattennamen. Nach dem Umbenennen oder bei einem Lauf an einem anderen Rechner bleibt es bei der Warnung zum Bestätigen.

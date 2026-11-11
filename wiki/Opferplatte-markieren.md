@@ -1,3 +1,5 @@
+[English](Marking-the-Spoilboard) | **Deutsch**
+
 # Opferplatte markieren
 
 Ein Assistent fräst **Markierungen in die Opferplatte** der Maschine: Nullpunkt-Kreuz und Rahmen, ein Lineal mit Zahlen, Anschlag-Linien und ein Lochraster. Damit legst du Werkstücke nach Augenmaß genau und setzt Spannmittel. Die Markierungen erscheinen danach auch in der Tisch-Ansicht der Karte im Schritt »Fräsen«.

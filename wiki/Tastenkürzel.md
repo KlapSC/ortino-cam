@@ -1,3 +1,5 @@
+[English](Keyboard-Shortcuts) | **Deutsch**
+
 # Tastenkürzel
 
 Diese Seite listet die Tastenkürzel von ortino.CAM unter Windows. Im Programm zeigt dir die Taste `?` (also `Umschalt+ß` auf einer deutschen Tastatur) oder Hilfe → »Tastenkürzel« die aktuelle Liste. Die Befehlspalette (`Strg+K`) findet **jeden** Befehl per Stichwort und zeigt sein Kürzel an. Einzelne Kürzel wirken nur im passenden Schritt, solange du nicht in einem Textfeld tippst.

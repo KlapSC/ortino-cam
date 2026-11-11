@@ -1,3 +1,5 @@
+[English](Importing-3D-Models) | **Deutsch**
+
 # 3D-Modelle importieren (STL und STEP)
 
 Ein 3D-Modell aus einem CAD- oder Netzprogramm lässt sich in ortino.CAM auf die Platte bringen, als **3D-Relief**, als **Umriss** oder als **Schichtmodell**. Davor siehst du es im Dialog in 3D, richtest es aus und bekommst eine Prüfliste mit Lösungsvorschlägen.

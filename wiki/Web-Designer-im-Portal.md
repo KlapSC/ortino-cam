@@ -1,3 +1,5 @@
+[English](Web-Designer-in-the-Portal) | **Deutsch**
+
 # Web-Designer im Portal (Küche und Möbel im Browser)
 
 Seit Version 0.5.0 laufen der **Küchen-Designer** und der **Möbel-Designer** auch im [Community-Portal](Community-Portal): im Browser, ohne das Programm zu installieren. Du entwirfst, siehst das Ergebnis in 3D, bekommst Stückliste und Zuschnitt, speicherst den Entwurf in deinem Konto und lädst ihn als Datei herunter, um ihn im Programm weiterzubearbeiten und zu fräsen.

@@ -1,3 +1,5 @@
+[English](Backup-in-the-Portal) | **Deutsch**
+
 # Sicherung im Portal
 
 Mit einem Konto im Community-Portal kannst du **Maschinenprofile**, deine **eigenen Fräser** (»Meine Bibliothek«) und eine feste Auswahl der **Programmeinstellungen** privat sichern und später auf demselben oder einem anderen Rechner wieder abrufen: nach einer Neuinstallation oder um zum Beispiel Büro und Werkstatt abzugleichen. **Nichts davon geschieht von selbst** – gesichert und abgerufen wird nur, was du im Dialog auslöst.

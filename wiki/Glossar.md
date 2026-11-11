@@ -1,3 +1,5 @@
+[English](Glossary) | **Deutsch**
+
 # Glossar
 
 Kurze Erklärungen der Begriffe, die in ortino.CAM und in diesem Wiki vorkommen. Alphabetisch sortiert.

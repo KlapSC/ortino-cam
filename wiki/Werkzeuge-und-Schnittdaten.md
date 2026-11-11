@@ -1,3 +1,5 @@
+[English](Tools-and-Cutting-Data) | **Deutsch**
+
 # Werkzeuge und Schnittdaten
 
 Welcher Fräser, wie schnell, wie tief? Diese Seite erklärt die **Fräserbibliothek**, die **Richtwerte** für Vorschub und Drehzahl, die **bewährten Schnittdaten**, die du selbst speichern kannst, und die **Standzeit-Grenzen**.

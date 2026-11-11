@@ -1,3 +1,5 @@
+[English](Kitchen-Rendering) | **Deutsch**
+
 # Küchen-Rendering
 
 Der Möbel- und Küchen-Designer ([Platten und Möbel](Platten-und-Möbel)) kann ein **Bild der Küche** speichern, mit Licht, weichen Schatten, Glanz lackierter Fronten, eingebauter Spüle samt Armatur, Boden, Wänden und Spritzschutz. Gedacht ist es für das Gespräch mit dem Kunden: »So könnte Ihre Küche aussehen.«

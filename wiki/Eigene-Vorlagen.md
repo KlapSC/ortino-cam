@@ -1,3 +1,5 @@
+[English](Custom-Templates) | **Deutsch**
+
 # Eigene Vorlagen und der Dialog »Formen« (seit 0.15.0)
 
 Im **Muster-Studio** und im **Relief-Studio** kannst du einen eingestellten Stand als **eigene Vorlage** speichern und später wieder verwenden. Dazu gibt es einen neuen Dialog **»Formen«** mit zehn Grundformen. Eigene Vorlagen stehen in der Sparte **»Eigene«**, dem ersten Reiter der Galerie. Dieselbe Datei liest und schreibt auch der [Formen- und Muster-Generator](Formen-und-Muster-Generator) im Browser, du kannst dort gespeicherte Vorlagen also im Programm importieren.
@@ -12,7 +14,7 @@ Im **Muster-Studio** und im **Relief-Studio** kannst du einen eingestellten Stan
 
 Was gespeichert wird:
 
-* **Muster:** die Musterart, der Zufallswert (Seed), **alle** Einstellungen als Zahlen und die Fläche (auch Drehung, Text und Schrift, soweit eingestellt).
+* **Muster:** die Musterart, der Zufallswert (Seed), **alle** Einstellungen als Zahlen und die Fläche (auch Drehung, Text und Schrift, soweit eingestellt). Bei der **Wort- und Logo-Collage** (seit 0.16.0) kommen die vier Einträge dazu, bei Wörtern mit Text, Schrift, Fett und Häufigkeit; ein Logo-Platz bleibt ohne Bild.
 * **Relief:** Größe, Tiefe, Zufallswert, Regler, Nachbearbeitung, Rand und die Ebenen mit ihren Quellen und Einstellungen.
 * **Form:** die Form mit ihren Maßen (Millimeter) und Einstellungen.
 
@@ -38,7 +40,7 @@ Der Dialog **»Formen«** gibt es seit 0.15.0. Du öffnest ihn im Schritt »Desi
 
 ## Dateien und Austausch
 
-Eine Vorlage ist eine **JSON-Datei** (UTF-8) mit der Endung `.ortino-vorlage.json`. Sie nennt das Format (`ortino-vorlage`, Version 1), die Art (`muster`, `form` oder `relief`), den Namen, den Zeitpunkt und die Einstellungen (nur Zahlen, Texte und Wahrheitswerte, nie Bilder und nie etwas, das ausgeführt wird). **Alle sichern** schreibt eine Datei `ortino-vorlagen-<Datum>.ortino-vorlage.json` mit der Liste. Das Programm prüft jede Datei streng: höchstens 1 MB, höchstens 200 Vorlagen je Datei, gültige Zeichen im Namen, bekannte Felder. Eine kaputte Datei oder ein kaputter Eintrag ergibt eine Meldung mit Ursache und Lösung, nie einen Absturz; hat eine Datei eine neuere Version, als das Programm kennt, sagt es das und bittet um ein Update. Weil das Format dasselbe ist, kannst du Dateien aus dem [Online-Generator](Formen-und-Muster-Generator) hier importieren (Formen bleiben dabei echte Formen) und Dateien des Programms weitergeben.
+Eine Vorlage ist eine **JSON-Datei** (UTF-8) mit der Endung `.ortino-vorlage.json`. Sie nennt das Format (`ortino-vorlage`, Version 1), die Art (`muster`, `form` oder `relief`), den Namen, den Zeitpunkt und die Einstellungen (nur Zahlen, Texte und Wahrheitswerte, nie Bilder und nie etwas, das ausgeführt wird). **Alle sichern** schreibt eine Datei `ortino-vorlagen-<Datum>.ortino-vorlage.json` mit der Liste. Das Programm prüft jede Datei streng: höchstens 1 MB, höchstens 200 Vorlagen je Datei, gültige Zeichen im Namen, bekannte Felder. Eine kaputte Datei oder ein kaputter Eintrag ergibt eine Meldung mit Ursache und Lösung, nie einen Absturz; hat eine Datei eine neuere Version, als das Programm kennt, sagt es das und bittet um ein Update. Seit 0.16.0 darf ein Muster der Wort- und Logo-Collage ein optionales Feld `items` tragen (bis zu vier Einträge, nie ein Bild); das Format bleibt Version 1. Das Programm 0.15.0 lehnt eine Datei mit `items` beim Import ab (unbekanntes Feld), alle Dateien ohne Collage lesen sich unverändert. Weil das Format dasselbe ist, kannst du Dateien aus dem [Online-Generator](Formen-und-Muster-Generator) hier importieren (Formen bleiben dabei echte Formen) und Dateien des Programms weitergeben.
 
 ## Wo die Vorlagen liegen
 
@@ -48,7 +50,7 @@ Eigene Vorlagen liegen im **Speicher der Oberfläche** des Programms (`localStor
 
 ## Grenzen
 
-* **Muster aus einem Bild** (»Bild als Lochraster«) lassen sich nicht speichern: Bilddaten gehören nicht in eine Vorlage. Der Knopf sagt es.
+* **Muster aus einem Bild** (»Bild als Lochraster«) lassen sich nicht speichern: Bilddaten gehören nicht in eine Vorlage. Der Knopf sagt es. Dasselbe gilt für eine **Wort- und Logo-Collage mit einem Logo-Bild**; speichern lassen sich die Wörter (ohne Bild) oder das ganze Muster als Projekt.
 * **Reliefs:** Von den 62 mitgelieferten Vorlagen lassen sich 60 speichern, nicht **»Bild«** und **»Formen wölben«**. Reliefs aus einem **Foto**, **Höhenbild**, **3D-Modell**, einer **Maske**, aus **Komponenten** oder mit **Pinselstrichen** werden abgelehnt: Der Knopf ist dann gesperrt und nennt die Ursache.
 * Eine Vorlage hält **Einstellungen**, keine Platte und keine Lage auf der Platte.
 * Höchstens **200 Vorlagen** und etwa **2 MB** im Speicher, eine Datei höchstens **1 MB**.

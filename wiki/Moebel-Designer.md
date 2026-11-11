@@ -1,3 +1,5 @@
+[English](Furniture-Designer) | **Deutsch**
+
 # Möbel-Designer (Tische, Sideboards, Regale, Sitzmöbel)
 
 Neben der Küche entwirfst du im selben Dialog **Möbel**: Tische, Sideboards, Regale und Sitzmöbel. Werkstoffe, Kantenband, Farben, Griffe, Reliefs, Stückliste, Zuschnitt, Rüstblatt und Angebot, »Teile erzeugen & fräsen vorbereiten« und Rückgängig gelten wie bei der Küche (siehe [Platten und Möbel](Platten-und-Möbel)).

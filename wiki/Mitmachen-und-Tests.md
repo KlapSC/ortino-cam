@@ -1,3 +1,5 @@
+[English](Contributing-and-Testing) | **Deutsch**
+
 # Mitmachen und Tests
 
 **Neue Mitwirkende sind willkommen.** Der Quelltext von ortino.CAM ist nicht öffentlich, mitmachen kannst du trotzdem an vielem. Am wertvollsten sind **Tests an echten Maschinen**, denn ortino.CAM entsteht zum größten Teil mit Claude Code (Anthropic) als Co-Autor. Tausende automatische Tests prüfen die Rechnung, aber sie stammen aus derselben Quelle wie der Code. Nur ein Test an einer echten Maschine zeigt, ob etwas wirklich funktioniert.
@@ -49,7 +51,7 @@ Nur an der **Ultimate Bee mit xPRO V5** sind bisher erprobt: Taschen, V-Carving,
 * gefräste Passungen, Fingerzinken, Inlays, Reliefs und Möbelteile,
 * Läufe **mit Pause, Vorschubänderung (Overrides) und Werkzeugwechsel mitten im Programm**, in anderen Materialien als Birke und mit anderen Maschinen,
 * Teile aus dem [Creator](Creator) (seit 0.13.0; Adventskalender, Kranz, Windlicht und Girlande seit 0.14.0): Schachtel, Zahnräder, Puzzle und die übrigen sind **nie gefräst oder verleimt**; bitte zuerst im Reststück und mit dem Passungs-Testcoupon. Beim Windlicht gilt: LED-Teelicht verwenden, der Creator prüft nicht, ob eine offene Flamme sicher ist,
-* Lochmuster aus dem Muster-Studio (39 Arten, 76 Vorlagen), die neuen Relief-Vorlagen (62) und die Wandbild-Motive des Art Designers (14), alle seit 0.14.0 erweitert: **nie gefräst**; besonders gefragt sind Berichte zu feinen Stegen (Fischschuppen, Shippo, Spiralen) und dünnen Spitzen (Ogee, Schneeflocken, Ahornblatt, Sterne) in echtem Holz,
+* Lochmuster aus dem Muster-Studio (40 Arten, 80 Vorlagen, davon die Wort- und Logo-Collage seit 0.16.0), die neuen Relief-Vorlagen (62) und die Wandbild-Motive des Art Designers (14), seit 0.14.0 und 0.16.0 erweitert: **nie gefräst**; besonders gefragt sind Berichte zu feinen Stegen (Fischschuppen, Shippo, Spiralen) und dünnen Spitzen (Ogee, Schneeflocken, Ahornblatt, Sterne) in echtem Holz; bei der Wort- und Logo-Collage (Stege von rund 1 mm zwischen Buchstaben, Inseln mit Brücken, kleine Teile) und beim Logo aus einer eigenen Datei,
 * **eigene Vorlagen** unter Windows (WebView2): bleiben sie nach einem Neustart und nach einem Update erhalten, zeigt »Als Datei sichern« einen Speichern-Dialog, geht das Ablegen von Dateien auf die Sparte »Eigene«? Außerdem **SVG- und DXF-Dateien des [Online-Generators](Formen-und-Muster-Generator)** in anderer CAM-Software und an einer Maschine (bisher nur ihr Wiedereinlesen in ortino.CAM geprüft) und der Zuschnitt **»Optimiert«** im [Möbel-Designer](Moebel-Designer) an einer echten Säge (bisher nur am Rechner gemessen),
 * die **Beispiele** der Galerie, gefräst in einem Reststück (**nicht gefräst**), und ob die **Lektionen** zu deiner Erfahrung passen,
 * **Béziers aus echten Illustrator-, Inkscape- oder CorelDRAW-Dateien** (bisher nur mit selbst erzeugten SVG- und PDF-Dateien geprüft) und Seriennummern auf gefrästen Teilen.

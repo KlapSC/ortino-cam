@@ -1,3 +1,5 @@
+[English](Tiling-Large-Parts) | **Deutsch**
+
 # Große Teile kacheln (seit 0.7.0)
 
 > **Ehrlich zum Stand:** Die Kachelung ist nur gegen Geometrie- und Eigenschaftstests, die Simulation, den eingebauten Maschinensimulator und Chromium geprüft. **Nie an einer echten Maschine** und nicht unter Windows (WebView2). Wie genau die Kacheln an der Naht zusammenpassen, hängt davon ab, wie genau der Fräser über einer Passmarke steht, wie gerade das Material nach dem Verschieben liegt und wie eben Platte und Opferplatte sind; das ist **nicht erprobt**.

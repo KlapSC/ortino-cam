@@ -1,3 +1,5 @@
+[English](Photo-to-Relief) | **Deutsch**
+
 # Foto → Relief (KI-Tiefenschätzung auf deinem Rechner)
 
 Seit Version 0.6.0 kann ortino.CAM aus einem **Foto** ein **Relief** machen: Ein kleines KI-Modell (Depth Anything V2 Small) schätzt, wie weit jede Stelle des Bildes entfernt ist. Daraus entsteht ein Höhenbild, das als gewöhnliches Relief ins Projekt kommt und im Relief-Studio weiterbearbeitet und gefräst werden kann.

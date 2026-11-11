@@ -1,3 +1,5 @@
+[English](Sheets-and-Furniture) | **Deutsch**
+
 # Platten und Möbel
 
 Diese Seite beschreibt, wie du viele Teile auf Platten verteilst (**Plattenplaner**), Holzverbindungen erzeugst (**Passungen und Fingerzinken**), Schränke und Küchen entwirfst (**Küchen-Designer**; Tische, Regale und Sitzmöbel stehen im [Möbel-Designer](Moebel-Designer)) und Projekte als **Vorlagen** und **Serien aus einer Tabelle** fertigst.

@@ -1,3 +1,5 @@
+[English](Export-STL-3MF-en) | **Deutsch**
+
 # 3D-Körper exportieren: STL und 3MF (seit 0.11.0)
 
 Seit Version 0.11.0 kannst du 3D-Körper deines Projekts auch wieder **speichern**, zum Weitergeben oder zum Ansehen in anderen Programmen. Bis dahin gab es nur den [Import von STL und STEP](3D-Modelle-importieren). Die Formate sind **3MF** (mit Einheit Millimeter, ein benannter Körper je Teil) und **STL** (alle Körper als ein Netz).

@@ -1,3 +1,5 @@
+[English](AI-Models-and-Start-Page) | **Deutsch**
+
 # KI-Modelle und Startseite mit Schnellzugriffen (seit 0.13.0)
 
 Zwei Dinge für den schnellen Einstieg: die **Startseite mit Schnellzugriffen** (und der Grundsatz »Eigenes zuerst«) und der Dialog **KI-Modelle**, in dem du das Tiefenmodell für »Foto → Relief« herunterlädst, prüfst oder entfernst.

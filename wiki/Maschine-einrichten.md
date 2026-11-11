@@ -1,3 +1,5 @@
+[English](Setting-Up-the-Machine) | **Deutsch**
+
 # Maschine einrichten
 
 Damit ortino.CAM weiß, wie groß deine Fräse ist und wie schnell sie fahren darf, braucht es ein **Maschinenprofil**. Das ist eine kleine Datei mit den Verfahrwegen, dem Drehzahlbereich der Spindel, den Vorschüben und dem Postprozessor (siehe [Postprozessoren und Steuerungen](Postprozessoren-und-Steuerungen)). Aus dem Profil rechnet das Programm die Zeitschätzung, die Prüfliste und den Start-Check.

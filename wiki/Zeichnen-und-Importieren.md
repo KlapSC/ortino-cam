@@ -1,3 +1,5 @@
+[English](Drawing-and-Importing) | **Deutsch**
+
 # Zeichnen und Importieren
 
 Im Schritt **Design** entwirfst du, was gefräst werden soll: Formen, Text, importierte Zeichnungen. Alles lässt sich mit Formeln und Variablen **parametrisch** halten, also später per Zahlenänderung anpassen.
@@ -128,7 +130,7 @@ Der Assistent zeichnet Fotos, Logos und Skizzen als fräsbare Konturen nach. Du 
 
 ## Exportieren
 
-Unter Datei findest du **Als SVG exportieren** und **Als DXF exportieren** (die Vektoren der Platte). Den G-Code erzeugst du im Schritt »Fräsen«, siehe [Fräsen an der Maschine](Fräsen-an-der-Maschine). Einen Export als STL oder 3MF gibt es nicht.
+Unter Datei findest du **Als SVG exportieren** und **Als DXF exportieren** (die Vektoren der Platte). Den G-Code erzeugst du im Schritt »Fräsen«, siehe [Fräsen an der Maschine](Fräsen-an-der-Maschine). 3D-Körper kannst du als STL oder 3MF speichern, siehe [3D-Körper exportieren](Export-STL-3MF).
 
 ## Probleme in der Zeichnung finden
 
@@ -136,26 +138,37 @@ Die **Geometrie-Prüfung** findet offene oder fast geschlossene Konturen, Doppel
 
 ## Muster- und Relief-Studio
 
-Zwei Studios erzeugen aufwendige Flächen mit wenigen Reglern: das **Muster-Studio** für gelochte Paneele (Waben, Sterne, Voronoi, Text und Bild als Lochraster) und das **Relief-Studio** für 3D-Reliefs. Du öffnest sie über die Werkzeugpalette oder die Befehlspalette (»Muster & Reliefs …«). Wie du daraus Werkzeugwege machst, steht unter [Bearbeitungen](Bearbeitungen).
+Zwei Studios erzeugen aufwendige Flächen mit wenigen Reglern: das **Muster-Studio** für gelochte Paneele (Waben, Sterne, Voronoi, Text und Bild als Lochraster, Wort- und Logo-Collage) und das **Relief-Studio** für 3D-Reliefs. Du öffnest sie über die Werkzeugpalette oder die Befehlspalette (»Muster & Reliefs …«). Wie du daraus Werkzeugwege machst, steht unter [Bearbeitungen](Bearbeitungen).
 
-### Muster-Studio: 39 Arten und 76 Vorlagen (seit 0.14.0 erweitert)
+### Muster-Studio: 40 Arten und 80 Vorlagen
 
 > **Ehrlich zum Stand:** Die Muster sind **nur gerechnet und am Bildschirm geprüft** (Rust-Tests, Vitest, Chromium, Simulator), **nichts wurde gefräst**. Die Fräsbarkeit (Steg, Öffnungsweite, Inseln, Ecken) ist gemessen, ob feine Stege im Holz halten, ist nicht erprobt. Der Mindeststeg von 1,5 mm ist eine Voreinstellung, keine Materialgarantie.
 
 * **So ist das Studio aufgebaut:** Links stehen die **Vorlagen** als Karten mit Vorschau; du filterst nach Kategorie oder tippst ins **Suchfeld** (*seit 0.14.0*: sucht in Name, Beschreibung, Musterart und Kategorie; alle Wörter müssen passen, Groß- und Kleinschreibung und Akzente sind egal, `Esc` leert das Feld). In der Mitte siehst du die Platte in Originalgröße mit allen Öffnungen und der **Ampel** für die Fräsbarkeit. Rechts stehen die einfachen Regler (Größe, Dichte, Steg, Variation, Zufall mit Würfel), darunter »Fläche und Rand« und »Erweitert« mit allen Parametern. **»Auf Platte einfügen«** (`Strg+Enter`) ist ein Rückgängig-Schritt; **»Fräsen einrichten«** legt die Innenkontur an und auf Wunsch eine Außenkontur mit Haltestegen.
-* **39 Arten in sechs Kategorien** (0.13.0: 25 Arten in fünf Kategorien; **fett** = neu seit 0.14.0):
+* **40 Arten in sechs Kategorien** (0.14.0: 39, 0.13.0: 25 Arten in fünf Kategorien; **fett** = neu seit 0.14.0, die Collage ist neu seit 0.16.0):
   * *Geometrisch:* Dreiecke, Waben, Gitter, Ziegelverband, Fischgrät, Würfel, Lamellen, Truchet-Bögen, Zickzack und Wellen, konzentrische Ringe, **Chevron-Lamellen, Argyle, Kreuzparkett, Penrose-Parkett**
   * *Orientalisch:* Mashrabiya, Sterne mit sechs, acht und zwölf Zacken, **Ogee-Laterne, Fischschuppen (Seigaiha), Kagome**
   * *Ornament (neue Kategorie):* **Vierpass-Maßwerk, überlappende Kreise (Shippo), Art-déco-Fächer, Spiralen**
   * *Natur:* Blätter, Palmwedel, Blütenwirbel, Blumen, **Sonnenblume (Fibonacci), Schneeflocken, Wellenlinien**
   * *Zufall:* zufällige Rechtecke, unterteilte Felder, Voronoi, Konfetti
-  * *Lochraster:* Rasterverlauf, Text aus Löchern, Bild als Lochraster
-* **76 Vorlagen** (0.13.0: 37), darunter elf neue für die bisherigen Arten. Alle sind mit den Voreinstellungen des Studios (Fräser 3,175 mm, Mindeststeg 1,5 mm, keine Inseln) laut Ampel **grün** – gemessen, nicht gefräst. Eine Vorlage, »Bild als Lochraster«, braucht ein Bild von dir.
+  * *Lochraster:* Rasterverlauf, Text aus Löchern, Bild als Lochraster, **Wort- und Logo-Collage (seit 0.16.0)**
+* **80 Vorlagen** (0.14.0: 76, 0.13.0: 37), darunter elf neue für die bisherigen Arten (0.14.0) und vier für die Collage (0.16.0). 75 davon sind mit den Voreinstellungen des Studios (Fräser 3,175 mm, Mindeststeg 1,5 mm, keine Inseln) laut Ampel **grün** – gemessen, nicht gefräst. Nicht grün sind die **vier Vorlagen der Collage** (Inseln, siehe unten); die Vorlage »Bild als Lochraster« braucht ein Bild von dir.
 * **Option `trim`** (*seit 0.14.0*, unter »Erweitert«, bei Dreiecken, Waben, Gitter, Ziegel, Fischgrät, Würfeln und Lamellen): am Rand angeschnittene Zellen, von denen weniger als der gewählte Anteil übrig bleibt, entfallen. Ohne `trim` (Standard) entstehen am Rand schmale Schlitze, auch unterhalb der Fräserbreite. Bei den **Blumen** gibt es ein **versetztes, mittiges Gitter** mit gleichem Rand ringsum. Gespeicherte Muster ändern sich durch beides nicht.
 * **Bögen bleiben Bögen:** Die Ornament-Arten (Ogee, Fischschuppen, Vierpass, Shippo, Art-déco-Fächer, Spiralen, Kreuzparkett) rechnen mit echten Kreisbögen, nicht mit vielen kleinen Strecken. Dadurch ist die Rechnung schnell: auf dem Entwicklungsrechner unter 0,3 Sekunden je Art für eine ganze Platte von 1200 × 600 mm (eine Messung, keine Zusage).
-* **Eigene Vorlagen (*seit 0.15.0*):** Im Reiter **»Eigene«** (der erste der Galerie) speicherst du den Stand des Studios mit **»Als eigene Vorlage speichern«**, benennst um, sicherst als Datei, importierst Dateien (auch aus dem [Online-Generator](Formen-und-Muster-Generator)) und beginnst mit **»Neu erstellen«**. Muster aus einem Bild lassen sich nicht speichern. Das Formen-Symbol im Kopf der Galerie öffnet den Dialog **»Formen«** mit zehn Grundformen. Alles dazu steht unter [Eigene Vorlagen](Eigene-Vorlagen); die Vorlagen sind nicht unter Windows (WebView2) geprüft.
+* **Wort- und Logo-Collage (*seit 0.16.0*):** Die Art füllt eine Fläche dicht mit bis zu vier Wörtern oder Logos; Einzelheiten im Abschnitt [Wort- und Logo-Collage](#wort--und-logo-collage-seit-0160) unten.
+* **Eigene Vorlagen (*seit 0.15.0*):** Im Reiter **»Eigene«** (der erste der Galerie) speicherst du den Stand des Studios mit **»Als eigene Vorlage speichern«**, benennst um, sicherst als Datei, importierst Dateien (auch aus dem [Online-Generator](Formen-und-Muster-Generator)) und beginnst mit **»Neu erstellen«**. Muster aus einem Bild lassen sich nicht speichern; von der Collage speichert eine Vorlage nur die Wörter, nie ein Logo. Das Formen-Symbol im Kopf der Galerie öffnet den Dialog **»Formen«** mit zehn Grundformen. Alles dazu steht unter [Eigene Vorlagen](Eigene-Vorlagen); die Vorlagen sind nicht unter Windows (WebView2) geprüft.
 * **Rechenfrist (*seit 0.15.0*):** Die Rechnung endet bei Ausreißern nach der Rechenfrist des Programms (Standard 180 s) von selbst, mit Meldung; vorher wirkte die Frist bei Mustern nicht. Muster, die in der Frist fertig werden, rechnen unverändert.
 * **Grenzen:** Bei gedrehten Gittern und bei Ellipsen als Umriss werden Randzellen angeschnitten, dort entstehen Strecken statt Bögen. Spiralen, Schneeflocken und Sonnenblume setzen nur **ganze Elemente**, der Rand ist dadurch ungleich breit. Argyle zeigt nur ganze Rauten. **Shippo** ist die Kreisanordnung dieses Namens, nicht die »Blume des Lebens«. Dünne Spitzen (Ogee, Schneeflocken, Penrose), lange schmale Stege (Spiralen) und sehr feine Netze (Shippo, Fischschuppen) sind rechnerisch fräsbar, ihre **Haltbarkeit im Holz ist nicht erprobt**. Die Sterne folgen einer Konstruktion nach Augenmaß, es sind keine historisch exakten Rosetten; Palm- und Blattformen sind stilisiert.
+
+#### Wort- und Logo-Collage (seit 0.16.0)
+
+* **Was sie macht:** Eine Fläche (zum Beispiel ein Wandpaneel von 1200 × 600 mm) wird dicht mit bis zu vier verschiedenen Wörtern, Texten oder Logos gefüllt, in vielen Größen und Drehungen (nur waagerecht, 0° und 90° oder frei), ineinander verzahnt. Kleine Teile sitzen auch in den Innenflächen großer Buchstaben (»o«, »A«, »0«). Die Umrisse der Buchstaben samt Innenflächen sind die Öffnungen; der **Steg** ist der Mindestabstand zwischen zwei Teilen. Die Art steht in der Kategorie *Lochraster*.
+* **Das Formular »Wörter und Logos«:** Es hat vier Einträge; jeder ist **Aus**, **Wort** oder **Logo**. Ein *Wort* hat Text (eine Zeile, höchstens 40 Zeichen), Schrift und Fett. Ein *Logo* kommt aus einer PNG- oder JPEG-Datei mit Vorschau und **»Entfernen«**; dunkel ist die Form, bei Transparenz das Deckende, **»Hell und Dunkel vertauschen«** kehrt das um. Die **Häufigkeit** (1 bis 5) bestimmt den Anteil eines Eintrags an den gelegten Teilen. Dazu kommen kleinste und größte Höhe, Dichte, Drehung und Gründlichkeit. Gleiche Eingaben und gleicher Startwert (Würfel) geben dasselbe Bild.
+* **Schriften:** Mitgeliefert sind **Montserrat** (schlank, die Voreinstellung für **neu angelegte** Wörter), **DejaVu Sans** (kräftig) und **DejaVu Serif** (mit Serifen); dazu **»Systemschrift …«** mit der Schriftliste deines Rechners. Montserrat steht unter der SIL Open Font License 1.1 (Lizenztext unter »Über ortino.CAM → Lizenzen …«) und ist auf die Zeichen Westeuropas verkleinert: Akzente, Umlaute, Ziffern, Satzzeichen, Euro. Fehlt einer Schrift ein Zeichen (Kyrillisch oder Griechisch in Montserrat), meldet die Collage das mit einer Lösung (DejaVu Sans hat beides). **Ältere Dateien bleiben, wie sie waren:** Ein Wort ohne Schriftangabe wird weiter in DejaVu Sans gesetzt.
+* **Vorlagen:** *Namens-Collage*, *Zwei Wörter dicht*, *Wort und Logo* (mit freiem Logo-Platz) und *Vier Marken gemischt* (drei Schriften). Die Beispiele nutzen neutrale Wörter. Sie nehmen 1 bis 2 mm Steg und Teile ab 8 mm Höhe.
+* **Fräsbarkeit:** Buchstaben mit Innenflächen ergeben **Inseln**, die beim Durchfräsen herausfallen. Darum steht die Ampel bei Wörtern fast nie auf Grün; sie nennt die Inseln, und **»Brücken für Inseln«** setzt Haltestege. Die schlanke Schrift hat dünne Striche: Für einen Fräser von 3,175 mm meldet die Ampel viele Öffnungen als zu schmal. Die Collage ist eher für feine Werkzeuge (V-Fräser, Gravur) gedacht. Ob Stege von rund 1 mm zwischen Buchstaben und kleine Teile im Holz halten, ist nicht erprobt.
+* **Speichern:** Ein Projekt mit Collage speichert das Logo als Graustufenbild in der `.ocam`-Datei; ältere Programmversionen können die Datei nicht öffnen. Eigene Vorlagen speichern nur die Wörter (nie ein Bild); ein Muster mit Logo lässt sich nicht als Vorlage speichern, der Knopf nennt die Ursache.
+* **Rechte an Bildern und Marken:** Am Logo-Platz steht der Hinweis »Verwende nur Logos und Bilder, an denen du die Rechte hast.« Wer fremde Namen und Logos eingibt, trägt die Rechte selbst. Die Collage gibt es auch im [Online-Generator](Formen-und-Muster-Generator) (dort mit den drei mitgelieferten Schriften).
 
 ### Relief-Studio: 62 Vorlagen (seit 0.14.0 erweitert)
 

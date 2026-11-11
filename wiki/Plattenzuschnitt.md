@@ -1,3 +1,5 @@
+[English](Sheet-Cutting) | **Deutsch**
+
 # Plattenzuschnitt: der Sägeplan mit Optimierer (seit 0.11.0)
 
 Der **Plattenzuschnitt** verteilt rechteckige Teile so auf Platten, dass sie sich an einer **Plattensäge** (Formatkreissäge) mit **durchgehenden Schnitten** abtrennen lassen, also jeder Schnitt durch die ganze Restfläche (»Guillotine-Zuschnitt«). Das Ergebnis ist ein Sägeplan mit Skizze je Platte, Schnittfolge, Schnittliste und Reststücken. Ein **Optimierer** sucht dafür nach weniger Platten, weniger Verschnitt, weniger Schnitten, einem größeren Rest oder geringeren Kosten.

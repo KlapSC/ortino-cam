@@ -1,3 +1,5 @@
+[English](Phone-Remote-Control) | **Deutsch**
+
 # Handy-Fernbedienung
 
 Du stehst an der Maschine, der Rechner mit ortino.CAM ist nicht in Reichweite? Mit dem Handy siehst du, was die Maschine tut, fährst sie in kleinen Schritten an eine Stelle (zum Beispiel zum Einrichten des Werkstücks), setzt den Nullpunkt in X und Y und hältst sie an.

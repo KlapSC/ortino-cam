@@ -1,3 +1,5 @@
+[English](Checking-and-Simulation) | **Deutsch**
+
 # Prüfen und Simulation
 
 Bevor du fräst, prüft ortino.CAM dein Projekt auf mehreren Ebenen. Im Schritt **Prüfen** siehst du die **Prüfliste**, die **3D-Simulation** und eine Zeitschätzung. Dazu kommen die **Hinweise** (die Glühbirne in der Kopfleiste) und später an der Maschine der **Start-Check**.

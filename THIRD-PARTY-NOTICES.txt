@@ -18,6 +18,7 @@ ortino-mcp). Sections 1 to 3 list the components, section 4 contains the license
 1. Schriften / Fonts
 ----------------------------------------------------------------------------------------------------
 * DejaVu Sans, DejaVu Sans Bold, DejaVu Serif – Bitstream Vera License (frei, DejaVu-Änderungen gemeinfrei) – https://dejavu-fonts.github.io/ (in ortino-core eingebettet (crates/ortino-core/fonts))
+* Montserrat Regular, Montserrat Bold (Teilmenge: Zeichen Westeuropas) – SIL Open Font License 1.1 (Copyright 2011 The Montserrat Project Authors) – https://github.com/JulietaUla/Montserrat (in ortino-core eingebettet (crates/ortino-core/fonts))
 * Hershey Fonts (Einlinien-Vektorschriften: Roman, Script, Italic, Gothic) – Hershey Fonts License (frei für jeden Zweck bei Namensnennung; nicht im NTIS-Format) – Dr. A. V. Hershey, U. S. National Bureau of Standards; Datenformat: James Hurt, Cognition, Inc. (in ortino-core eingebettet (crates/ortino-core/fonts/hershey))
 * Inter (Variable) – SIL Open Font License 1.1 – im Programm über das Paket @fontsource-variable/inter 5.3.0 eingebettet; der Text steht in Abschnitt 4.
 
@@ -484,7 +485,7 @@ package metadata is used instead:
 4. Lizenztexte / License texts
 ====================================================================================================
 
-[1/264] Gilt für / applies to:
+[1/265] Gilt für / applies to:
   @fontsource-variable/inter 5.3.0
 ----------------------------------------------------------------------------------------------------
 Copyright 2016 The Inter Project Authors (https://github.com/rsms/inter) Inter-Italic[opsz,wght].ttf: Copyright 2016 The Inter Project Authors (https://github.com/rsms/inter)
@@ -580,7 +581,7 @@ DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 
-[2/264] Gilt für / applies to:
+[2/265] Gilt für / applies to:
   @tauri-apps/api 2.11.1, fdeflate 0.3.7, image 0.25.10, image-webp 0.2.4, miniz_oxide 0.8.9,
   miniz_oxide 0.9.1, num-conv 0.2.2, pin-project-lite 0.2.17, portable-atomic 1.15.0, raw-window-handle 0.6.2,
   rhai 1.26.1, simdutf8 0.1.5, sync_wrapper 1.0.2, tauri 2.11.6, tauri-codegen 2.6.3, tauri-macros 2.6.3,
@@ -765,7 +766,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 
    END OF TERMS AND CONDITIONS
 
-[3/264] Gilt für / applies to:
+[3/265] Gilt für / applies to:
   @tauri-apps/api 2.11.1, tauri 2.11.6, tauri-codegen 2.6.3, tauri-macros 2.6.3, tauri-plugin-deep-link 2.4.10,
   tauri-plugin-dialog 2.7.3, tauri-plugin-fs 2.5.2, tauri-plugin-updater 2.12.0, tauri-runtime 2.11.3,
   tauri-runtime-wry 2.11.4, tauri-utils 2.9.3
@@ -792,7 +793,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[4/264] Gilt für / applies to:
+[4/265] Gilt für / applies to:
   @tauri-apps/plugin-dialog 2.7.3, tauri-plugin-deep-link 2.4.10, tauri-plugin-dialog 2.7.3,
   tauri-plugin-fs 2.5.2, tauri-plugin-single-instance 2.4.5, tauri-plugin-updater 2.12.0
 ----------------------------------------------------------------------------------------------------
@@ -817,7 +818,7 @@ PackageDownloadLocation: git+https://github.com/tauri-apps/tauri.git
 PackageDownloadLocation: git+ssh://github.com/tauri-apps/tauri.git
 Creator: Person: Daniel Thompson-Yvetot
 
-[5/264] Gilt für / applies to:
+[5/265] Gilt für / applies to:
   DejaVu Sans, DejaVu Sans Bold, DejaVu Serif
 ----------------------------------------------------------------------------------------------------
 Mitgelieferte Schriften: DejaVu Sans, DejaVu Sans Bold, DejaVu Serif
@@ -868,7 +869,7 @@ without prior written authorization from the Gnome Foundation or Bitstream
 Inc., respectively. For further information, contact: fonts at gnome dot
 org.
 
-[6/264] Gilt für / applies to:
+[6/265] Gilt für / applies to:
   Hershey Fonts (Einlinien-Vektorschriften: Roman, Script, Italic, Gothic)
 ----------------------------------------------------------------------------------------------------
 USE RESTRICTION:
@@ -895,7 +896,103 @@ USE RESTRICTION:
 			in eight bytes as "xxx yyy:", where xxx and yyy are
 			the coordinate values as ASCII numbers.
 
-[7/264] Gilt für / applies to:
+[7/265] Gilt für / applies to:
+  Montserrat Regular, Montserrat Bold (Teilmenge: Zeichen Westeuropas)
+----------------------------------------------------------------------------------------------------
+Copyright 2024 The Montserrat.Git Project Authors (https://github.com/JulietaUla/Montserrat.git)
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+https://openfontlicense.org
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded,
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+
+[8/265] Gilt für / applies to:
   adler2 2.0.1, allocator-api2 0.2.21, anyhow 1.0.104, atomic-waker 1.1.2, camino 1.2.6, cargo-platform 0.1.9,
   cargo_metadata 0.19.2, displaydoc 0.2.7, dtoa 1.0.11, dyn-clone 1.0.20, erased-serde 0.4.10, fastrand 2.5.0,
   itoa 1.0.18, once_cell 1.21.4, pin-project-lite 0.2.17, portable-atomic 1.15.0, proc-macro2 1.0.107,
@@ -929,7 +1026,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[8/264] Gilt für / applies to:
+[9/265] Gilt für / applies to:
   adler2 2.0.1, cargo-platform 0.1.9
 ----------------------------------------------------------------------------------------------------
                               Apache License
@@ -1134,7 +1231,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[9/264] Gilt für / applies to:
+[10/265] Gilt für / applies to:
   adler2 2.0.1
 ----------------------------------------------------------------------------------------------------
 Copyright (C) Jonas Schievink <jonasschievink@gmail.com>
@@ -1150,7 +1247,7 @@ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN
 AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT
 OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-[10/264] Gilt für / applies to:
+[11/265] Gilt für / applies to:
   ahash 0.8.12, arrayvec 0.7.8, atomic-waker 1.1.2, base64 0.22.1, base64 0.23.1, bitflags 1.3.2,
   bitflags 2.13.2, bs58 0.5.1, bumpalo 3.20.3, camino 1.2.6, cfg-if 1.0.5, chunked_transfer 1.5.0,
   const-random 0.1.18, const-random-macro 0.1.16, core_detect 1.0.0, crossbeam-channel 0.5.17,
@@ -1371,7 +1468,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[11/264] Gilt für / applies to:
+[12/265] Gilt für / applies to:
   ahash 0.8.12
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2018 Tom Kaitchuck
@@ -1400,7 +1497,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[12/264] Gilt für / applies to:
+[13/265] Gilt für / applies to:
   aho-corasick 1.1.5, byteorder 1.5.0, byteorder-lite 0.1.0, jiff 0.2.38, jiff-core 0.1.1, jiff-tzdb 0.1.9,
   jiff-tzdb-platform 0.1.3, memchr 2.8.3, walkdir 2.5.0
 ----------------------------------------------------------------------------------------------------
@@ -1426,7 +1523,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[13/264] Gilt für / applies to:
+[14/265] Gilt für / applies to:
   aho-corasick 1.1.5, byteorder 1.5.0, jiff 0.2.38, jiff-core 0.1.1, jiff-tzdb 0.1.9, jiff-tzdb-platform 0.1.3,
   memchr 2.8.3, same-file 1.0.6, walkdir 2.5.0, winapi-util 0.1.11
 ----------------------------------------------------------------------------------------------------
@@ -1434,7 +1531,7 @@ This project is dual-licensed under the Unlicense and MIT licenses.
 
 You may use this code under the terms of either license.
 
-[14/264] Gilt für / applies to:
+[15/265] Gilt für / applies to:
   aho-corasick 1.1.5, byteorder 1.5.0, byteorder-lite 0.1.0, jiff 0.2.38, jiff-core 0.1.1, jiff-tzdb 0.1.9,
   jiff-tzdb-platform 0.1.3, memchr 2.8.3, same-file 1.0.6, walkdir 2.5.0, winapi-util 0.1.11
 ----------------------------------------------------------------------------------------------------
@@ -1463,7 +1560,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <http://unlicense.org/>
 
-[15/264] Gilt für / applies to:
+[16/265] Gilt für / applies to:
   alloc-no-stdlib 2.0.4, brotli 8.0.4, brotli-decompressor 5.0.3
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2016 Dropbox, Inc.
@@ -1479,7 +1576,7 @@ Redistribution and use in source and binary forms, with or without modification,
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-[16/264] Gilt für / applies to:
+[17/265] Gilt für / applies to:
   alloc-stdlib 0.2.4
 ----------------------------------------------------------------------------------------------------
 BSD 3-Clause License
@@ -1496,7 +1593,7 @@ Redistribution and use in source and binary forms, with or without modification,
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-[17/264] Gilt für / applies to:
+[18/265] Gilt für / applies to:
   allocator-api2 0.2.21, anyhow 1.0.104, dtoa 1.0.11, dyn-clone 1.0.20, erased-serde 0.4.10, itoa 1.0.18,
   libc 0.2.190, proc-macro2 1.0.107, quote 1.0.47, ref-cast 1.0.27, ref-cast-impl 1.0.27, rustc-hash 2.1.3,
   semver 1.0.28, serde 1.0.229, serde-untagged 0.1.9, serde_core 1.0.229, serde_derive 1.0.229,
@@ -1681,7 +1778,7 @@ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
 END OF TERMS AND CONDITIONS
 
-[18/264] Gilt für / applies to:
+[19/265] Gilt für / applies to:
   arrayref 0.3.9
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2015 David Roundy <roundyd@physics.oregonstate.edu>
@@ -1711,7 +1808,7 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-[19/264] Gilt für / applies to:
+[20/265] Gilt für / applies to:
   arrayvec 0.7.8
 ----------------------------------------------------------------------------------------------------
 Copyright (c) Ulrik Sverdrup "bluss" 2015-2023
@@ -1740,7 +1837,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[20/264] Gilt für / applies to:
+[21/265] Gilt für / applies to:
   ascii 1.1.0
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -1766,7 +1863,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[21/264] Gilt für / applies to:
+[22/265] Gilt für / applies to:
   ascii 1.1.0
 ----------------------------------------------------------------------------------------------------
   Apache License
@@ -1971,7 +2068,7 @@ SOFTWARE.
    See the License for the specific language governing permissions and
    limitations under the License.
 
-[22/264] Gilt für / applies to:
+[23/265] Gilt für / applies to:
   atomic-waker 1.1.2
 ----------------------------------------------------------------------------------------------------
 ===============================================================================
@@ -2020,7 +2117,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[23/264] Gilt für / applies to:
+[24/265] Gilt für / applies to:
   base64 0.22.1
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -2045,7 +2142,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[24/264] Gilt für / applies to:
+[25/265] Gilt für / applies to:
   base64 0.23.1
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -2070,7 +2167,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[25/264] Gilt für / applies to:
+[26/265] Gilt für / applies to:
   bit-set 0.8.0, bit-vec 0.8.0
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2023 The Rust Project Developers
@@ -2099,7 +2196,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[26/264] Gilt für / applies to:
+[27/265] Gilt für / applies to:
   bit-set 0.8.0, bit-vec 0.8.0, defmt 1.1.1, defmt-macros 1.1.1, hashlink 0.9.1
 ----------------------------------------------------------------------------------------------------
                               Apache License
@@ -2304,7 +2401,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[27/264] Gilt für / applies to:
+[28/265] Gilt für / applies to:
   bitflags 1.3.2, bitflags 2.13.2, glob 0.3.4, log 0.4.34, num 0.4.3, num-bigint 0.4.8, num-complex 0.4.6,
   num-integer 0.1.47, num-iter 0.1.46, num-rational 0.4.2, num-traits 0.1.43, num-traits 0.2.19, regex 1.13.1,
   regex-automata 0.4.18, regex-syntax 0.8.11
@@ -2335,7 +2432,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[28/264] Gilt für / applies to:
+[29/265] Gilt für / applies to:
   block-buffer 0.10.4, const-oid 0.9.6, cpufeatures 0.2.17, crypto-common 0.1.7, digest 0.10.7, md-5 0.10.6,
   sha2 0.10.9
 ----------------------------------------------------------------------------------------------------
@@ -2541,7 +2638,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[29/264] Gilt für / applies to:
+[30/265] Gilt für / applies to:
   block-buffer 0.10.4
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2018-2019 The RustCrypto Project Developers
@@ -2570,7 +2667,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[30/264] Gilt für / applies to:
+[31/265] Gilt für / applies to:
   brotli 8.0.4
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2009, 2010, 2013-2016 by the Brotli Authors.
@@ -2593,7 +2690,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[31/264] Gilt für / applies to:
+[32/265] Gilt für / applies to:
   bs58 0.5.1
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -2617,7 +2714,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[32/264] Gilt für / applies to:
+[33/265] Gilt für / applies to:
   bumpalo 3.20.3
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2019 Nick Fitzgerald
@@ -2646,7 +2743,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[33/264] Gilt für / applies to:
+[34/265] Gilt für / applies to:
   bytemuck 1.25.2
 ----------------------------------------------------------------------------------------------------
 Apache License
@@ -2711,7 +2808,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[34/264] Gilt für / applies to:
+[35/265] Gilt für / applies to:
   bytemuck 1.25.2, tinyvec 1.13.3
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2019 Daniel "Lokathor" Gee.
@@ -2726,7 +2823,7 @@ Permission is granted to anyone to use this software for any purpose, including 
 
 3. This notice may not be removed or altered from any source distribution.
 
-[35/264] Gilt für / applies to:
+[36/265] Gilt für / applies to:
   bytemuck 1.25.2
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -2739,7 +2836,7 @@ The above copyright notice and this permission notice (including the next paragr
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[36/264] Gilt für / applies to:
+[37/265] Gilt für / applies to:
   bytes 1.12.1
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2018 Carl Lerche
@@ -2768,7 +2865,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[37/264] Gilt für / applies to:
+[38/265] Gilt für / applies to:
   cavalier_contours 0.9.0
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -2781,7 +2878,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[38/264] Gilt für / applies to:
+[39/265] Gilt für / applies to:
   cfb 0.7.3
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -2806,7 +2903,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[39/264] Gilt für / applies to:
+[40/265] Gilt für / applies to:
   cfg-if 1.0.5, socket2 0.6.5
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2014 Alex Crichton
@@ -2835,7 +2932,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[40/264] Gilt für / applies to:
+[41/265] Gilt für / applies to:
   chrono 0.4.45
 ----------------------------------------------------------------------------------------------------
 Rust-chrono is dual-licensed under The MIT License [1] and
@@ -3076,7 +3173,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ~~~~
 
-[41/264] Gilt für / applies to:
+[42/265] Gilt für / applies to:
   chunked_transfer 1.5.0
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -3102,7 +3199,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[42/264] Gilt für / applies to:
+[43/265] Gilt für / applies to:
   color_quant 1.1.0
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -3127,7 +3224,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[43/264] Gilt für / applies to:
+[44/265] Gilt für / applies to:
   const-oid 0.9.6
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2020-2022 The RustCrypto Project Developers
@@ -3156,7 +3253,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[44/264] Gilt für / applies to:
+[45/265] Gilt für / applies to:
   const-random 0.1.18, const-random-macro 0.1.16, hashbrown 0.12.3, hashbrown 0.14.5, hashbrown 0.16.1,
   hashbrown 0.17.1
 ----------------------------------------------------------------------------------------------------
@@ -3186,7 +3283,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[45/264] Gilt für / applies to:
+[46/265] Gilt für / applies to:
   cookie 0.18.2
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2017 Sergio Benitez
@@ -3216,7 +3313,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[46/264] Gilt für / applies to:
+[47/265] Gilt für / applies to:
   cookie 0.18.2
 ----------------------------------------------------------------------------------------------------
                               Apache License
@@ -3422,7 +3519,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[47/264] Gilt für / applies to:
+[48/265] Gilt für / applies to:
   core_detect 1.0.0
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2017-2020 The Rust Project Developers
@@ -3451,7 +3548,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[48/264] Gilt für / applies to:
+[49/265] Gilt für / applies to:
   core_maths 0.1.1
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -3476,7 +3573,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[49/264] Gilt für / applies to:
+[50/265] Gilt für / applies to:
   cpufeatures 0.2.17
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2020-2025 The RustCrypto Project Developers
@@ -3505,7 +3602,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[50/264] Gilt für / applies to:
+[51/265] Gilt für / applies to:
   crc32fast 1.5.2
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -3530,7 +3627,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[51/264] Gilt für / applies to:
+[52/265] Gilt für / applies to:
   crc32fast 1.5.2, fallible-iterator 0.3.0, fallible-streaming-iterator 0.1.9, hex 0.4.3, json-patch 3.0.1,
   quick-error 2.0.1, toml 0.9.12+spec-1.1.0, toml_datetime 0.7.5+spec-1.1.0
 ----------------------------------------------------------------------------------------------------
@@ -3736,7 +3833,7 @@ SOFTWARE.
    See the License for the specific language governing permissions and
    limitations under the License.
 
-[52/264] Gilt für / applies to:
+[53/265] Gilt für / applies to:
   crossbeam-channel 0.5.17
 ----------------------------------------------------------------------------------------------------
 ===============================================================================
@@ -4332,7 +4429,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[53/264] Gilt für / applies to:
+[54/265] Gilt für / applies to:
   crossbeam-channel 0.5.17, crossbeam-utils 0.8.23
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -4363,7 +4460,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[54/264] Gilt für / applies to:
+[55/265] Gilt für / applies to:
   crunchy 0.2.4
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -4388,7 +4485,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[55/264] Gilt für / applies to:
+[56/265] Gilt für / applies to:
   crypto-common 0.1.7
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2021 RustCrypto Developers
@@ -4417,7 +4514,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[56/264] Gilt für / applies to:
+[57/265] Gilt für / applies to:
   cssparser 0.36.0, cssparser-macros 0.6.1, dtoa-short 0.3.5, selectors 0.36.1
 ----------------------------------------------------------------------------------------------------
 Mozilla Public License Version 2.0
@@ -4794,7 +4891,7 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
   This Source Code Form is "Incompatible With Secondary Licenses", as
   defined by the Mozilla Public License, v. 2.0.
 
-[57/264] Gilt für / applies to:
+[58/265] Gilt für / applies to:
   ctor 0.8.0, ctor-proc-macro 0.0.7, dpi 0.1.2, dtor 0.3.0, dtor-proc-macro 0.0.6, tao 0.35.3
 ----------------------------------------------------------------------------------------------------
 Apache License
@@ -4999,7 +5096,7 @@ Apache License
    See the License for the specific language governing permissions and
    limitations under the License.
 
-[58/264] Gilt für / applies to:
+[59/265] Gilt für / applies to:
   ctor 0.8.0, ctor-proc-macro 0.0.7, dtor 0.3.0, dtor-proc-macro 0.0.6, tinyvec 1.13.3
 ----------------------------------------------------------------------------------------------------
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -5008,7 +5105,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[59/264] Gilt für / applies to:
+[60/265] Gilt für / applies to:
   darling 0.24.1, darling_core 0.24.1, darling_macro 0.24.1
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -5033,7 +5130,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[60/264] Gilt für / applies to:
+[61/265] Gilt für / applies to:
   data-url 0.3.2, idna 1.1.0, percent-encoding 2.3.2, url 2.5.8
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2013-2025 The rust-url developers
@@ -5062,7 +5159,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[61/264] Gilt für / applies to:
+[62/265] Gilt für / applies to:
   defmt 1.1.1, defmt-macros 1.1.1
 ----------------------------------------------------------------------------------------------------
 Copyright (c) Ferrous Systems
@@ -5091,7 +5188,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[62/264] Gilt für / applies to:
+[63/265] Gilt für / applies to:
   defmt-parser 1.0.0
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -5104,7 +5201,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[63/264] Gilt für / applies to:
+[64/265] Gilt für / applies to:
   deranged 0.5.9
 ----------------------------------------------------------------------------------------------------
                                  Apache License
@@ -5309,7 +5406,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
    See the License for the specific language governing permissions and
    limitations under the License.
 
-[64/264] Gilt für / applies to:
+[65/265] Gilt für / applies to:
   deranged 0.5.9
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2024 Jacob Pratt et al.
@@ -5332,7 +5429,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[65/264] Gilt für / applies to:
+[66/265] Gilt für / applies to:
   derive_more 2.1.1, derive_more-impl 2.1.1
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -5357,7 +5454,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[66/264] Gilt für / applies to:
+[67/265] Gilt für / applies to:
   digest 0.10.7
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2017 Artyom Pavlov
@@ -5386,7 +5483,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[67/264] Gilt für / applies to:
+[68/265] Gilt für / applies to:
   dirs 6.0.0, dirs-sys 0.5.0
 ----------------------------------------------------------------------------------------------------
                               Apache License
@@ -5564,7 +5661,7 @@ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
    incurred by, or claims asserted against, such Contributor by reason
    of your accepting any such warranty or additional liability.
 
-[68/264] Gilt für / applies to:
+[69/265] Gilt für / applies to:
   dirs 6.0.0, dirs-sys 0.5.0
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2018-2019 dirs-rs contributors
@@ -5587,7 +5684,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[69/264] Gilt für / applies to:
+[70/265] Gilt für / applies to:
   dom_query 0.27.0
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -5618,7 +5715,7 @@ This project contains portions of code and architectural concepts originally
 derived from the "nipper" project (https://github.com/importcjj/nipper),
 developed by Chen Jiaju, licensed under the MIT License and the Apache License 2.0 (dual licensed).
 
-[70/264] Gilt für / applies to:
+[71/265] Gilt für / applies to:
   dpi 0.1.2
 ----------------------------------------------------------------------------------------------------
 rust-lang/libm as a whole is available for use under the MIT license:
@@ -5673,7 +5770,7 @@ and labelled as such in comments in the individual source files. All
 have been licensed under extremely permissive terms.
 ------------------------------------------------------------------------------
 
-[71/264] Gilt für / applies to:
+[72/265] Gilt für / applies to:
   dunce 1.0.5, tiny-keccak 2.0.2
 ----------------------------------------------------------------------------------------------------
 Creative Commons Legal Code
@@ -5798,7 +5895,7 @@ express Statement of Purpose.
     party to this document and has no duty or obligation with respect to
     this CC0 or use of the Work.
 
-[72/264] Gilt für / applies to:
+[73/265] Gilt für / applies to:
   dxf 0.6.2
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -5824,7 +5921,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[73/264] Gilt für / applies to:
+[74/265] Gilt für / applies to:
   either 1.19.0, itertools 0.14.0, serde_with 3.24.0, serde_with_macros 3.24.0
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2015
@@ -5853,7 +5950,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[74/264] Gilt für / applies to:
+[75/265] Gilt für / applies to:
   encoding_rs 0.8.42
 ----------------------------------------------------------------------------------------------------
 encoding_rs is copyright Mozilla Foundation.
@@ -5874,7 +5971,7 @@ source code, are licensed under the BSD 3-Clause License
 Test code within encoding_rs is dedicated to the Public Domain when so
 designated (see the individual files for PD/CC0-dedicated sections).
 
-[75/264] Gilt für / applies to:
+[76/265] Gilt für / applies to:
   encoding_rs 0.8.42, kurbo 0.13.1, multiversion_no_op 1.0.0, polycool 0.4.0, rustls-platform-verifier 0.7.1,
   serialize-to-javascript 0.1.2, serialize-to-javascript-impl 0.1.2, siphasher 1.0.4, spade 2.15.1,
   static_assertions 1.1.0, tinyvec 1.13.3, ureq 3.4.2, ureq-proto 0.6.4, utf8_iter 1.0.4, zeroize 1.9.1,
@@ -6082,7 +6179,7 @@ designated (see the individual files for PD/CC0-dedicated sections).
    See the License for the specific language governing permissions and
    limitations under the License.
 
-[76/264] Gilt für / applies to:
+[77/265] Gilt für / applies to:
   encoding_rs 0.8.42, multiversion_no_op 1.0.0, utf8_iter 1.0.4
 ----------------------------------------------------------------------------------------------------
 Copyright Mozilla Foundation
@@ -6111,7 +6208,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[77/264] Gilt für / applies to:
+[78/265] Gilt für / applies to:
   encoding_rs 0.8.42
 ----------------------------------------------------------------------------------------------------
 Copyright © WHATWG (Apple, Google, Mozilla, Microsoft).
@@ -6141,7 +6238,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-[78/264] Gilt für / applies to:
+[79/265] Gilt für / applies to:
   enum_primitive 0.1.1
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2015 Anders Kaseorg <andersk@mit.edu>
@@ -6165,7 +6262,7 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[79/264] Gilt für / applies to:
+[80/265] Gilt für / applies to:
   equivalent 1.0.2
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2016--2023
@@ -6194,7 +6291,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[80/264] Gilt für / applies to:
+[81/265] Gilt für / applies to:
   euclid 0.22.14, string_cache 0.9.0
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2012-2013 Mozilla Foundation
@@ -6223,7 +6320,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[81/264] Gilt für / applies to:
+[82/265] Gilt für / applies to:
   euclid 0.22.14
 ----------------------------------------------------------------------------------------------------
 Licensed under the Apache License, Version 2.0 <LICENSE-APACHE or
@@ -6232,7 +6329,7 @@ http://www.apache.org/licenses/LICENSE-2.0> or the MIT license
 option. All files in the project carrying such notice may not be
 copied, modified, or distributed except according to those terms.
 
-[82/264] Gilt für / applies to:
+[83/265] Gilt für / applies to:
   fallible-iterator 0.3.0
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2015 The rust-openssl-verify Developers
@@ -6255,7 +6352,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[83/264] Gilt für / applies to:
+[84/265] Gilt für / applies to:
   fallible-streaming-iterator 0.1.9
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2016 The fallible-streaming-iterator Developers
@@ -6278,7 +6375,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[84/264] Gilt für / applies to:
+[85/265] Gilt für / applies to:
   fdeflate 0.3.7, image 0.25.10, image-webp 0.2.4
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -6307,7 +6404,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[85/264] Gilt für / applies to:
+[86/265] Gilt für / applies to:
   flate2 1.1.10
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2014-2026 Alex Crichton
@@ -6336,7 +6433,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[86/264] Gilt für / applies to:
+[87/265] Gilt für / applies to:
   float-cmp 0.9.0
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2014-2020 Optimal Computing (NZ) Ltd
@@ -6359,7 +6456,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 IN THE SOFTWARE.
 
-[87/264] Gilt für / applies to:
+[88/265] Gilt für / applies to:
   fnv 1.0.7
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2017 Contributors
@@ -6388,7 +6485,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[88/264] Gilt für / applies to:
+[89/265] Gilt für / applies to:
   foldhash 0.2.0
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2024 Orson Peters
@@ -6411,7 +6508,7 @@ the following restrictions:
 
 3. This notice may not be removed or altered from any source distribution.
 
-[89/264] Gilt für / applies to:
+[90/265] Gilt für / applies to:
   fontdb 0.24.0, unicode-bidi-mirroring 0.4.0, unicode-ccc 0.4.0
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -6436,7 +6533,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[90/264] Gilt für / applies to:
+[91/265] Gilt für / applies to:
   form_urlencoded 1.2.2
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2013-2016 The rust-url developers
@@ -6465,7 +6562,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[91/264] Gilt für / applies to:
+[92/265] Gilt für / applies to:
   futures-channel 0.3.34, futures-core 0.3.34, futures-io 0.3.34, futures-macro 0.3.34, futures-sink 0.3.34,
   futures-task 0.3.34, futures-util 0.3.34
 ----------------------------------------------------------------------------------------------------
@@ -6496,7 +6593,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[92/264] Gilt für / applies to:
+[93/265] Gilt für / applies to:
   futures-channel 0.3.34, futures-core 0.3.34, futures-io 0.3.34, futures-macro 0.3.34, futures-sink 0.3.34,
   futures-task 0.3.34, futures-util 0.3.34
 ----------------------------------------------------------------------------------------------------
@@ -6703,7 +6800,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[93/264] Gilt für / applies to:
+[94/265] Gilt für / applies to:
   generic-array 0.14.7
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -6728,7 +6825,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[94/264] Gilt für / applies to:
+[95/265] Gilt für / applies to:
   getrandom 0.2.17, getrandom 0.3.4, getrandom 0.4.3
 ----------------------------------------------------------------------------------------------------
                               Apache License
@@ -6933,7 +7030,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[95/264] Gilt für / applies to:
+[96/265] Gilt für / applies to:
   getrandom 0.2.17
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2018-2024 The rust-random Project Developers
@@ -6963,7 +7060,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[96/264] Gilt für / applies to:
+[97/265] Gilt für / applies to:
   getrandom 0.3.4
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2018-2025 The rust-random Project Developers
@@ -6993,7 +7090,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[97/264] Gilt für / applies to:
+[98/265] Gilt für / applies to:
   getrandom 0.4.3
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2018-2026 The rust-random Project Developers
@@ -7023,7 +7120,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[98/264] Gilt für / applies to:
+[99/265] Gilt für / applies to:
   gif 0.14.2
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -7048,7 +7145,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[99/264] Gilt für / applies to:
+[100/265] Gilt für / applies to:
   hashlink 0.9.1
 ----------------------------------------------------------------------------------------------------
 This work is derived in part from the `linked-hash-map` crate, Copyright (c)
@@ -7078,7 +7175,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[100/264] Gilt für / applies to:
+[101/265] Gilt für / applies to:
   heck 0.5.0, unicode-properties 0.1.4, unicode-segmentation 1.13.3
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2015 The Rust Project Developers
@@ -7107,7 +7204,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[101/264] Gilt für / applies to:
+[102/265] Gilt für / applies to:
   hex 0.4.3
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2013-2014 The Rust Project Developers.
@@ -7131,7 +7228,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[102/264] Gilt für / applies to:
+[103/265] Gilt für / applies to:
   html5ever 0.38.0, markup5ever 0.38.0, web_atoms 0.2.6
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2014 The html5ever Project Developers
@@ -7160,7 +7257,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[103/264] Gilt für / applies to:
+[104/265] Gilt für / applies to:
   http 1.5.0
 ----------------------------------------------------------------------------------------------------
                               Apache License
@@ -7365,7 +7462,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[104/264] Gilt für / applies to:
+[105/265] Gilt für / applies to:
   http 1.5.0
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2017 http-rs authors
@@ -7394,7 +7491,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[105/264] Gilt für / applies to:
+[106/265] Gilt für / applies to:
   http-body 1.1.0, http-body-util 0.1.5
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2019-2026 Sean McArthur & Hyper Contributors
@@ -7423,7 +7520,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[106/264] Gilt für / applies to:
+[107/265] Gilt für / applies to:
   httparse 1.10.1
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2015-2025 Sean McArthur
@@ -7446,7 +7543,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[107/264] Gilt für / applies to:
+[108/265] Gilt für / applies to:
   httpdate 1.0.3
 ----------------------------------------------------------------------------------------------------
 Apache License
@@ -7651,7 +7748,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[108/264] Gilt für / applies to:
+[109/265] Gilt für / applies to:
   httpdate 1.0.3
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2016 Pyfisch
@@ -7674,7 +7771,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[109/264] Gilt für / applies to:
+[110/265] Gilt für / applies to:
   hyper 1.12.0
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2014-2026 Sean McArthur
@@ -7697,7 +7794,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[110/264] Gilt für / applies to:
+[111/265] Gilt für / applies to:
   hyper-rustls 0.27.10, rustls 0.23.46
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2016 Joseph Birr-Pixton <jpixton@gmail.com>
@@ -7726,7 +7823,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[111/264] Gilt für / applies to:
+[112/265] Gilt für / applies to:
   hyper-rustls 0.27.10, rustls 0.23.46
 ----------------------------------------------------------------------------------------------------
 ISC License (ISC)
@@ -7745,7 +7842,7 @@ PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS
 ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
 THIS SOFTWARE.
 
-[112/264] Gilt für / applies to:
+[113/265] Gilt für / applies to:
   hyper-util 0.1.21
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2023-2025 Sean McArthur
@@ -7768,7 +7865,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[113/264] Gilt für / applies to:
+[114/265] Gilt für / applies to:
   i_float 5.0.0, i_shape 5.0.0
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -7793,7 +7890,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[114/264] Gilt für / applies to:
+[115/265] Gilt für / applies to:
   i_key_sort 0.11.0, i_overlay 9.0.1
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -7806,7 +7903,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[115/264] Gilt für / applies to:
+[116/265] Gilt für / applies to:
   i_tree 0.19.1
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -7831,7 +7928,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[116/264] Gilt für / applies to:
+[117/265] Gilt für / applies to:
   ico 0.5.0
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -7856,7 +7953,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[117/264] Gilt für / applies to:
+[118/265] Gilt für / applies to:
   icu_collections 2.3.0, icu_locale_core 2.3.0, icu_normalizer 2.3.0, icu_normalizer_data 2.3.0,
   icu_properties 2.3.0, icu_properties_data 2.3.0, icu_provider 2.3.1, litemap 0.8.3, potential_utf 0.1.6,
   tinystr 0.8.4, writeable 0.6.4, yoke 0.8.3, yoke-derive 0.8.4, zerofrom 0.1.8, zerofrom-derive 0.1.8,
@@ -7909,7 +8006,7 @@ SPDX-License-Identifier: Unicode-3.0
 Portions of ICU4X may have been adapted from ICU4C and/or ICU4J.
 ICU 1.8.1 to ICU 57.1 © 1995-2016 International Business Machines Corporation and others.
 
-[118/264] Gilt für / applies to:
+[119/265] Gilt für / applies to:
   ident_case 1.0.1, simdutf8 0.1.5
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -7932,7 +8029,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[119/264] Gilt für / applies to:
+[120/265] Gilt für / applies to:
   idna_adapter 1.2.2
 ----------------------------------------------------------------------------------------------------
 Copyright (c) The rust-url developers
@@ -7961,7 +8058,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[120/264] Gilt für / applies to:
+[121/265] Gilt für / applies to:
   imagesize 0.15.0
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -7986,7 +8083,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[121/264] Gilt für / applies to:
+[122/265] Gilt für / applies to:
   indexmap 1.9.3, indexmap 2.14.2
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2016--2017
@@ -8015,7 +8112,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[122/264] Gilt für / applies to:
+[123/265] Gilt für / applies to:
   infer 0.19.0
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -8040,7 +8137,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[123/264] Gilt für / applies to:
+[124/265] Gilt für / applies to:
   ipnet 2.12.2
 ----------------------------------------------------------------------------------------------------
                                  Apache License
@@ -8245,7 +8342,7 @@ SOFTWARE.
    See the License for the specific language governing permissions and
    limitations under the License.
 
-[124/264] Gilt für / applies to:
+[125/265] Gilt für / applies to:
   ipnet 2.12.2
 ----------------------------------------------------------------------------------------------------
 Copyright 2017 Juniper Networks, Inc.
@@ -8256,7 +8353,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[125/264] Gilt für / applies to:
+[126/265] Gilt für / applies to:
   js-tokens 4.0.0
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -8281,7 +8378,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[126/264] Gilt für / applies to:
+[127/265] Gilt für / applies to:
   json-patch 3.0.1
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -8306,7 +8403,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[127/264] Gilt für / applies to:
+[128/265] Gilt für / applies to:
   jsonptr 0.6.3
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -8331,7 +8428,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[128/264] Gilt für / applies to:
+[129/265] Gilt für / applies to:
   jsonptr 0.6.3
 ----------------------------------------------------------------------------------------------------
                                  Apache License
@@ -8536,7 +8633,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[129/264] Gilt für / applies to:
+[130/265] Gilt für / applies to:
   keyboard-types 0.7.0
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2017 Pyfisch
@@ -8559,7 +8656,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[130/264] Gilt für / applies to:
+[131/265] Gilt für / applies to:
   keyring 3.6.3
 ----------------------------------------------------------------------------------------------------
                               Apache License
@@ -8764,7 +8861,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[131/264] Gilt für / applies to:
+[132/265] Gilt für / applies to:
   keyring 3.6.3
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2016 keyring Developers
@@ -8793,7 +8890,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[132/264] Gilt für / applies to:
+[133/265] Gilt für / applies to:
   kurbo 0.13.1, polycool 0.4.0
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2018 Raph Levien
@@ -8822,7 +8919,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[133/264] Gilt für / applies to:
+[134/265] Gilt für / applies to:
   libc 0.2.190
 ----------------------------------------------------------------------------------------------------
 Copyright (c) The Rust Project Developers
@@ -8851,7 +8948,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[134/264] Gilt für / applies to:
+[135/265] Gilt für / applies to:
   libm 0.2.16
 ----------------------------------------------------------------------------------------------------
 rust-lang/libm as a whole is available for use under the MIT license:
@@ -9113,7 +9210,7 @@ have been licensed under extremely permissive terms.
 
 Copyright notices are retained in src/* files where relevant.
 
-[135/264] Gilt für / applies to:
+[136/265] Gilt für / applies to:
   libsqlite3-sys 0.30.1, rusqlite 0.32.1
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2014-2021 The rusqlite developers
@@ -9136,7 +9233,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[136/264] Gilt für / applies to:
+[137/265] Gilt für / applies to:
   lock_api 0.4.14, parking_lot 0.12.5, parking_lot_core 0.9.12
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2016 The Rust Project Developers
@@ -9165,7 +9262,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[137/264] Gilt für / applies to:
+[138/265] Gilt für / applies to:
   loose-envify 1.4.0
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -9190,7 +9287,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[138/264] Gilt für / applies to:
+[139/265] Gilt für / applies to:
   lucide-react 1.56.0
 ----------------------------------------------------------------------------------------------------
 ISC License
@@ -9237,7 +9334,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[139/264] Gilt für / applies to:
+[140/265] Gilt für / applies to:
   md-5 0.10.6, sha2 0.10.9
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2006-2009 Graydon Hoare
@@ -9268,7 +9365,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[140/264] Gilt für / applies to:
+[141/265] Gilt für / applies to:
   memmap2 0.9.11
 ----------------------------------------------------------------------------------------------------
                               Apache License
@@ -9473,7 +9570,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[141/264] Gilt für / applies to:
+[142/265] Gilt für / applies to:
   memmap2 0.9.11
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2020 Yevhenii Reizner
@@ -9503,7 +9600,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[142/264] Gilt für / applies to:
+[143/265] Gilt für / applies to:
   mime 0.3.17
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2014 Sean McArthur
@@ -9526,7 +9623,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[143/264] Gilt für / applies to:
+[144/265] Gilt für / applies to:
   minisign-verify 0.2.5
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2019-2025 Frank Denis
@@ -9589,7 +9686,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[144/264] Gilt für / applies to:
+[145/265] Gilt für / applies to:
   miniz_oxide 0.8.9, miniz_oxide 0.9.1
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -9617,7 +9714,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[145/264] Gilt für / applies to:
+[146/265] Gilt für / applies to:
   miniz_oxide 0.8.9, miniz_oxide 0.9.1
 ----------------------------------------------------------------------------------------------------
 Copyright 2013-2014 RAD Game Tools and Valve Software
@@ -9635,7 +9732,7 @@ Permission is granted to anyone to use this software for any purpose, including 
 
 3. This notice may not be removed or altered from any source distribution.
 
-[146/264] Gilt für / applies to:
+[147/265] Gilt für / applies to:
   mio 1.2.4
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2014 Carl Lerche and other MIO contributors
@@ -9658,7 +9755,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[147/264] Gilt für / applies to:
+[148/265] Gilt für / applies to:
   moxcms 0.8.1, pxfm 0.1.30
 ----------------------------------------------------------------------------------------------------
 Copyright (c) Radzivon Bartoshyk. All rights reserved.
@@ -9688,7 +9785,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-[148/264] Gilt für / applies to:
+[149/265] Gilt für / applies to:
   moxcms 0.8.1, pxfm 0.1.30
 ----------------------------------------------------------------------------------------------------
                                  Apache License
@@ -9893,7 +9990,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
    See the License for the specific language governing permissions and
    limitations under the License.
 
-[149/264] Gilt für / applies to:
+[150/265] Gilt für / applies to:
   muda 0.19.3, tray-icon 0.24.2
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -9918,7 +10015,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[150/264] Gilt für / applies to:
+[151/265] Gilt für / applies to:
   muda 0.19.3
 ----------------------------------------------------------------------------------------------------
 SPDXVersion: SPDX-2.1
@@ -9941,7 +10038,7 @@ PackageDownloadLocation: git+https://github.com/tauri-apps/muda.git
 PackageDownloadLocation: git+ssh://github.com/tauri-apps/muda.git
 Creator: Person: Daniel Thompson-Yvetot
 
-[151/264] Gilt für / applies to:
+[152/265] Gilt für / applies to:
   multiversion_no_op 1.0.0
 ----------------------------------------------------------------------------------------------------
 Copyright Mozilla Foundation
@@ -9960,7 +10057,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the Licenses for the specific language governing permissions and
 limitations under the Licenses.
 
-[152/264] Gilt für / applies to:
+[153/265] Gilt für / applies to:
   new_debug_unreachable 1.0.6
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2015 Jonathan Reem
@@ -9989,7 +10086,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[153/264] Gilt für / applies to:
+[154/265] Gilt für / applies to:
   num-conv 0.2.2
 ----------------------------------------------------------------------------------------------------
 Copyright (c) Jacob Pratt
@@ -10012,7 +10109,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[154/264] Gilt für / applies to:
+[155/265] Gilt für / applies to:
   option-ext 0.2.0
 ----------------------------------------------------------------------------------------------------
 Mozilla Public License Version 2.0
@@ -10389,7 +10486,7 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
   This Source Code Form is "Incompatible With Secondary Licenses", as
   defined by the Mozilla Public License, v. 2.0.
 
-[155/264] Gilt für / applies to:
+[156/265] Gilt für / applies to:
   phf 0.13.1, phf_generator 0.13.1, phf_macros 0.13.1, phf_shared 0.13.1
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -10413,7 +10510,7 @@ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[156/264] Gilt für / applies to:
+[157/265] Gilt für / applies to:
   pico-args 0.5.0
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2019 Yevhenii Reizner
@@ -10436,7 +10533,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[157/264] Gilt für / applies to:
+[158/265] Gilt für / applies to:
   plist 1.10.1
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2015 Edward Barnard
@@ -10459,7 +10556,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[158/264] Gilt für / applies to:
+[159/265] Gilt für / applies to:
   png 0.17.16, png 0.18.1
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2015 nwin
@@ -10488,7 +10585,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[159/264] Gilt für / applies to:
+[160/265] Gilt für / applies to:
   powerfmt 0.2.1
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2023 Jacob Pratt et al.
@@ -10511,7 +10608,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[160/264] Gilt für / applies to:
+[161/265] Gilt für / applies to:
   powerfmt 0.2.1
 ----------------------------------------------------------------------------------------------------
                                  Apache License
@@ -10716,7 +10813,7 @@ SOFTWARE.
    See the License for the specific language governing permissions and
    limitations under the License.
 
-[161/264] Gilt für / applies to:
+[162/265] Gilt für / applies to:
   precomputed-hash 0.1.1
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -10741,7 +10838,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[162/264] Gilt für / applies to:
+[163/265] Gilt für / applies to:
   qrcodegen 1.8.0
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -10754,7 +10851,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[163/264] Gilt für / applies to:
+[164/265] Gilt für / applies to:
   quick-error 2.0.1
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2015 The quick-error Developers
@@ -10777,7 +10874,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[164/264] Gilt für / applies to:
+[165/265] Gilt für / applies to:
   quick-xml 0.42.0
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -10802,7 +10899,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[165/264] Gilt für / applies to:
+[166/265] Gilt für / applies to:
   rand_core 0.10.1
 ----------------------------------------------------------------------------------------------------
                               Apache License
@@ -10993,7 +11090,7 @@ APPENDIX: How to apply the Apache License to your work.
    same "printed page" as the copyright notice for easier
    identification within third-party archives.
 
-[166/264] Gilt für / applies to:
+[167/265] Gilt für / applies to:
   rand_core 0.10.1
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2018-2026 The Rand Project Developers
@@ -11022,7 +11119,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[167/264] Gilt für / applies to:
+[168/265] Gilt für / applies to:
   rand_core 0.10.1
 ----------------------------------------------------------------------------------------------------
 Copyrights in the Rand project are retained by their contributors. No
@@ -11035,7 +11132,7 @@ licensed under the Apache License, Version 2.0 <LICENSE-APACHE> or
 <http://www.apache.org/licenses/LICENSE-2.0> or the MIT license
 <LICENSE-MIT> or <http://opensource.org/licenses/MIT>, at your option.
 
-[168/264] Gilt für / applies to:
+[169/265] Gilt für / applies to:
   raw-window-handle 0.6.2
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2020 Osspial
@@ -11050,7 +11147,7 @@ Permission is granted to anyone to use this software for any purpose, including 
 
 3. This notice may not be removed or altered from any source distribution.
 
-[169/264] Gilt für / applies to:
+[170/265] Gilt für / applies to:
   raw-window-handle 0.6.2
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -11075,7 +11172,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[170/264] Gilt für / applies to:
+[171/265] Gilt für / applies to:
   react 18.3.1, react-dom 18.3.1, scheduler 0.23.2
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -11100,7 +11197,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[171/264] Gilt für / applies to:
+[172/265] Gilt für / applies to:
   reqwest 0.13.5
 ----------------------------------------------------------------------------------------------------
                               Apache License
@@ -11305,7 +11402,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[172/264] Gilt für / applies to:
+[173/265] Gilt für / applies to:
   reqwest 0.13.5
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2016-2026 Sean McArthur
@@ -11328,7 +11425,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[173/264] Gilt für / applies to:
+[174/265] Gilt für / applies to:
   rfd 0.16.0
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -11353,7 +11450,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[174/264] Gilt für / applies to:
+[175/265] Gilt für / applies to:
   rhai_codegen 3.2.0
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -11366,7 +11463,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[175/264] Gilt für / applies to:
+[176/265] Gilt für / applies to:
   ring 0.17.14
 ----------------------------------------------------------------------------------------------------
 Copyright 2015-2025 Brian Smith.
@@ -11383,7 +11480,7 @@ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION
 OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
 CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-[176/264] Gilt für / applies to:
+[177/265] Gilt für / applies to:
   ring 0.17.14
 ----------------------------------------------------------------------------------------------------
                                  Apache License
@@ -11656,7 +11753,7 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-[177/264] Gilt für / applies to:
+[178/265] Gilt für / applies to:
   ring 0.17.14
 ----------------------------------------------------------------------------------------------------
 *ring* uses an "ISC" license, like BoringSSL used to use, for new code
@@ -11669,7 +11766,7 @@ license. In each case, the license info is at the top of the file.
 See src/polyfill/once_cell/LICENSE-APACHE and src/polyfill/once_cell/LICENSE-MIT
 for the license to code that was sourced from the once_cell project.
 
-[178/264] Gilt für / applies to:
+[179/265] Gilt für / applies to:
   robust 1.2.0
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2017 The Spade Developers
@@ -11699,7 +11796,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[179/264] Gilt für / applies to:
+[180/265] Gilt für / applies to:
   roxmltree 0.21.1
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -11724,7 +11821,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[180/264] Gilt für / applies to:
+[181/265] Gilt für / applies to:
   rustls-pki-types 1.15.1
 ----------------------------------------------------------------------------------------------------
                               Apache License
@@ -11929,7 +12026,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[181/264] Gilt für / applies to:
+[182/265] Gilt für / applies to:
   rustls-pki-types 1.15.1
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2023 Dirkjan Ochtman <dirkjan@ochtman.nl>
@@ -11958,7 +12055,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[182/264] Gilt für / applies to:
+[183/265] Gilt für / applies to:
   rustls-platform-verifier 0.7.1
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -11983,7 +12080,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[183/264] Gilt für / applies to:
+[184/265] Gilt für / applies to:
   rustls-webpki 0.103.15
 ----------------------------------------------------------------------------------------------------
 Except as otherwise noted, this project is licensed under the following
@@ -12006,7 +12103,7 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 The files under third-party/chromium are licensed as described in
 third-party/chromium/LICENSE.
 
-[184/264] Gilt für / applies to:
+[185/265] Gilt für / applies to:
   rustybuzz 0.20.1
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -12032,7 +12129,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[185/264] Gilt für / applies to:
+[186/265] Gilt für / applies to:
   same-file 1.0.6, winapi-util 0.1.11
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -12057,7 +12154,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[186/264] Gilt für / applies to:
+[187/265] Gilt für / applies to:
   schemars 0.8.22, schemars 0.9.0, schemars 1.2.3, schemars_derive 0.8.22
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -12082,7 +12179,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[187/264] Gilt für / applies to:
+[188/265] Gilt für / applies to:
   scopeguard 1.2.0
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2016-2019 Ulrik Sverdrup "bluss" and scopeguard developers
@@ -12111,7 +12208,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[188/264] Gilt für / applies to:
+[189/265] Gilt für / applies to:
   serde_spanned 1.1.2, toml 0.9.12+spec-1.1.0, toml 1.1.8+spec-1.1.0, toml_datetime 0.7.5+spec-1.1.0,
   toml_datetime 1.1.2+spec-1.1.0, toml_parser 1.1.5+spec-1.1.0, toml_writer 1.1.3+spec-1.1.0
 ----------------------------------------------------------------------------------------------------
@@ -12135,7 +12232,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[189/264] Gilt für / applies to:
+[190/265] Gilt für / applies to:
   serde_spanned 1.1.2, toml 1.1.8+spec-1.1.0, toml_datetime 1.1.2+spec-1.1.0, toml_parser 1.1.5+spec-1.1.0,
   toml_writer 1.1.3+spec-1.1.0
 ----------------------------------------------------------------------------------------------------
@@ -12341,7 +12438,7 @@ SOFTWARE.
    See the License for the specific language governing permissions and
    limitations under the License.
 
-[190/264] Gilt für / applies to:
+[191/265] Gilt für / applies to:
   serialize-to-javascript 0.1.2, serialize-to-javascript-impl 0.1.2
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -12366,13 +12463,13 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[191/264] Gilt für / applies to:
+[192/265] Gilt für / applies to:
   serialport 4.10.1
 ----------------------------------------------------------------------------------------------------
 This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of
 the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-[192/264] Gilt für / applies to:
+[193/265] Gilt für / applies to:
   simd-adler32 0.3.10
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -12397,7 +12494,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[193/264] Gilt für / applies to:
+[194/265] Gilt für / applies to:
   simplecss 0.2.2
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -12422,7 +12519,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[194/264] Gilt für / applies to:
+[195/265] Gilt für / applies to:
   siphasher 1.0.4
 ----------------------------------------------------------------------------------------------------
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -12443,7 +12540,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[195/264] Gilt für / applies to:
+[196/265] Gilt für / applies to:
   siphasher 1.0.4
 ----------------------------------------------------------------------------------------------------
 Copyright 2012-2016 The Rust Project Developers.
@@ -12454,7 +12551,7 @@ http://www.apache.org/licenses/LICENSE-2.0> or the MIT license
 <LICENSE-MIT or http://opensource.org/licenses/MIT>, at your
 option.
 
-[196/264] Gilt für / applies to:
+[197/265] Gilt für / applies to:
   slab 0.4.12
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2019 Carl Lerche
@@ -12483,7 +12580,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[197/264] Gilt für / applies to:
+[198/265] Gilt für / applies to:
   slotmap 1.1.1
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2021 Orson Peters <orsonpeters@gmail.com>
@@ -12506,7 +12603,7 @@ the following restrictions:
 
  3. This notice may not be removed or altered from any source distribution.
 
-[198/264] Gilt für / applies to:
+[199/265] Gilt für / applies to:
   smallvec 1.16.3
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2018 The Servo Project Developers
@@ -12535,7 +12632,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[199/264] Gilt für / applies to:
+[200/265] Gilt für / applies to:
   smartstring 1.0.1
 ----------------------------------------------------------------------------------------------------
 Mozilla Public License Version 2.0
@@ -12886,7 +12983,7 @@ You may add additional accurate notices of copyright ownership.
     This Source Code Form is "Incompatible With Secondary Licenses", as
     defined by the Mozilla Public License, v. 2.0.
 
-[200/264] Gilt für / applies to:
+[201/265] Gilt für / applies to:
   softbuffer 0.4.8
 ----------------------------------------------------------------------------------------------------
 Apache License
@@ -13091,7 +13188,7 @@ Apache License
    See the License for the specific language governing permissions and
    limitations under the License.
 
-[201/264] Gilt für / applies to:
+[202/265] Gilt für / applies to:
   softbuffer 0.4.8
 ----------------------------------------------------------------------------------------------------
 Copyright 2022 Kirill Chibisov
@@ -13114,7 +13211,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[202/264] Gilt für / applies to:
+[203/265] Gilt für / applies to:
   spade 2.15.1
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2017 The Spade Developers
@@ -13143,7 +13240,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[203/264] Gilt für / applies to:
+[204/265] Gilt für / applies to:
   stable_deref_trait 1.2.1
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2017 Robert Grosse
@@ -13172,7 +13269,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[204/264] Gilt für / applies to:
+[205/265] Gilt für / applies to:
   static_assertions 1.1.0
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -13197,7 +13294,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[205/264] Gilt für / applies to:
+[206/265] Gilt für / applies to:
   strict-num 0.1.1
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2022 Yevhenii Reizner
@@ -13220,7 +13317,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[206/264] Gilt für / applies to:
+[207/265] Gilt für / applies to:
   strsim 0.11.1
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -13247,7 +13344,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[207/264] Gilt für / applies to:
+[208/265] Gilt für / applies to:
   subtle 2.6.1
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2016-2017 Isis Agora Lovecruft, Henry de Valence. All rights reserved.
@@ -13280,7 +13377,7 @@ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
 NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-[208/264] Gilt für / applies to:
+[209/265] Gilt für / applies to:
   svgtypes 0.16.1, ttf-parser 0.25.1
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2018 Yevhenii Reizner
@@ -13303,7 +13400,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[209/264] Gilt für / applies to:
+[210/265] Gilt für / applies to:
   synstructure 0.14.0
 ----------------------------------------------------------------------------------------------------
 Copyright 2016 Nika Layzell
@@ -13314,7 +13411,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[210/264] Gilt für / applies to:
+[211/265] Gilt für / applies to:
   tao 0.35.3
 ----------------------------------------------------------------------------------------------------
 SPDXVersion: SPDX-2.1
@@ -13336,7 +13433,7 @@ PackageDownloadLocation: git+https://github.com/tauri-apps/tao.git
 PackageDownloadLocation: git+ssh://github.com/tauri-apps/tao.git
 Creator: Person: Daniel Thompson-Yvetot
 
-[211/264] Gilt für / applies to:
+[212/265] Gilt für / applies to:
   tauri-plugin-single-instance 2.4.5
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -13361,7 +13458,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[212/264] Gilt für / applies to:
+[213/265] Gilt für / applies to:
   tempfile 3.27.0
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2015 Steven Allen
@@ -13390,7 +13487,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[213/264] Gilt für / applies to:
+[214/265] Gilt für / applies to:
   tendril 0.5.1
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2015 Keegan McAllister
@@ -13419,7 +13516,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[214/264] Gilt für / applies to:
+[215/265] Gilt für / applies to:
   three 0.186.1
 ----------------------------------------------------------------------------------------------------
 The MIT License
@@ -13444,7 +13541,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[215/264] Gilt für / applies to:
+[216/265] Gilt für / applies to:
   time 0.3.55, time-core 0.1.9, time-macros 0.2.32
 ----------------------------------------------------------------------------------------------------
 Copyright (c) Jacob Pratt et al.
@@ -13467,7 +13564,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[216/264] Gilt für / applies to:
+[217/265] Gilt für / applies to:
   tiny-skia-path 0.12.0
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2011 Google Inc. All rights reserved.
@@ -13501,7 +13598,7 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-[217/264] Gilt für / applies to:
+[218/265] Gilt für / applies to:
   tiny_http 0.12.0
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2014-2019 The tiny-http contributors
@@ -13530,7 +13627,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[218/264] Gilt für / applies to:
+[219/265] Gilt für / applies to:
   tokio 1.53.2, tokio-util 0.7.20
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -13555,7 +13652,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[219/264] Gilt für / applies to:
+[220/265] Gilt für / applies to:
   tokio-rustls 0.26.6
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2017 quininer kel
@@ -13584,7 +13681,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[220/264] Gilt für / applies to:
+[221/265] Gilt für / applies to:
   tokio-rustls 0.26.6
 ----------------------------------------------------------------------------------------------------
                               Apache License
@@ -13789,7 +13886,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[221/264] Gilt für / applies to:
+[222/265] Gilt für / applies to:
   tower 0.5.3, tower-layer 0.3.3, tower-service 0.3.3
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2019 Tower Contributors
@@ -13818,7 +13915,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[222/264] Gilt für / applies to:
+[223/265] Gilt für / applies to:
   tower-http 0.6.11
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2019-2021 Tower Contributors
@@ -13847,7 +13944,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[223/264] Gilt für / applies to:
+[224/265] Gilt für / applies to:
   tracing 0.1.44, tracing-attributes 0.1.31, tracing-core 0.1.36
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2019 Tokio Contributors
@@ -13876,7 +13973,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[224/264] Gilt für / applies to:
+[225/265] Gilt für / applies to:
   tray-icon 0.24.2
 ----------------------------------------------------------------------------------------------------
 SPDXVersion: SPDX-2.1
@@ -13899,7 +13996,7 @@ PackageDownloadLocation: git+https://github.com/tauri-apps/tray-icon.git
 PackageDownloadLocation: git+ssh://github.com/tauri-apps/tray-icon.git
 Creator: Person: Daniel Thompson-Yvetot
 
-[225/264] Gilt für / applies to:
+[226/265] Gilt für / applies to:
   try-lock 0.2.5
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2018-2023 Sean McArthur
@@ -13923,7 +14020,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[226/264] Gilt für / applies to:
+[227/265] Gilt für / applies to:
   typenum 1.20.1
 ----------------------------------------------------------------------------------------------------
                               Apache License
@@ -14128,7 +14225,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[227/264] Gilt für / applies to:
+[228/265] Gilt für / applies to:
   typenum 1.20.1
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -14153,12 +14250,12 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[228/264] Gilt für / applies to:
+[229/265] Gilt für / applies to:
   typenum 1.20.1
 ----------------------------------------------------------------------------------------------------
 MIT OR Apache-2.0
 
-[229/264] Gilt für / applies to:
+[230/265] Gilt für / applies to:
   unic-char-property 0.9.0, unic-char-range 0.9.0, unic-common 0.9.0, unic-ucd-ident 0.9.0,
   unic-ucd-version 0.9.0
 ----------------------------------------------------------------------------------------------------
@@ -14172,7 +14269,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[230/264] Gilt für / applies to:
+[231/265] Gilt für / applies to:
   unicode-ident 1.0.27
 ----------------------------------------------------------------------------------------------------
 UNICODE LICENSE V3
@@ -14215,7 +14312,7 @@ not be used in advertising or otherwise to promote the sale, use or other
 dealings in these Data Files or Software without prior written
 authorization of the copyright holder.
 
-[231/264] Gilt für / applies to:
+[232/265] Gilt für / applies to:
   unicode-properties 0.1.4, unicode-segmentation 1.13.3
 ----------------------------------------------------------------------------------------------------
 Licensed under the Apache License, Version 2.0
@@ -14226,7 +14323,7 @@ at your option. All files in the project carrying such
 notice may not be copied, modified, or distributed except
 according to those terms.
 
-[232/264] Gilt für / applies to:
+[233/265] Gilt für / applies to:
   unicode-script 0.5.8
 ----------------------------------------------------------------------------------------------------
                               Apache License
@@ -14431,7 +14528,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[233/264] Gilt für / applies to:
+[234/265] Gilt für / applies to:
   unicode-script 0.5.8
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -14462,7 +14559,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[234/264] Gilt für / applies to:
+[235/265] Gilt für / applies to:
   untrusted 0.9.0
 ----------------------------------------------------------------------------------------------------
 // Copyright 2015-2016 Brian Smith.
@@ -14479,7 +14576,7 @@ DEALINGS IN THE SOFTWARE.
 // ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 // OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-[235/264] Gilt für / applies to:
+[236/265] Gilt für / applies to:
   ureq 3.4.2
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -14504,7 +14601,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[236/264] Gilt für / applies to:
+[237/265] Gilt für / applies to:
   ureq-proto 0.6.4
 ----------------------------------------------------------------------------------------------------
 Copyright 2022 Martin Algesten
@@ -14515,7 +14612,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[237/264] Gilt für / applies to:
+[238/265] Gilt für / applies to:
   urlpattern 0.3.0
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -14540,7 +14637,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[238/264] Gilt für / applies to:
+[239/265] Gilt für / applies to:
   usvg 0.48.1
 ----------------------------------------------------------------------------------------------------
 Copyright 2017 the Resvg Authors
@@ -14569,7 +14666,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[239/264] Gilt für / applies to:
+[240/265] Gilt für / applies to:
   utf8_iter 1.0.4
 ----------------------------------------------------------------------------------------------------
 Copyright Mozilla Foundation
@@ -14615,7 +14712,7 @@ licensed under the Apache License, Version 2.0 <LICENSE-APACHE> or
 <http://www.apache.org/licenses/LICENSE-2.0> or the MIT license
 <LICENSE-MIT> or <http://opensource.org/licenses/MIT>, at your option.
 
-[240/264] Gilt für / applies to:
+[241/265] Gilt für / applies to:
   uuid 1.26.1
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2014 The Rust Project Developers
@@ -14645,7 +14742,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[241/264] Gilt für / applies to:
+[242/265] Gilt für / applies to:
   want 0.3.2
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2018-2019 Sean McArthur
@@ -14668,7 +14765,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[242/264] Gilt für / applies to:
+[243/265] Gilt für / applies to:
   webpki-roots 1.0.9
 ----------------------------------------------------------------------------------------------------
 # Community Data License Agreement - Permissive - Version 2.0
@@ -14733,7 +14830,7 @@ agreement.
 of Data, including for example machine learning models and models'
 insights.
 
-[243/264] Gilt für / applies to:
+[244/265] Gilt für / applies to:
   webview2-com 0.38.2
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -14746,7 +14843,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[244/264] Gilt für / applies to:
+[245/265] Gilt für / applies to:
   webview2-com-macros 0.8.1
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -14759,7 +14856,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[245/264] Gilt für / applies to:
+[246/265] Gilt für / applies to:
   webview2-com-sys 0.38.2
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -14772,7 +14869,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[246/264] Gilt für / applies to:
+[247/265] Gilt für / applies to:
   weezl 0.1.12
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -14797,7 +14894,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[247/264] Gilt für / applies to:
+[248/265] Gilt für / applies to:
   window-vibrancy 0.6.0
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -14822,7 +14919,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[248/264] Gilt für / applies to:
+[249/265] Gilt für / applies to:
   window-vibrancy 0.6.0
 ----------------------------------------------------------------------------------------------------
 SPDXVersion: SPDX-2.1
@@ -14845,7 +14942,7 @@ PackageDownloadLocation: git+https://github.com/tauri-apps/window-vibrancy.git
 PackageDownloadLocation: git+ssh://github.com/tauri-apps/window-vibrancy.git
 Creator: Person: Daniel Thompson-Yvetot
 
-[249/264] Gilt für / applies to:
+[250/265] Gilt für / applies to:
   windows 0.61.3, windows-collections 0.2.0, windows-core 0.61.2, windows-future 0.2.1,
   windows-implement 0.60.2, windows-interface 0.59.3, windows-link 0.1.3, windows-link 0.2.1,
   windows-numerics 0.2.0, windows-registry 0.5.3, windows-registry 0.6.1, windows-result 0.3.4,
@@ -15055,7 +15152,7 @@ Creator: Person: Daniel Thompson-Yvetot
    See the License for the specific language governing permissions and
    limitations under the License.
 
-[250/264] Gilt für / applies to:
+[251/265] Gilt für / applies to:
   windows 0.61.3, windows-collections 0.2.0, windows-core 0.61.2, windows-future 0.2.1,
   windows-implement 0.60.2, windows-interface 0.59.3, windows-link 0.1.3, windows-link 0.2.1,
   windows-numerics 0.2.0, windows-registry 0.5.3, windows-registry 0.6.1, windows-result 0.3.4,
@@ -15085,7 +15182,7 @@ Creator: Person: Daniel Thompson-Yvetot
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE
 
-[251/264] Gilt für / applies to:
+[252/265] Gilt für / applies to:
   winnow 0.7.15, winnow 1.0.4
 ----------------------------------------------------------------------------------------------------
 Permission is hereby granted, free of charge, to any person obtaining
@@ -15107,7 +15204,7 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[252/264] Gilt für / applies to:
+[253/265] Gilt für / applies to:
   wry 0.55.1
 ----------------------------------------------------------------------------------------------------
 SPDXVersion: SPDX-2.1
@@ -15131,7 +15228,7 @@ PackageDownloadLocation: git+https://github.com/tauri-apps/wry.git
 PackageDownloadLocation: git+ssh://github.com/tauri-apps/wry.git
 Creator: Person: Daniel Thompson-Yvetot
 
-[253/264] Gilt für / applies to:
+[254/265] Gilt für / applies to:
   wry 0.55.1
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -15156,7 +15253,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[254/264] Gilt für / applies to:
+[255/265] Gilt für / applies to:
   zerocopy 0.8.62
 ----------------------------------------------------------------------------------------------------
 Copyright 2019 The Fuchsia Authors.
@@ -15184,7 +15281,7 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-[255/264] Gilt für / applies to:
+[256/265] Gilt für / applies to:
   zerocopy 0.8.62
 ----------------------------------------------------------------------------------------------------
                                  Apache License
@@ -15389,7 +15486,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
    See the License for the specific language governing permissions and
    limitations under the License.
 
-[256/264] Gilt für / applies to:
+[257/265] Gilt für / applies to:
   zerocopy 0.8.62
 ----------------------------------------------------------------------------------------------------
 Copyright 2023 The Fuchsia Authors
@@ -15418,7 +15515,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[257/264] Gilt für / applies to:
+[258/265] Gilt für / applies to:
   zeroize 1.9.1
 ----------------------------------------------------------------------------------------------------
 Copyright (c) 2018-2026 The RustCrypto Project Developers
@@ -15447,7 +15544,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-[258/264] Gilt für / applies to:
+[259/265] Gilt für / applies to:
   zip 4.6.1
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -15475,7 +15572,7 @@ SOFTWARE.
 Some files in the "tests/data" subdirectory of this repository are under other
 licences; see files named LICENSE.*.txt for details.
 
-[259/264] Gilt für / applies to:
+[260/265] Gilt für / applies to:
   zip 9.0.2
 ----------------------------------------------------------------------------------------------------
 The MIT License (MIT)
@@ -15500,7 +15597,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[260/264] Gilt für / applies to:
+[261/265] Gilt für / applies to:
   zlib-rs 0.6.8
 ----------------------------------------------------------------------------------------------------
 (C) 2024 Trifecta Tech Foundation
@@ -15523,7 +15620,7 @@ freely, subject to the following restrictions:
 
 3. This notice may not be removed or altered from any source distribution.
 
-[261/264] Gilt für / applies to:
+[262/265] Gilt für / applies to:
   zopfli 0.8.4
 ----------------------------------------------------------------------------------------------------
                                  Apache License
@@ -15728,7 +15825,7 @@ freely, subject to the following restrictions:
    See the License for the specific language governing permissions and
    limitations under the License.
 
-[262/264] Gilt für / applies to:
+[263/265] Gilt für / applies to:
   zune-core 0.5.3, zune-jpeg 0.5.15
 ----------------------------------------------------------------------------------------------------
 MIT License
@@ -15753,7 +15850,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[263/264] Gilt für / applies to:
+[264/265] Gilt für / applies to:
   zune-core 0.5.3, zune-jpeg 0.5.15
 ----------------------------------------------------------------------------------------------------
 zlib License
@@ -15776,7 +15873,7 @@ freely, subject to the following restrictions:
    misrepresented as being the original software.
 3. This notice may not be removed or altered from any source distribution.
 
-[264/264] Gilt für / applies to:
+[265/265] Gilt für / applies to:
   zustand 5.0.15
 ----------------------------------------------------------------------------------------------------
 MIT License
